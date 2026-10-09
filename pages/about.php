@@ -16,9 +16,9 @@
 
         <div class="container max-w-315!">
             <div class="mb-12.5 text-center">
-                <h1 class="lg:text-[56px] md:text-5xl text-4xl text-default-950 mb-2.5">Building better businesses with smart strategy</h1>
+                <h1 class="lg:text-[56px] md:text-5xl text-4xl text-default-950 mb-2.5">We Build Systems That Fill Your Calendar</h1>
 
-                <p class="md:max-w-1/2 mx-auto">We're a forward-thinking consulting agency helping businesses grow smarter, scale faster, and lead with clarity.</p>
+                <p class="md:max-w-2/3 mx-auto text-lg text-default-600">dopdev is a software house focused on service-based small and medium businesses. We combine a strong company profile website with a powerful booking engine and the right integrations, so your customers can find you, book you and pay you — without the back-and-forth messages.</p>
             </div>
 
             <div class="mb-2.5">

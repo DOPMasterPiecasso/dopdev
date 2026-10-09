@@ -14,57 +14,67 @@
     <section class="relative size-full overflow-hidden md:py-14.5 py-10">
 
         <div class="container">
-            <h1 class="mb-15 lg:text-[56px] md:text-5xl text-4xl text-default-950">Have a business challenge? We're ready to help</h1>
+            <h1 class="mb-5 lg:text-[56px] md:text-5xl text-4xl text-default-950 font-bold">Ready To Fill Your Calendar?</h1>
+
+            <div class="mb-12 text-default-600 text-lg max-w-3xl">Tell us about your business and we’ll show you how dopdev can help you get more confirmed bookings, reduce no-shows and run your operations more smoothly.</div>
 
             <div class="grid lg:grid-cols-5 lg:gap-17.5 md:gap-12.5 gap-7.5">
                 <div class="lg:col-span-3">
 
-                    <div class="mb-10">Whether you’re ready to scale, solve a business challenge, or explore a partnership - we're here to help.</div>
+                    <h3 class="text-2xl font-bold text-default-950 mb-6">Book a Demo / Get a Quote</h3>
 
-                    <div class="grid md:grid-cols-2 gap-7.5 mb-7.5">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
                         <div>
-                            <label for="name" class="mb-1.5 text-sm block">Your name*</label>
-                            <input type="text" id="name" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-default-200">
+                            <label for="name" class="mb-1.5 text-sm font-medium block">Name*</label>
+                            <input type="text" id="name" required placeholder="Your full name" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
                         </div>
 
                         <div>
-                            <label for="email" class="mb-1.5 text-sm block">Email Address*</label>
-                            <input type="email" id="email" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-default-200">
+                            <label for="business-name" class="mb-1.5 text-sm font-medium block">Business name*</label>
+                            <input type="text" id="business-name" required placeholder="Your business or brand name" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
                         </div>
 
                         <div>
-                            <label for="phone-number" class="mb-1.5 text-sm block">Phone number</label>
-                            <input type="tel" id="phone-number" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-default-200">
+                            <label for="email" class="mb-1.5 text-sm font-medium block">Email*</label>
+                            <input type="email" id="email" required placeholder="name@company.com" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
                         </div>
 
                         <div>
-                            <label for="select-field" class="mb-1.5 text-sm block">Services</label>
-                            <select id="select-field" name="select-field" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-default-200">
-                                <option value="">Select one...</option>
-                                <option value="Business Strategy">Business Strategy</option>
-                                <option value="Process optimization">Process optimization</option>
-                                <option value="Financial advisory">Financial advisory</option>
-                                <option value="Market research">Market research</option>
+                            <label for="phone-number" class="mb-1.5 text-sm font-medium block">Phone / WhatsApp*</label>
+                            <input type="tel" id="phone-number" required placeholder="+65 / +61 ..." class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
+                        </div>
+
+                        <div>
+                            <label for="country" class="mb-1.5 text-sm font-medium block">Country</label>
+                            <select id="country" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
+                                <option value="Singapore">Singapore</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="type-of-business" class="mb-1.5 text-sm font-medium block">Type of business</label>
+                            <select id="type-of-business" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
+                                <option value="Barbershop">Barbershop</option>
+                                <option value="Clinic">Clinic</option>
+                                <option value="Salon">Salon</option>
+                                <option value="Gym">Gym</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
                     </div>
 
-                    <div class="mb-5">
-                        <label for="message" class="mb-1.5 text-sm block">Message</label>
-                        <textarea id="message" class="rounded-lg bg-default-100 py-2 px-5 w-full flex items-center border-transparent focus:border-default-200" rows="8"></textarea>
+                    <div class="mb-6">
+                        <label for="message" class="mb-1.5 text-sm font-medium block">Message / Goals</label>
+                        <textarea id="message" placeholder="Tell us a bit about your business goals or questions..." class="rounded-lg bg-default-100 py-2 px-5 w-full flex items-center border-transparent focus:border-primary" rows="5"></textarea>
                     </div>
 
-                    <div class="lg:-mb-14">
-                        <button type="submit" class="group py-3.5 px-5 inline-flex items-center justify-center gap-5 rounded-lg bg-primary font-medium text-white transition-all">
-                            <span class="relative block overflow-hidden">
-                                <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                    Submit
-                                </span>
-                                <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                    Submit
-                                </span>
-                            </span>
+                    <div>
+                        <button type="submit" class="py-4 px-8 inline-flex items-center justify-center gap-5 rounded-lg bg-primary font-medium text-white text-lg transition-all shadow-md">
+                            Send Enquiry
                         </button>
+                        <p class="text-sm text-default-500 mt-3">No pressure sales. Just a clear conversation about your business.</p>
                     </div>
 
                 </div>

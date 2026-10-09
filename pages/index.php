@@ -18,18 +18,18 @@
             <div class="grid lg:grid-cols-2 lg:gap-25 md:gap-16 gap-7.5">
                 <div class="flex flex-col lg:gap-15 gap-7.5 h-full">
                     <div>
-                        <h1 class="lg:text-[56px] md:text-5xl text-4xl text-default-950 mb-2.5">Driving business growth through expert strategy</h1>
+                        <h1 class="lg:text-[56px] md:text-5xl text-4xl text-default-950 mb-2.5">Turn Your Website Into a 24/7 Booking Machine</h1>
 
-                        <p>Unlock your company's full potential with expert guidance, tailored solutions, and proven results from our seasoned consultants.</p>
+                        <p>Company profile + online booking + smart integrations built for barbershops, clinics, salons and other service businesses in Singapore and Australia.</p>
 
                         <div class="mt-11 inline-flex items-center lg:gap-7.5 md:gap-20 gap-4">
                             <a href="contact" class="group py-5 px-10 inline-flex items-center justify-center gap-5 rounded-lg bg-primary text-white font-medium transition-all">
                                 <span class="relative block overflow-hidden">
                                     <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        See all case studies
+                                        Book a Demo
                                     </span>
                                     <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        See all case studies
+                                        Book a Demo
                                     </span>
                                 </span>
                             </a>
@@ -38,8 +38,8 @@
 
                     <div class="mt-auto flex items-end justify-between gap-2.5">
                         <div class="lg:w-3/4">
-                            <div class="mb-2.5 text-default-700">Firm of the Year 2025</div>
-                            <p class="text-primary">Helping businesses thrive by providing expert guidance in business planning.</p>
+                            <div class="mb-2.5 text-default-700">dopdev Booking Systems</div>
+                            <p class="text-primary">Trusted by growing service businesses across SG & AU.</p>
                         </div>
 
                         <div>
@@ -48,11 +48,11 @@
                             <div class="flex gap-2.5">
                                 <div class="relative group">
                                     <img src="images/other/office-dubai.jpg" alt="Image" class="rounded">
-                                    <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -bottom-2 inset-s-0 translate-y-full w-full text-center text-xs font-medium py-1 px-2.5 bg-default-100 rounded">Dubai</div>
+                                    <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -bottom-2 inset-s-0 translate-y-full w-full text-center text-xs font-medium py-1 px-2.5 bg-default-100 rounded">Singapore</div>
                                 </div>
                                 <div class="relative group">
                                     <img src="images/other/office-paris.jpg" alt="Image" class="rounded">
-                                    <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -bottom-2 inset-s-0 translate-y-full w-full text-center text-xs font-medium py-1 px-2.5 bg-default-100 rounded">Paris</div>
+                                    <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -bottom-2 inset-s-0 translate-y-full w-full text-center text-xs font-medium py-1 px-2.5 bg-default-100 rounded">Australia</div>
                                 </div>
                             </div>
                         </div>
@@ -66,14 +66,14 @@
 
                     <div class="space-y-2.5">
                         <div class="bg-primary rounded-lg p-6">
-                            <p class="mb-25 text-white">The consultants helped us shape a sustainable HR strategy that emphasized performance, retention, and employee well-being.</p>
+                            <p class="mb-25 text-white">“Before dopdev, most of our bookings came via WhatsApp and a lot of people just didn’t show up. Now our calendar is much fuller.”</p>
 
                             <div class="flex items-center gap-4">
                                 <img src="images/users/5.jpg" loading="lazy" alt="Image" class="size-11.5 rounded-full">
 
                                 <div class="space-y-1.5">
-                                    <div class="text-lg text-white">Sofia Grant</div>
-                                    <div class="text-sm text-default-400">Director of Strategy</div>
+                                    <div class="text-lg text-white">Barbershop Owner</div>
+                                    <div class="text-sm text-default-400">Singapore</div>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +83,7 @@
 
 
                             <div class="absolute inset-0  m-7.5 text-center">
-                                <div class="mb-2.5 text-default-950 py-3 px-4 rounded bg-white/50">Build a business growth</div>
+                                <div class="mb-2.5 text-default-950 py-3 px-4 rounded bg-white/50">24/7 Booking Engine</div>
 
                                 <img src="images/other/hero-image-2.jpg" alt="Image" class="rounded">
                             </div>
@@ -97,7 +97,8 @@
     <!-- About company -->
     <section class="lg:py-27.5 md:py-25 py-15 bg-default-100">
         <div class="container lg:max-w-[70%]! mb-12.5">
-            <p class="mb-12.5 md:text-xl text-lg text-center text-default-950 font-medium">Companies who rely on our expertise</p>
+            <p class="mb-2 md:text-2xl text-xl text-center text-default-950 font-bold">Powering Local Service Businesses</p>
+            <p class="mb-12.5 text-center text-default-600">From busy barbershops in Singapore to multi-branch clinics in Australia, dopdev helps service businesses run smoother and sell more.</p>
 
             <div class="flex flex-nowrap md:gap-16 gap-5 w-full overflow-hidden relative">
                 <div class="w-25 z-10 absolute inset-0 end-auto bg-linear-to-tr from-default-100 from-18% to-transparent lg:flex hidden"></div>
@@ -188,24 +189,24 @@
             <div class="text-center">
                 <div class="lg:mb-25 mb-15">
                     <div class="inline-flex flex-wrap md:gap-2.5 gap-1 justify-center md:py-1.25 md:px-4 p-2 bg-white text-default-950 md:rounded-full rounded md:text-sm text-xs shadow">
-                        <span>Strategy</span>
+                        <span>Singapore</span>
 
                         <img src="images/other/emoji-1.svg" alt="Icon" class="decorative-icon">
 
-                        <span>We help businesses grow, adapt, and lead.</span>
+                        <span>dopdev — Booking Systems for Service Businesses</span>
 
                         <img src="images/other/emoji-2.svg" alt="Icon" class="decorative-icon">
 
-                        <span>Growth</span>
+                        <span>Australia</span>
                     </div>
                 </div>
 
                 <div class="lg:mb-12.5 mb-15">
-                    <div class="mb-2 text-sm text-default-950">What we offer</div>
+                    <div class="mb-2 text-sm text-default-950">What You Get With dopdev</div>
 
-                    <h2 class="mb-2.5 lg:text-5xl md:text-4xl text-3xl">Our core consulting services</h2>
+                    <h2 class="mb-2.5 lg:text-5xl md:text-4xl text-3xl">What You Get With dopdev</h2>
 
-                    <p class="mx-auto lg:max-w-2/5">We provide tailored consulting solutions to help businesses overcome challenges, seize opportunities, and achieve sustainable growth.</p>
+                    <p class="mx-auto lg:max-w-2/5">Company profile + online booking + smart integrations built for service businesses in Singapore and Australia.</p>
                 </div>
 
                 <div class="grid lg:grid-cols-4 md:grid-cols-2 md:gap-7.5 gap-2.5">
@@ -214,7 +215,7 @@
                         <img src="images/service/1.jpg" alt="Image" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Business strategy</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Company Profile + Booking Website</div>
                         </div>
                     </div>
 
@@ -223,7 +224,7 @@
                         <img src="images/service/2.jpg" alt="Image" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Process optimization</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Smart Appointment Booking</div>
                         </div>
                     </div>
 
@@ -232,7 +233,7 @@
                         <img src="images/service/3.jpg" alt="Image" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Financial advisory</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">No-Show Reduction Tools</div>
                         </div>
                     </div>
 
@@ -241,7 +242,7 @@
                         <img src="images/service/4.jpg" alt="Image" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Marketing Research</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Multi-Branch & Multi-Staff</div>
                         </div>
                     </div>
                 </div>
@@ -258,13 +259,13 @@
                 <!-- Item -->
                 <div>
                     <span class="inline-block px-2.5 py-1 text-sm bg-default-100 rounded-md">
-                        Business transformed
+                        No-Show Reduction
                     </span>
 
                     <div class="mt-4 flex items-start gap-4">
-                        <h3 class="text-3xl">260+</h3>
+                        <h3 class="text-3xl">30–50%</h3>
                         <p>
-                            Helping companies grow and perform better.
+                            Reduction in no-shows with reminders and deposits.
                         </p>
                     </div>
                 </div>
@@ -272,13 +273,13 @@
                 <!-- Item -->
                 <div>
                     <span class="inline-block px-2.5 py-1 text-sm bg-default-100 rounded-md">
-                        Client satisfaction rate
+                        Online Booking
                     </span>
 
                     <div class="mt-4 flex items-start gap-4">
-                        <h3 class="text-3xl">95%</h3>
+                        <h3 class="text-3xl">24/7</h3>
                         <p>
-                            Trusted and recommended by our clients.
+                            Online booking engine for your customers.
                         </p>
                     </div>
                 </div>
@@ -286,13 +287,13 @@
                 <!-- Item -->
                 <div>
                     <span class="inline-block px-2.5 py-1 text-sm bg-default-100 rounded-md">
-                        Revenue growth generated
+                        Multi-Branch Support
                     </span>
 
                     <div class="mt-4 flex items-start gap-4">
-                        <h3 class="text-3xl">$150M</h3>
+                        <h3 class="text-3xl">Day 1</h3>
                         <p>
-                            Delivering measurable financial impact.
+                            Built for multi-location groups and chains.
                         </p>
                     </div>
                 </div>
@@ -304,20 +305,20 @@
             <div class="grid lg:grid-cols-2 gap-7.5">
                 <div class="flex flex-col lg:gap-50 md:gap-25 gap-10 h-full">
                     <div>
-                        <div class="text-sm text-default-950 mb-2.5">About Copora</div>
+                        <div class="text-sm text-default-950 mb-2.5">About dopdev</div>
 
-                        <h1 class="lg:text-5xl md:text-4xl text-3xl mb-2.5">Driven by insight. <br> Focused on results</h1>
+                        <h1 class="lg:text-5xl md:text-4xl text-3xl mb-2.5">We Build Systems <br> That Fill Your Calendar</h1>
 
-                        <p class="text-default-600">We provide tailored consulting solutions to help businesses overcome challenges, seize opportunities, and achieve sustainable growth.</p>
+                        <p class="text-default-600">dopdev is a software house focused on service-based small and medium businesses. We combine a strong company profile website with a powerful booking engine and the right integrations, so your customers can find you, book you and pay you — without the back-and-forth messages.</p>
 
                         <div class="mt-11 inline-flex items-center lg:gap-7.5 md:gap-20 gap-4">
                             <a href="contact" class="group py-5 px-10 inline-flex items-center justify-center gap-5 rounded-lg bg-primary text-white font-medium transition-all">
                                 <span class="relative block overflow-hidden">
                                     <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        More about us
+                                        Book a Demo
                                     </span>
                                     <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        More about us
+                                        Book a Demo
                                     </span>
                                 </span>
                             </a>
@@ -326,7 +327,7 @@
 
                     <div class="mt-auto">
                         <div class="relative w-[215px] h-[116px] overflow-hidden rounded-lg">
-                            <video loop autoplay muted class="bg-[url('/videos/video-poster.jpg')] bg-cover bg-center flex object-cover rounded-lg w-full h-full absolute -inset-full m-auto -z-10">
+                            <video loop autoplay muted class="bg-[url('videos/video-poster.jpg')] bg-cover bg-center flex object-cover rounded-lg w-full h-full absolute -inset-full m-auto -z-10">
                                 <source src="/videos/video.mp4" type="video/mp4">
                                 <source src="/videos/video.webm" type="video/webm">
                             </video>
@@ -358,7 +359,7 @@
                         <img src="images/other/work-step.jpg" alt="Image" class="rounded-lg size-full object-cover">
 
                         <div class="absolute bottom-5 inset-x-5 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-block rounded bg-white">Want to know what's possible? <a href="/contact-us" class="underline text-body-color">Get in touch now</a></div>
+                            <div class="text-default-950 py-2 px-4 inline-block rounded bg-white">Want to fill your calendar? <a href="contact" class="underline text-body-color">Book a Demo now</a></div>
                         </div>
                     </div>
                 </div>
@@ -366,11 +367,11 @@
                 <div class="lg:col-span-4">
                     <div class="flex flex-col lg:gap-37.5 md:gap-25 gap-10">
                         <div>
-                            <div class="text-sm text-white mb-2.5">How we work</div>
+                            <div class="text-sm text-white mb-2.5">How We Work</div>
 
-                            <h1 class="text-white lg:text-5xl md:text-4xl text-3xl mb-5">Smart steps to business growth</h1>
+                            <h1 class="text-white lg:text-5xl md:text-4xl text-3xl mb-5">How We Work</h1>
 
-                            <p class="text-default-400">We follow a strategic four-step approach designed to drive measurable results. From deep discovery to ongoing optimization, every step is focused on moving your business forward with clarity, efficiency, and impact.</p>
+                            <p class="text-default-400">Four simple steps from idea to live system.</p>
                         </div>
 
                         <div class="mt-auto">
@@ -380,22 +381,22 @@
 
                                     <button type="button" class="hs-tab-active:text-white group relative md:py-5 py-2 px-1 inline-flex items-center gap-2 text-lg text-default-400 active" id="tab-understand" data-hs-tab="#tab-pane-understand" aria-controls="tab-pane-understand" role="tab">
                                         <span class="hs-tab-active:scale-100 mb-0.5 flex size-1.75 scale-0 bg-white rounded-full transition-all duration-300 group-hover:scale-100"></span>
-                                        Understand
+                                        Discovery
                                     </button>
 
                                     <button type="button" class="hs-tab-active:text-white group relative md:py-5 py-2 px-1 inline-flex items-center gap-2 text-lg text-default-400" id="tab-strategize" data-hs-tab="#tab-pane-strategize" aria-controls="tab-pane-strategize" role="tab">
                                         <span class="hs-tab-active:scale-100 mb-0.5 flex size-1.75 scale-0 bg-white rounded-full transition-all duration-300 group-hover:scale-100"></span>
-                                        Strategize
+                                        Build
                                     </button>
 
                                     <button type="button" class="hs-tab-active:text-white group relative md:py-5 py-2 px-1 inline-flex items-center gap-2 text-lg text-default-400" id="tab-execute" data-hs-tab="#tab-pane-execute" aria-controls="tab-pane-execute" role="tab">
                                         <span class="hs-tab-active:scale-100 mb-0.5 flex size-1.75 scale-0 bg-white rounded-full transition-all duration-300 group-hover:scale-100"></span>
-                                        Execute
+                                        Test & Train
                                     </button>
 
                                     <button type="button" class="hs-tab-active:text-white group relative md:py-5 py-2 px-1 inline-flex items-center gap-2 text-lg text-default-400" id="tab-optimize" data-hs-tab="#tab-pane-optimize" aria-controls="tab-pane-optimize" role="tab">
                                         <span class="hs-tab-active:scale-100 mb-0.5 flex size-1.75 scale-0 bg-white rounded-full transition-all duration-300 group-hover:scale-100"></span>
-                                        Optimize
+                                        Launch & Optimise
                                     </button>
                                 </nav>
                             </div>
@@ -407,25 +408,25 @@
 
                                 <div id="tab-pane-understand" role="tabpanel" aria-labelledby="tab-understand">
                                     <p class="text-default-400">
-                                        We begin by listening closely to your challenges and goals. Through research and deep business analysis, we uncover insights. This foundation shapes every strategy we build moving forward.
+                                        We learn about your business model, services, target customers and current pain points. We map out the exact booking flow you need.
                                     </p>
                                 </div>
 
                                 <div id="tab-pane-strategize" class="hidden" role="tabpanel" aria-labelledby="tab-strategize">
                                     <p class="text-default-400">
-                                        Strategize helps teams turn ideas into action with smart planning tools, real-time collaboration, and data-driven insights. Empowers growing businesses with tailored strategies to scale, compete, and thrive in fast-moving markets.
+                                        We design and develop your company profile and booking system, configure services, staff, branches and integrations.
                                     </p>
                                 </div>
 
                                 <div id="tab-pane-execute" class="hidden" role="tabpanel" aria-labelledby="tab-execute">
                                     <p class="text-default-400">
-                                        Execute streamlines team workflows so you can focus less on planning and more on progress. Execute helps dev teams ship code faster, safer, and smarter with streamlined CI/CD pipelines.
+                                        We test every flow end-to-end and train your team on how to manage bookings, customers and reports day-to-day.
                                     </p>
                                 </div>
 
                                 <div id="tab-pane-optimize" class="hidden" role="tabpanel" aria-labelledby="tab-optimize">
                                     <p class="text-default-400">
-                                        We're a results-driven agency helping brands grow through strategy, design, and digital innovation. A full-service marketing agency delivering bold ideas, data-backed strategies, and measurable growth.
+                                        We go live, monitor performance and keep improving based on real data and customer behaviour.
                                     </p>
                                 </div>
 
@@ -443,11 +444,11 @@
         <div class="container">
 
             <div class="mb-12.5">
-                <div class="text-sm text-default-950 mb-2.5">Our case studies</div>
+                <div class="text-sm text-default-950 mb-2.5">Case Studies</div>
 
-                <h1 class="lg:text-5xl md:text-4xl text-3xl mb-2.5">Futured case study</h1>
+                <h1 class="lg:text-5xl md:text-4xl text-3xl mb-2.5">Real Results From Real Businesses</h1>
 
-                <p class="text-default-600">Explore a selection of our featured case study to see how we've helped businesses overcome challenges and reach their full potential.</p>
+                <p class="text-default-600">Real results from barbershops in Singapore and aesthetic clinics in Australia.</p>
             </div>
 
             <div class="relative rounded-lg overflow-hidden group">
@@ -457,8 +458,8 @@
 
                 <div class="md:absolute bottom-7.5 inset-x-7.5 flex rounded bg-white p-4">
                     <div class="space-y-2.5">
-                        <div class="py-1 px-1.5 inline-flex text-xs/none font-medium bg-default-100 rounded-md">Financial</div>
-                        <h2 class="md:text-2xl text-xl">Market entry strategy for a fintech startup</h2>
+                        <div class="py-1 px-1.5 inline-flex text-xs/none font-medium bg-default-100 rounded-md">Singapore</div>
+                        <h2 class="md:text-2xl text-xl">Barbershop Chain in Singapore</h2>
                     </div>
                 </div>
             </div>
@@ -471,12 +472,12 @@
 
             <div class="flex flex-wrap items-center justify-between gap-7.5">
                 <div>
-                    <div class="text-sm text-default-950">Recent case studies</div>
+                    <div class="text-sm text-default-950">Numbers That Matter</div>
                 </div>
 
                 <div>
                     <a href="contact" class="flex items-center gap-1 text-default-950 underline">
-                        <div>Let's work together</div>
+                        <div>Book a Demo</div>
                         <i class="iconify tabler--arrow-up-right"></i>
                     </a>
                 </div>
@@ -489,8 +490,8 @@
             <div class="hs-accordion rounded-2xl">
                 <button class="hs-accordion-toggle lg:py-12.5 md:py-10 py-4 w-full flex justify-between items-center gap-2.5 text-start">
                     <div class="space-y-2.5">
-                        <div class="py-1.5 px-2.5 inline-flex text-sm/none font-medium border border-default-200 rounded-md">Healthcare</div>
-                        <h3 class="md:text-3xl text-base">Digital transformation for a healthcare provider</h3>
+                        <div class="py-1.5 px-2.5 inline-flex text-sm/none font-medium border border-default-200 rounded-md">Singapore</div>
+                        <h3 class="md:text-3xl text-base">Barbershop Chain in Singapore</h3>
                     </div>
 
                     <div class="relative size-4.5 flex items-center justify-center">
@@ -504,14 +505,14 @@
                         <div class="lg:col-span-3">
                             <div class="flex flex-col justify-between lg:gap-50 md:gap-25 gap-10">
                                 <p class="text-default-600">
-                                    A large healthcare network partnered with our team to digitize patient management systems, streamline appointment scheduling, and improve internal workflows.
+                                    Implemented online booking, WhatsApp reminders and deposit system. Result: fewer empty slots, clearer staff schedules and more repeat customers across multiple outlets.
                                 </p>
 
                                 <div class="mt-auto">
                                     <div class="flex items-center justify-between gap-2.5 p-2 ps-4 rounded-lg bg-default-100">
                                         <div class="flex gap-1.25">
-                                            <div class="text-sm">Less time spent on manual tasks</div>
-                                            <div class="font-medium text-default-950">50%</div>
+                                            <div class="text-sm">Reduction in no-shows with reminders</div>
+                                            <div class="font-medium text-default-950">30–50%</div>
                                         </div>
 
                                         <a href="contact" class="group py-3 px-4.5 inline-flex items-center justify-center rounded-lg bg-primary text-white font-medium transition-all">
@@ -538,8 +539,8 @@
             <div class="hs-accordion rounded-2xl">
                 <button class="hs-accordion-toggle lg:py-12.5 md:py-10 py-4 w-full flex justify-between items-center gap-2.5 text-start">
                     <div class="space-y-2.5">
-                        <div class="py-1.5 px-2.5 inline-flex text-sm/none font-medium border border-default-200 rounded-md">Retail</div>
-                        <h3 class="md:text-3xl text-base">International expansion strategy for a retail brand</h3>
+                        <div class="py-1.5 px-2.5 inline-flex text-sm/none font-medium border border-default-200 rounded-md">Australia</div>
+                        <h3 class="md:text-3xl text-base">Aesthetic Clinic in Australia</h3>
                     </div>
 
                     <div class="relative size-4.5 flex items-center justify-center">
@@ -553,13 +554,13 @@
                         <div class="lg:col-span-3">
                             <div class="flex flex-col justify-between lg:gap-50 md:gap-25 gap-10">
                                 <p class="text-default-600">
-                                    A European retail brand collaborated with our consultants to expand into Middle Eastern and Southeast Asian markets using localized marketing strategies.
+                                    Centralised appointment booking across doctors and treatments, with automated reminders and simple payment links. Result: reduced admin time and better visibility on doctor utilisation.
                                 </p>
 
                                 <div class="flex items-center justify-between p-2 ps-4 rounded-lg bg-default-100">
                                     <div class="flex gap-1.25">
-                                        <div class="text-sm">Cut in operational admin load</div>
-                                        <div class="font-medium text-default-950">30%</div>
+                                        <div class="text-sm">24/7 online booking for your customers</div>
+                                        <div class="font-medium text-default-950">24/7</div>
                                     </div>
 
                                     <a href="contact" class="group py-3 px-4.5 rounded-lg bg-primary text-white font-medium">
@@ -585,8 +586,8 @@
             <div class="hs-accordion rounded-2xl">
                 <button class="hs-accordion-toggle lg:py-12.5 md:py-10 py-4 w-full flex justify-between items-center gap-2.5 text-start">
                     <div class="space-y-2.5">
-                        <div class="py-1.5 px-2.5 inline-flex text-sm/none font-medium border border-default-200 rounded-md">Website Design</div>
-                        <h3 class="md:text-3xl text-base">Corporate website for a green energy company</h3>
+                        <div class="py-1.5 px-2.5 inline-flex text-sm/none font-medium border border-default-200 rounded-md">Multi-Branch</div>
+                        <h3 class="md:text-3xl text-base">Multi-Branch & Multi-Staff Support</h3>
                     </div>
 
                     <div class="relative size-4.5 flex items-center justify-center">
@@ -600,13 +601,13 @@
                         <div class="lg:col-span-3">
                             <div class="flex flex-col justify-between lg:gap-50 md:gap-25 gap-10">
                                 <p class="text-default-600">
-                                    We designed and developed a modern website for a renewable energy consulting firm to showcase sustainability initiatives and global projects.
+                                    Manage multiple locations, staff rosters and commissions from one dashboard. Built for Singapore and Australian time zones, payments and habits.
                                 </p>
 
                                 <div class="flex items-center justify-between p-2 ps-4 rounded-lg bg-default-100">
                                     <div class="flex gap-1.25">
-                                        <div class="text-sm">Decrease in backend workload</div>
-                                        <div class="font-medium text-default-950">37%</div>
+                                        <div class="text-sm">Multi-branch support from day one</div>
+                                        <div class="font-medium text-default-950">Day 1</div>
                                     </div>
 
                                     <a href="contact" class="group py-3 px-4.5 rounded-lg bg-primary text-white font-medium">
@@ -632,8 +633,8 @@
             <div class="hs-accordion rounded-2xl">
                 <button class="hs-accordion-toggle lg:py-12.5 md:py-10 py-4 w-full flex justify-between items-center gap-2.5 text-start">
                     <div class="space-y-2.5">
-                        <div class="py-1.5 px-2.5 inline-flex text-sm/none font-medium border border-default-200 rounded-md">SaaS Product</div>
-                        <h3 class="md:text-3xl text-base">Product redesign for a SaaS analytics platform</h3>
+                        <div class="py-1.5 px-2.5 inline-flex text-sm/none font-medium border border-default-200 rounded-md">Admin Efficiency</div>
+                        <h3 class="md:text-3xl text-base">Hours saved every week on admin</h3>
                     </div>
 
                     <div class="relative size-4.5 flex items-center justify-center">
@@ -647,13 +648,13 @@
                         <div class="lg:col-span-3">
                             <div class="flex flex-col justify-between lg:gap-50 md:gap-25 gap-10">
                                 <p class="text-default-600">
-                                    Our team redesigned the user interface of a SaaS analytics platform to improve usability, performance, and real-time reporting capabilities.
+                                    Hours saved every week on admin and back-and-forth messages with automated booking workflows.
                                 </p>
 
                                 <div class="flex items-center justify-between p-2 ps-4 rounded-lg bg-default-100">
                                     <div class="flex gap-1.25">
-                                        <div class="text-sm">Increase in user engagement</div>
-                                        <div class="font-medium text-default-950">42%</div>
+                                        <div class="text-sm">Hours saved every week</div>
+                                        <div class="font-medium text-default-950">10+ hrs</div>
                                     </div>
 
                                     <a href="contact" class="group py-3 px-4.5 rounded-lg bg-primary text-white font-medium">
@@ -695,9 +696,9 @@
             <div class="mb-12.5 text-center">
                 <div class="text-sm text-default-950 mb-2.5">Testimonials</div>
 
-                <h1 class="lg:text-5xl md:text-4xl text-3xl mb-2.5">Proven impact, shared experiences</h1>
+                <h1 class="lg:text-5xl md:text-4xl text-3xl mb-2.5">What Our Clients Say</h1>
 
-                <p class="text-default-600 lg:max-w-1/3 mx-auto mb-7.5">From startups to enterprises, our clients share how our strategic consulting helped them achieve lasting success.</p>
+                <p class="text-default-600 lg:max-w-1/3 mx-auto mb-7.5">From barbershops in Singapore to aesthetic clinics in Australia, our clients share their experiences with dopdev.</p>
 
                 <div class="inline-flex items-center gap-2">
                     <i class="iconify tabler--star-filled text-yellow-300 size-6"></i>
@@ -717,24 +718,24 @@
 
                         <div class="space-y-6">
                             <div>
-                                <h4 class="mb-1.5 text-lg text-white">Amanda Lewis</h4>
-                                <p class="text-sm text-default-400">Director of Strategy</p>
+                                <h4 class="mb-1.5 text-lg text-white">Owner</h4>
+                                <p class="text-sm text-default-400">Barbershop Chain – Singapore</p>
                             </div>
 
                             <p class="text-white">
-                                Our company was growing fast, but our culture couldn’t keep pace.
+                                “Before dopdev, most of our bookings came via WhatsApp and a lot of people just didn’t show up. Now our calendar is much fuller and our staff know exactly who is coming.”
                             </p>
                         </div>
 
                         <div class="flex flex-wrap justify-between gap-12 mt-10">
                             <div>
-                                <h3 class="text-4xl text-white font-semibold">18%</h3>
-                                <p class="text-default-100">Reduced costs</p>
+                                <h3 class="text-4xl text-white font-semibold">30-50%</h3>
+                                <p class="text-default-100">Fewer no-shows</p>
                             </div>
 
                             <div>
-                                <h3 class="text-4xl text-white font-semibold">50%</h3>
-                                <p class="text-default-100">Boosting productivity</p>
+                                <h3 class="text-4xl text-white font-semibold">24/7</h3>
+                                <p class="text-default-100">Online booking</p>
                             </div>
                         </div>
                     </div>
@@ -763,15 +764,13 @@
                             <img src="images/users/4.jpg" class="size-12 rounded-full object-cover" alt="author">
 
                             <div>
-                                <h4 class="font-medium mb-1">Amanda Lewis</h4>
-                                <p class="text-sm text-default-500">Director of Strategy</p>
+                                <h4 class="font-medium mb-1">Clinic Manager</h4>
+                                <p class="text-sm text-default-500">Aesthetic Clinic – Australia</p>
                             </div>
                         </div>
 
                         <p class="text-default-600 leading-relaxed">
-                            Within the first three months, we saw a 35% boost in our sales
-                            performance and streamlined several underperforming areas of our
-                            operation.
+                            “Setting up appointments across multiple doctors used to be a mess. dopdev gave us one clean system and our front desk loves it.”
                         </p>
                     </div>
                 </div>
@@ -780,15 +779,15 @@
 
             <div class="mt-12.5">
                 <div class="flex items-center justify-between gap-2.5 p-2 md:ps-6 rounded-lg bg-default-100">
-                    <div class="font-medium">Let's discuss your business goals - schedule your 20-minute consultation now.</div>
+                    <div class="font-medium">Ready To Fill Your Calendar? Contact dopdev today.</div>
 
                     <a href="contact" class="group py-5 px-10 inline-flex text-nowrap items-center justify-center rounded-lg bg-white text-primary font-medium transition-all">
                         <span class="relative block overflow-hidden">
                             <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                Let's talk
+                                Book a Demo
                             </span>
                             <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                Let's talk
+                                Book a Demo
                             </span>
                         </span>
                     </a>
@@ -806,7 +805,7 @@
 
                     <h2 class="mb-2.5 lg:text-5xl md:text-4xl text-3xl">Insights & Ideas</h2>
 
-                    <p class="lg:max-w-3/4">Our blog delivers fresh perspectives on business growth, innovation, leadership, and operational efficiency</p>
+                    <p class="lg:max-w-3/4">Our blog delivers fresh perspectives on online booking, customer retention, and service business management</p>
                 </div>
 
                 <div class="text-end place-content-end">
@@ -840,7 +839,7 @@
                                     <span class="text-sm">June 20, 2025</span>
                                 </div>
 
-                                <h3 class="text-xl">Why your company needs a strategic roadmap in 2025</h3>
+                                <h3 class="text-xl">Why your service business needs a 24/7 booking engine</h3>
                             </div>
 
                             <div class="grow">
@@ -861,11 +860,11 @@
                         <div class="flex items-end justify-between gap-5 p-4">
                             <div>
                                 <div class="flex items-center gap-3 text-default-500 mb-3">
-                                    <span class="px-2 py-1 bg-default-100 rounded-md text-xs font-medium">Planning</span>
+                                    <span class="px-2 py-1 bg-default-100 rounded-md text-xs font-medium">No-Show Reduction</span>
                                     <span class="text-sm">June 20, 2025</span>
                                 </div>
 
-                                <h3 class="text-xl">From goals to KPIs: Turning vision into measurable success</h3>
+                                <h3 class="text-xl">How WhatsApp reminders cut client no-shows by up to 50%</h3>
                             </div>
 
                             <div class="grow">
@@ -887,11 +886,11 @@
                         <div class="flex items-end justify-between gap-5 p-4">
                             <div>
                                 <div class="flex items-center gap-3 text-default-500 mb-3">
-                                    <span class="px-2 py-1 bg-default-100 rounded-md text-xs font-medium">Marketing</span>
+                                    <span class="px-2 py-1 bg-default-100 rounded-md text-xs font-medium">Growth</span>
                                     <span class="text-sm">June 20, 2025</span>
                                 </div>
 
-                                <h3 class="text-xl">5 growth strategies every modern business should know</h3>
+                                <h3 class="text-xl">Managing multi-branch rosters and staff commissions seamlessly</h3>
                             </div>
 
                             <div class="grow">
@@ -913,11 +912,11 @@
                         <div class="flex items-end justify-between gap-5 p-4">
                             <div>
                                 <div class="flex items-center gap-3 text-default-500 mb-3">
-                                    <span class="px-2 py-1 bg-default-100 rounded-md text-xs font-medium">Growth</span>
+                                    <span class="px-2 py-1 bg-default-100 rounded-md text-xs font-medium">Payments</span>
                                     <span class="text-sm">June 20, 2025</span>
                                 </div>
 
-                                <h3 class="text-xl">Digital transformation for service-based businesses</h3>
+                                <h3 class="text-xl">Local payment integrations for Singapore & Australia businesses</h3>
                             </div>
 
                             <div class="grow">
@@ -938,10 +937,10 @@
                 <div>
                     <div class="border border-default-200 rounded-xl lg:p-10 p-5 lg:pb-16 pb-12 h-full flex flex-col md:items-start items-center lg:text-start text-center justify-between gap-12">
 
-                        <h4 class="lg:text-3xl text-2xl">Let’s build something that moves your business forward</h4>
+                        <h4 class="lg:text-3xl text-2xl">Ready To Fill Your Calendar?</h4>
 
                         <div class="inline-flex items-center gap-3">
-                            <div class="text-sm">Talk to our experts</div>
+                            <div class="text-sm">Book a Demo / Get a Quote</div>
                             <i class="iconify tabler--circle-plus size-5"></i>
                             <div class="flex -space-x-2">
                                 <div class="relative inline-block group">
@@ -995,10 +994,10 @@
                             <a href="contact" class="group py-5 px-10 inline-flex items-center text-nowrap justify-center rounded-lg bg-white text-primary font-medium transition-all">
                                 <span class="relative block overflow-hidden">
                                     <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Get started now
+                                        Book a Demo
                                     </span>
                                     <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Get started now
+                                        Book a Demo
                                     </span>
                                 </span>
                             </a>

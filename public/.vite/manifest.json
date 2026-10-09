@@ -16,12 +16,12 @@
     "src": "node_modules/lightgallery/images/loading.gif"
   },
   "src/js/app.js": {
-    "file": "build/app-DjSNAm1N.js",
+    "file": "build/app-CrBX5ZkC.js",
     "name": "app",
     "src": "src/js/app.js",
     "isEntry": true,
     "css": [
-      "build/app-7om-lsNm.css"
+      "build/app-DZpMQD1M.css"
     ],
     "assets": [
       "build/lg-oyjwlqP2.ttf",

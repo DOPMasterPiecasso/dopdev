@@ -3,7 +3,7 @@
     <div class="container">
         <div class="nav-sticky navbar md:py-6.5 py-5 flex items-center w-full justify-between">
             <a href="/" class="flex items-center">
-                <img src="images/logo.svg" class="h-9.5 w-[132px] flex" />
+                <img src="logo/logodophitam.webp" class="h-9.5 flex" alt="dopdev logo" />
             </a>
 
             <div id="navbar" class="mx-auto hidden lg:flex items-center justify-center">
