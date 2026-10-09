@@ -1,4 +1,4 @@
-# robots.txt for https://unifato.com
+# robots.txt for https://dopdev.com
 
 User-agent: *
 Allow: /
@@ -15,4 +15,4 @@ Disallow: /error-401
 Disallow: /error-404
 
 # Sitemap location
-Sitemap: https://unifato.com/sitemap.xml
+Sitemap: https://dopdev.com/sitemap.xml
