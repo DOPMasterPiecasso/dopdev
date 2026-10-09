@@ -15,6 +15,8 @@ export default defineConfig({
 		port: 5177,
 		strictPort: true,
 		host: true,
+		cors: true,
+		origin: 'http://localhost:5177',
 	},
 	build: {
 		outDir: 'public',
