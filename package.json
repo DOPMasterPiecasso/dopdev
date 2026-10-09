@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "php -S localhost:8080 -t public router.php",
+    "serve": "php -S localhost:8080 -t public",
     "composer": "php ./bin/composer.phar"
   },
   "devDependencies": {
