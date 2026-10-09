@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "php -S localhost:8080 -t public",
+    "serve:root": "php -S localhost:8080",
     "composer": "php ./bin/composer.phar"
   },
   "devDependencies": {
