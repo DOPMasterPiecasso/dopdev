@@ -337,7 +337,7 @@
 
                     <div class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 text-start">
                         <p class="mt-5">
-                            We provide strategy consulting for startups, small to mid-sized businesses, and large enterprises across various industries—including technology, healthcare, manufacturing, retail, and professional services. Whether you're scaling, pivoting, or entering new markets, we tailor solutions to your unique goals.
+                            We provide strategy consulting for startups, small to mid-sized businesses, and large enterprises across various industriesincluding technology, healthcare, manufacturing, retail, and professional services. Whether you're scaling, pivoting, or entering new markets, we tailor solutions to your unique goals.
                         </p>
                     </div>
                 </div>
@@ -398,7 +398,7 @@
 
                     <div class="hs-accordion-content w-full hidden overflow-hidden transition-[height] duration-300 text-start">
                         <p class="mt-5">
-                            Our package includes business analysis, market research, goal setting, tailored growth strategies, and implementation support—all customized to your needs.
+                            Our package includes business analysis, market research, goal setting, tailored growth strategies, and implementation supportall customized to your needs.
                         </p>
                     </div>
                 </div>

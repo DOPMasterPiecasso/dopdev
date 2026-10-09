@@ -60,7 +60,7 @@
                 </em>
             </blockquote>
 
-            <p>Automation is no longer a choice — it is the engine driving modern SaaS. With smart machines, AI, and human expertise working together, industries achieve higher output, reduce waste, and maintain a competitive edge. Every process becomes smarter, greener, and future-ready, turning challenges into opportunities for innovation.</p>
+            <p>Automation is no longer a choice  it is the engine driving modern SaaS. With smart machines, AI, and human expertise working together, industries achieve higher output, reduce waste, and maintain a competitive edge. Every process becomes smarter, greener, and future-ready, turning challenges into opportunities for innovation.</p>
         </div>
     </section>
 

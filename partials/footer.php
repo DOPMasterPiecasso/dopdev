@@ -14,8 +14,8 @@
                     </div>
 
                     <div class="space-y-2">
-                        <a href="mailto:hello@DOP.com" class="block text-white transition duration-300 hover:text-default-400 text-sm">
-                            hello@DOP.com
+                        <a href="mailto:hello@dopdev.com" class="block text-white transition duration-300 hover:text-default-400 text-sm">
+                            hello@dopdev.com
                         </a>
                     </div>
                 </div>

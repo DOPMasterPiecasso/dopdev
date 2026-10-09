@@ -194,7 +194,7 @@
 
                         <img src="images/other/emoji-1.svg" alt="Icon" class="decorative-icon">
 
-                        <span>DOP — Booking Systems for Service Businesses</span>
+                        <span>DOP  Booking Systems for Service Businesses</span>
 
                         <img src="images/other/emoji-2.svg" alt="Icon" class="decorative-icon">
 
@@ -310,7 +310,7 @@
 
                         <h1 class="lg:text-5xl md:text-4xl text-3xl mb-2.5">We Build Systems <br> That Fill Your Calendar</h1>
 
-                        <p class="text-default-600">DOP is a software house focused on service-based small and medium businesses. We combine a strong company profile website with a powerful booking engine and the right integrations, so your customers can find you, book you and pay you — without the back-and-forth messages.</p>
+                        <p class="text-default-600">DOP is a software house focused on service-based small and medium businesses. We combine a strong company profile website with a powerful booking engine and the right integrations, so your customers can find you, book you and pay you  without the back-and-forth messages.</p>
 
                         <div class="mt-11 inline-flex items-center lg:gap-7.5 md:gap-20 gap-4">
                             <a href="contact" class="group py-5 px-10 inline-flex items-center justify-center gap-5 rounded-lg bg-primary text-white font-medium transition-all">

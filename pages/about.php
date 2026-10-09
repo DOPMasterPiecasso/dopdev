@@ -19,7 +19,7 @@
             <div class="mb-12.5 text-center">
                 <h1 class="lg:text-[56px] md:text-5xl text-4xl text-default-950 mb-2.5">We Build Systems That Fill Your Calendar</h1>
 
-                <p class="md:max-w-2/3 mx-auto text-lg text-default-600">DOP is a software house focused on service-based small and medium businesses. We combine a strong company profile website with a powerful booking engine and the right integrations, so your customers can find you, book you and pay you — without the back-and-forth messages.</p>
+                <p class="md:max-w-2/3 mx-auto text-lg text-default-600">DOP is a software house focused on service-based small and medium businesses. We combine a strong company profile website with a powerful booking engine and the right integrations, so your customers can find you, book you and pay you  without the back-and-forth messages.</p>
             </div>
 
             <div class="mb-2.5">
@@ -106,9 +106,9 @@
 
             <div class="grid lg:grid-cols-2 grid-cols-2 lg:gap-30 gap-7.5">
                 <div class="our-story-detail-item">
-                    <p class="mb-7.5 text-xl text-default-800">We didn’t start with a big boardroom — just a big idea: to make business consulting more human, strategic, and impact-driven. Founded by professionals who’ve lived through both corporate complexity and startup chaos, we understand what it takes to scale smart, pivot fast, and stay competitive.</p>
+                    <p class="mb-7.5 text-xl text-default-800">We didn’t start with a big boardroom  just a big idea: to make business consulting more human, strategic, and impact-driven. Founded by professionals who’ve lived through both corporate complexity and startup chaos, we understand what it takes to scale smart, pivot fast, and stay competitive.</p>
 
-                    <p>From helping early-stage ventures define their roadmap to guiding enterprises through digital transformation, our journey has always been about one thing — unlocking clarity and measurable growth for every client. Today, we’re proud to be the go-to partner for businesses ready to think bigger and move faster, backed by strategy that works.We follow a strategic four-step approach designed to drive measurable results. From deep discovery to ongoing optimization, every step is focused on moving your business forward with clarity, efficiency, and impact.</p>
+                    <p>From helping early-stage ventures define their roadmap to guiding enterprises through digital transformation, our journey has always been about one thing  unlocking clarity and measurable growth for every client. Today, we’re proud to be the go-to partner for businesses ready to think bigger and move faster, backed by strategy that works.We follow a strategic four-step approach designed to drive measurable results. From deep discovery to ongoing optimization, every step is focused on moving your business forward with clarity, efficiency, and impact.</p>
                 </div>
 
                 <div>
