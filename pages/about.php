@@ -184,7 +184,7 @@
 
     </section>
 
-    <section class="lg:py-27.5 md:py-25 py-15">
+    <!-- <section class="lg:py-27.5 md:py-25 py-15">
         <div class="container">
 
             <div class="mb-12.5 text-center">
@@ -197,7 +197,6 @@
 
             <div class="grid lg:grid-cols-5 md:grid-cols-3 gap-6">
 
-                <!-- Member 1 -->
                 <div class="group relative rounded-lg flex flex-col items-center overflow-hidden">
                     <img src="images/team/1.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
 
@@ -213,7 +212,6 @@
                     </div>
                 </div>
 
-                <!-- Member 2 -->
                 <div class="group relative rounded-lg flex flex-col items-center overflow-hidden">
                     <img src="images/team/2.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
 
@@ -228,7 +226,6 @@
                     </div>
                 </div>
 
-                <!-- Member 3 -->
                 <div class="group relative rounded-lg flex flex-col items-center overflow-hidden">
                     <img src="images/team/3.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
 
@@ -243,7 +240,6 @@
                     </div>
                 </div>
 
-                <!-- Member 4 -->
                 <div class="group relative rounded-lg flex flex-col items-center overflow-hidden">
                     <img src="images/team/4.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
 
@@ -259,7 +255,6 @@
                     </div>
                 </div>
 
-                <!-- Member 5 -->
                 <div class="group relative rounded-lg flex flex-col items-center overflow-hidden">
                     <img src="images/team/5.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
 
@@ -276,7 +271,7 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
 
     <section class="lg:py-27.5 md:py-25 py-15">
         <div class="container max-w-315!">
