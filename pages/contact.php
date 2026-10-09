@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <?php $title = 'Contact Us'; include('partials/title-meta.php'); ?>
+    <?php $title = 'Contact Us';
+    include('partials/title-meta.php'); ?>
 
     <?php include('partials/head-css.php'); ?>
 </head>
@@ -16,7 +17,7 @@
         <div class="container">
             <h1 class="mb-5 lg:text-[56px] md:text-5xl text-4xl text-default-950 font-bold">Ready To Fill Your Calendar?</h1>
 
-            <div class="mb-12 text-default-600 text-lg max-w-3xl">Tell us about your business and we’ll show you how dopdev can help you get more confirmed bookings, reduce no-shows and run your operations more smoothly.</div>
+            <div class="mb-12 text-default-600 text-lg max-w-3xl">Tell us about your business and we’ll show you how DOP can help you get more confirmed bookings, reduce no-shows and run your operations more smoothly.</div>
 
             <div class="grid lg:grid-cols-5 lg:gap-17.5 md:gap-12.5 gap-7.5">
                 <div class="lg:col-span-3">

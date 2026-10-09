@@ -8,14 +8,14 @@
             <div class="lg:col-span-3">
                 <div class="h-full flex flex-col justify-between gap-6">
                     <div>
-                        <img src="logo/logodophitam.webp" class="h-10 mb-4 brightness-0 invert" alt="dopdev logo">
-                        <div class="text-white font-bold text-xl mb-2">dopdev – Booking Systems for Service Businesses</div>
+                        <img src="logo/logodophitam.webp" class="h-10 mb-4 brightness-0 invert" alt="DOP logo">
+                        <div class="text-white font-bold text-xl mb-2">DOP – Booking Systems for Service Businesses</div>
                         <p class="text-default-400 text-sm leading-relaxed">Company profile + online booking + integrations for barbershops, clinics and other service brands in Singapore and Australia.</p>
                     </div>
 
                     <div class="space-y-2">
-                        <a href="mailto:hello@dopdev.com" class="block text-white transition duration-300 hover:text-default-400 text-sm">
-                            hello@dopdev.com
+                        <a href="mailto:hello@DOP.com" class="block text-white transition duration-300 hover:text-default-400 text-sm">
+                            hello@DOP.com
                         </a>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
             </div>
 
             <!-- Copyright -->
-            <p class="text-sm text-white text-center md:text-right">© dopdev. All rights reserved.</p>
+            <p class="text-sm text-white text-center md:text-right">© DOP. All rights reserved.</p>
 
         </div>
 

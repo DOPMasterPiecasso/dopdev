@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <?php $title = 'Home'; include('partials/title-meta.php'); ?>
+    <?php $title = 'Home';
+    include('partials/title-meta.php'); ?>
 
     <?php include('partials/head-css.php'); ?>
 </head>
@@ -38,7 +39,7 @@
 
                     <div class="mt-auto flex items-end justify-between gap-2.5">
                         <div class="lg:w-3/4">
-                            <div class="mb-2.5 text-default-700">dopdev Booking Systems</div>
+                            <div class="mb-2.5 text-default-700">DOP Booking Systems</div>
                             <p class="text-primary">Trusted by growing service businesses across SG & AU.</p>
                         </div>
 
@@ -66,7 +67,7 @@
 
                     <div class="space-y-2.5">
                         <div class="bg-primary rounded-lg p-6">
-                            <p class="mb-25 text-white">“Before dopdev, most of our bookings came via WhatsApp and a lot of people just didn’t show up. Now our calendar is much fuller.”</p>
+                            <p class="mb-25 text-white">“Before DOP, most of our bookings came via WhatsApp and a lot of people just didn’t show up. Now our calendar is much fuller.”</p>
 
                             <div class="flex items-center gap-4">
                                 <img src="images/users/5.jpg" loading="lazy" alt="Image" class="size-11.5 rounded-full">
@@ -98,7 +99,7 @@
     <section class="lg:py-27.5 md:py-25 py-15 bg-default-100">
         <div class="container lg:max-w-[70%]! mb-12.5">
             <p class="mb-2 md:text-2xl text-xl text-center text-default-950 font-bold">Powering Local Service Businesses</p>
-            <p class="mb-12.5 text-center text-default-600">From busy barbershops in Singapore to multi-branch clinics in Australia, dopdev helps service businesses run smoother and sell more.</p>
+            <p class="mb-12.5 text-center text-default-600">From busy barbershops in Singapore to multi-branch clinics in Australia, DOP helps service businesses run smoother and sell more.</p>
 
             <div class="flex flex-nowrap md:gap-16 gap-5 w-full overflow-hidden relative">
                 <div class="w-25 z-10 absolute inset-0 end-auto bg-linear-to-tr from-default-100 from-18% to-transparent lg:flex hidden"></div>
@@ -193,7 +194,7 @@
 
                         <img src="images/other/emoji-1.svg" alt="Icon" class="decorative-icon">
 
-                        <span>dopdev — Booking Systems for Service Businesses</span>
+                        <span>DOP — Booking Systems for Service Businesses</span>
 
                         <img src="images/other/emoji-2.svg" alt="Icon" class="decorative-icon">
 
@@ -202,9 +203,9 @@
                 </div>
 
                 <div class="lg:mb-12.5 mb-15">
-                    <div class="mb-2 text-sm text-default-950">What You Get With dopdev</div>
+                    <div class="mb-2 text-sm text-default-950">What You Get With DOP</div>
 
-                    <h2 class="mb-2.5 lg:text-5xl md:text-4xl text-3xl">What You Get With dopdev</h2>
+                    <h2 class="mb-2.5 lg:text-5xl md:text-4xl text-3xl">What You Get With DOP</h2>
 
                     <p class="mx-auto lg:max-w-2/5">Company profile + online booking + smart integrations built for service businesses in Singapore and Australia.</p>
                 </div>
@@ -305,11 +306,11 @@
             <div class="grid lg:grid-cols-2 gap-7.5">
                 <div class="flex flex-col lg:gap-50 md:gap-25 gap-10 h-full">
                     <div>
-                        <div class="text-sm text-default-950 mb-2.5">About dopdev</div>
+                        <div class="text-sm text-default-950 mb-2.5">About DOP</div>
 
                         <h1 class="lg:text-5xl md:text-4xl text-3xl mb-2.5">We Build Systems <br> That Fill Your Calendar</h1>
 
-                        <p class="text-default-600">dopdev is a software house focused on service-based small and medium businesses. We combine a strong company profile website with a powerful booking engine and the right integrations, so your customers can find you, book you and pay you — without the back-and-forth messages.</p>
+                        <p class="text-default-600">DOP is a software house focused on service-based small and medium businesses. We combine a strong company profile website with a powerful booking engine and the right integrations, so your customers can find you, book you and pay you — without the back-and-forth messages.</p>
 
                         <div class="mt-11 inline-flex items-center lg:gap-7.5 md:gap-20 gap-4">
                             <a href="contact" class="group py-5 px-10 inline-flex items-center justify-center gap-5 rounded-lg bg-primary text-white font-medium transition-all">
@@ -698,7 +699,7 @@
 
                 <h1 class="lg:text-5xl md:text-4xl text-3xl mb-2.5">What Our Clients Say</h1>
 
-                <p class="text-default-600 lg:max-w-1/3 mx-auto mb-7.5">From barbershops in Singapore to aesthetic clinics in Australia, our clients share their experiences with dopdev.</p>
+                <p class="text-default-600 lg:max-w-1/3 mx-auto mb-7.5">From barbershops in Singapore to aesthetic clinics in Australia, our clients share their experiences with DOP.</p>
 
                 <div class="inline-flex items-center gap-2">
                     <i class="iconify tabler--star-filled text-yellow-300 size-6"></i>
@@ -723,7 +724,7 @@
                             </div>
 
                             <p class="text-white">
-                                “Before dopdev, most of our bookings came via WhatsApp and a lot of people just didn’t show up. Now our calendar is much fuller and our staff know exactly who is coming.”
+                                “Before DOP, most of our bookings came via WhatsApp and a lot of people just didn’t show up. Now our calendar is much fuller and our staff know exactly who is coming.”
                             </p>
                         </div>
 
@@ -770,7 +771,7 @@
                         </div>
 
                         <p class="text-default-600 leading-relaxed">
-                            “Setting up appointments across multiple doctors used to be a mess. dopdev gave us one clean system and our front desk loves it.”
+                            “Setting up appointments across multiple doctors used to be a mess. DOP gave us one clean system and our front desk loves it.”
                         </p>
                     </div>
                 </div>
@@ -779,7 +780,7 @@
 
             <div class="mt-12.5">
                 <div class="flex items-center justify-between gap-2.5 p-2 md:ps-6 rounded-lg bg-default-100">
-                    <div class="font-medium">Ready To Fill Your Calendar? Contact dopdev today.</div>
+                    <div class="font-medium">Ready To Fill Your Calendar? Contact DOP today.</div>
 
                     <a href="contact" class="group py-5 px-10 inline-flex text-nowrap items-center justify-center rounded-lg bg-white text-primary font-medium transition-all">
                         <span class="relative block overflow-hidden">

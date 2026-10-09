@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <?php $title = 'About'; include('partials/title-meta.php'); ?>
+    <?php $title = 'About';
+    include('partials/title-meta.php'); ?>
 
     <?php include('partials/head-css.php'); ?>
 </head>
@@ -18,7 +19,7 @@
             <div class="mb-12.5 text-center">
                 <h1 class="lg:text-[56px] md:text-5xl text-4xl text-default-950 mb-2.5">We Build Systems That Fill Your Calendar</h1>
 
-                <p class="md:max-w-2/3 mx-auto text-lg text-default-600">dopdev is a software house focused on service-based small and medium businesses. We combine a strong company profile website with a powerful booking engine and the right integrations, so your customers can find you, book you and pay you — without the back-and-forth messages.</p>
+                <p class="md:max-w-2/3 mx-auto text-lg text-default-600">DOP is a software house focused on service-based small and medium businesses. We combine a strong company profile website with a powerful booking engine and the right integrations, so your customers can find you, book you and pay you — without the back-and-forth messages.</p>
             </div>
 
             <div class="mb-2.5">
