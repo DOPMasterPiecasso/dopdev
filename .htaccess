@@ -1,42 +1,41 @@
-# Redirect all requests to public/ directory
 <IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
     RewriteEngine On
-    
-    # Prevent access to sensitive files
-    RewriteRule ^\.env$ - [F,L]
-    RewriteRule ^composer\.(json|lock)$ - [F,L]
-    RewriteRule ^package(-lock)?\.json$ - [F,L]
-    
-    # Block access to directories that should not be public
-    RewriteRule ^(configs|src|system|pages|partials|bin|vendor|node_modules)/ - [F,L]
-    
-    # Redirect to public/ if file/directory exists there
-    RewriteCond %{REQUEST_URI} !^/public/
-    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -f [OR]
-    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -d
-    RewriteRule ^(.*)$ /public/$1 [L]
-    
-    # Route everything else to public/index.php
-    RewriteCond %{REQUEST_URI} !^/public/
-    RewriteRule ^ /public/index.php [L]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Handle X-XSRF-Token Header
+    RewriteCond %{HTTP:x-xsrf-token} .
+    RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
+
+    # Blok dotfile (.env, .git, .htaccess, .vite, .prettierrc, dst)
+    RewriteRule (^\.|/\.) - [F,L]
+
+    # Blok akses langsung ke source code & folder sensitif
+    RewriteRule ^(bin|configs|dist|node_modules|pages|partials|src|system|vendor)(/|$) - [F,L]
+
+    # Blok arsip / file proyek yang tidak boleh diakses publik
+    RewriteRule \.(zip|tar|gz|sql|log|bak|lock)$ - [F,L]
+    RewriteRule ^(composer\.(json|lock)|package(-lock)?\.json|bun\.lock|vite\.config\.js|README\.md)$ - [F,L]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # File statis diambil dari public/ (/build/..., /images/..., /logo/..., /videos/..., /robots.txt)
+    # Jalan untuk docroot root (Apache) — request /build/app.css -> public/build/app.css
+    RewriteCond %{REQUEST_URI} !\.php$
+    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -f
+    RewriteRule ^(.+)$ public/$1 [END]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
 </IfModule>
-
-# Security headers
-<IfModule mod_headers.c>
-    Header set X-Content-Type-Options "nosniff"
-    Header set X-Frame-Options "SAMEORIGIN"
-    Header set X-XSS-Protection "1; mode=block"
-</IfModule>
-
-# Disable directory listing
-Options -Indexes
-
-# Deny access to all files by default, except when redirected to public/
-<FilesMatch "^.*$">
-    Require all denied
-</FilesMatch>
-
-# Allow .htaccess itself
-<Files ".htaccess">
-    Require all denied
-</Files>
