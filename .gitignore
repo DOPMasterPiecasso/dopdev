@@ -1,6 +1,5 @@
 # build output
 dist
-public/build
 
 # generated files
 .php-tmp
