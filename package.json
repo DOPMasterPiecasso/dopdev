@@ -1,0 +1,46 @@
+{
+  "name": "copora",
+  "description": "Copora - Creative SaaS Tailwind CSS 4 Template",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "php -S localhost:8080 -t public router.php",
+    "composer": "php ./bin/composer.phar"
+  },
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.22.4",
+    "@tailwindcss/vite": "^4.2.1",
+    "@types/node": "^22.13.4",
+    "glob": "^13.0.6",
+    "path": "^0.12.7",
+    "postcss": "^8.5.8",
+    "prettier": "^3.5.1",
+    "vite": "^6.1.1",
+    "vite-imagetools": "^7.0.5",
+    "vite-plugin-ejs": "^1.7.0",
+    "vite-plugin-handlebars": "^2.0.0",
+    "vite-plugin-php": "^2.0.1",
+    "vite-plugin-static-copy": "^2.2.0",
+    "vite-plugin-svgr": "^4.3.0",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "trustedDependencies": [
+    "@parcel/watcher"
+  ],
+  "main": "index.js",
+  "website": "https://unifato.com",
+  "author": "Unifato",
+  "private": true,
+  "dependencies": {
+    "@iconify/json": "^2.2.448",
+    "@iconify/tailwind4": "^1.2.3",
+    "@tailwindcss/forms": "^0.5.11",
+    "@tailwindcss/typography": "^0.5.19",
+    "lightgallery": "^2.9.0",
+    "preline": "4.0.1",
+    "smoothscroll-for-websites": "^1.5.1",
+    "tailwindcss": "^4.2.1"
+  }
+}

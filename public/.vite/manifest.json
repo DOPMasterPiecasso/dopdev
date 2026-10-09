@@ -1,0 +1,33 @@
+{
+  "node_modules/lightgallery/fonts/lg.svg": {
+    "file": "build/lg-B0dIV2BS.svg",
+    "src": "node_modules/lightgallery/fonts/lg.svg"
+  },
+  "node_modules/lightgallery/fonts/lg.ttf": {
+    "file": "build/lg-oyjwlqP2.ttf",
+    "src": "node_modules/lightgallery/fonts/lg.ttf"
+  },
+  "node_modules/lightgallery/fonts/lg.woff": {
+    "file": "build/lg-CosQH4Cu.woff",
+    "src": "node_modules/lightgallery/fonts/lg.woff"
+  },
+  "node_modules/lightgallery/images/loading.gif": {
+    "file": "build/loading-BZOHaeKn.gif",
+    "src": "node_modules/lightgallery/images/loading.gif"
+  },
+  "src/js/app.js": {
+    "file": "build/app-DjSNAm1N.js",
+    "name": "app",
+    "src": "src/js/app.js",
+    "isEntry": true,
+    "css": [
+      "build/app-7om-lsNm.css"
+    ],
+    "assets": [
+      "build/lg-oyjwlqP2.ttf",
+      "build/lg-CosQH4Cu.woff",
+      "build/lg-B0dIV2BS.svg",
+      "build/loading-BZOHaeKn.gif"
+    ]
+  }
+}
