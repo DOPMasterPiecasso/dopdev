@@ -14,7 +14,8 @@
     <section class="relative size-full overflow-hidden md:py-14.5 py-10">
         <div class="container">
             <div class="mb-12.5 text-center">
-                <h1 class="lg:text-[56px] md:text-5xl text-4xl mb-2.5">Our case studies</h1>
+                <h1 class="lg:text-[56px] md:text-5xl text-4xl mb-2.5">Our Case Studies</h1>
+                <p class="text-default-600 max-w-2xl mx-auto text-base">Explore our portfolio of successful projects and strategic solutions across various categories including Financial Services, Technology, and Digital Transformation.</p>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-7.5">

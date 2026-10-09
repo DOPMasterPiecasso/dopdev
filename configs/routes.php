@@ -16,6 +16,9 @@ $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) 
 	$r->addRoute('GET', '/case-studies', function ($ROUTE_PARAMS) {
 		include('pages/case-studies.php');
 	});
+	$r->addRoute('GET', '/case-study', function ($ROUTE_PARAMS) {
+		include('pages/case-study.php');
+	});
 	$r->addRoute('GET', '/contact', function ($ROUTE_PARAMS) {
 		include('pages/contact.php');
 	});
