@@ -348,7 +348,7 @@
     </section>
 
     <!-- Process / How we work -->
-    <section class="lg:py-27.5 md:py-25 py-15 bg-default-950">
+    <!-- <section class="lg:py-27.5 md:py-25 py-15 bg-default-950">
         <div class="container max-w-315!">
 
             <div class="grid lg:grid-cols-7 gap-25">
@@ -376,7 +376,6 @@
                         </div>
 
                         <div class="mt-auto">
-                            <!-- Tab Nav -->
                             <div class="Fborder-b border-default-800">
                                 <nav class="flex flex-wrap justify-between md:gap-x-6 gap-3" role="tablist">
 
@@ -401,10 +400,6 @@
                                     </button>
                                 </nav>
                             </div>
-                            <!-- End Tab Nav -->
-
-
-                            <!-- Tab Content -->
                             <div class="mt-12.5">
 
                                 <div id="tab-pane-understand" role="tabpanel" aria-labelledby="tab-understand">
@@ -432,13 +427,12 @@
                                 </div>
 
                             </div>
-                            <!-- End Tab Content -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Case studies -->
     <section class="lg:py-27.5 md:py-25 py-15">
@@ -798,7 +792,7 @@
     </section>
 
     <!-- Blog / Insights -->
-    <section class="lg:py-27.5 md:py-25 py-15 bg-default-100">
+    <!-- <section class="lg:py-27.5 md:py-25 py-15 bg-default-100">
         <div class="container">
             <div class="flex flex-wrap justify-between gap-7.5 lg:mb-12.5 mb-15">
                 <div>
@@ -825,7 +819,6 @@
 
             <div class="grid md:grid-cols-2 lg:gap-6 gap-2.5">
 
-                <!-- Blog Item -->
                 <a href="blog-details" class="grid lg:grid-cols-4 items-center lg:gap-4 gap-2.5 bg-white transition rounded-xl p-2 lg:pe-6 group">
 
                     <div class="overflow-hidden rounded-lg lg:h-full md:h-75 w-full">
@@ -850,7 +843,6 @@
                     </div>
                 </a>
 
-                <!-- Blog Item -->
                 <a href="blog-details" class="grid lg:grid-cols-4 items-center lg:gap-4 gap-2.5 bg-white transition rounded-xl p-2 lg:pe-6 group">
 
                     <div class="overflow-hidden rounded-lg lg:h-full md:h-75 w-full">
@@ -876,7 +868,6 @@
                 </a>
 
 
-                <!-- Blog Item -->
                 <a href="blog-details" class="grid lg:grid-cols-4 items-center lg:gap-4 gap-2.5 bg-white transition rounded-xl p-2 lg:pe-6 group">
 
                     <div class="overflow-hidden rounded-lg lg:h-full md:h-75 w-full">
@@ -902,7 +893,6 @@
                 </a>
 
 
-                <!-- Blog Item -->
                 <a href="blog-details" class="grid lg:grid-cols-4 items-center lg:gap-4 gap-2.5 bg-white transition rounded-xl p-2 lg:pe-6 group">
 
                     <div class="overflow-hidden rounded-lg lg:h-full md:h-75 w-full">
@@ -928,7 +918,7 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Contact details -->
     <section class="lg:py-27.5 md:py-25 py-15">
