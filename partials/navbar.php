@@ -27,7 +27,7 @@
                     <span class="iconify tabler--arrow-up-right ms-1.25 flex size-4 scale-0 bg-primary transition-all duration-300 group-hover:scale-100"></span>
                 </a>
 
-                <div class="hs-dropdown relative inline-flex [--trigger:hover]">
+                <!-- <div class="hs-dropdown relative inline-flex [--trigger:hover]">
                     <button type="button" class="hs-dropdown-toggle group flex items-center p-2.5 font-medium text-default-600 transition-all duration-300 hover:text-primary hover:decoration-current underline decoration-transparent underline-offset-3" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
                         Pages
                         <i class="iconify tabler--chevron-down ms-3"></i>
@@ -47,11 +47,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <div class="flex items-center justify-end gap-4">
-                <a href="tel:+1234567891" class="text-default-900 transition duration-300 hover:text-default-600 md:flex hidden">+123 456 7891</a>
+                <!-- <a href="tel:+1234567891" class="text-default-900 transition duration-300 hover:text-default-600 md:flex hidden">+123 456 7891</a> -->
 
                 <div class="md:flex items-center hidden">
                     <a href="contact" class="group py-2.5 px-4.5 inline-flex items-center justify-center gap-5 rounded-lg bg-primary font-medium text-white transition-all">
@@ -98,7 +98,7 @@
                         <span class="iconify tabler--arrow-up-right ms-1.25 flex size-4 scale-0 bg-primary transition-all duration-300 group-hover:scale-100"></span>
                     </a>
 
-                    <div class="hs-accordion">
+                    <!-- <div class="hs-accordion">
                         <button type="button" class="hs-accordion-toggle group flex items-center p-2.5 font-medium text-default-600 transition-all duration-300 hover:text-primary hover:decoration-current underline decoration-transparent underline-offset-3" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
                             Pages
                             <i class="iconify tabler--chevron-down transition-all hs-accordion-active:rotate-180 ms-4"></i>
@@ -116,7 +116,7 @@
                                 <a href="error-401" class="block rounded-sm px-3 py-2 text-sm font-semibold text-default-600 hover:bg-primary/6 hover:text-primary">Error 401</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
