@@ -36,8 +36,16 @@ function setActiveLinks(containerSelector) {
 
         const normalizedHref = href.replace(/\/$/, "");
 
+        if (!normalizedHref) {
+            if (currentPath === "" || currentPath.endsWith("/index.php") || currentPath.endsWith("/index")) {
+                link.classList.add("active");
+            }
+            return;
+        }
+
         if (
             currentPath === normalizedHref ||
+            currentPath.endsWith("/" + normalizedHref) ||
             currentPath.endsWith(normalizedHref)
         ) {
             link.classList.add("active");
@@ -53,6 +61,8 @@ document.addEventListener("DOMContentLoaded", () => {
     initStickyNavbar();
 
     setActiveLinks("#navbar");
+
+    setActiveLinks("#mobile-menu");
 
     setActiveLinks("#offcanvasSidebar ul");
 
