@@ -1,0 +1,18 @@
+# robots.txt for https://unifato.com
+
+User-agent: *
+Allow: /
+
+# Disallow admin or system directories
+Disallow: /system/
+Disallow: /configs/
+Disallow: /vendor/
+Disallow: /node_modules/
+Disallow: /src/
+
+# Disallow error pages
+Disallow: /error-401
+Disallow: /error-404
+
+# Sitemap location
+Sitemap: https://unifato.com/sitemap.xml
