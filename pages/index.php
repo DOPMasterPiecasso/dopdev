@@ -438,18 +438,27 @@
     <section class="lg:py-27.5 md:py-25 py-15">
         <div class="container">
 
-            <div class="mb-12.5">
-                <div class="text-sm text-default-950 mb-2.5">Case Studies</div>
+            <div class="flex flex-wrap items-end justify-between gap-6 mb-12.5">
+                <div>
+                    <div class="text-sm text-default-950 mb-2.5">Case Studies</div>
 
-                <h1 class="lg:text-5xl md:text-4xl text-3xl mb-2.5">Real Results From Real Businesses</h1>
+                    <h1 class="lg:text-5xl md:text-4xl text-3xl mb-2.5">Real Results From Real Businesses</h1>
 
-                <p class="text-default-600">Real results from barbershops in Singapore and aesthetic clinics in Australia.</p>
+                    <p class="text-default-600">Real results from barbershops in Singapore and aesthetic clinics in Australia.</p>
+                </div>
+
+                <div>
+                    <a href="contact" class="flex items-center gap-1 text-default-950 underline font-medium">
+                        <div>Book a Demo</div>
+                        <i class="iconify tabler--arrow-up-right"></i>
+                    </a>
+                </div>
             </div>
 
-            <div class="relative rounded-lg overflow-hidden group">
+            <!-- Featured image -->
+            <div class="relative rounded-lg overflow-hidden group mb-12.5">
                 <a href="service-detail" class="absolute inset-0 z-1"></a>
                 <img src="images/other/case-study.webp" alt="Image" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
-
 
                 <div class="md:absolute bottom-7.5 inset-x-7.5 flex rounded bg-white p-4">
                     <div class="space-y-2.5">
@@ -458,212 +467,169 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Statistics -->
-    <section>
-        <div class="container">
+            <!-- 2x2 Accordion Grid -->
+            <div class="grid md:grid-cols-2 gap-6 items-start">
+                <!-- 1 -->
+                <div class="hs-accordion border border-default-200 rounded-2xl p-6 lg:p-7.5 bg-white">
+                    <button class="hs-accordion-toggle w-full flex justify-between items-start gap-3 text-start">
+                        <div class="space-y-2">
+                            <!-- <div class="py-1 px-2.5 inline-flex text-xs/none font-medium border border-default-200 rounded-md">LP</div> -->
+                            <h3 class="lg:text-2xl text-xl font-medium text-default-950">Landing Page</h3>
+                        </div>
 
-            <div class="flex flex-wrap items-center justify-between gap-7.5">
-                <div>
-                    <div class="text-sm text-default-950">Numbers That Matter</div>
-                </div>
+                        <div class="relative size-4.5 flex items-center justify-center shrink-0 mt-1.5">
+                            <i class="absolute h-4.5 w-0.5 bg-default-950 flex transition duration-500 hs-accordion-active:rotate-90"></i>
+                            <i class="w-4.5 h-0.5 bg-default-950 flex"></i>
+                        </div>
+                    </button>
 
-                <div>
-                    <a href="contact" class="flex items-center gap-1 text-default-950 underline">
-                        <div>Book a Demo</div>
-                        <i class="iconify tabler--arrow-up-right"></i>
-                    </a>
-                </div>
+                    <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300 text-start">
+                        <div class="pt-5 flex flex-col gap-5">
+                            <p class="text-default-600 text-sm md:text-base leading-relaxed">
+                                High-converting landing pages built to turn traffic into bookings and sales, with optimized call-to-actions, mobile-first design, and fast load speeds.
+                            </p>
 
-            </div>
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="images/case-studies/1.webp" class="w-full h-48 md:h-56 object-cover rounded-xl" alt="Landing Page">
+                            </div>
 
-            <hr class="lg:my-12.5 md:my-10 my-4 border-default-200">
-
-            <!-- 1 -->
-            <div class="hs-accordion rounded-2xl">
-                <button class="hs-accordion-toggle lg:py-12.5 md:py-10 py-4 w-full flex justify-between items-center gap-2.5 text-start">
-                    <div class="space-y-2.5">
-                        <div class="py-1.5 px-2.5 inline-flex text-sm/none font-medium border border-default-200 rounded-md">Singapore</div>
-                        <h3 class="md:text-3xl text-base">Barbershop Chain in Singapore</h3>
-                    </div>
-
-                    <div class="relative size-4.5 flex items-center justify-center">
-                        <i class="absolute h-4.5 w-0.5 bg-default-950 flex transition duration-500 hs-accordion-active:rotate-90"></i>
-                        <i class="w-4.5 h-0.5 bg-default-950 flex"></i>
-                    </div>
-                </button>
-
-                <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300 text-start">
-                    <div class="grid lg:grid-cols-7 gap-25 mb-12.5">
-                        <div class="lg:col-span-3">
-                            <div class="flex flex-col justify-between lg:gap-50 md:gap-25 gap-10">
-                                <p class="text-default-600">
-                                    Implemented online booking, WhatsApp reminders and deposit system. Result: fewer empty slots, clearer staff schedules and more repeat customers across multiple outlets.
-                                </p>
-
-                                <div class="mt-auto">
-                                    <div class="flex items-center justify-between gap-2.5 p-2 ps-4 rounded-lg bg-default-100">
-                                        <div class="flex gap-1.25">
-                                            <div class="text-sm">Reduction in no-shows with reminders</div>
-                                            <div class="font-medium text-default-950">30–50%</div>
-                                        </div>
-
-                                        <a href="contact" class="group py-3 px-4.5 inline-flex items-center justify-center rounded-lg bg-primary text-white font-medium transition-all">
-                                            <span class="relative block overflow-hidden">
-                                                <span class="block group-hover:-translate-y-7 duration-[1.125s]">See details</span>
-                                                <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s]">See details</span>
-                                            </span>
-                                        </a>
-                                    </div>
+                            <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 p-3 ps-4 rounded-lg bg-default-100">
+                                <div class="flex flex-col">
+                                    <span class="text-xs text-default-600">High Conversion & Fast Loading</span>
+                                    <span class="font-medium text-default-950 text-sm">2x–3x Leads</span>
                                 </div>
+
+                                <a href="contact" class="group py-2.5 px-4 inline-flex items-center justify-center rounded-lg bg-primary text-white text-xs font-medium transition-all shrink-0">
+                                    <span class="relative block overflow-hidden">
+                                        <span class="block group-hover:-translate-y-7 duration-[1.125s]">See details</span>
+                                        <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s]">See details</span>
+                                    </span>
+                                </a>
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="lg:col-span-4">
-                            <img src="images/case-studies/1.webp" class="size-full object-cover rounded-xl">
+                <!-- 2 -->
+                <div class="hs-accordion border border-default-200 rounded-2xl p-6 lg:p-7.5 bg-white">
+                    <button class="hs-accordion-toggle w-full flex justify-between items-start gap-3 text-start">
+                        <div class="space-y-2">
+                            <!-- <div class="py-1 px-2.5 inline-flex text-xs/none font-medium border border-default-200 rounded-md">Website Company</div> -->
+                            <h3 class="lg:text-2xl text-xl font-medium text-default-950">Website Company Profile</h3>
+                        </div>
+
+                        <div class="relative size-4.5 flex items-center justify-center shrink-0 mt-1.5">
+                            <i class="absolute h-4.5 w-0.5 bg-default-950 flex transition duration-500 hs-accordion-active:rotate-90"></i>
+                            <i class="w-4.5 h-0.5 bg-default-950 flex"></i>
+                        </div>
+                    </button>
+
+                    <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300 text-start">
+                        <div class="pt-5 flex flex-col gap-5">
+                            <p class="text-default-600 text-sm md:text-base leading-relaxed">
+                                Modern, professional company profile websites that reflect your brand credibility, showcase your services, and engage potential clients across desktop and mobile.
+                            </p>
+
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="images/case-studies/2.webp" class="w-full h-48 md:h-56 object-cover rounded-xl" alt="Website Company Profile">
+                            </div>
+
+                            <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 p-3 ps-4 rounded-lg bg-default-100">
+                                <div class="flex flex-col">
+                                    <span class="text-xs text-default-600">Professional Brand Presence</span>
+                                    <span class="font-medium text-default-950 text-sm">100% Custom</span>
+                                </div>
+
+                                <a href="contact" class="group py-2.5 px-4 rounded-lg bg-primary text-white text-xs font-medium shrink-0">
+                                    <span class="relative block overflow-hidden">
+                                        <span class="block group-hover:-translate-y-7 duration-[1.125s]">See details</span>
+                                        <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s]">See details</span>
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <hr class="border-default-200">
-
-            <!-- 2 -->
-            <div class="hs-accordion rounded-2xl">
-                <button class="hs-accordion-toggle lg:py-12.5 md:py-10 py-4 w-full flex justify-between items-center gap-2.5 text-start">
-                    <div class="space-y-2.5">
-                        <div class="py-1.5 px-2.5 inline-flex text-sm/none font-medium border border-default-200 rounded-md">Australia</div>
-                        <h3 class="md:text-3xl text-base">Aesthetic Clinic in Australia</h3>
-                    </div>
-
-                    <div class="relative size-4.5 flex items-center justify-center">
-                        <i class="absolute h-4.5 w-0.5 bg-default-950 flex transition duration-500 hs-accordion-active:rotate-90"></i>
-                        <i class="w-4.5 h-0.5 bg-default-950 flex"></i>
-                    </div>
-                </button>
-
-                <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300 text-start">
-                    <div class="grid lg:grid-cols-7 gap-25 mb-12.5">
-                        <div class="lg:col-span-3">
-                            <div class="flex flex-col justify-between lg:gap-50 md:gap-25 gap-10">
-                                <p class="text-default-600">
-                                    Centralised appointment booking across doctors and treatments, with automated reminders and simple payment links. Result: reduced admin time and better visibility on doctor utilisation.
-                                </p>
-
-                                <div class="flex items-center justify-between p-2 ps-4 rounded-lg bg-default-100">
-                                    <div class="flex gap-1.25">
-                                        <div class="text-sm">24/7 online booking for your customers</div>
-                                        <div class="font-medium text-default-950">24/7</div>
-                                    </div>
-
-                                    <a href="contact" class="group py-3 px-4.5 rounded-lg bg-primary text-white font-medium">
-                                        <span class="relative block overflow-hidden">
-                                            <span class="block group-hover:-translate-y-7 duration-[1.125s]">See details</span>
-                                            <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s]">See details</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
+                <!-- 3 -->
+                <div class="hs-accordion border border-default-200 rounded-2xl p-6 lg:p-7.5 bg-white">
+                    <button class="hs-accordion-toggle w-full flex justify-between items-start gap-3 text-start">
+                        <div class="space-y-2">
+                            <!-- <div class="py-1 px-2.5 inline-flex text-xs/none font-medium border border-default-200 rounded-md">Web Book System</div> -->
+                            <h3 class="lg:text-2xl text-xl font-medium text-default-950">Web Booking System</h3>
                         </div>
 
-                        <div class="lg:col-span-4">
-                            <img src="images/case-studies/2.webp" class="size-full object-cover rounded-xl">
+                        <div class="relative size-4.5 flex items-center justify-center shrink-0 mt-1.5">
+                            <i class="absolute h-4.5 w-0.5 bg-default-950 flex transition duration-500 hs-accordion-active:rotate-90"></i>
+                            <i class="w-4.5 h-0.5 bg-default-950 flex"></i>
+                        </div>
+                    </button>
+
+                    <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300 text-start">
+                        <div class="pt-5 flex flex-col gap-5">
+                            <p class="text-default-600 text-sm md:text-base leading-relaxed">
+                                Seamless 24/7 online booking, automated WhatsApp/email reminders, calendar scheduling, and payment deposits to streamline appointments and eliminate no-shows.
+                            </p>
+
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="images/case-studies/3.webp" class="w-full h-48 md:h-56 object-cover rounded-xl" alt="Web Booking System">
+                            </div>
+
+                            <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 p-3 ps-4 rounded-lg bg-default-100">
+                                <div class="flex flex-col">
+                                    <span class="text-xs text-default-600">Reduction in no-shows with reminders</span>
+                                    <span class="font-medium text-default-950 text-sm">30–50%</span>
+                                </div>
+
+                                <a href="contact" class="group py-2.5 px-4 rounded-lg bg-primary text-white text-xs font-medium shrink-0">
+                                    <span class="relative block overflow-hidden">
+                                        <span class="block group-hover:-translate-y-7 duration-[1.125s]">See details</span>
+                                        <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s]">See details</span>
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <hr class="border-default-200">
+                <!-- 4 -->
+                <div class="hs-accordion border border-default-200 rounded-2xl p-6 lg:p-7.5 bg-white">
+                    <button class="hs-accordion-toggle w-full flex justify-between items-start gap-3 text-start">
+                        <div class="space-y-2">
+                            <!-- <div class="py-1 px-2.5 inline-flex text-xs/none font-medium border border-default-200 rounded-md">Web System</div> -->
+                            <h3 class="lg:text-2xl text-xl font-medium text-default-950">Custom Web System</h3>
+                        </div>
 
-            <!-- 3 -->
-            <div class="hs-accordion rounded-2xl">
-                <button class="hs-accordion-toggle lg:py-12.5 md:py-10 py-4 w-full flex justify-between items-center gap-2.5 text-start">
-                    <div class="space-y-2.5">
-                        <div class="py-1.5 px-2.5 inline-flex text-sm/none font-medium border border-default-200 rounded-md">Multi-Branch</div>
-                        <h3 class="md:text-3xl text-base">Multi-Branch & Multi-Staff Support</h3>
-                    </div>
+                        <div class="relative size-4.5 flex items-center justify-center shrink-0 mt-1.5">
+                            <i class="absolute h-4.5 w-0.5 bg-default-950 flex transition duration-500 hs-accordion-active:rotate-90"></i>
+                            <i class="w-4.5 h-0.5 bg-default-950 flex"></i>
+                        </div>
+                    </button>
 
-                    <div class="relative size-4.5 flex items-center justify-center">
-                        <i class="absolute h-4.5 w-0.5 bg-default-950 flex transition duration-500 hs-accordion-active:rotate-90"></i>
-                        <i class="w-4.5 h-0.5 bg-default-950 flex"></i>
-                    </div>
-                </button>
+                    <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300 text-start">
+                        <div class="pt-5 flex flex-col gap-5">
+                            <p class="text-default-600 text-sm md:text-base leading-relaxed">
+                                Robust management systems and dashboards for multi-branch operations, staff rosters, commissions, and automated business workflows tailored to your needs.
+                            </p>
 
-                <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300 text-start">
-                    <div class="grid lg:grid-cols-7 gap-25 mb-12.5">
-                        <div class="lg:col-span-3">
-                            <div class="flex flex-col justify-between lg:gap-50 md:gap-25 gap-10">
-                                <p class="text-default-600">
-                                    Manage multiple locations, staff rosters and commissions from one dashboard. Built for Singapore and Australian time zones, payments and habits.
-                                </p>
-
-                                <div class="flex items-center justify-between p-2 ps-4 rounded-lg bg-default-100">
-                                    <div class="flex gap-1.25">
-                                        <div class="text-sm">Multi-branch support from day one</div>
-                                        <div class="font-medium text-default-950">Day 1</div>
-                                    </div>
-
-                                    <a href="contact" class="group py-3 px-4.5 rounded-lg bg-primary text-white font-medium">
-                                        <span class="relative block overflow-hidden">
-                                            <span class="block group-hover:-translate-y-7 duration-[1.125s]">See details</span>
-                                            <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s]">See details</span>
-                                        </span>
-                                    </a>
-                                </div>
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="images/case-studies/4.webp" class="w-full h-48 md:h-56 object-cover rounded-xl" alt="Custom Web System">
                             </div>
-                        </div>
 
-                        <div class="lg:col-span-4">
-                            <img src="images/case-studies/3.webp" class="size-full object-cover rounded-xl">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="border-default-200">
-
-            <!-- 4 -->
-            <div class="hs-accordion rounded-2xl">
-                <button class="hs-accordion-toggle lg:py-12.5 md:py-10 py-4 w-full flex justify-between items-center gap-2.5 text-start">
-                    <div class="space-y-2.5">
-                        <div class="py-1.5 px-2.5 inline-flex text-sm/none font-medium border border-default-200 rounded-md">Admin Efficiency</div>
-                        <h3 class="md:text-3xl text-base">Hours saved every week on admin</h3>
-                    </div>
-
-                    <div class="relative size-4.5 flex items-center justify-center">
-                        <i class="absolute h-4.5 w-0.5 bg-default-950 flex transition duration-500 hs-accordion-active:rotate-90"></i>
-                        <i class="w-4.5 h-0.5 bg-default-950 flex"></i>
-                    </div>
-                </button>
-
-                <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300 text-start">
-                    <div class="grid lg:grid-cols-7 gap-25 mb-12.5">
-                        <div class="lg:col-span-3">
-                            <div class="flex flex-col justify-between lg:gap-50 md:gap-25 gap-10">
-                                <p class="text-default-600">
-                                    Hours saved every week on admin and back-and-forth messages with automated booking workflows.
-                                </p>
-
-                                <div class="flex items-center justify-between p-2 ps-4 rounded-lg bg-default-100">
-                                    <div class="flex gap-1.25">
-                                        <div class="text-sm">Hours saved every week</div>
-                                        <div class="font-medium text-default-950">10+ hrs</div>
-                                    </div>
-
-                                    <a href="contact" class="group py-3 px-4.5 rounded-lg bg-primary text-white font-medium">
-                                        <span class="relative block overflow-hidden">
-                                            <span class="block group-hover:-translate-y-7 duration-[1.125s]">See details</span>
-                                            <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s]">See details</span>
-                                        </span>
-                                    </a>
+                            <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 p-3 ps-4 rounded-lg bg-default-100">
+                                <div class="flex flex-col">
+                                    <span class="text-xs text-default-600">Hours saved every week</span>
+                                    <span class="font-medium text-default-950 text-sm">10+ hrs</span>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="lg:col-span-4">
-                            <img src="images/case-studies/4.webp" class="size-full object-cover rounded-xl">
+                                <a href="contact" class="group py-2.5 px-4 rounded-lg bg-primary text-white text-xs font-medium shrink-0">
+                                    <span class="relative block overflow-hidden">
+                                        <span class="block group-hover:-translate-y-7 duration-[1.125s]">See details</span>
+                                        <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s]">See details</span>
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
