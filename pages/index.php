@@ -494,12 +494,12 @@
             <!-- Featured image -->
             <div class="relative rounded-lg overflow-hidden group mb-12.5">
                 <a href="service-detail" class="absolute inset-0 z-1"></a>
-                <img src="images/other/case-study.webp" alt="Image" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                <img src="images/case-studies/barber.png" alt="Image" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                 <div class="md:absolute bottom-7.5 inset-x-7.5 flex rounded bg-white p-4">
                     <div class="space-y-2.5">
-                        <div class="py-1 px-1.5 inline-flex text-xs/none font-medium bg-default-100 rounded-md">Singapore</div>
-                        <h2 class="md:text-2xl text-xl">Barbershop Chain in Singapore</h2>
+                        <!-- <div class="py-1 px-1.5 inline-flex text-xs/none font-medium bg-default-100 rounded-md">Singapore</div> -->
+                        <h2 class="md:text-2xl text-xl">Barbershop Classic Haircuts</h2>
                     </div>
                 </div>
             </div>
