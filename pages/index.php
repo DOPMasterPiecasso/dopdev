@@ -203,9 +203,9 @@
                 </div>
 
                 <div class="lg:mb-12.5 mb-15">
-                    <div class="mb-2 text-sm text-default-950">What You Get With DOP</div>
+                    <div class="mb-2 text-sm text-default-950">What You Get With dopdev</div>
 
-                    <h2 class="mb-2.5 lg:text-5xl md:text-4xl text-3xl">What You Get With DOP</h2>
+                    <h2 class="mb-2.5 lg:text-5xl md:text-4xl text-3xl">What You Get With dopdev</h2>
 
                     <p class="mx-auto lg:max-w-2/5">Company profile + online booking + smart integrations built for service businesses in Singapore and Australia.</p>
                 </div>
@@ -213,7 +213,7 @@
                 <div class="grid lg:grid-cols-4 md:grid-cols-2 md:gap-7.5 gap-2.5">
                     <div class="relative rounded-lg overflow-hidden group">
                         <a href="service-detail" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/1.jpg" alt="Image" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <img src="images/service/1.jpg" alt="Company Profile + Booking Website" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
                             <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Company Profile + Booking Website</div>
@@ -222,7 +222,7 @@
 
                     <div class="relative rounded-lg overflow-hidden group">
                         <a href="service-detail" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/2.jpg" alt="Image" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <img src="images/service/2.jpg" alt="Smart Appointment Booking" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
                             <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Smart Appointment Booking</div>
@@ -231,7 +231,7 @@
 
                     <div class="relative rounded-lg overflow-hidden group">
                         <a href="service-detail" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/3.jpg" alt="Image" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <img src="images/service/3.jpg" alt="No-Show Reduction Tools" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
                             <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">No-Show Reduction Tools</div>
@@ -240,10 +240,46 @@
 
                     <div class="relative rounded-lg overflow-hidden group">
                         <a href="service-detail" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/4.jpg" alt="Image" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <img src="images/service/4.jpg" alt="Multi-Branch & Multi-Staff Management" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Multi-Branch & Multi-Staff</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Multi-Branch & Multi-Staff Management</div>
+                        </div>
+                    </div>
+
+                    <div class="relative rounded-lg overflow-hidden group">
+                        <a href="service-detail" class="absolute inset-0 z-1"></a>
+                        <img src="images/service/5.jpg" alt="Payments & Deposits" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+
+                        <div class="absolute bottom-5 inset-x-0 text-center">
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Payments & Deposits</div>
+                        </div>
+                    </div>
+
+                    <div class="relative rounded-lg overflow-hidden group">
+                        <a href="service-detail" class="absolute inset-0 z-1"></a>
+                        <img src="images/service/6.jpg" alt="CRM & Customer Retention" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+
+                        <div class="absolute bottom-5 inset-x-0 text-center">
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">CRM & Customer Retention</div>
+                        </div>
+                    </div>
+
+                    <div class="relative rounded-lg overflow-hidden group">
+                        <a href="service-detail" class="absolute inset-0 z-1"></a>
+                        <img src="images/service/7.jpg" alt="Reports & Analytics for Owners" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+
+                        <div class="absolute bottom-5 inset-x-0 text-center">
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Reports & Analytics for Owners</div>
+                        </div>
+                    </div>
+
+                    <div class="relative rounded-lg overflow-hidden group">
+                        <a href="service-detail" class="absolute inset-0 z-1"></a>
+                        <img src="images/service/8.jpg" alt="Integrations That Matter" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+
+                        <div class="absolute bottom-5 inset-x-0 text-center">
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Integrations That Matter</div>
                         </div>
                     </div>
                 </div>
