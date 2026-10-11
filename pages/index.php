@@ -337,9 +337,9 @@
 
             </div>
 
-            <hr class="lg:my-17.5 md:my-12.5 my-5 border-default-200">
+            <!-- <hr class="lg:my-17.5 md:my-12.5 my-5 border-default-200"> -->
 
-            <div class="grid lg:grid-cols-2 gap-7.5">
+            <!-- <div class="grid lg:grid-cols-2 gap-7.5">
                 <div class="flex flex-col lg:gap-50 md:gap-25 gap-10 h-full">
                     <div>
                         <div class="text-sm text-default-950 mb-2.5">About DOP</div>
@@ -379,7 +379,7 @@
                 <div class="lg:h-full md:h-100 w-full">
                     <img src="images/other/about-image.jpg" alt="About image" class="size-full object-cover rounded-xl">
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
