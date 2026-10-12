@@ -24,65 +24,68 @@
 
                     <h3 class="text-2xl font-bold text-default-950 mb-6">Book a Demo / Get a Quote</h3>
 
-                    <div class="grid md:grid-cols-2 gap-6 mb-6">
-                        <div>
-                            <label for="name" class="mb-1.5 text-sm font-medium block">Name*</label>
-                            <input type="text" id="name" required placeholder="Your full name" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="mb-1.5 text-sm font-medium block">Name*</label>
+                                <input type="text" id="name" required placeholder="Your full name" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
+                            </div>
+
+                            <div>
+                                <label for="business-name" class="mb-1.5 text-sm font-medium block">Business name*</label>
+                                <input type="text" id="business-name" required placeholder="Your business or brand name" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
+                            </div>
+
+                            <div>
+                                <label for="email" class="mb-1.5 text-sm font-medium block">Email*</label>
+                                <input type="email" id="email" required placeholder="name@company.com" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
+                            </div>
+
+                            <div>
+                                <label for="phone-number" class="mb-1.5 text-sm font-medium block">Phone / WhatsApp*</label>
+                                <input type="tel" id="phone-number" required placeholder="+62 / +65 / +61 ..." class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
+                            </div>
+
+                            <div>
+                                <label for="country" class="mb-1.5 text-sm font-medium block">Country</label>
+                                <select id="country" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
+                                    <option value="Singapore">Singapore</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Indonesia">Indonesia</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="type-of-business" class="mb-1.5 text-sm font-medium block">Type of business</label>
+                                <select id="type-of-business" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
+                                    <option value="Barbershop">Barbershop</option>
+                                    <option value="Clinic">Clinic</option>
+                                    <option value="Salon">Salon</option>
+                                    <option value="Gym">Gym</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
                         </div>
 
                         <div>
-                            <label for="business-name" class="mb-1.5 text-sm font-medium block">Business name*</label>
-                            <input type="text" id="business-name" required placeholder="Your business or brand name" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
+                            <label for="message" class="mb-1.5 text-sm font-medium block">Message / Goals</label>
+                            <textarea id="message" placeholder="Tell us a bit about your business goals or questions..." class="rounded-lg bg-default-100 py-2 px-5 w-full flex items-center border-transparent focus:border-primary" rows="5"></textarea>
                         </div>
 
                         <div>
-                            <label for="email" class="mb-1.5 text-sm font-medium block">Email*</label>
-                            <input type="email" id="email" required placeholder="name@company.com" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
+                            <button type="submit" class="py-4 px-8 inline-flex items-center justify-center gap-3 rounded-lg bg-primary hover:bg-primary-hover font-medium text-white text-lg transition-all shadow-md">
+                                <span>Send Enquiry</span>
+                            </button>
+                            <p class="text-sm text-default-500 mt-3">No pressure sales. Just a clear conversation about your business.</p>
                         </div>
-
-                        <div>
-                            <label for="phone-number" class="mb-1.5 text-sm font-medium block">Phone / WhatsApp*</label>
-                            <input type="tel" id="phone-number" required placeholder="+65 / +61 ..." class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
-                        </div>
-
-                        <div>
-                            <label for="country" class="mb-1.5 text-sm font-medium block">Country</label>
-                            <select id="country" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
-                                <option value="Singapore">Singapore</option>
-                                <option value="Australia">Australia</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label for="type-of-business" class="mb-1.5 text-sm font-medium block">Type of business</label>
-                            <select id="type-of-business" class="rounded-lg bg-default-100 h-11.25 py-2 px-5 w-full flex items-center border-transparent focus:border-primary">
-                                <option value="Barbershop">Barbershop</option>
-                                <option value="Clinic">Clinic</option>
-                                <option value="Salon">Salon</option>
-                                <option value="Gym">Gym</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="mb-6">
-                        <label for="message" class="mb-1.5 text-sm font-medium block">Message / Goals</label>
-                        <textarea id="message" placeholder="Tell us a bit about your business goals or questions..." class="rounded-lg bg-default-100 py-2 px-5 w-full flex items-center border-transparent focus:border-primary" rows="5"></textarea>
-                    </div>
-
-                    <div>
-                        <button type="submit" class="py-4 px-8 inline-flex items-center justify-center gap-5 rounded-lg bg-primary font-medium text-white text-lg transition-all shadow-md">
-                            Send Enquiry
-                        </button>
-                        <p class="text-sm text-default-500 mt-3">No pressure sales. Just a clear conversation about your business.</p>
-                    </div>
+                    </form>
 
                 </div>
 
                 <div class="lg:col-span-2">
                     <div class="size-full rounded-lg overflow-hidden group">
-                        <img class="size-full rounded-lg object-cover group-hover:scale-105 transition-all duration-300" src="images/other/contact-bg.jpg">
+                        <img class="size-full rounded-lg object-cover group-hover:scale-105 transition-all duration-300" src="images/other/contact-bg.jpg" alt="Contact DOP">
                     </div>
                 </div>
             </div>
@@ -96,18 +99,26 @@
             <div class="grid md:grid-cols-2 gap-5">
                 <div>
                     <div class="relative rounded-xl overflow-hidden size-full">
-                        <img src="images/other/contact-info.jpg" class="w-full h-full object-cover" alt="testimonial video">
+                        <img src="images/other/contact-info.jpg" class="w-full h-full object-cover" alt="Contact Information">
                     </div>
                 </div>
 
                 <div>
-                    <div class="border border-default-200 rounded-xl p-10 lg:py-20 h-full flex flex-col items-center text-center justify-center gap-12">
+                    <div class="border border-default-200 rounded-xl p-10 lg:py-20 h-full flex flex-col items-center text-center justify-center gap-8">
 
-                        <h4 class="lg:text-3xl text-2xl lg:max-w-4/5">Business consulting agency Copora</h4>
+                        <h4 class="lg:text-3xl text-2xl lg:max-w-4/5 font-semibold text-default-950">DOP – Booking Systems & Digital Solutions</h4>
 
-                        <p class="lg:max-w-2/5">Chicago HQ Estica Cop. Macomb, MI 48042</p>
+                        <p class="lg:max-w-3/5 text-default-600 leading-relaxed">Dedicated development and booking solutions for service brands in Indonesia, Singapore & Australia.</p>
 
-                        <a href="mailto:contact@copora.com" class="underline text-default-950 transition duration-300 hover:text-default-400">contact@copora.com</a>
+                        <div class="flex flex-col gap-3">
+                            <a href="mailto:hello@dopdev.com" class="text-lg font-medium text-default-950 transition duration-300 hover:text-primary flex items-center justify-center gap-2">
+                                <i class="iconify tabler--mail size-5 text-primary"></i>
+                                hello@dopdev.com
+                            </a>
+                            <a href="https://wa.me/6282125189383" target="_blank" rel="noopener noreferrer" class="text-lg font-medium text-default-950 transition duration-300 hover:text-primary flex items-center justify-center gap-2">
+                                +62 821-2518-9383
+                            </a>
+                        </div>
 
                     </div>
                 </div>
@@ -120,16 +131,17 @@
                     <!-- Contact -->
                     <div class="flex items-center gap-6 flex-wrap">
 
-                        <h3 class="md:text-2xl text-xl text-white">Contact on:</h3>
+                        <h3 class="md:text-2xl text-xl text-white font-semibold">Contact on:</h3>
 
-                        <a href="mailto:contact@copora.com" class="text-white/80 hover:text-white transition">
-                            contact@copora.com
+                        <a href="mailto:hello@dopdev.com" class="text-white/80 hover:text-white transition flex items-center gap-2">
+                            <i class="iconify tabler--mail size-5 text-primary"></i>
+                            hello@dopdev.com
                         </a>
 
                         <span class="hidden md:block w-px h-6 bg-white/30"></span>
 
-                        <a href="tel:+1234567890" class="text-white/80 hover:text-white transition">
-                            +123 456 7890
+                        <a href="https://wa.me/6282125189383" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-white transition flex items-center gap-2">
+                            +62 821-2518-9383
                         </a>
 
                     </div>
@@ -247,6 +259,36 @@
 
 
     <?php include('partials/footer.php'); ?>
+
+    <script>
+        document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name')?.value?.trim() || '';
+            const businessName = document.getElementById('business-name')?.value?.trim() || '';
+            const email = document.getElementById('email')?.value?.trim() || '';
+            const phone = document.getElementById('phone-number')?.value?.trim() || '';
+            const country = document.getElementById('country')?.value || '';
+            const businessType = document.getElementById('type-of-business')?.value || '';
+            const message = document.getElementById('message')?.value?.trim() || '';
+
+            const waNumber = '6282125189383';
+
+            let text = `Hello DOP Team,\n\nI would like to book a demo / enquire about DOP booking systems & digital solutions:\n\n`;
+            text += `• *Name*: ${name}\n`;
+            text += `• *Business Name*: ${businessName}\n`;
+            text += `• *Email*: ${email}\n`;
+            text += `• *Phone / WhatsApp*: ${phone}\n`;
+            text += `• *Country*: ${country}\n`;
+            text += `• *Type of Business*: ${businessType}\n`;
+            if (message) {
+                text += `• *Message / Goals*: ${message}\n`;
+            }
+
+            const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`;
+            window.open(waUrl, '_blank');
+        });
+    </script>
 
 </body>
 
