@@ -19,6 +19,12 @@ $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) 
 	$r->addRoute('GET', '/case-study', function ($ROUTE_PARAMS) {
 		include('pages/case-study.php');
 	});
+	$r->addRoute('GET', '/case-study/{slug}', function ($ROUTE_PARAMS) {
+		if (isset($ROUTE_PARAMS['slug'])) {
+			$_GET['case'] = $ROUTE_PARAMS['slug'];
+		}
+		include('pages/case-study.php');
+	});
 	$r->addRoute('GET', '/contact', function ($ROUTE_PARAMS) {
 		include('pages/contact.php');
 	});
