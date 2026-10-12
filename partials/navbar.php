@@ -1,12 +1,12 @@
 <!-- Navbar -->
 <header class="sticky top-0 z-50 bg-body-bg transition-all duration-300">
     <div class="container">
-        <div class="nav-sticky navbar md:py-6.5 py-5 flex items-center w-full justify-between">
+        <div class="nav-sticky navbar md:py-6.5 py-5 flex items-center w-full justify-between relative">
             <a href="/" class="flex items-center">
                 <img src="logo/logodophitam.webp" class="h-9.5 flex" alt="DOP logo" />
             </a>
 
-            <div id="navbar" class="mx-auto hidden lg:flex items-center justify-center">
+            <div id="navbar" class="absolute left-[calc(50%+24px)] -translate-x-1/2 hidden lg:flex items-center justify-center">
                 <a href="/" class="group flex items-center p-2.5 font-medium text-default-600 transition-all duration-300 hover:text-primary hover:decoration-current underline decoration-transparent underline-offset-3">
                     Home
                     <span class="iconify tabler--arrow-up-right ms-1.25 flex size-4 scale-0 bg-primary transition-all duration-300 group-hover:scale-100"></span>
