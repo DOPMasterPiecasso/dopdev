@@ -491,15 +491,207 @@
                 </div>
             </div>
 
-            <!-- Featured image -->
-            <div class="relative rounded-lg overflow-hidden group mb-12.5">
-                <a href="service-detail" class="absolute inset-0 z-1"></a>
-                <img src="images/case-studies/barber.png" alt="Image" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+            <!-- Category Tabs & Examples (3x1) -->
+            <div class="mb-12.5">
+                <!-- Category Buttons -->
+                <div class="flex flex-wrap items-center justify-start gap-2 mb-8">
+                    <nav class="bg-default-100 p-1.5 rounded-xl inline-flex flex-wrap gap-1.5" aria-label="Example Categories" role="tablist">
+                        <button type="button" class="hs-tab-active:bg-primary hs-tab-active:text-white py-2 px-4.5 text-sm font-medium text-default-700 hover:text-default-950 rounded-lg transition-all active" id="tab-example-barber" data-hs-tab="#pane-example-barber" aria-controls="pane-example-barber" role="tab">
+                            Barbershop
+                        </button>
+                        <button type="button" class="hs-tab-active:bg-primary hs-tab-active:text-white py-2 px-4.5 text-sm font-medium text-default-700 hover:text-default-950 rounded-lg transition-all" id="tab-example-clinic" data-hs-tab="#pane-example-clinic" aria-controls="pane-example-clinic" role="tab">
+                            Clinic
+                        </button>
+                        <button type="button" class="hs-tab-active:bg-primary hs-tab-active:text-white py-2 px-4.5 text-sm font-medium text-default-700 hover:text-default-950 rounded-lg transition-all" id="tab-example-fitness" data-hs-tab="#pane-example-fitness" aria-controls="pane-example-fitness" role="tab">
+                            Fitness
+                        </button>
+                        <button type="button" class="hs-tab-active:bg-primary hs-tab-active:text-white py-2 px-4.5 text-sm font-medium text-default-700 hover:text-default-950 rounded-lg transition-all" id="tab-example-trainer" data-hs-tab="#pane-example-trainer" aria-controls="pane-example-trainer" role="tab">
+                            Personal Trainer
+                        </button>
+                        <button type="button" class="hs-tab-active:bg-primary hs-tab-active:text-white py-2 px-4.5 text-sm font-medium text-default-700 hover:text-default-950 rounded-lg transition-all" id="tab-example-salon" data-hs-tab="#pane-example-salon" aria-controls="pane-example-salon" role="tab">
+                            Salon
+                        </button>
+                    </nav>
+                </div>
 
-                <div class="md:absolute bottom-7.5 inset-x-7.5 flex rounded bg-white p-4">
-                    <div class="space-y-2.5">
-                        <!-- <div class="py-1 px-1.5 inline-flex text-xs/none font-medium bg-default-100 rounded-md">Singapore</div> -->
-                        <h2 class="md:text-2xl text-xl">Barbershop Classic Haircuts</h2>
+                <!-- Tab Panels: 3x1 Image Grid -->
+                <!-- Barbershop -->
+                <div id="pane-example-barber" role="tabpanel" aria-labelledby="tab-example-barber">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-toggle="gallery">
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all">
+                            <a href="images/examples/barber-1.png" class="block overflow-hidden relative">
+                                <img src="images/examples/barber-1.png" alt="Barbershop Example 1" class="w-full object-cover group-hover:scale-105 transition-all duration-300">
+                                <div class="absolute inset-0 bg-default-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <span class="size-11 rounded-full bg-white/95 text-default-950 flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                                        <i class="iconify tabler--zoom-in size-5"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all">
+                            <a href="images/examples/barber-2.png" class="block overflow-hidden relative">
+                                <img src="images/examples/barber-2.png" alt="Barbershop Example 2" class="w-full object-cover group-hover:scale-105 transition-all duration-300">
+                                <div class="absolute inset-0 bg-default-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <span class="size-11 rounded-full bg-white/95 text-default-950 flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                                        <i class="iconify tabler--zoom-in size-5"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all">
+                            <a href="images/examples/barber-3.png" class="block overflow-hidden relative">
+                                <img src="images/examples/barber-3.png" alt="Barbershop Example 3" class="w-full object-cover group-hover:scale-105 transition-all duration-300">
+                                <div class="absolute inset-0 bg-default-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <span class="size-11 rounded-full bg-white/95 text-default-950 flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                                        <i class="iconify tabler--zoom-in size-5"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clinic -->
+                <div id="pane-example-clinic" class="hidden" role="tabpanel" aria-labelledby="tab-example-clinic">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-toggle="gallery">
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all">
+                            <a href="images/examples/clinic-1.png" class="block overflow-hidden relative">
+                                <img src="images/examples/clinic-1.png" alt="Clinic Example 1" class="w-full object-cover group-hover:scale-105 transition-all duration-300">
+                                <div class="absolute inset-0 bg-default-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <span class="size-11 rounded-full bg-white/95 text-default-950 flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                                        <i class="iconify tabler--zoom-in size-5"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all">
+                            <a href="images/examples/clinic-2.png" class="block overflow-hidden relative">
+                                <img src="images/examples/clinic-2.png" alt="Clinic Example 2" class="w-full object-cover group-hover:scale-105 transition-all duration-300">
+                                <div class="absolute inset-0 bg-default-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <span class="size-11 rounded-full bg-white/95 text-default-950 flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                                        <i class="iconify tabler--zoom-in size-5"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all">
+                            <a href="images/examples/clinic-3.png" class="block overflow-hidden relative">
+                                <img src="images/examples/clinic-3.png" alt="Clinic Example 3" class="w-full object-cover group-hover:scale-105 transition-all duration-300">
+                                <div class="absolute inset-0 bg-default-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <span class="size-11 rounded-full bg-white/95 text-default-950 flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                                        <i class="iconify tabler--zoom-in size-5"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fitness -->
+                <div id="pane-example-fitness" class="hidden" role="tabpanel" aria-labelledby="tab-example-fitness">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-toggle="gallery">
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all">
+                            <a href="images/examples/fitness-1.png" class="block overflow-hidden relative">
+                                <img src="images/examples/fitness-1.png" alt="Fitness Example 1" class="w-full object-cover group-hover:scale-105 transition-all duration-300">
+                                <div class="absolute inset-0 bg-default-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <span class="size-11 rounded-full bg-white/95 text-default-950 flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                                        <i class="iconify tabler--zoom-in size-5"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all">
+                            <a href="images/examples/fitness-2.png" class="block overflow-hidden relative">
+                                <img src="images/examples/fitness-2.png" alt="Fitness Example 2" class="w-full object-cover group-hover:scale-105 transition-all duration-300">
+                                <div class="absolute inset-0 bg-default-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <span class="size-11 rounded-full bg-white/95 text-default-950 flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                                        <i class="iconify tabler--zoom-in size-5"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all">
+                            <a href="images/examples/fitness-3.png" class="block overflow-hidden relative">
+                                <img src="images/examples/fitness-3.png" alt="Fitness Example 3" class="w-full object-cover group-hover:scale-105 transition-all duration-300">
+                                <div class="absolute inset-0 bg-default-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <span class="size-11 rounded-full bg-white/95 text-default-950 flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                                        <i class="iconify tabler--zoom-in size-5"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Trainer -->
+                <div id="pane-example-trainer" class="hidden" role="tabpanel" aria-labelledby="tab-example-trainer">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-toggle="gallery">
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all">
+                            <a href="images/examples/personal-trainer-1.png" class="block overflow-hidden relative">
+                                <img src="images/examples/personal-trainer-1.png" alt="Personal Trainer Example 1" class="w-full object-cover group-hover:scale-105 transition-all duration-300">
+                                <div class="absolute inset-0 bg-default-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <span class="size-11 rounded-full bg-white/95 text-default-950 flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                                        <i class="iconify tabler--zoom-in size-5"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all">
+                            <a href="images/examples/personal-trainer-2.png" class="block overflow-hidden relative">
+                                <img src="images/examples/personal-trainer-2.png" alt="Personal Trainer Example 2" class="w-full object-cover group-hover:scale-105 transition-all duration-300">
+                                <div class="absolute inset-0 bg-default-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <span class="size-11 rounded-full bg-white/95 text-default-950 flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                                        <i class="iconify tabler--zoom-in size-5"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all">
+                            <a href="images/examples/personal-trainer-3.png" class="block overflow-hidden relative">
+                                <img src="images/examples/personal-trainer-3.png" alt="Personal Trainer Example 3" class="w-full object-cover group-hover:scale-105 transition-all duration-300">
+                                <div class="absolute inset-0 bg-default-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <span class="size-11 rounded-full bg-white/95 text-default-950 flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                                        <i class="iconify tabler--zoom-in size-5"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salon -->
+                <div id="pane-example-salon" class="hidden" role="tabpanel" aria-labelledby="tab-example-salon">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-toggle="gallery">
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all">
+                            <a href="images/examples/salon-1.png" class="block overflow-hidden relative">
+                                <img src="images/examples/salon-1.png" alt="Salon Example 1" class="w-full object-cover group-hover:scale-105 transition-all duration-300">
+                                <div class="absolute inset-0 bg-default-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <span class="size-11 rounded-full bg-white/95 text-default-950 flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                                        <i class="iconify tabler--zoom-in size-5"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all">
+                            <a href="images/examples/salon-2.png" class="block overflow-hidden relative">
+                                <img src="images/examples/salon-2.png" alt="Salon Example 2" class="w-full object-cover group-hover:scale-105 transition-all duration-300">
+                                <div class="absolute inset-0 bg-default-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <span class="size-11 rounded-full bg-white/95 text-default-950 flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                                        <i class="iconify tabler--zoom-in size-5"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all">
+                            <a href="images/examples/salon-3.png" class="block overflow-hidden relative">
+                                <img src="images/examples/salon-3.png" alt="Salon Example 3" class="w-full object-cover group-hover:scale-105 transition-all duration-300">
+                                <div class="absolute inset-0 bg-default-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <span class="size-11 rounded-full bg-white/95 text-default-950 flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                                        <i class="iconify tabler--zoom-in size-5"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
