@@ -728,7 +728,7 @@
                                     <span class="font-medium text-default-950 text-sm">2x–3x Leads</span>
                                 </div>
 
-                                <a href="contact" class="group py-2.5 px-4 inline-flex items-center justify-center rounded-lg bg-primary text-white text-xs font-medium transition-all shrink-0">
+                                <a href="service-detail?service=landing-page" class="group py-2.5 px-4 inline-flex items-center justify-center rounded-lg bg-primary text-white text-xs font-medium transition-all shrink-0">
                                     <span class="relative block overflow-hidden">
                                         <span class="block group-hover:-translate-y-7 duration-[1.125s]">See details</span>
                                         <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s]">See details</span>
@@ -769,7 +769,7 @@
                                     <span class="font-medium text-default-950 text-sm">100% Custom</span>
                                 </div>
 
-                                <a href="contact" class="group py-2.5 px-4 rounded-lg bg-primary text-white text-xs font-medium shrink-0">
+                                <a href="service-detail?service=company-profile" class="group py-2.5 px-4 rounded-lg bg-primary text-white text-xs font-medium shrink-0">
                                     <span class="relative block overflow-hidden">
                                         <span class="block group-hover:-translate-y-7 duration-[1.125s]">See details</span>
                                         <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s]">See details</span>
@@ -810,7 +810,7 @@
                                     <span class="font-medium text-default-950 text-sm">30–50%</span>
                                 </div>
 
-                                <a href="contact" class="group py-2.5 px-4 rounded-lg bg-primary text-white text-xs font-medium shrink-0">
+                                <a href="service-detail?service=booking-system" class="group py-2.5 px-4 rounded-lg bg-primary text-white text-xs font-medium shrink-0">
                                     <span class="relative block overflow-hidden">
                                         <span class="block group-hover:-translate-y-7 duration-[1.125s]">See details</span>
                                         <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s]">See details</span>
@@ -851,7 +851,7 @@
                                     <span class="font-medium text-default-950 text-sm">10+ hrs</span>
                                 </div>
 
-                                <a href="contact" class="group py-2.5 px-4 rounded-lg bg-primary text-white text-xs font-medium shrink-0">
+                                <a href="service-detail?service=custom-system" class="group py-2.5 px-4 rounded-lg bg-primary text-white text-xs font-medium shrink-0">
                                     <span class="relative block overflow-hidden">
                                         <span class="block group-hover:-translate-y-7 duration-[1.125s]">See details</span>
                                         <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s]">See details</span>

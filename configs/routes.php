@@ -37,6 +37,12 @@ $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) 
 	$r->addRoute('GET', '/service-detail', function ($ROUTE_PARAMS) {
 		include('pages/service-detail.php');
 	});
+	$r->addRoute('GET', '/service-detail/{slug}', function ($ROUTE_PARAMS) {
+		if (isset($ROUTE_PARAMS['slug'])) {
+			$_GET['service'] = $ROUTE_PARAMS['slug'];
+		}
+		include('pages/service-detail.php');
+	});
 
 });
 
