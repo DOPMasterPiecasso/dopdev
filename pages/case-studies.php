@@ -20,17 +20,17 @@
 
             <!-- Category Quick Jump Navigation -->
             <div id="case-study-hero-nav" class="flex justify-center mb-16 transition-all duration-300">
-                <div class="bg-default-100 p-1.5 rounded-xl inline-flex flex-wrap gap-2 justify-center">
-                    <a href="#lp" data-case-cat="lp" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-sm rounded-lg transition-all">
+                <div class="inline-flex flex-wrap gap-2 justify-center">
+                    <a href="#lp" data-case-cat="lp" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
                         Landing Page
                     </a>
-                    <a href="#company" data-case-cat="company" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-sm rounded-lg transition-all">
+                    <a href="#company" data-case-cat="company" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
                         Website Company
                     </a>
-                    <a href="#booking" data-case-cat="booking" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-sm rounded-lg transition-all">
+                    <a href="#booking" data-case-cat="booking" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
                         Web Book System
                     </a>
-                    <a href="#system" data-case-cat="system" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-sm rounded-lg transition-all">
+                    <a href="#system" data-case-cat="system" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
                         Web System
                     </a>
                 </div>

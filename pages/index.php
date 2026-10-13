@@ -491,7 +491,7 @@
             <div class="mb-12.5">
                 <!-- Category Buttons -->
                 <div class="flex flex-wrap items-center justify-start gap-2 mb-8">
-                    <nav class="bg-default-100 p-1.5 rounded-xl inline-flex flex-wrap gap-1.5" aria-label="Example Categories" role="tablist">
+                    <nav class="inline-flex flex-wrap gap-2" aria-label="Example Categories" role="tablist">
                         <button type="button" class="hs-tab-active:bg-primary hs-tab-active:text-white py-2 px-4.5 text-sm font-medium text-default-700 hover:text-default-950 rounded-lg transition-all active" id="tab-example-barber" data-hs-tab="#pane-example-barber" aria-controls="pane-example-barber" role="tab">
                             Barbershop
                         </button>
