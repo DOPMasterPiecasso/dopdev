@@ -480,8 +480,8 @@
                 </div>
 
                 <div>
-                    <a href="contact" class="flex items-center gap-1 text-default-950 underline font-medium">
-                        <div>Book a Demo</div>
+                    <a href="case-studies" class="flex items-center gap-1 text-default-950 underline font-medium">
+                        <div>Details</div>
                         <i class="iconify tabler--arrow-up-right"></i>
                     </a>
                 </div>
