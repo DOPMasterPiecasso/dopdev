@@ -199,9 +199,9 @@
                 </div>
 
                 <div class="lg:mb-12.5 mb-15">
-                    <div class="mb-2 text-sm text-default-950">What You Get With dopdev</div>
+                    <div class="mb-2 text-sm text-default-950">What You Get With DopDev</div>
 
-                    <h2 class="mb-2.5 lg:text-5xl md:text-4xl text-3xl">What You Get With dopdev</h2>
+                    <h2 class="mb-2.5 lg:text-5xl md:text-4xl text-3xl">What You Get With DopDev</h2>
 
                     <p class="mx-auto lg:max-w-2/5">Company profile + online booking + smart integrations built for service businesses in Singapore and Australia.</p>
                 </div>

@@ -66,8 +66,8 @@
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center gap-2 mb-3">
-                                    <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">LP</span>
-                                    <span class="text-xs font-semibold text-primary">🇸🇬 The Heritage Barber Co.</span>
+                                    <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">LP</span> -->
+                                    <span class="text-xs font-semibold text-primary">The Heritage Barber Co.</span>
                                 </div>
                                 <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Express booking landing page for barbershop</h3>
                                 <p class="text-xs text-default-500 mb-4">Central Singapore • High-converting mobile landing page with instant WhatsApp reminders.</p>
@@ -87,8 +87,8 @@
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center gap-2 mb-3">
-                                    <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">LP</span>
-                                    <span class="text-xs font-semibold text-primary">🇦🇺 Lumina Aesthetic Clinic</span>
+                                    <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">LP</span> -->
+                                    <span class="text-xs font-semibold text-primary">Lumina Aesthetic Clinic</span>
                                 </div>
                                 <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Aesthetic clinic promotional campaign LP</h3>
                                 <p class="text-xs text-default-500 mb-4">Melbourne & Sydney • Targeted treatment lead capture page with pre-consultation booking.</p>
@@ -108,8 +108,8 @@
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center gap-2 mb-3">
-                                    <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">LP</span>
-                                    <span class="text-xs font-semibold text-primary">🇸🇬 Maison Privée Salon</span>
+                                    <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">LP</span> -->
+                                    <span class="text-xs font-semibold text-primary">Maison Privée Salon</span>
                                 </div>
                                 <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">High-converting lead page for wellness studio</h3>
                                 <p class="text-xs text-default-500 mb-4">Orchard Road, SG • Promotional package funnel with deposit collection & stylist selection.</p>
@@ -133,8 +133,8 @@
                                 </div>
                                 <div class="p-6">
                                     <div class="flex items-center gap-2 mb-3">
-                                        <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">LP</span>
-                                        <span class="text-xs font-semibold text-primary">🇦🇺 Dental Care & Implants</span>
+                                        <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">LP</span> -->
+                                        <span class="text-xs font-semibold text-primary">Dental Care & Implants</span>
                                     </div>
                                     <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Dental care promotional offer landing page</h3>
                                     <p class="text-xs text-default-500 mb-4">Sydney, Australia • Direct dental assessment offer with instant calendar booking.</p>
@@ -154,8 +154,8 @@
                                 </div>
                                 <div class="p-6">
                                     <div class="flex items-center gap-2 mb-3">
-                                        <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">LP</span>
-                                        <span class="text-xs font-semibold text-primary">🇸🇬 Botanical Spa Studio</span>
+                                        <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">LP</span> -->
+                                        <span class="text-xs font-semibold text-primary">Botanical Spa Studio</span>
                                     </div>
                                     <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Seasonal spa package introductory landing page</h3>
                                     <p class="text-xs text-default-500 mb-4">Marina Bay, SG • Seasonal wellness treatment funnel with PayNow deposit collection.</p>
@@ -175,8 +175,8 @@
                                 </div>
                                 <div class="p-6">
                                     <div class="flex items-center gap-2 mb-3">
-                                        <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">LP</span>
-                                        <span class="text-xs font-semibold text-primary">🇦🇺 Apex Fitness Studio</span>
+                                        <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">LP</span> -->
+                                        <span class="text-xs font-semibold text-primary">Apex Fitness Studio</span>
                                     </div>
                                     <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Physiotherapy direct consultation lead page</h3>
                                     <p class="text-xs text-default-500 mb-4">Brisbane, AU • 2-step assessment trial booking funnel with automated SMS confirm.</p>
@@ -227,8 +227,8 @@
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center gap-2 mb-3">
-                                    <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">Company</span>
-                                    <span class="text-xs font-semibold text-primary">🇦🇺 Lumina Aesthetic Clinic</span>
+                                    <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">Company</span> -->
+                                    <span class="text-xs font-semibold text-primary">Lumina Aesthetic Clinic</span>
                                 </div>
                                 <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Corporate website for dental & aesthetic group</h3>
                                 <p class="text-xs text-default-500 mb-4">Melbourne & Sydney • Brand presence showcasing doctor credentials & treatment options.</p>
@@ -248,8 +248,8 @@
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center gap-2 mb-3">
-                                    <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">Company</span>
-                                    <span class="text-xs font-semibold text-primary">🇸🇬 The Heritage Barber Co.</span>
+                                    <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">Company</span> -->
+                                    <span class="text-xs font-semibold text-primary">The Heritage Barber Co.</span>
                                 </div>
                                 <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Multi-branch barbershop brand identity website</h3>
                                 <p class="text-xs text-default-500 mb-4">Central Singapore • Multi-branch location maps, barber bios, and service pricing.</p>
@@ -269,8 +269,8 @@
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center gap-2 mb-3">
-                                    <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">Company</span>
-                                    <span class="text-xs font-semibold text-primary">🇸🇬 Maison Privée Studio</span>
+                                    <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">Company</span> -->
+                                    <span class="text-xs font-semibold text-primary">Maison Privée Studio</span>
                                 </div>
                                 <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Medical aesthetics & salon corporate portal</h3>
                                 <p class="text-xs text-default-500 mb-4">Orchard Road, SG • Luxury treatment galleries, stylist portfolios, and press mentions.</p>
@@ -370,8 +370,8 @@
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center gap-2 mb-3">
-                                    <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">Booking</span>
-                                    <span class="text-xs font-semibold text-primary">🇸🇬 The Heritage Barber Co.</span>
+                                    <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">Booking</span> -->
+                                    <span class="text-xs font-semibold text-primary">The Heritage Barber Co.</span>
                                 </div>
                                 <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">24/7 barbershop chain appointment engine</h3>
                                 <p class="text-xs text-default-500 mb-4">Central Singapore • Automated multi-barber calendar, WhatsApp reminders, PayNow deposit.</p>
@@ -391,8 +391,8 @@
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center gap-2 mb-3">
-                                    <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">Booking</span>
-                                    <span class="text-xs font-semibold text-primary">🇦🇺 Lumina Aesthetic</span>
+                                    <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">Booking</span> -->
+                                    <span class="text-xs font-semibold text-primary">Lumina Aesthetic</span>
                                 </div>
                                 <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Multi-doctor clinic booking & reminder system</h3>
                                 <p class="text-xs text-default-500 mb-4">Melbourne & Sydney • Treatment-aware room logic, medical consent form, deposit hold.</p>
@@ -412,8 +412,8 @@
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center gap-2 mb-3">
-                                    <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">Booking</span>
-                                    <span class="text-xs font-semibold text-primary">🇸🇬 Maison Privée Studio</span>
+                                    <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">Booking</span> -->
+                                    <span class="text-xs font-semibold text-primary">Maison Privée Studio</span>
                                 </div>
                                 <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Spa & salon deposit booking integration</h3>
                                 <p class="text-xs text-default-500 mb-4">Orchard Road, SG • Split-interval processing time booking, tiered stylist pricing.</p>
@@ -513,8 +513,8 @@
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center gap-2 mb-3">
-                                    <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">System</span>
-                                    <span class="text-xs font-semibold text-primary">🇸🇬 The Heritage Barber Co.</span>
+                                    <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">System</span> -->
+                                    <span class="text-xs font-semibold text-primary">The Heritage Barber Co.</span>
                                 </div>
                                 <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Multi-branch staff roster & commission hub</h3>
                                 <p class="text-xs text-default-500 mb-4">Central Singapore • Multi-chair management, automated staff commission calculation & shifts.</p>
@@ -534,8 +534,8 @@
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center gap-2 mb-3">
-                                    <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">System</span>
-                                    <span class="text-xs font-semibold text-primary">🇦🇺 Lumina Aesthetic Clinic</span>
+                                    <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">System</span> -->
+                                    <span class="text-xs font-semibold text-primary">Lumina Aesthetic Clinic</span>
                                 </div>
                                 <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Centralised clinic management & workflow platform</h3>
                                 <p class="text-xs text-default-500 mb-4">Melbourne & Sydney • Treatment room capacity locking, digital medical records & consent forms.</p>
@@ -555,8 +555,8 @@
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center gap-2 mb-3">
-                                    <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">System</span>
-                                    <span class="text-xs font-semibold text-primary">🇦🇺 Apex Performance Studio</span>
+                                    <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">System</span> -->
+                                    <span class="text-xs font-semibold text-primary">Apex Performance Studio</span>
                                 </div>
                                 <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Trainer roster & session credit portal for fitness</h3>
                                 <p class="text-xs text-default-500 mb-4">Brisbane • Private bay capacity lock, session pack deduction, automated trainer payouts.</p>

@@ -9,7 +9,7 @@ $case_studies = [
         'client' => 'The Heritage Barber Co.',
         'category' => 'Barbershop • Booking System & LP',
         'location' => 'Singapore (Tanjong Pagar & Orchard)',
-        'flag' => '🇸🇬',
+        'flag' => '',
         'duration' => '3 Weeks',
         'hero_image' => 'images/case-studies/barber.png',
         'alt' => 'The Heritage Barber Co. Booking Preview',
@@ -58,7 +58,7 @@ $case_studies = [
         'client' => 'Lumina Aesthetic & Wellness',
         'category' => 'Medical & Aesthetic Clinic • Web System',
         'location' => 'Melbourne & Sydney, Australia',
-        'flag' => '🇦🇺',
+        'flag' => '',
         'duration' => '6 Weeks',
         'hero_image' => 'images/case-studies/2.webp',
         'alt' => 'Lumina Aesthetic Web System Preview',
@@ -107,7 +107,7 @@ $case_studies = [
         'client' => 'Maison Privée Hair Studio',
         'category' => 'Hair & Beauty Salon • Web Platform',
         'location' => 'Singapore (Orchard Road)',
-        'flag' => '🇸🇬',
+        'flag' => '',
         'duration' => '4 Weeks',
         'hero_image' => 'images/case-studies/3.webp',
         'alt' => 'Maison Privée Booking Preview',
@@ -156,7 +156,7 @@ $case_studies = [
         'client' => 'Apex Performance Studio',
         'category' => 'Fitness & Personal Training • Web App',
         'location' => 'Brisbane, Australia',
-        'flag' => '🇦🇺',
+        'flag' => '',
         'duration' => '4 Weeks',
         'hero_image' => 'images/case-studies/4.webp',
         'alt' => 'Apex Performance Portal Preview',
@@ -248,7 +248,7 @@ $current_case = $case_studies[$case_key];
                     <span class="text-xs uppercase tracking-wider font-semibold text-default-500 me-1 hidden lg:inline-block shrink-0">Case Studies:</span>
                     <?php foreach ($case_studies as $k => $cs): ?>
                         <a href="case-study?case=<?= $k ?>" class="shrink-0 whitespace-nowrap py-1.5 px-3 text-xs md:text-sm font-medium rounded-lg transition-all <?= $k === $case_key ? 'bg-primary text-white shadow-xs' : 'bg-white text-default-700 hover:text-default-950 hover:bg-default-50 border border-default-200' ?>">
-                            <?= $cs['flag'] ?> <?= htmlspecialchars($cs['client']) ?>
+                            <?= htmlspecialchars($cs['client']) ?>
                         </a>
                     <?php endforeach; ?>
                 </div>
@@ -261,7 +261,7 @@ $current_case = $case_studies[$case_key];
         <div class="container max-w-245!">
             <div class="mb-8 space-y-4 text-center">
                 <div class="py-1.5 px-3.5 text-xs font-semibold inline-flex items-center gap-2 bg-primary/10 text-primary border border-primary/20 rounded-full uppercase tracking-wider">
-                    <span><?= $current_case['flag'] ?> <?= htmlspecialchars($current_case['location']) ?></span>
+                    <span><?= htmlspecialchars($current_case['location']) ?></span>
                     <span>•</span>
                     <span><?= htmlspecialchars($current_case['badge']) ?></span>
                 </div>
@@ -448,7 +448,7 @@ $current_case = $case_studies[$case_key];
                             <div class="p-6">
                                 <div class="flex items-center gap-2 mb-3">
                                     <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">
-                                        <?= $other_case['flag'] ?> <?= htmlspecialchars($other_case['location']) ?>
+                                        <?= htmlspecialchars($other_case['location']) ?>
                                     </span>
                                 </div>
                                 <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">
