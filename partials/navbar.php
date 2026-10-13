@@ -6,7 +6,7 @@
                 <img src="logo/logodophitam.webp" class="h-9.5 flex" alt="DOP logo" />
             </a>
 
-            <div id="navbar" class="absolute left-[calc(50%+24px)] -translate-x-1/2 hidden lg:flex items-center justify-center">
+            <div id="navbar" class="absolute left-[calc(50%+24px)] -translate-x-1/2 hidden lg:flex items-center justify-center transition-all duration-300">
                 <a href="/" class="group flex items-center p-2.5 font-medium text-default-600 transition-all duration-300 hover:text-primary hover:decoration-current underline decoration-transparent underline-offset-3">
                     Home
                     <span class="iconify tabler--arrow-up-right ms-1.25 flex size-4 scale-0 bg-primary transition-all duration-300 group-hover:scale-100"></span>
@@ -50,6 +50,26 @@
                 </div> -->
             </div>
 
+            <?php if (isset($title) && $title === 'Case Studies'): ?>
+            <!-- Category Quick Jump Navigation on Navbar (Scrolled) -->
+            <div id="navbar-case-studies" class="absolute left-[calc(50%+24px)] -translate-x-1/2 hidden lg:flex items-center justify-center opacity-0 pointer-events-none -translate-y-2 transition-all duration-300">
+                <div class="bg-default-100/90 backdrop-blur-md p-1.5 rounded-xl inline-flex items-center gap-1.5 justify-center border border-default-200/60 shadow-xs">
+                    <a href="#lp" data-case-cat="lp" class="case-cat-btn py-1.5 px-3.5 text-xs font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-xs rounded-lg transition-all">
+                        Landing Page
+                    </a>
+                    <a href="#company" data-case-cat="company" class="case-cat-btn py-1.5 px-3.5 text-xs font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-xs rounded-lg transition-all">
+                        Website Company
+                    </a>
+                    <a href="#booking" data-case-cat="booking" class="case-cat-btn py-1.5 px-3.5 text-xs font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-xs rounded-lg transition-all">
+                        Web Book System
+                    </a>
+                    <a href="#system" data-case-cat="system" class="case-cat-btn py-1.5 px-3.5 text-xs font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-xs rounded-lg transition-all">
+                        Web System
+                    </a>
+                </div>
+            </div>
+            <?php endif; ?>
+
             <div class="flex items-center justify-end gap-4">
                 <!-- <a href="tel:+1234567891" class="text-default-900 transition duration-300 hover:text-default-600 md:flex hidden">+123 456 7891</a> -->
 
@@ -73,6 +93,28 @@
                 </div>
             </div>
         </div>
+
+        <?php if (isset($title) && $title === 'Case Studies'): ?>
+        <!-- Mobile Adaptive Category Navigation -->
+        <div id="navbar-case-studies-mobile" class="lg:hidden w-full overflow-hidden transition-all duration-300 max-h-0 opacity-0 -translate-y-2 pointer-events-none border-t border-transparent">
+            <div class="py-2.5 overflow-x-auto no-scrollbar flex justify-start sm:justify-center">
+                <div class="bg-default-100/90 backdrop-blur-md p-1 rounded-xl inline-flex items-center gap-1 whitespace-nowrap border border-default-200/60 shadow-xs">
+                    <a href="#lp" data-case-cat="lp" class="case-cat-btn py-1.5 px-3 text-xs font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-xs rounded-lg transition-all">
+                        Landing Page
+                    </a>
+                    <a href="#company" data-case-cat="company" class="case-cat-btn py-1.5 px-3 text-xs font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-xs rounded-lg transition-all">
+                        Website Company
+                    </a>
+                    <a href="#booking" data-case-cat="booking" class="case-cat-btn py-1.5 px-3 text-xs font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-xs rounded-lg transition-all">
+                        Web Book System
+                    </a>
+                    <a href="#system" data-case-cat="system" class="case-cat-btn py-1.5 px-3 text-xs font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-xs rounded-lg transition-all">
+                        Web System
+                    </a>
+                </div>
+            </div>
+        </div>
+        <?php endif; ?>
     </div>
 
     <div id="mobile-menu" class="hs-overlay hs-overlay-open:translate-y-0 hs-overlay-open:opacity-100 opacity-0 hs-overlay-open:top-auto [--body-scroll:true] fixed inset-x-0 top-0 z-40 h-100 -translate-y-full transform transition-all duration-500 lg:hidden" role="dialog" tabindex="-1" aria-labelledby="mobile-menu-label">

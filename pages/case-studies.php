@@ -19,18 +19,18 @@
             </div>
 
             <!-- Category Quick Jump Navigation -->
-            <div class="flex justify-center mb-16">
+            <div id="case-study-hero-nav" class="flex justify-center mb-16 transition-all duration-300">
                 <div class="bg-default-100 p-1.5 rounded-xl inline-flex flex-wrap gap-2 justify-center">
-                    <a href="#lp" class="py-2 px-4 text-sm font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-sm rounded-lg transition-all">
+                    <a href="#lp" data-case-cat="lp" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-sm rounded-lg transition-all">
                         Landing Page
                     </a>
-                    <a href="#company" class="py-2 px-4 text-sm font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-sm rounded-lg transition-all">
+                    <a href="#company" data-case-cat="company" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-sm rounded-lg transition-all">
                         Website Company
                     </a>
-                    <a href="#booking" class="py-2 px-4 text-sm font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-sm rounded-lg transition-all">
+                    <a href="#booking" data-case-cat="booking" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-sm rounded-lg transition-all">
                         Web Book System
                     </a>
-                    <a href="#system" class="py-2 px-4 text-sm font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-sm rounded-lg transition-all">
+                    <a href="#system" data-case-cat="system" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:bg-white hover:text-default-950 hover:shadow-sm rounded-lg transition-all">
                         Web System
                     </a>
                 </div>
@@ -40,7 +40,7 @@
             <div class="space-y-20">
 
                 <!-- Category 1: LP -->
-                <div id="lp" class="scroll-mt-24">
+                <div id="lp" class="scroll-mt-28 md:scroll-mt-24">
                     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pb-5 border-b border-default-200">
                         <div class="max-w-2xl">
                             <h2 class="text-2xl md:text-3xl font-semibold text-default-950 mb-2">Landing Page</h2>
@@ -201,7 +201,7 @@
                 </div>
 
                 <!-- Category 2: Website Company -->
-                <div id="company" class="scroll-mt-24">
+                <div id="company" class="scroll-mt-28 md:scroll-mt-24">
                     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pb-5 border-b border-default-200">
                         <div class="max-w-2xl">
                             <h2 class="text-2xl md:text-3xl font-semibold text-default-950 mb-2">Website Company</h2>
@@ -344,7 +344,7 @@
                 </div>
 
                 <!-- Category 3: Web Book System -->
-                <div id="booking" class="scroll-mt-24">
+                <div id="booking" class="scroll-mt-28 md:scroll-mt-24">
                     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pb-5 border-b border-default-200">
                         <div class="max-w-2xl">
                             <h2 class="text-2xl md:text-3xl font-semibold text-default-950 mb-2">Web Book System</h2>
@@ -487,7 +487,7 @@
                 </div>
 
                 <!-- Category 4: Web System -->
-                <div id="system" class="scroll-mt-24">
+                <div id="system" class="scroll-mt-28 md:scroll-mt-24">
                     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pb-5 border-b border-default-200">
                         <div class="max-w-2xl">
                             <h2 class="text-2xl md:text-3xl font-semibold text-default-950 mb-2">Web System</h2>
