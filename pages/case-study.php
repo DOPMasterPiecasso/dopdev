@@ -232,22 +232,22 @@ $current_case = $case_studies[$case_key];
     <?php include('partials/navbar.php'); ?>
 
     <!-- Breadcrumb & Case Switcher -->
-    <div class="bg-default-100/70 border-b border-default-200 py-4">
+    <div class="bg-default-100/70 border-b border-default-200 py-3 sm:py-4">
         <div class="container">
-            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                <div class="flex items-center gap-2 text-sm text-default-600">
-                    <a href="/" class="hover:text-primary transition-colors">Home</a>
-                    <i class="iconify tabler--chevron-right size-4 text-default-400"></i>
-                    <a href="case-studies" class="hover:text-primary transition-colors">Case Studies</a>
-                    <i class="iconify tabler--chevron-right size-4 text-default-400"></i>
-                    <span class="text-default-950 font-medium"><?= htmlspecialchars($current_case['client']) ?></span>
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3 sm:gap-4">
+                <div class="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm text-default-600 min-w-0">
+                    <a href="/" class="hover:text-primary transition-colors shrink-0">Home</a>
+                    <i class="iconify tabler--chevron-right size-3.5 sm:size-4 text-default-400 shrink-0"></i>
+                    <a href="case-studies" class="hover:text-primary transition-colors shrink-0">Case Studies</a>
+                    <i class="iconify tabler--chevron-right size-3.5 sm:size-4 text-default-400 shrink-0"></i>
+                    <span class="text-default-950 font-medium truncate"><?= htmlspecialchars($current_case['client']) ?></span>
                 </div>
 
                 <!-- Case Studies Switcher -->
-                <div class="flex items-center gap-1.5 flex-wrap">
-                    <span class="text-xs uppercase tracking-wider font-semibold text-default-500 me-1 hidden lg:inline-block">Case Studies:</span>
+                <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar -mx-5 px-5 md:mx-0 md:px-0 py-0.5 max-w-full">
+                    <span class="text-xs uppercase tracking-wider font-semibold text-default-500 me-1 hidden lg:inline-block shrink-0">Case Studies:</span>
                     <?php foreach ($case_studies as $k => $cs): ?>
-                        <a href="case-study?case=<?= $k ?>" class="py-1.5 px-3 text-xs md:text-sm font-medium rounded-lg transition-all <?= $k === $case_key ? 'bg-primary text-white shadow-xs' : 'bg-white text-default-700 hover:text-default-950 hover:bg-default-50 border border-default-200' ?>">
+                        <a href="case-study?case=<?= $k ?>" class="shrink-0 whitespace-nowrap py-1.5 px-3 text-xs md:text-sm font-medium rounded-lg transition-all <?= $k === $case_key ? 'bg-primary text-white shadow-xs' : 'bg-white text-default-700 hover:text-default-950 hover:bg-default-50 border border-default-200' ?>">
                             <?= $cs['flag'] ?> <?= htmlspecialchars($cs['client']) ?>
                         </a>
                     <?php endforeach; ?>
