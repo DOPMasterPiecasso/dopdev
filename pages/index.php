@@ -44,16 +44,12 @@
                         </div>
 
                         <div>
-                            <div class="mb-1.5 text-default-950">Based in</div>
+                            <div class="mb-1.5 text-default-950">Based in </div>
 
                             <div class="flex gap-2.5">
                                 <div class="relative group">
-                                    <img src="images/other/office-dubai.jpg" alt="Image" class="rounded">
-                                    <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -bottom-2 inset-s-0 translate-y-full w-full text-center text-xs font-medium py-1 px-2.5 bg-default-100 rounded">Singapore</div>
-                                </div>
-                                <div class="relative group">
-                                    <img src="images/other/office-paris.jpg" alt="Image" class="rounded">
-                                    <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -bottom-2 inset-s-0 translate-y-full w-full text-center text-xs font-medium py-1 px-2.5 bg-default-100 rounded">Australia</div>
+                                    <img src="images/other/office-indonesia.jpg" alt="Office Indonesia" class="rounded size-12 object-cover">
+                                    <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -bottom-2 inset-s-0 translate-y-full w-full text-center text-xs font-medium py-1 px-2.5 bg-default-100 rounded">Indonesia</div>
                                 </div>
                             </div>
                         </div>
