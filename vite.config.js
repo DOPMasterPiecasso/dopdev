@@ -16,7 +16,7 @@ export default defineConfig({
 		strictPort: true,
 		host: true,
 		cors: true,
-		origin: 'http://localhost:5177',
+		origin: process.env.VITE_ORIGIN || undefined,
 	},
 	build: {
 		outDir: 'public',
