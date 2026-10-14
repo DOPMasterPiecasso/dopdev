@@ -154,6 +154,43 @@ All files will be generated and copied into the `/dist` folder.
 │   │   ├── **/* (Files copied from the ./vendor folder, usually Composer packages)
 ```
 
+## Blog & Admin Dashboard
+
+Blog dikelola lewat SQLite (mode WAL) — postingan bisa dibuat lewat admin dashboard maupun lewat seeder dari data portofolio.
+
+### Setup
+
+```bash
+npm run migrate      # php bin/migrate.php  -> membuat tabel di database/dop.sqlite
+npm run seed         # php bin/seed.php     -> seed 24 artikel dari pages/case-studies.php
+php bin/seed.php --fresh   # hapus & seed ulang
+npm run serve:root   # php -S localhost:8080 (docroot = root)
+```
+
+### Admin
+
+-   `/admin` — dashboard artikel (list, filter, search, hapus)
+-   `/admin/posts/create` — tulis artikel baru
+-   `/admin/posts/{id}/edit` — edit artikel
+-   Login default `admin` / `admin123` (ubah di `.env`: `ADMIN_USER`, `ADMIN_PASS`)
+
+### Publik
+
+-   `/blog` — daftar artikel (filter kategori `?cat=`, pagination `?page=`)
+-   `/blog-details?post={slug}` — detail artikel (fallback: artikel terbaru)
+
+### Struktur terkait
+
+```
+database/
+├── migrations/001_create_blog_posts.sql   # schema blog_posts
+├── seeders/CaseStudySeeder.php            # parse cards di pages/case-studies.php
+└── dop.sqlite                             # database (gitignored, WAL mode)
+bin/migrate.php, bin/seed.php
+system/db.php, system/blog.php, system/auth.php, system/env.php
+pages/admin/*.php, partials/admin-topbar.php
+```
+
 ## Configuration
 
 You can customize configurations according to your project requirements. Key configuration files include:

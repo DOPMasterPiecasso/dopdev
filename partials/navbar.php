@@ -1,4 +1,9 @@
 <!-- Navbar -->
+<?php
+$navPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?? '/';
+$navBlogActive = $navPath === '/blog' || $navPath === '/blog-details' || strpos($navPath, '/blog-details/') === 0;
+$navBlogClass = $navBlogActive ? 'text-primary underline decoration-current' : '';
+?>
 <header class="sticky top-0 z-50 bg-body-bg transition-all duration-300">
     <div class="container">
         <div class="nav-sticky navbar md:py-6.5 py-5 flex items-center w-full justify-between relative">
@@ -22,10 +27,10 @@
                     <span class="iconify tabler--arrow-up-right ms-1.25 flex size-4 scale-0 bg-primary transition-all duration-300 group-hover:scale-100"></span>
                 </a>
 
-                <!-- <a href="blog" class="group flex items-center p-2.5 font-medium text-default-600 transition-all duration-300 hover:text-primary hover:decoration-current underline decoration-transparent underline-offset-3">
+                <a href="blog" class="group flex items-center p-2.5 font-medium text-default-600 transition-all duration-300 hover:text-primary hover:decoration-current underline decoration-transparent underline-offset-3 <?php echo $navBlogClass; ?>">
                     Blog
                     <span class="iconify tabler--arrow-up-right ms-1.25 flex size-4 scale-0 bg-primary transition-all duration-300 group-hover:scale-100"></span>
-                </a> -->
+                </a>
 
                 <!-- <div class="hs-dropdown relative inline-flex [--trigger:hover]">
                     <button type="button" class="hs-dropdown-toggle group flex items-center p-2.5 font-medium text-default-600 transition-all duration-300 hover:text-primary hover:decoration-current underline decoration-transparent underline-offset-3" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
@@ -135,10 +140,10 @@
                         <span class="iconify tabler--arrow-up-right ms-1.25 flex size-4 scale-0 bg-primary transition-all duration-300 group-hover:scale-100"></span>
                     </a>
 
-                    <!-- <a href="blog" class="group flex items-center p-2.5 font-medium text-default-600 transition-all duration-300 hover:text-primary hover:decoration-current underline decoration-transparent underline-offset-3">
+                    <a href="blog" class="group flex items-center p-2.5 font-medium text-default-600 transition-all duration-300 hover:text-primary hover:decoration-current underline decoration-transparent underline-offset-3 <?php echo $navBlogClass; ?>">
                         Blog
                         <span class="iconify tabler--arrow-up-right ms-1.25 flex size-4 scale-0 bg-primary transition-all duration-300 group-hover:scale-100"></span>
-                    </a> -->
+                    </a>
 
                     <!-- <div class="hs-accordion">
                         <button type="button" class="hs-accordion-toggle group flex items-center p-2.5 font-medium text-default-600 transition-all duration-300 hover:text-primary hover:decoration-current underline decoration-transparent underline-offset-3" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">

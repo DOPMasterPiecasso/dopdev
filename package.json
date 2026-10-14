@@ -8,6 +8,8 @@
     "build": "vite build",
     "serve": "php -S localhost:8080 -t public",
     "serve:root": "php -S localhost:8080",
+    "migrate": "php bin/migrate.php",
+    "seed": "php bin/seed.php",
     "composer": "php ./bin/composer.phar"
   },
   "devDependencies": {

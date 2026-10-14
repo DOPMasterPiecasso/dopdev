@@ -17,10 +17,10 @@
     RewriteRule (^\.|/\.) - [F,L]
 
     # Blok akses langsung ke source code & folder sensitif
-    RewriteRule ^(bin|configs|dist|node_modules|pages|partials|src|system|vendor)(/|$) - [F,L]
+    RewriteRule ^(bin|configs|database|dist|node_modules|pages|partials|src|system|vendor)(/|$) - [F,L]
 
     # Blok arsip / file proyek yang tidak boleh diakses publik
-    RewriteRule \.(zip|tar|gz|sql|log|bak|lock)$ - [F,L]
+    RewriteRule \.(zip|tar|gz|sql|log|bak|lock|sqlite|sqlite-wal|sqlite-shm)$ - [F,L]
     RewriteRule ^(composer\.(json|lock)|package(-lock)?\.json|bun\.lock|vite\.config\.js|README\.md)$ - [F,L]
 
     # Redirect Trailing Slashes If Not A Folder...

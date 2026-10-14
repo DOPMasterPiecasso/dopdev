@@ -15,6 +15,10 @@ function require_existing(string $path) {
 
 require_existing('vendor/autoload.php');
 require_existing('configs/env.php');
+require_existing('system/env.php');
+require_existing('system/db.php');
+require_existing('system/blog.php');
+require_existing('system/auth.php');
 require_existing('system/vite.php');
 
 try {
