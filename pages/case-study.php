@@ -242,16 +242,6 @@ $current_case = $case_studies[$case_key];
                     <i class="iconify tabler--chevron-right size-3.5 sm:size-4 text-default-400 shrink-0"></i>
                     <span class="text-default-950 font-medium truncate"><?= htmlspecialchars($current_case['client']) ?></span>
                 </div>
-
-                <!-- Case Studies Switcher -->
-                <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar -mx-5 px-5 md:mx-0 md:px-0 py-0.5 max-w-full">
-                    <span class="text-xs uppercase tracking-wider font-semibold text-default-500 me-1 hidden lg:inline-block shrink-0">Case Studies:</span>
-                    <?php foreach ($case_studies as $k => $cs): ?>
-                        <a href="case-study?case=<?= $k ?>" class="shrink-0 whitespace-nowrap py-1.5 px-3 text-xs md:text-sm font-medium rounded-lg transition-all <?= $k === $case_key ? 'bg-primary text-white shadow-xs' : 'bg-white text-default-700 hover:text-default-950 hover:bg-default-50 border border-default-200' ?>">
-                            <?= htmlspecialchars($cs['client']) ?>
-                        </a>
-                    <?php endforeach; ?>
-                </div>
             </div>
         </div>
     </div>
