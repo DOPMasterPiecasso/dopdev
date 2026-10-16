@@ -2,9 +2,9 @@
 dist
 
 # database sqlite (dibuat oleh bin/migrate.php + bin/seed.php)
-database/*.sqlite
-database/*.sqlite-wal
-database/*.sqlite-shm
+# database/*.sqlite
+# database/*.sqlite-wal
+# database/*.sqlite-shm
 
 # generated files
 .php-tmp
