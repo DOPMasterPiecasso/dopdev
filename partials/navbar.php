@@ -92,8 +92,8 @@ $navBlogClass = $navBlogActive ? 'text-primary underline decoration-current' : '
                 </div>
 
                 <div class="flex items-center lg:hidden">
-                    <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="mobile-menu" data-hs-overlay="#mobile-menu" class="inline-flex size-10 items-center justify-center rounded-md bg-primary text-white font-medium transition-all">
-                        <i class="iconify tabler--align-right size-6"></i>
+                    <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="mobile-menu" data-hs-overlay="#mobile-menu" class="inline-flex size-10 items-center justify-center rounded-lg bg-primary text-white font-medium hover:bg-default-900 transition-all shadow-xs" aria-label="Toggle Navigation">
+                        <i class="iconify tabler--menu-2 size-5.5"></i>
                     </button>
                 </div>
             </div>
@@ -121,51 +121,101 @@ $navBlogClass = $navBlogActive ? 'text-primary underline decoration-current' : '
         </div>
         <?php endif; ?>
     </div>
+</header>
 
-    <div id="mobile-menu" class="hs-overlay hs-overlay-open:translate-y-0 hs-overlay-open:opacity-100 opacity-0 hs-overlay-open:top-auto [--body-scroll:true] fixed inset-x-0 top-0 z-40 h-100 -translate-y-full transform transition-all duration-500 lg:hidden" role="dialog" tabindex="-1" aria-labelledby="mobile-menu-label">
-        <div class="container">
-            <div class="bg-body-bg shadow border border-default-200 rounded-lg mb-4">
-                <div class="flex max-h-100 flex-col gap-1 divide-y divide-default-200 overflow-y-auto">
-                    <a href="/" class="group flex items-center p-2.5 font-medium text-default-600 transition-all duration-300 hover:text-primary hover:decoration-current underline decoration-transparent underline-offset-3">
-                        Home
-                    </a>
+<!-- Mobile Menu Offcanvas Drawer -->
+<div id="mobile-menu" class="hs-overlay hs-overlay-open:translate-x-0 hidden translate-x-full fixed top-0 end-0 z-[80] h-full w-[85%] max-w-xs sm:max-w-sm bg-body-bg border-s border-default-200 shadow-2xl transition-all duration-300 transform flex flex-col" role="dialog" tabindex="-1" aria-labelledby="mobile-menu-label">
+    <!-- Header with logo and close button -->
+    <div class="flex items-center justify-between px-5 py-4 border-b border-default-200">
+        <a href="/" class="flex items-center">
+            <img src="logo/logodophitam.webp" class="h-8 flex" alt="DOP logo" />
+        </a>
+        <button type="button" class="inline-flex size-8 items-center justify-center rounded-lg border border-default-200 bg-default-50 text-default-600 hover:text-default-950 hover:bg-default-100 transition-colors" data-hs-overlay="#mobile-menu" aria-label="Close">
+            <i class="iconify tabler--x size-4.5"></i>
+        </button>
+    </div>
 
-                    <a href="about" class="group flex items-center p-2.5 font-medium text-default-600 transition-all duration-300 hover:text-primary hover:decoration-current underline decoration-transparent underline-offset-3">
-                        About
-                        <span class="iconify tabler--arrow-up-right ms-1.25 flex size-4 scale-0 bg-primary transition-all duration-300 group-hover:scale-100"></span>
-                    </a>
+    <!-- Scrollable Navigation -->
+    <div class="flex-1 overflow-y-auto px-4 py-5 space-y-1">
+        <div class="text-[11px] font-bold uppercase tracking-wider text-default-400 px-3 py-1 mb-1">
+            Navigation
+        </div>
 
-                    <a href="case-studies" class="group flex items-center p-2.5 font-medium text-default-600 transition-all duration-300 hover:text-primary hover:decoration-current underline decoration-transparent underline-offset-3">
-                        Case Studies
-                        <span class="iconify tabler--arrow-up-right ms-1.25 flex size-4 scale-0 bg-primary transition-all duration-300 group-hover:scale-100"></span>
-                    </a>
+        <a href="/" class="mobile-nav-link group flex items-center justify-between px-3.5 py-3 rounded-xl font-medium text-default-700 hover:bg-default-100 hover:text-default-950 transition-all">
+            <span class="flex items-center gap-3">
+                <span class="size-8.5 rounded-lg bg-default-100 text-default-700 group-hover:bg-primary/10 group-hover:text-primary flex items-center justify-center transition-colors">
+                    <i class="iconify tabler--home size-4.5"></i>
+                </span>
+                <span class="text-sm">Home</span>
+            </span>
+            <i class="iconify tabler--chevron-right size-4 text-default-400 group-hover:text-default-950 transition-all"></i>
+        </a>
 
-                    <a href="blog" class="group flex items-center p-2.5 font-medium text-default-600 transition-all duration-300 hover:text-primary hover:decoration-current underline decoration-transparent underline-offset-3 <?php echo $navBlogClass; ?>">
-                        Blog
-                        <span class="iconify tabler--arrow-up-right ms-1.25 flex size-4 scale-0 bg-primary transition-all duration-300 group-hover:scale-100"></span>
-                    </a>
+        <a href="about" class="mobile-nav-link group flex items-center justify-between px-3.5 py-3 rounded-xl font-medium text-default-700 hover:bg-default-100 hover:text-default-950 transition-all">
+            <span class="flex items-center gap-3">
+                <span class="size-8.5 rounded-lg bg-default-100 text-default-700 group-hover:bg-primary/10 group-hover:text-primary flex items-center justify-center transition-colors">
+                    <i class="iconify tabler--user-star size-4.5"></i>
+                </span>
+                <span class="text-sm">About</span>
+            </span>
+            <i class="iconify tabler--chevron-right size-4 text-default-400 group-hover:text-default-950 transition-all"></i>
+        </a>
 
-                    <!-- <div class="hs-accordion">
-                        <button type="button" class="hs-accordion-toggle group flex items-center p-2.5 font-medium text-default-600 transition-all duration-300 hover:text-primary hover:decoration-current underline decoration-transparent underline-offset-3" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                            Pages
-                            <i class="iconify tabler--chevron-down transition-all hs-accordion-active:rotate-180 ms-4"></i>
-                        </button>
+        <a href="case-studies" class="mobile-nav-link group flex items-center justify-between px-3.5 py-3 rounded-xl font-medium text-default-700 hover:bg-default-100 hover:text-default-950 transition-all">
+            <span class="flex items-center gap-3">
+                <span class="size-8.5 rounded-lg bg-default-100 text-default-700 group-hover:bg-primary/10 group-hover:text-primary flex items-center justify-center transition-colors">
+                    <i class="iconify tabler--briefcase size-4.5"></i>
+                </span>
+                <span class="text-sm">Case Studies</span>
+            </span>
+            <i class="iconify tabler--chevron-right size-4 text-default-400 group-hover:text-default-950 transition-all"></i>
+        </a>
 
-                        <div class="hs-accordion-content hidden w-full overflow-hidden ps-5 pb-4 transition-[height]">
-                            <div class="space-y-1">
-                                <a href="/" class="block rounded-sm px-3 py-2 text-sm font-semibold text-default-600 hover:bg-primary/6 hover:text-primary">Home </a>
-                                <a href="about" class="block rounded-sm px-3 py-2 text-sm font-semibold text-default-600 hover:bg-primary/6 hover:text-primary">About</a>
-                                <a href="service-detail" class="block rounded-sm px-3 py-2 text-sm font-semibold text-default-600 hover:bg-primary/6 hover:text-primary">Service Detail</a>
-                                <a href="blog" class="block rounded-sm px-3 py-2 text-sm font-semibold text-default-600 hover:bg-primary/6 hover:text-primary">Blog</a>
-                                <a href="blog-details" class="block rounded-sm px-3 py-2 text-sm font-semibold text-default-600 hover:bg-primary/6 hover:text-primary">Blog Details</a>
-                                <a href="contact" class="block rounded-sm px-3 py-2 text-sm font-semibold text-default-600 hover:bg-primary/6 hover:text-primary">Contact</a>
-                                <a href="error-404" class="block rounded-sm px-3 py-2 text-sm font-semibold text-default-600 hover:bg-primary/6 hover:text-primary">Error 404</a>
-                                <a href="error-401" class="block rounded-sm px-3 py-2 text-sm font-semibold text-default-600 hover:bg-primary/6 hover:text-primary">Error 401</a>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
+        <a href="blog" class="mobile-nav-link group flex items-center justify-between px-3.5 py-3 rounded-xl font-medium text-default-700 hover:bg-default-100 hover:text-default-950 transition-all <?php echo $navBlogActive ? 'active' : ''; ?>">
+            <span class="flex items-center gap-3">
+                <span class="size-8.5 rounded-lg bg-default-100 text-default-700 group-hover:bg-primary/10 group-hover:text-primary flex items-center justify-center transition-colors">
+                    <i class="iconify tabler--article size-4.5"></i>
+                </span>
+                <span class="text-sm">Blog</span>
+            </span>
+            <i class="iconify tabler--chevron-right size-4 text-default-400 group-hover:text-default-950 transition-all"></i>
+        </a>
+
+        <!-- Quick Live Demos -->
+        <div class="pt-5 mt-4 border-t border-default-200">
+            <div class="text-[11px] font-bold uppercase tracking-wider text-default-400 px-3 py-1 mb-2.5">
+                Live Platform Demos
+            </div>
+            <div class="grid grid-cols-3 gap-2">
+                <a href="https://barber.dopdev.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center p-2.5 rounded-xl border border-default-200 bg-white hover:border-primary hover:text-primary text-default-700 text-xs font-medium transition-all text-center group">
+                    <i class="iconify tabler--cut size-4.5 mb-1.5 text-primary group-hover:scale-110 transition-transform"></i>
+                    <span>Barber</span>
+                </a>
+                <a href="https://www.salon.dopdev.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center p-2.5 rounded-xl border border-default-200 bg-white hover:border-primary hover:text-primary text-default-700 text-xs font-medium transition-all text-center group">
+                    <i class="iconify tabler--sparkles size-4.5 mb-1.5 text-primary group-hover:scale-110 transition-transform"></i>
+                    <span>Salon</span>
+                </a>
+                <a href="https://clinic.dopdev.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center p-2.5 rounded-xl border border-default-200 bg-white hover:border-primary hover:text-primary text-default-700 text-xs font-medium transition-all text-center group">
+                    <i class="iconify tabler--stethoscope size-4.5 mb-1.5 text-primary group-hover:scale-110 transition-transform"></i>
+                    <span>Clinic</span>
+                </a>
             </div>
         </div>
     </div>
-</header>
+
+    <!-- Footer / Contact CTA -->
+    <div class="p-5 border-t border-default-200 bg-default-50/70 space-y-3">
+        <a href="contact" class="w-full py-3 px-4 inline-flex items-center justify-center gap-2 rounded-xl bg-primary text-white font-medium hover:bg-default-900 transition-all shadow-sm">
+            <span>Contact Now</span>
+            <i class="iconify tabler--arrow-up-right size-4.5"></i>
+        </a>
+
+        <div class="flex items-center justify-between text-xs text-default-500 pt-1">
+            <a href="mailto:hello@dopdev.com" class="hover:text-primary transition-colors inline-flex items-center gap-1.5">
+                <i class="iconify tabler--mail size-4"></i>
+                <span>hello@dopdev.com</span>
+            </a>
+            <span class="text-[11px] text-default-400">Singapore • Global</span>
+        </div>
+    </div>
+</div>

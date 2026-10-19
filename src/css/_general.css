@@ -51,12 +51,23 @@ textarea {
     span {
         @apply scale-100;
     }
-
-
 }
 
 #navbar .hs-dropdown-menu a.active {
     @apply bg-primary/8;
+}
+
+/* Mobile Menu Active Link */
+#mobile-menu a.mobile-nav-link.active {
+    @apply bg-primary/10 text-primary font-semibold;
+
+    span > span:first-child {
+        @apply bg-primary text-white;
+    }
+
+    > i {
+        @apply text-primary;
+    }
 }
 
 
