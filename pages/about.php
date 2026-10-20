@@ -123,9 +123,9 @@
                                 <source src="/videos/video.webm" type="video/webm">
                             </video>
 
-                            <a href="https://www.youtube.com/embed/elgqxmdVms8?si=yYfzbunShGP15tde" data-toggle="video" class="absolute inset-0 rounded-lg bg-default-950/50 size-full text-center flex items-center justify-center">
+                            <!-- <a href="https://www.youtube.com/embed/elgqxmdVms8?si=yYfzbunShGP15tde" data-toggle="video" class="absolute inset-0 rounded-lg bg-default-950/50 size-full text-center flex items-center justify-center">
                                 <div class="text-white">Play Reel</div>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
 
