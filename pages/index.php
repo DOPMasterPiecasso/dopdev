@@ -290,57 +290,117 @@
             <div class="text-center mb-12.5">
                 <div class="text-sm text-primary font-semibold mb-2.5">Comparison</div>
                 <h2 class="lg:text-5xl md:text-4xl text-3xl mb-2.5 font-medium text-default-950">Why Not Just Use a Booking SaaS?</h2>
-                <p class="text-default-600 lg:max-w-2xl mx-auto">Tools like Timely, Booksy, or a generic booking plugin get you started, until your business grows. Here's where they stop working:</p>
+                <p class="text-default-600 lg:max-w-2xl mx-auto">Tools like Timely, Booksy, or a generic booking plugin get you started, until your business grows. Here is how they compare:</p>
             </div>
 
-            <div class="max-w-4xl mx-auto overflow-hidden rounded-xl border border-default-200 shadow-xs">
-                <div class="overflow-x-auto">
-                    <table class="w-full text-left text-sm">
-                        <thead class="bg-default-100 border-b border-default-200 text-default-950 font-semibold">
-                            <tr>
-                                <th class="p-4 md:px-6">Feature</th>
-                                <th class="p-4 md:px-6 text-default-600">Booking SaaS / Plugin</th>
-                                <th class="p-4 md:px-6 text-primary bg-primary/5">DOP Custom System</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-default-200">
-                            <tr>
-                                <td class="p-4 md:px-6 font-medium text-default-950">Ongoing Cost</td>
-                                <td class="p-4 md:px-6 text-default-600">S$50–200/month, forever</td>
-                                <td class="p-4 md:px-6 font-semibold text-default-950 bg-primary/5">One-time build (you own the code)</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 md:px-6 font-medium text-default-950">Booking Flow</td>
-                                <td class="p-4 md:px-6 text-default-600">Rigid third-party templates &amp; branding</td>
-                                <td class="p-4 md:px-6 font-semibold text-default-950 bg-primary/5">Custom-built around <em>your</em> service menu &amp; policies</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 md:px-6 font-medium text-default-950">Multi-Branch</td>
-                                <td class="p-4 md:px-6 text-default-600">Monthly surcharge per location</td>
-                                <td class="p-4 md:px-6 font-semibold text-default-950 bg-primary/5">Built in from Day 1</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 md:px-6 font-medium text-default-950">Integrations</td>
-                                <td class="p-4 md:px-6 text-default-600">Limited to supported plug-ins</td>
-                                <td class="p-4 md:px-6 font-semibold text-default-950 bg-primary/5">WhatsApp, PayNow, Stripe, CRM (built for your exact stack)</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 md:px-6 font-medium text-default-950">Data Ownership</td>
-                                <td class="p-4 md:px-6 text-default-600">Locked inside their proprietary database</td>
-                                <td class="p-4 md:px-6 font-semibold text-default-950 bg-primary/5">Export anytime, hosted on your own account</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 md:px-6 font-medium text-default-950">Scaling Up</td>
-                                <td class="p-4 md:px-6 text-default-600">Hit software limits or migrate from scratch</td>
-                                <td class="p-4 md:px-6 font-semibold text-default-950 bg-primary/5">Extend modules seamlessly as your business grows</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div class="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Generic SaaS Card -->
+                <div class="rounded-xl border border-default-200 bg-white p-6 md:p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-4 mb-4">
+                            <span class="inline-block px-3 py-1 text-xs font-medium rounded-md bg-default-100 text-default-700">
+                                Monthly Subscription
+                            </span>
+                            <span class="text-xs text-default-500">Off-the-shelf</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-default-950 mb-2">Booking SaaS or Generic Plugin</h3>
+                        <p class="text-sm text-default-500 mb-6">Quick to start, but restrictive and costly as your appointment volume grows.</p>
+
+                        <ul class="space-y-4 pt-4 border-t border-default-200 text-sm">
+                            <li class="flex items-start gap-3">
+                                <i class="iconify tabler--x size-4.5 text-red-500 shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="font-medium text-default-950 block">Recurring Monthly Costs</span>
+                                    <span class="text-xs text-default-500 leading-relaxed">S$50 to S$200 every month, compounding as you add features or staff.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="iconify tabler--x size-4.5 text-red-500 shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="font-medium text-default-950 block">Rigid Booking Flow</span>
+                                    <span class="text-xs text-default-500 leading-relaxed">Bound to their rigid layouts, foreign branding, and non-negotiable steps.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="iconify tabler--x size-4.5 text-red-500 shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="font-medium text-default-950 block">Multi-Branch Surcharges</span>
+                                    <span class="text-xs text-default-500 leading-relaxed">Extra monthly fees demanded for every new chair, therapist, or location.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="iconify tabler--x size-4.5 text-red-500 shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="font-medium text-default-950 block">Restricted Integrations</span>
+                                    <span class="text-xs text-default-500 leading-relaxed">Limited to their pre-approved plugin store, rarely tailored for local SG/AU payments.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="iconify tabler--x size-4.5 text-red-500 shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="font-medium text-default-950 block">Platform Lock-In</span>
+                                    <span class="text-xs text-default-500 leading-relaxed">Your client relationships and booking records stay trapped in their proprietary cloud.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- DOP Custom System Card -->
+                <div class="rounded-xl border border-default-200 bg-white p-6 md:p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-4 mb-4">
+                            <span class="inline-block px-3 py-1 text-xs font-semibold rounded-md bg-primary/10 text-primary">
+                                Complete Ownership
+                            </span>
+                            <span class="text-xs font-semibold text-primary">Built for Growth</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-default-950 mb-2">DOP Custom Booking System</h3>
+                        <p class="text-sm text-default-500 mb-6">Built specifically for your team, service rules, and local client booking habits.</p>
+
+                        <ul class="space-y-4 pt-4 border-t border-default-200 text-sm">
+                            <li class="flex items-start gap-3">
+                                <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="font-semibold text-default-950 block">One-Time Build Investment</span>
+                                    <span class="text-xs text-default-600 leading-relaxed">Fixed build cost with no mandatory monthly subscription fees. You own your code.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="font-semibold text-default-950 block">Tailored Booking Pathway</span>
+                                    <span class="text-xs text-default-600 leading-relaxed">Designed around your exact service menu, deposit policies, and staff rotation.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="font-semibold text-default-950 block">Multi-Branch From Day 1</span>
+                                    <span class="text-xs text-default-600 leading-relaxed">Manage multiple locations, chairs, and practitioners under one unified dashboard.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="font-semibold text-default-950 block">Direct Local Integrations</span>
+                                    <span class="text-xs text-default-600 leading-relaxed">Automated WhatsApp reminders, PayNow, Stripe deposits, and instant calendar sync.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="font-semibold text-default-950 block">100% Data &amp; System Ownership</span>
+                                    <span class="text-xs text-default-600 leading-relaxed">Export client records anytime; everything runs safely on your own web infrastructure.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <div class="mt-8 text-center">
-                <a href="service-detail?service=booking-system" class="group py-3.5 px-8 inline-flex items-center justify-center gap-2 rounded-lg bg-primary text-white font-medium transition-all">
+            <div class="mt-10 text-center">
+                <a href="service-detail?service=booking-system" class="group py-3.5 px-8 inline-flex items-center justify-center gap-2 rounded-lg bg-primary text-white font-medium transition-all shadow-xs hover:bg-primary/90">
                     <span>See How It Works</span>
                 </a>
             </div>
