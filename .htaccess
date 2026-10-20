@@ -28,6 +28,10 @@
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]
 
+    # File demo (misal demo/barbershop/img/...) langsung dilayani jika ada
+    RewriteCond %{DOCUMENT_ROOT}/demo%{REQUEST_URI} -f
+    RewriteRule ^(.*)$ demo/$1 [END]
+
     # File statis diambil dari public/ (/build/..., /images/..., /logo/..., /videos/..., /robots.txt)
     # Jalan untuk docroot root (Apache) — request /build/app.css -> public/build/app.css
     RewriteCond %{REQUEST_URI} !\.php$
