@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Detail postingan blog — data dari tabel blog_posts.
+ * Blog post details: loads data from blog_posts table.
  * Route: /blog-details/{slug} (dan fallback /blog-details -> artikel terbaru)
  */
 

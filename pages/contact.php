@@ -15,14 +15,14 @@
     <section class="relative size-full overflow-hidden md:py-14.5 py-10">
 
         <div class="container">
-            <h1 class="mb-5 lg:text-[56px] md:text-5xl text-4xl text-default-950 font-bold">Ready To Fill Your Calendar?</h1>
+            <h1 class="mb-5 lg:text-[56px] md:text-5xl text-4xl text-default-950 font-bold">Tell Us Where Bookings Break Down</h1>
 
-            <div class="mb-12 text-default-600 text-lg max-w-3xl">Tell us about your business and we’ll show you how DOP can help you get more confirmed bookings, reduce no-shows and run your operations more smoothly.</div>
+            <div class="mb-12 text-default-600 text-lg max-w-3xl">Send us your current booking flow (WhatsApp, phone, or Google Form) and we'll reply within 24 hours with what we'd automate first. Free, whether or not you hire us.</div>
 
             <div class="grid lg:grid-cols-5 lg:gap-17.5 md:gap-12.5 gap-7.5">
                 <div class="lg:col-span-3">
 
-                    <h3 class="text-2xl font-bold text-default-950 mb-6">Book a Demo / Get a Quote</h3>
+                    <h3 class="text-2xl font-bold text-default-950 mb-6">Share Your Current Booking Setup</h3>
 
                     <form id="contact-form" class="space-y-6">
                         <div class="grid md:grid-cols-2 gap-6">
@@ -70,14 +70,14 @@
 
                         <div>
                             <label for="message" class="mb-1.5 text-sm font-medium block">Message / Goals</label>
-                            <textarea id="message" placeholder="Tell us a bit about your business goals or questions..." class="rounded-lg bg-default-100 py-2 px-5 w-full flex items-center border-transparent focus:border-primary" rows="5"></textarea>
+                            <textarea id="message" placeholder="Tell us about how customers book right now and where the biggest bottleneck is..." class="rounded-lg bg-default-100 py-2 px-5 w-full flex items-center border-transparent focus:border-primary" rows="5"></textarea>
                         </div>
 
                         <div>
                             <button type="submit" class="py-4 px-8 inline-flex items-center justify-center gap-3 rounded-lg bg-primary hover:bg-primary-hover font-medium text-white text-lg transition-all shadow-md">
-                                <span>Send Enquiry</span>
+                                <span>Get a Free Booking Audit</span>
                             </button>
-                            <p class="text-sm text-default-500 mt-3">No pressure sales. Just a clear conversation about your business.</p>
+                            <p class="text-sm text-default-500 mt-3">We reply within 24 hours with what we'd automate first. Free, whether or not you hire us.</p>
                         </div>
                     </form>
 
@@ -106,7 +106,7 @@
                 <div>
                     <div class="border border-default-200 rounded-xl p-10 lg:py-20 h-full flex flex-col items-center text-center justify-center gap-8">
 
-                        <h4 class="lg:text-3xl text-2xl lg:max-w-4/5 font-semibold text-default-950">DOP – Booking Systems & Digital Solutions</h4>
+                        <h4 class="lg:text-3xl text-2xl lg:max-w-4/5 font-semibold text-default-950">DOP: Booking Systems & Digital Solutions</h4>
 
                         <p class="lg:max-w-3/5 text-default-600 leading-relaxed">Dedicated development and booking solutions for service brands in Indonesia, Singapore & Australia.</p>
 

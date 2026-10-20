@@ -7,7 +7,7 @@ $services = [
         'badge' => 'High-Conversion & Campaigns',
         'tagline' => 'High-converting single-page sites engineered for ad campaigns and immediate customer acquisition.',
         'hero_title' => 'High-Converting Landing Pages That Turn Clicks Into Paying Clients',
-        'hero_desc' => 'Stop burning your marketing spend on generic websites. We engineer high-speed, mobile-first landing pages tailored for service businesses in Singapore and Australia—optimized to capture leads, drive appointments, and maximize ad ROI.',
+        'hero_desc' => 'Stop burning your marketing spend on generic websites. We engineer high-speed, mobile-first landing pages tailored for service businesses in Singapore and Australia, optimized to capture leads, drive appointments, and maximize ad ROI.',
         'stat_value' => '2x–3x',
         'stat_metric' => 'More Leads & Bookings',
         'stat_desc' => 'Compared to generic multi-page websites when running paid advertising campaigns.',
@@ -179,7 +179,7 @@ $services = [
             ],
             [
                 'title' => 'Staff & Station Assignment',
-                'desc' => 'Customers can choose their preferred barber, stylist, or therapist—or pick "Any Available".'
+                'desc' => 'Customers can choose their preferred barber, stylist, or therapist, or pick "Any Available".'
             ],
             [
                 'title' => 'Two-Way Calendar Sync',
@@ -275,6 +275,75 @@ $services = [
             'images/examples/personal-trainer-3.png',
         ],
     ],
+
+    'revamp' => [
+        'id' => 'revamp',
+        'number' => '05',
+        'name' => 'Website Revamp',
+        'badge' => 'Tier 1 & Tier 2 Overhaul',
+        'tagline' => 'Keep your domain, rebuild everything else. Turn your slow site into a high-converting booking machine.',
+        'hero_title' => 'Keep Your Domain. Rebuild Everything Else.',
+        'hero_desc' => 'Your existing website doesn\'t need to be discarded: your hard-earned SEO equity, content, and local domain authority remain intact. We rebuild your design, mobile speed, and conversion pathway around the assets you already own. Not just a cosmetic template swap: we overhaul page structure, direct-response copy, mobile UX, and Core Web Vitals to turn passive visitors into confirmed appointments.',
+        'stat_value' => 'From S$1,350',
+        'stat_metric' => 'Fixed One-Time Investment',
+        'stat_desc' => 'Tier 1 Revamp Only from S$1,350. Tier 2 Revamp + Features from S$2,925. No monthly subscription lock-in.',
+        'image' => 'images/case-studies/2.webp',
+        'alt' => 'Website Revamp Preview',
+        'outcomes' => [
+            [
+                'icon' => 'tabler--device-mobile',
+                'title' => 'Mobile-First, Sub-3s Load',
+                'desc' => 'Over 70% of local service bookings happen on smartphones. We engineer for mobile speed first to stop visitor drop-offs.'
+            ],
+            [
+                'icon' => 'tabler--chart-arrows',
+                'title' => 'Conversion-Focused Architecture',
+                'desc' => 'Every page section is structured around how clients make buying decisions, not personal aesthetic preferences.'
+            ],
+            [
+                'icon' => 'tabler--shield-check',
+                'title' => 'SEO & Domain Equity Preserved',
+                'desc' => 'Your domain, existing URLs, backlinks, meta tags, and ranking history remain 100% intact.'
+            ],
+        ],
+        'features' => [
+            [
+                'title' => 'Tier 1: Revamp Only (from S$1,350)',
+                'desc' => 'New responsive design, mobile-first optimization, speed overhaul, persuasive copy polish, and structured CTAs for up to 5 pages.'
+            ],
+            [
+                'title' => 'Tier 2: Revamp + Features (from S$2,925)',
+                'desc' => 'Everything in Tier 1 plus 1–2 automated modules: Online Booking, WhatsApp Reminders, PayNow/Stripe Deposits, or CRM.'
+            ],
+            [
+                'title' => 'High-Converting Copy Polish',
+                'desc' => 'Headlines, service descriptions, and booking CTAs rewritten to clearly communicate client value and eliminate friction.'
+            ],
+            [
+                'title' => 'Booking-Ready Foundation',
+                'desc' => 'Clean, modular codebase ready to integrate appointment booking and payment modules anytime without rebuilding.'
+            ],
+            [
+                'title' => 'Integrated Functional Modules',
+                'desc' => 'Real-time calendar slots, automated 24h & 2h WhatsApp reminders, upfront card/PayNow deposits, and multi-branch dashboards.'
+            ],
+            [
+                'title' => 'Transparent 4-Week Delivery',
+                'desc' => 'Audit (Days 1–3), Redesign & Build (Weeks 1–3), Staff Training & Go-Live (Week 4) backed by 2 weeks of active monitoring.'
+            ],
+        ],
+        'ideal_for' => [
+            'Websites older than 3 years that load slowly and rarely produce bookings',
+            'Established businesses still taking appointments through manual WhatsApp chats',
+            'Websites with static inquiry forms that lack automated reminders or deposits',
+            'Multi-branch businesses whose practitioner schedules are still trapped in spreadsheets',
+        ],
+        'examples' => [
+            'images/examples/barber-2.png',
+            'images/examples/clinic-1.png',
+            'images/examples/salon-2.png',
+        ],
+    ],
 ];
 
 // Determine active service
@@ -288,6 +357,8 @@ $aliases = [
     'book' => 'booking-system',
     'custom' => 'custom-system',
     'system' => 'custom-system',
+    'revamp' => 'revamp',
+    'website-revamp' => 'revamp',
 ];
 if (!array_key_exists($service_key, $services)) {
     $service_key = $aliases[$service_key] ?? 'booking-system';
@@ -369,10 +440,10 @@ $current_service = $services[$service_key];
                         <a href="contact" class="group py-3.5 px-7 inline-flex items-center justify-center gap-4 rounded-lg bg-primary text-white font-medium transition-all shadow-sm hover:shadow">
                             <span class="relative block overflow-hidden">
                                 <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                    Book a Free Demo
+                                    Get My Custom Quote
                                 </span>
                                 <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                    Book a Free Demo
+                                    Get My Custom Quote
                                 </span>
                             </span>
                             <i class="iconify tabler--arrow-up-right size-5"></i>
@@ -599,19 +670,19 @@ $current_service = $services[$service_key];
                 Ready to Upgrade Your Booking Workflow?
             </span>
             <h2 class="lg:text-5xl md:text-4xl text-3xl font-semibold mb-4 text-white">
-                Let's Build Your <?= htmlspecialchars($current_service['name']) ?>
+                Get My Custom Quote
             </h2>
             <p class="text-default-400 text-base md:text-lg mb-8 leading-relaxed">
-                Schedule a quick 15-minute demo to see how DOP's booking platforms streamline customer appointments and increase repeat revenue.
+                Free scoping call. Fixed price before any code is written.
             </p>
             <div class="flex flex-wrap items-center justify-center gap-4">
                 <a href="contact" class="group py-4 px-8 inline-flex items-center justify-center gap-4 rounded-xl bg-primary text-white font-semibold transition-all shadow-md hover:bg-primary/90">
                     <span class="relative block overflow-hidden">
                         <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                            Book a Demo Call
+                            Get My Custom Quote
                         </span>
                         <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                            Book a Demo Call
+                            Get My Custom Quote
                         </span>
                     </span>
                     <i class="iconify tabler--arrow-up-right size-5"></i>

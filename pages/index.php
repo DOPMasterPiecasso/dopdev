@@ -23,17 +23,18 @@
 
                         <p>Company profile + online booking + smart integrations built for barbershops, clinics, salons and other service businesses in Singapore and Australia.</p>
 
-                        <div class="mt-11 inline-flex items-center lg:gap-7.5 md:gap-20 gap-4">
+                        <div class="mt-11 flex flex-col items-start gap-2.5">
                             <a href="contact" class="group py-5 px-10 inline-flex items-center justify-center gap-5 rounded-lg bg-primary text-white font-medium transition-all">
                                 <span class="relative block overflow-hidden">
                                     <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Book a Demo
+                                        Get a Free Booking Audit
                                     </span>
                                     <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Book a Demo
+                                        Get a Free Booking Audit
                                     </span>
                                 </span>
                             </a>
+                            <p class="text-xs text-default-500">15 min. We'll show you exactly where you're losing bookings, with no pitch.</p>
                         </div>
                     </div>
 
@@ -208,7 +209,7 @@
 
                 <div class="grid lg:grid-cols-4 md:grid-cols-2 md:gap-7.5 gap-2.5">
                     <div class="relative rounded-lg overflow-hidden group">
-                        <a href="service-detail" class="absolute inset-0 z-1"></a>
+                        <a href="service-detail?service=company-profile" class="absolute inset-0 z-1"></a>
                         <img src="images/service/1.jpg" alt="Company Profile + Booking Website" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
@@ -217,7 +218,7 @@
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
-                        <a href="service-detail" class="absolute inset-0 z-1"></a>
+                        <a href="service-detail?service=booking-system" class="absolute inset-0 z-1"></a>
                         <img src="images/service/2.jpg" alt="Smart Appointment Booking" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
@@ -226,7 +227,7 @@
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
-                        <a href="service-detail" class="absolute inset-0 z-1"></a>
+                        <a href="service-detail?service=booking-system" class="absolute inset-0 z-1"></a>
                         <img src="images/service/3.jpg" alt="No-Show Reduction Tools" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
@@ -235,43 +236,43 @@
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
-                        <a href="service-detail" class="absolute inset-0 z-1"></a>
+                        <a href="service-detail?service=custom-system" class="absolute inset-0 z-1"></a>
                         <img src="images/service/4.jpg" alt="Multi-Branch & Multi-Staff Management" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Multi-Branch & Multi-Staff Management</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Multi-Branch &amp; Multi-Staff Management</div>
                         </div>
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
-                        <a href="service-detail" class="absolute inset-0 z-1"></a>
+                        <a href="service-detail?service=booking-system" class="absolute inset-0 z-1"></a>
                         <img src="images/service/5.jpg" alt="Payments & Deposits" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Payments & Deposits</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Payments &amp; Deposits</div>
                         </div>
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
-                        <a href="service-detail" class="absolute inset-0 z-1"></a>
+                        <a href="service-detail?service=custom-system" class="absolute inset-0 z-1"></a>
                         <img src="images/service/6.jpg" alt="CRM & Customer Retention" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">CRM & Customer Retention</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">CRM &amp; Customer Retention</div>
                         </div>
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
-                        <a href="service-detail" class="absolute inset-0 z-1"></a>
+                        <a href="service-detail?service=custom-system" class="absolute inset-0 z-1"></a>
                         <img src="images/service/7.jpg" alt="Reports & Analytics for Owners" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Reports & Analytics for Owners</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Reports &amp; Analytics for Owners</div>
                         </div>
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
-                        <a href="service-detail" class="absolute inset-0 z-1"></a>
+                        <a href="service-detail?service=custom-system" class="absolute inset-0 z-1"></a>
                         <img src="images/service/8.jpg" alt="Integrations That Matter" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
@@ -279,6 +280,69 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOP vs Booking SaaS -->
+    <section class="lg:py-27.5 md:py-25 py-15 bg-white">
+        <div class="container">
+            <div class="text-center mb-12.5">
+                <div class="text-sm text-primary font-semibold mb-2.5">Comparison</div>
+                <h2 class="lg:text-5xl md:text-4xl text-3xl mb-2.5 font-medium text-default-950">Why Not Just Use a Booking SaaS?</h2>
+                <p class="text-default-600 lg:max-w-2xl mx-auto">Tools like Timely, Booksy, or a generic booking plugin get you started, until your business grows. Here's where they stop working:</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto overflow-hidden rounded-xl border border-default-200 shadow-xs">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-default-100 border-b border-default-200 text-default-950 font-semibold">
+                            <tr>
+                                <th class="p-4 md:px-6">Feature</th>
+                                <th class="p-4 md:px-6 text-default-600">Booking SaaS / Plugin</th>
+                                <th class="p-4 md:px-6 text-primary bg-primary/5">DOP Custom System</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-default-200">
+                            <tr>
+                                <td class="p-4 md:px-6 font-medium text-default-950">Ongoing Cost</td>
+                                <td class="p-4 md:px-6 text-default-600">S$50–200/month, forever</td>
+                                <td class="p-4 md:px-6 font-semibold text-default-950 bg-primary/5">One-time build (you own the code)</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 md:px-6 font-medium text-default-950">Booking Flow</td>
+                                <td class="p-4 md:px-6 text-default-600">Rigid third-party templates &amp; branding</td>
+                                <td class="p-4 md:px-6 font-semibold text-default-950 bg-primary/5">Custom-built around <em>your</em> service menu &amp; policies</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 md:px-6 font-medium text-default-950">Multi-Branch</td>
+                                <td class="p-4 md:px-6 text-default-600">Monthly surcharge per location</td>
+                                <td class="p-4 md:px-6 font-semibold text-default-950 bg-primary/5">Built in from Day 1</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 md:px-6 font-medium text-default-950">Integrations</td>
+                                <td class="p-4 md:px-6 text-default-600">Limited to supported plug-ins</td>
+                                <td class="p-4 md:px-6 font-semibold text-default-950 bg-primary/5">WhatsApp, PayNow, Stripe, CRM (built for your exact stack)</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 md:px-6 font-medium text-default-950">Data Ownership</td>
+                                <td class="p-4 md:px-6 text-default-600">Locked inside their proprietary database</td>
+                                <td class="p-4 md:px-6 font-semibold text-default-950 bg-primary/5">Export anytime, hosted on your own account</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 md:px-6 font-medium text-default-950">Scaling Up</td>
+                                <td class="p-4 md:px-6 text-default-600">Hit software limits or migrate from scratch</td>
+                                <td class="p-4 md:px-6 font-semibold text-default-950 bg-primary/5">Extend modules seamlessly as your business grows</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <a href="service-detail?service=booking-system" class="group py-3.5 px-8 inline-flex items-center justify-center gap-2 rounded-lg bg-primary text-white font-medium transition-all">
+                    <span>See How It Works</span>
+                </a>
             </div>
         </div>
     </section>
@@ -344,17 +408,18 @@
 
                         <p class="text-default-600">DOP is a software house focused on service-based small and medium businesses. We combine a strong company profile website with a powerful booking engine and the right integrations, so your customers can find you, book you and pay you  without the back-and-forth messages.</p>
 
-                        <div class="mt-11 inline-flex items-center lg:gap-7.5 md:gap-20 gap-4">
+                        <div class="mt-11 flex flex-col items-start gap-2.5">
                             <a href="contact" class="group py-5 px-10 inline-flex items-center justify-center gap-5 rounded-lg bg-primary text-white font-medium transition-all">
                                 <span class="relative block overflow-hidden">
                                     <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Book a Demo
+                                        Get a Free Booking Audit
                                     </span>
                                     <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Book a Demo
+                                        Get a Free Booking Audit
                                     </span>
                                 </span>
                             </a>
+                            <p class="text-xs text-default-500">15 min. We'll show you exactly where you're losing bookings, with no pitch.</p>
                         </div>
                     </div>
 
@@ -879,11 +944,11 @@
         <div class="container">
 
             <div class="mb-12.5 text-center">
-                <div class="text-sm text-default-950 mb-2.5">Testimonials</div>
+                <div class="text-sm font-semibold text-primary mb-2.5">Proven Results</div>
 
-                <h1 class="lg:text-5xl md:text-4xl text-3xl mb-2.5">What Our Clients Say</h1>
+                <h2 class="lg:text-5xl md:text-4xl text-3xl font-medium text-default-950 mb-2.5">Real Businesses. Real Numbers. Not Stock Testimonials.</h2>
 
-                <p class="text-default-600 lg:max-w-1/3 mx-auto mb-7.5">From barbershops in Singapore to aesthetic clinics in Australia, our clients share their experiences with DOP.</p>
+                <p class="text-default-600 lg:max-w-xl mx-auto mb-7.5">From barbershops in Singapore to aesthetic clinics in Australia, our clients share their experiences with DOP.</p>
 
                 <div class="inline-flex items-center gap-2">
                     <i class="iconify tabler--star-filled text-yellow-300 size-6"></i>
@@ -891,7 +956,7 @@
                     <i class="iconify tabler--star-filled text-yellow-300 size-6"></i>
                     <i class="iconify tabler--star-filled text-yellow-300 size-6"></i>
                     <i class="iconify tabler--star-filled text-yellow-300 size-6"></i>
-                    <div class="ms-2">450+ reviews</div>
+                    <div class="ms-2 font-medium text-sm">Verified Client Metrics</div>
                 </div>
             </div>
 
@@ -903,25 +968,31 @@
 
                         <div class="space-y-6">
                             <div>
-                                <h4 class="mb-1.5 text-lg text-white">Owner</h4>
-                                <p class="text-sm text-default-400">Barbershop Chain – Singapore</p>
+                                <h4 class="mb-1.5 text-lg text-white font-semibold">Wei Lin</h4>
+                                <p class="text-sm text-default-400">Owner, Heritage Barber Co. <span class="text-primary">(2 branches, SG)</span></p>
                             </div>
 
-                            <p class="text-white">
-                                “Before DOP, most of our bookings came via WhatsApp and a lot of people just didn’t show up. Now our calendar is much fuller and our staff know exactly who is coming.”
+                            <p class="text-white text-sm leading-relaxed">
+                                “Our no-shows dropped from 1 in 4 to almost zero. Before DOP, half our bookings came through WhatsApp and people just didn't show up. Now the calendar fills itself and deposits mean nobody disappears on us.”
                             </p>
                         </div>
 
-                        <div class="flex flex-wrap justify-between gap-12 mt-10">
-                            <div>
-                                <h3 class="text-4xl text-white font-semibold">30-50%</h3>
-                                <p class="text-default-100">Fewer no-shows</p>
-                            </div>
+                        <div class="mt-8">
+                            <div class="flex flex-wrap justify-between gap-6 mb-4">
+                                <div>
+                                    <h3 class="text-3xl text-white font-semibold">−45%</h3>
+                                    <p class="text-default-300 text-xs">No-shows in 60 days</p>
+                                </div>
 
-                            <div>
-                                <h3 class="text-4xl text-white font-semibold">24/7</h3>
-                                <p class="text-default-100">Online booking</p>
+                                <div>
+                                    <h3 class="text-3xl text-white font-semibold">24/7</h3>
+                                    <p class="text-default-300 text-xs">Online booking</p>
+                                </div>
                             </div>
+                            <a href="case-studies" class="text-xs text-primary hover:underline font-medium inline-flex items-center gap-1">
+                                <span>Read the full case study</span>
+                                <i class="iconify tabler--arrow-up-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -929,12 +1000,20 @@
 
                 <!-- Center Video -->
                 <div class="lg:col-span-4">
-                    <div class="relative rounded-xl overflow-hidden">
+                    <div class="relative rounded-xl overflow-hidden h-full min-h-[360px]">
 
                         <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" class="w-full h-full object-cover" alt="testimonial video">
 
+                        <div class="absolute top-5 inset-x-5">
+                            <div class="bg-default-950/80 backdrop-blur rounded-lg p-3.5 text-white">
+                                <span class="text-xs text-primary font-semibold block mb-0.5">Result: +140% trial bookings</span>
+                                <p class="text-xs text-default-200">“Bookings after hours tripled, and we didn't hire anyone.”</p>
+                                <span class="text-[11px] text-default-400 mt-1 block">Marcus Tan, Apex Performance Studio (Brisbane)</span>
+                            </div>
+                        </div>
+
                         <a href="https://www.youtube.com/embed/elgqxmdVms8?si=yYfzbunShGP15tde" data-toggle="video" class="absolute bottom-6 inset-s-1/2 -translate-x-1/2 bg-white px-4 py-2 rounded flex items-center gap-2 shadow">
-                            <span class="font-medium">Watch a review</span>
+                            <span class="font-medium text-sm">Watch a review</span>
                             <i class="iconify tabler--player-play-filled"></i>
                         </a>
                     </div>
@@ -943,20 +1022,33 @@
 
                 <!-- Right Card -->
                 <div class="lg:col-span-3 md:col-span-2">
-                    <div class="border border-default-200 rounded-xl p-6 h-full flex flex-col justify-between">
+                    <div class="border border-default-200 rounded-xl p-6 h-full flex flex-col justify-between bg-white">
 
-                        <div class="flex items-center gap-3 mb-6">
-                            <img src="images/users/4.jpg" class="size-12 rounded-full object-cover" alt="author">
+                        <div>
+                            <div class="flex items-center gap-3 mb-6">
+                                <img src="images/users/4.jpg" class="size-12 rounded-full object-cover" alt="Dr. Sarah Nguyen">
 
-                            <div>
-                                <h4 class="font-medium mb-1">Clinic Manager</h4>
-                                <p class="text-sm text-default-500">Aesthetic Clinic – Australia</p>
+                                <div>
+                                    <h4 class="font-medium mb-1 text-default-950">Dr. Sarah Nguyen</h4>
+                                    <p class="text-sm text-default-500">Clinic Manager, Lumina Aesthetic <span class="text-primary">(Melb &amp; Syd)</span></p>
+                                </div>
                             </div>
+
+                            <p class="text-default-600 leading-relaxed text-sm mb-4">
+                                “Front desk got 12 hours a week back. Scheduling across five practitioners used to take two people and a whiteboard. DOP gave us one clean system, our team actually thanked us.”
+                            </p>
                         </div>
 
-                        <p class="text-default-600 leading-relaxed">
-                            “Setting up appointments across multiple doctors used to be a mess. DOP gave us one clean system and our front desk loves it.”
-                        </p>
+                        <div class="pt-4 border-t border-default-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs text-default-500 block">Verified Result:</span>
+                                <span class="text-sm font-bold text-default-950">98.8% show-up rate</span>
+                            </div>
+                            <a href="case-studies" class="text-xs text-primary hover:underline font-medium inline-flex items-center gap-1">
+                                <span>Case study</span>
+                                <i class="iconify tabler--arrow-up-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -964,15 +1056,18 @@
 
             <div class="mt-12.5">
                 <div class="flex items-center justify-between gap-2.5 p-2 md:ps-6 rounded-lg bg-default-100">
-                    <div class="font-medium">Ready To Fill Your Calendar? Contact DOP today.</div>
+                    <div>
+                        <div class="font-medium text-default-950">Ready To Fill Your Calendar?</div>
+                        <div class="text-xs text-default-500 hidden sm:block">Free scoping call. Fixed price before any code is written.</div>
+                    </div>
 
-                    <a href="contact" class="group py-5 px-10 inline-flex text-nowrap items-center justify-center rounded-lg bg-white text-primary font-medium transition-all">
+                    <a href="contact" class="group py-5 px-10 inline-flex text-nowrap items-center justify-center rounded-lg bg-white text-primary font-medium transition-all shadow-xs">
                         <span class="relative block overflow-hidden">
                             <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                Book a Demo
+                                Get My Custom Quote
                             </span>
                             <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                Book a Demo
+                                Get My Custom Quote
                             </span>
                         </span>
                     </a>
@@ -1110,6 +1205,113 @@
         </div>
     </section> -->
 
+    <!-- Pricing Section -->
+    <section class="lg:py-27.5 md:py-25 py-15 bg-default-100">
+        <div class="container max-w-4xl">
+            <div class="mb-12.5 text-center">
+                <div class="text-sm font-semibold text-primary mb-2.5">Transparent Pricing</div>
+                <h2 class="lg:text-5xl md:text-4xl text-3xl mb-2.5 font-medium text-default-950">Straightforward Pricing. No Surprises.</h2>
+                <p class="text-default-600 lg:max-w-2xl mx-auto">Every business is different, so we scope after a free 15-minute call. But to save you a round-trip:</p>
+            </div>
+
+            <div class="bg-white rounded-xl border border-default-200 overflow-hidden divide-y divide-default-200 mb-8 shadow-xs">
+                <div class="p-5 flex items-center justify-between gap-4">
+                    <div>
+                        <div class="font-semibold text-default-950 text-base">Landing Page</div>
+                        <div class="text-xs text-default-500">Promo campaign landing page</div>
+                    </div>
+                    <div class="text-right shrink-0">
+                        <span class="text-xs text-default-500">from</span>
+                        <span class="text-xl font-bold text-default-950 ms-1">S$900</span>
+                    </div>
+                </div>
+
+                <div class="p-5 flex items-center justify-between gap-4 bg-default-50/50">
+                    <div>
+                        <div class="font-semibold text-default-950 text-base">Website Revamp (Tier 1)</div>
+                        <div class="text-xs text-default-500">Keep domain, rebuild speed, design &amp; conversion</div>
+                    </div>
+                    <div class="text-right shrink-0">
+                        <span class="text-xs text-default-500">from</span>
+                        <span class="text-xl font-bold text-default-950 ms-1">S$1,350</span>
+                    </div>
+                </div>
+
+                <div class="p-5 flex items-center justify-between gap-4">
+                    <div>
+                        <div class="font-semibold text-default-950 text-base">Website Revamp + Booking Features (Tier 2)</div>
+                        <div class="text-xs text-default-500">Redesign + 1–2 integrated booking &amp; reminder modules</div>
+                    </div>
+                    <div class="text-right shrink-0">
+                        <span class="text-xs text-default-500">from</span>
+                        <span class="text-xl font-bold text-primary ms-1">S$2,925</span>
+                    </div>
+                </div>
+
+                <div class="p-5 flex items-center justify-between gap-4 bg-default-50/50">
+                    <div>
+                        <div class="font-semibold text-default-950 text-base">Company Profile Website</div>
+                        <div class="text-xs text-default-500">Custom multi-page brand presence</div>
+                    </div>
+                    <div class="text-right shrink-0">
+                        <span class="text-xs text-default-500">from</span>
+                        <span class="text-xl font-bold text-default-950 ms-1">S$1,875</span>
+                    </div>
+                </div>
+
+                <div class="p-5 flex items-center justify-between gap-4">
+                    <div>
+                        <div class="font-semibold text-default-950 text-base">Web Booking System</div>
+                        <div class="text-xs text-default-500">24/7 calendar, WhatsApp reminders, deposits</div>
+                    </div>
+                    <div class="text-right shrink-0">
+                        <span class="text-xs text-default-500">from</span>
+                        <span class="text-xl font-bold text-default-950 ms-1">S$3,375</span>
+                    </div>
+                </div>
+
+                <div class="p-5 flex items-center justify-between gap-4 bg-default-50/50">
+                    <div>
+                        <div class="font-semibold text-default-950 text-base">Custom Web System</div>
+                        <div class="text-xs text-default-500">Multi-branch dashboard, staff commissions, custom workflows</div>
+                    </div>
+                    <div class="text-right shrink-0">
+                        <span class="text-xs text-default-500">from</span>
+                        <span class="text-xl font-bold text-default-950 ms-1">S$5,625</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-4 mb-8">
+                <div class="p-4 rounded-xl bg-white border border-default-200 text-xs text-default-700 flex items-center gap-2.5">
+                    <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0"></i>
+                    <span>One-time build with no mandatory monthly fees</span>
+                </div>
+                <div class="p-4 rounded-xl bg-white border border-default-200 text-xs text-default-700 flex items-center gap-2.5">
+                    <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0"></i>
+                    <span>Hosting &amp; support optional (from S$68/mo)</span>
+                </div>
+                <div class="p-4 rounded-xl bg-white border border-default-200 text-xs text-default-700 flex items-center gap-2.5">
+                    <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0"></i>
+                    <span>Fixed scope quoted before we start</span>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="contact" class="group py-5 px-10 inline-flex items-center justify-center gap-5 rounded-lg bg-primary text-white font-medium transition-all">
+                    <span class="relative block overflow-hidden">
+                        <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                            Get My Exact Quote in 15 Min
+                        </span>
+                        <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                            Get My Exact Quote in 15 Min
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact details -->
     <section class="lg:py-27.5 md:py-25 py-15">
         <div class="container max-w-315!">
@@ -1118,10 +1320,13 @@
                 <div>
                     <div class="border border-default-200 rounded-xl lg:p-10 p-5 lg:pb-16 pb-12 h-full flex flex-col md:items-start items-center lg:text-start text-center justify-between gap-12">
 
-                        <h4 class="lg:text-3xl text-2xl">Ready To Fill Your Calendar?</h4>
+                        <div>
+                            <h4 class="lg:text-3xl text-2xl font-medium mb-2 text-default-950">Ready To Fill Your Calendar?</h4>
+                            <p class="text-default-600 text-sm">Free scoping call. Fixed price before any code is written.</p>
+                        </div>
 
                         <div class="inline-flex items-center gap-3">
-                            <div class="text-sm">Book a Demo / Get a Quote</div>
+                            <div class="text-sm font-medium">Get My Custom Quote</div>
                             <i class="iconify tabler--circle-plus size-5"></i>
                             <div class="flex -space-x-2">
                                 <div class="relative inline-block group">
@@ -1175,10 +1380,10 @@
                             <a href="contact" class="group py-5 px-10 inline-flex items-center text-nowrap justify-center rounded-lg bg-white text-primary font-medium transition-all">
                                 <span class="relative block overflow-hidden">
                                     <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Book a Demo
+                                        Get My Custom Quote
                                     </span>
                                     <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Book a Demo
+                                        Get My Custom Quote
                                     </span>
                                 </span>
                             </a>

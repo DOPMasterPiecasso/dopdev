@@ -1,5 +1,5 @@
 <?php
-/** Topbar admin — dipakai semua halaman di bawah /admin */
+/** Admin topbar: used across all /admin pages */
 ?>
 <div class="bg-default-950 text-white">
     <div class="container flex flex-wrap items-center justify-between gap-4 py-4">

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Halaman Blog — daftar postingan dari database (blog_posts).
+ * Blog page: list of posts from database (blog_posts).
  * Filter kategori via ?cat=, pagination via ?page=
  */
 
@@ -73,11 +73,11 @@ $category
 
             <?php if (count($posts) === 0): ?>
             <div class="py-20 text-center">
-                <p class="text-default-600 mb-5">Belum ada artikel<?php echo $activeCategory !==
+                <p class="text-default-600 mb-5">No articles found<?php echo $activeCategory !==
                 ''
-                	? ' untuk kategori ini'
+                	? ' in this category'
                 	: ''; ?>.</p>
-                <a href="/blog" class="inline-flex items-center justify-center py-4.5 px-10 bg-primary rounded-lg text-white text-base font-medium transition-all">Lihat semua artikel</a>
+                <a href="/blog" class="inline-flex items-center justify-center py-4.5 px-10 bg-primary rounded-lg text-white text-base font-medium transition-all">View all articles</a>
             </div>
             <?php else: ?>
             <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5">
