@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barbershop Booking System — Cut No-Shows, Fill Every Chair | DOP</title>
+<meta name="description" content="24/7 online booking, WhatsApp reminders and deposits for barbershops in Singapore & Australia. Real result: −45% no-shows in 60 days.">
+<meta property="og:title" content="Your Chairs Should Never Sit Empty">
+<meta property="og:description" content="Booking system built for barbershops — 24/7 booking, reminders, deposits. Free 15-min audit, no pitch.">
+<meta property="og:image" content="img/hero-barber.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --primary:#121512;
+    --body:#52525b;
+    --line:#e4e4e7;
+    --bg-soft:#f4f4f5;
+    --white:#fff;
+    --wa:#25d366;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',sans-serif;color:var(--primary);background:var(--white);line-height:1.625;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+  .muted{color:var(--body)}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:14px 28px;border-radius:8px;transition:.18s;cursor:pointer;border:none}
+  .btn-dark{background:var(--primary);color:#fff}
+  .btn-dark:hover{background:#000;transform:translateY(-1px)}
+  .btn-ghost{background:#fff;color:var(--primary);border:1.5px solid var(--line)}
+  .btn-ghost:hover{border-color:var(--primary)}
+  .btn-wa{background:var(--wa);color:#fff}
+  .btn-wa:hover{filter:brightness(.95);transform:translateY(-1px)}
+  .btn-lg{padding:18px 36px;font-size:16px}
+
+  /* ---------- nav ---------- */
+  nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .logo{font-weight:800;font-size:22px;letter-spacing:-.5px}
+  .logo span{font-weight:400;color:var(--body);font-size:13px;margin-left:10px;letter-spacing:0}
+  .nav-links{display:flex;gap:28px;align-items:center;font-size:14.5px;font-weight:500}
+  .nav-links a{color:var(--body)}
+  .nav-links a:hover{color:var(--primary)}
+  nav .btn-dark, header .btn-dark{color:#a1a1aa}
+  nav .btn-dark:hover, header .btn-dark:hover{color:#000;background:#fff}
+  @media(max-width:760px){.nav-links a:not(.btn){display:none}}
+
+  /* ---------- hero promo ---------- */
+  .hero{position:relative;min-height:620px;display:flex;align-items:center;overflow:hidden;background:var(--primary)}
+  .hero-bg{position:absolute;inset:0;background:url('img/hero-barber.jpg') center/cover no-repeat;filter:grayscale(100%) brightness(.7);opacity:.55}
+  .hero-grad{position:absolute;inset:0;background:linear-gradient(100deg,rgba(18,21,18,.96) 0%,rgba(18,21,18,.82) 42%,rgba(18,21,18,.35) 100%)}
+  .hero-in{position:relative;z-index:2;padding:96px 0;max-width:760px}
+  .promo-badge{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--primary);font-size:12.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:9px 18px;border-radius:100px;margin-bottom:26px}
+  .promo-badge::before{content:"";width:8px;height:8px;border-radius:50%;background:#16a34a;animation:pulse 1.6s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .greet{display:none;color:#d4d4d8;font-size:16px;font-weight:500;margin-bottom:10px}
+  .greet.on{display:block}
+  h1{color:#fff;font-size:clamp(40px,6vw,64px);line-height:1.04;font-weight:800;letter-spacing:-2px;margin-bottom:22px}
+  h1 em{font-style:normal;color:transparent;-webkit-text-stroke:2px #fff}
+  .hero-sub{color:#d4d4d8;font-size:18.5px;max-width:590px;margin-bottom:36px}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .hero-note{color:#a1a1aa;font-size:13.5px;margin-top:18px}
+  .hero-stats{display:flex;gap:44px;margin-top:56px;flex-wrap:wrap}
+  .hero-stats .n{color:#fff;font-size:34px;font-weight:800;letter-spacing:-1px}
+  .hero-stats .l{color:#a1a1aa;font-size:13px;text-transform:uppercase;letter-spacing:1px;font-weight:600}
+
+  /* ---------- marquee strip ---------- */
+  .strip{background:var(--primary);border-top:1px solid #2a2d2a;padding:16px 0;overflow:hidden}
+  .strip-in{display:flex;gap:48px;white-space:nowrap;color:#a1a1aa;font-size:13.5px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;animation:slide 28s linear infinite}
+  @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ---------- sections ---------- */
+  section{padding:88px 0}
+  .eyebrow{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--body);background:var(--bg-soft);padding:8px 16px;border-radius:6px;margin-bottom:18px}
+  h2{font-size:clamp(30px,4vw,44px);line-height:1.12;font-weight:800;letter-spacing:-1.5px;margin-bottom:16px}
+  .lead{font-size:17.5px;color:var(--body);max-width:640px}
+  .center{text-align:center}
+  .center .lead{margin:0 auto}
+
+  /* pain */
+  .pain-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+  .pain-list{list-style:none;margin-top:34px}
+  .pain-list li{display:flex;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+  .pain-list li:last-child{border-bottom:none}
+  .pain-x{flex:0 0 30px;height:30px;border-radius:50%;background:var(--bg-soft);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;color:var(--primary)}
+  .pain-list b{display:block;font-size:16.5px;font-weight:700;margin-bottom:2px}
+  .pain-list p{font-size:15px;color:var(--body)}
+  .pain-img{position:relative}
+  .pain-img img{border-radius:16px;filter:grayscale(100%) contrast(1.05);box-shadow:0 30px 60px rgba(0,0,0,.18)}
+  .pain-tag{position:absolute;left:-18px;bottom:34px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 22px;box-shadow:0 16px 40px rgba(0,0,0,.12)}
+  .pain-tag .n{font-size:28px;font-weight:800;letter-spacing:-1px}
+  .pain-tag .l{font-size:12px;color:var(--body);font-weight:600;text-transform:uppercase;letter-spacing:1px}
+  @media(max-width:860px){.pain-grid{grid-template-columns:1fr;gap:44px}.pain-tag{left:16px}}
+
+  /* modules */
+  .mods{background:var(--bg-soft)}
+  .mod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+  .mod{background:#fff;border:1px solid var(--line);border-radius:14px;padding:30px 26px;transition:.18s}
+  .mod:hover{transform:translateY(-4px);box-shadow:0 20px 44px rgba(0,0,0,.08)}
+  .mod .ic{width:46px;height:46px;border-radius:10px;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;margin-bottom:18px}
+  .mod h3{font-size:17.5px;font-weight:700;margin-bottom:8px;letter-spacing:-.3px}
+  .mod p{font-size:14.5px;color:var(--body)}
+  @media(max-width:900px){.mod-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:600px){.mod-grid{grid-template-columns:1fr}}
+
+  /* case study */
+  .case{background:var(--primary);color:#fff}
+  .case .eyebrow{background:#262926;color:#a1a1aa}
+  .case h2{color:#fff}
+  .case .lead{color:#a1a1aa}
+  .case-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:10px}
+  .quote{font-size:clamp(21px,2.6vw,27px);line-height:1.45;font-weight:600;letter-spacing:-.5px;margin:30px 0 26px}
+  .quote::before{content:"“";display:block;font-size:64px;line-height:.6;margin-bottom:14px;color:#52525b}
+  .who{display:flex;align-items:center;gap:14px}
+  .who .av{width:46px;height:46px;border-radius:50%;background:#3f3f46 url('img/pain-barber.jpg') center 20%/cover}
+  .who b{display:block;font-size:15px}
+  .who span{font-size:13.5px;color:#a1a1aa}
+  .case-stats{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:38px}
+  .case-stat{background:#1c1f1c;border:1px solid #2e312e;border-radius:14px;padding:24px}
+  .case-stat .n{font-size:40px;font-weight:800;letter-spacing:-1.5px}
+  .case-stat .l{font-size:13px;color:#a1a1aa;font-weight:600;text-transform:uppercase;letter-spacing:1px}
+  .case-shot{border-radius:16px;border:1px solid #2e312e;box-shadow:0 30px 70px rgba(0,0,0,.45)}
+  .case-link{display:inline-flex;align-items:center;gap:8px;margin-top:28px;color:#fff;font-weight:600;font-size:15.5px;border-bottom:1.5px solid #52525b;padding-bottom:3px;transition:.15s}
+  .case-link:hover{border-color:#fff}
+  @media(max-width:860px){.case-grid{grid-template-columns:1fr;gap:44px}}
+
+  /* steps */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px;counter-reset:step}
+  .step{border:1px solid var(--line);border-radius:14px;padding:32px 26px;position:relative}
+  .step::before{counter-increment:step;content:"0" counter(step);font-size:13px;font-weight:800;letter-spacing:2px;color:var(--body);display:block;margin-bottom:16px}
+  .step h3{font-size:18px;font-weight:700;margin-bottom:8px;letter-spacing:-.3px}
+  .step p{font-size:14.5px;color:var(--body)}
+  @media(max-width:800px){.steps{grid-template-columns:1fr}}
+
+  /* pricing */
+  .pricing{background:var(--bg-soft)}
+  .price-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:44px;display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center;margin-top:46px}
+  .price-list{list-style:none}
+  .price-list li{display:flex;justify-content:space-between;gap:18px;padding:15px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+  .price-list li:last-child{border-bottom:none}
+  .price-list li b{font-weight:700;white-space:nowrap}
+  .price-list .tag{display:inline-block;font-size:11px;font-weight:700;background:var(--bg-soft);border:1px solid var(--line);padding:3px 10px;border-radius:100px;margin-left:8px;letter-spacing:.5px;text-transform:uppercase;vertical-align:middle}
+  .price-cta{background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;padding:32px 28px;text-align:center}
+  .price-cta .from{font-size:13px;color:var(--body);text-transform:uppercase;letter-spacing:1.5px;font-weight:700}
+  .price-cta .amt{font-size:44px;font-weight:800;letter-spacing:-2px;margin:6px 0 4px}
+  .price-cta .per{font-size:13.5px;color:var(--body);margin-bottom:22px}
+  .price-cta .btn{width:100%;justify-content:center}
+  .price-cta .fine{font-size:12.5px;color:var(--body);margin-top:14px}
+  .price-notes{display:flex;gap:26px;flex-wrap:wrap;margin-top:26px;font-size:14px;color:var(--body)}
+  .price-notes span::before{content:"✓";font-weight:800;color:var(--primary);margin-right:8px}
+  @media(max-width:860px){.price-card{grid-template-columns:1fr;padding:32px 26px}}
+
+  /* faq */
+  .faq{max-width:780px;margin:46px auto 0}
+  details{border-bottom:1px solid var(--line)}
+  summary{cursor:pointer;list-style:none;padding:22px 0;font-weight:700;font-size:16.5px;display:flex;justify-content:space-between;gap:16px;align-items:center}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:24px;font-weight:400;color:var(--body);transition:.2s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{padding:0 0 22px;font-size:15.5px;color:var(--body)}
+
+  /* final cta */
+  .final{background:var(--primary);color:#fff;text-align:center}
+  .final h2{color:#fff}
+  .final .lead{color:#a1a1aa;margin:0 auto 34px}
+  .final .btn-ghost{background:transparent;color:#fff;border-color:#3f3f46}
+  .final .btn-ghost:hover{border-color:#fff}
+  .final-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+  footer{border-top:1px solid var(--line);padding:36px 0;font-size:14px;color:var(--body)}
+  .foot-in{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+  .foot-in a:hover{color:var(--primary)}
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav>
+  <div class="wrap nav-in">
+    <div class="logo">DOP<span>Booking Systems</span></div>
+    <div class="nav-links">
+      <a href="#problem">The Problem</a>
+      <a href="#modules">What You Get</a>
+      <a href="#results">Results</a>
+      <a href="#pricing">Pricing</a>
+      <a class="btn btn-dark" href="https://dopdev.com/contact">Get a Free Booking Audit</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO PROMO ================= -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grad"></div>
+  <div class="wrap hero-in">
+    <div class="promo-badge">For barbershops — Singapore &amp; Australia</div>
+    <div class="greet" id="greet">Hey <span id="greetName"></span> — this is for your shop.</div>
+    <h1>Your chairs should never sit <em>empty.</em></h1>
+    <p class="hero-sub">A booking system built for barbershops: clients book 24/7, get automatic WhatsApp reminders, and pay a deposit so they actually show up. You own it — no monthly platform rent.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-dark btn-lg" href="https://dopdev.com/contact">Get a Free Booking Audit →</a>
+      <a class="btn btn-ghost btn-lg" href="https://dopdev.com/case-studies">See Real Results</a>
+    </div>
+    <p class="hero-note">15 minutes. We show you exactly where you're losing bookings — no pitch.</p>
+    <div class="hero-stats">
+      <div><div class="n">−45%</div><div class="l">No-shows in 60 days</div></div>
+      <div><div class="n">24/7</div><div class="l">Online booking engine</div></div>
+      <div><div class="n">260+</div><div class="l">Projects shipped</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="strip-in">
+    <span>Online booking</span><span>•</span><span>WhatsApp reminders</span><span>•</span><span>Deposits via PayNow</span><span>•</span><span>Multi-branch calendar</span><span>•</span><span>CRM &amp; rebooking</span><span>•</span>
+    <span>Online booking</span><span>•</span><span>WhatsApp reminders</span><span>•</span><span>Deposits via PayNow</span><span>•</span><span>Multi-branch calendar</span><span>•</span><span>CRM &amp; rebooking</span><span>•</span>
+  </div>
+</div>
+
+<!-- ================= PROBLEM ================= -->
+<section id="problem">
+  <div class="wrap pain-grid">
+    <div>
+      <span class="eyebrow">The real problem</span>
+      <h2>You're not losing clients because of your cuts.</h2>
+      <p class="lead">You're losing them in the gaps — the DM nobody answered, the booking form from 2019, the "sorry fully booked" when you were actually free.</p>
+      <ul class="pain-list">
+        <li>
+          <span class="pain-x">✕</span>
+          <div><b>Bookings buried in WhatsApp</b><p>Messages scroll away. Double bookings happen. New enquiries get no reply during a fade.</p></div>
+        </li>
+        <li>
+          <span class="pain-x">✕</span>
+          <div><b>No-shows draining the day</b><p>Every empty chair already cost you wages, rent, and the slot someone else wanted.</p></div>
+        </li>
+        <li>
+          <span class="pain-x">✕</span>
+          <div><b>Closed for business at 9pm</b><p>Most people decide to book after hours. If they can't book in one tap, they book a competitor.</p></div>
+        </li>
+        <li>
+          <span class="pain-x">✕</span>
+          <div><b>A schedule only you understand</b><p>Spreadsheet, paper book, sticky notes — one day off and the whole week falls apart.</p></div>
+        </li>
+      </ul>
+    </div>
+    <div class="pain-img">
+      <img src="img/pain-barber.jpg" alt="Barbershop owner overwhelmed by manual bookings" loading="lazy">
+      <div class="pain-tag">
+        <div class="n">1 in 4</div>
+        <div class="l">Bookings lost to no-shows*</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MODULES ================= -->
+<section class="mods" id="modules">
+  <div class="wrap">
+    <span class="eyebrow">What you get</span>
+    <h2>One system. Every chair accounted for.</h2>
+    <p class="lead">Built around your service menu, your barbers, and your policies — not a template that forces you to change how you work.</p>
+    <div class="mod-grid">
+      <div class="mod"><div class="ic">24</div><h3>24/7 Online Booking</h3><p>Live availability, pick a barber, pick a time. Clients book at 11pm — confirmed instantly, zero staff effort.</p></div>
+      <div class="mod"><div class="ic">WA</div><h3>WhatsApp Reminders</h3><p>Automatic confirmations plus reminders 24 hours and 2 hours before. Your phone stops being the receptionist.</p></div>
+      <div class="mod"><div class="ic">$</div><h3>Deposits That Commit</h3><p>PayNow or card deposit locks the slot. Clients who pay upfront show up — no-shows drop 30–50%.</p></div>
+      <div class="mod"><div class="ic">▦</div><h3>Multi-Branch Calendar</h3><p>Every chair, barber, and location in one dashboard. Rosters and rooms managed from a single screen.</p></div>
+      <div class="mod"><div class="ic">↻</div><h3>Rebooking &amp; CRM</h3><p>Track visit frequency and auto-win back lapsed clients. Chair refills itself instead of waiting for walk-ins.</p></div>
+      <div class="mod"><div class="ic">↗</div><h3>Reports for Owners</h3><p>Revenue per barber, peak hours, rebooking rate — know your real numbers without opening a spreadsheet.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CASE STUDY / PROOF ================= -->
+<section class="case" id="results">
+  <div class="wrap">
+    <span class="eyebrow">Case study — Heritage Barber Co., Singapore</span>
+    <div class="case-grid">
+      <div>
+        <h2>Real numbers from a real shop.</h2>
+        <p class="quote">Before DOP, half our bookings came through WhatsApp and people just didn't show up. Now the calendar fills itself and deposits mean nobody disappears on us.</p>
+        <div class="who">
+          <div class="av"></div>
+          <div><b>Wei Lin</b><span>Owner, Heritage Barber Co. — 2 branches, Singapore</span></div>
+        </div>
+        <div class="case-stats">
+          <div class="case-stat"><div class="n">−45%</div><div class="l">No-shows in 60 days</div></div>
+          <div class="case-stat"><div class="n">1→0</div><div class="l">From 1-in-4 no-shows to near zero</div></div>
+        </div>
+        <a class="case-link" href="https://dopdev.com/case-studies">Read the full case studies →</a>
+      </div>
+      <div>
+        <img class="case-shot" src="img/shot-booking.jpg" alt="Barbershop online booking interface" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">How it works</span>
+    <h2>Live in four weeks.</h2>
+    <p class="lead">Fixed scope, fixed price approved before any code is written. No open-ended agency retainer.</p>
+    <div class="steps">
+      <div class="step"><h3>Audit — days 1–3</h3><p>We review your current booking flow (WhatsApp, phone, paper) and show exactly where bookings leak.</p></div>
+      <div class="step"><h3>Build — weeks 1–3</h3><p>Design and build around your service menu and policies. Content and domain stay yours.</p></div>
+      <div class="step"><h3>Go-live — week 4</h3><p>Your front desk gets trained, system goes live, and we monitor the first two weeks with you.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <span class="eyebrow">Transparent pricing</span>
+    <h2>No surprises. You approve the number first.</h2>
+    <p class="lead">One-time build — no mandatory monthly platform fee. Most barbershops start with one of these two paths:</p>
+    <div class="price-card">
+      <ul class="price-list">
+        <li><span>Website Revamp <small class="tag">Keep domain</small><br><small class="muted">New design, mobile-first, faster, booking-ready foundation</small></span><b>from S$1,350</b></li>
+        <li><span>Revamp + Booking Features <small class="tag">Most popular</small><br><small class="muted">Redesign + 1–2 modules: booking, reminders, deposits</small></span><b>from S$2,925</b></li>
+        <li><span>Full Web Booking System<br><small class="muted">24/7 calendar, WhatsApp reminders, deposits, CRM</small></span><b>from S$3,375</b></li>
+        <li><span>Hosting &amp; support <small class="tag">Optional</small></span><b>from S$68/mo</b></li>
+      </ul>
+      <div class="price-cta">
+        <div class="from">Free scoping call</div>
+        <div class="amt">15 min</div>
+        <div class="per">Exact quote for your shop — before any code is written</div>
+        <a class="btn btn-dark" href="https://dopdev.com/contact">Get My Exact Quote →</a>
+        <div class="fine">No slides, no obligation. Bring your current booking setup.</div>
+      </div>
+    </div>
+    <div class="price-notes">
+      <span>One-time build, you own the system</span>
+      <span>Fixed scope quoted upfront</span>
+      <span>Data exportable anytime</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section>
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions we get from owners</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>We already take bookings on Instagram DMs — why change?</summary>
+        <p>DMs work until you're mid-haircut. Messages get buried, hours pass, and that client already booked someone else. A booking system answers instantly, every time — including the 40% of enquiries that arrive after closing.</p>
+      </details>
+      <details>
+        <summary>Will my barbers actually use it?</summary>
+        <p>Yes — it's built around how your shop already works: service menu, barber rotation, branch layout. Front-desk training is included at go-live, and the dashboard needs no manual or spreadsheets.</p>
+      </details>
+      <details>
+        <summary>Do I have to switch everything at once?</summary>
+        <p>No. Many shops start with a revamp plus one or two modules — booking and WhatsApp reminders first, deposits and CRM later. The system is built to extend without rebuilding.</p>
+      </details>
+      <details>
+        <summary>What about Booksy or Timely?</summary>
+        <p>They're fine to start — until you grow: monthly rent forever, per-location surcharges, and your client data locked in their cloud. A DOP system is a one-time build you own, shaped around your rules. <a href="https://dopdev.com/case-studies" style="text-decoration:underline">See the comparison with real projects →</a></p>
+      </details>
+      <details>
+        <summary>How fast until it's live?</summary>
+        <p>Four weeks from kick-off for typical barbershop scopes: 3-day audit, 3 weeks build, go-live with training in week 4. The exact timeline is confirmed before we start.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="final">
+  <div class="wrap">
+    <h2>Ready to fill every chair?</h2>
+    <p class="lead">Send us your current booking flow — WhatsApp, phone, or paper — and within 24 hours we'll reply with what we'd automate first. Free, whether or not you hire us.</p>
+    <div class="final-ctas">
+      <a class="btn btn-dark btn-lg" style="background:#fff;color:#121512" href="https://dopdev.com/contact">Get a Free Booking Audit →</a>
+      <a class="btn btn-ghost btn-lg" href="https://dopdev.com/case-studies">Browse Case Studies</a>
+      <a class="btn btn-wa btn-lg" href="https://wa.me/6281234567890?text=Hi%20DOP%2C%20I%20run%20a%20barbershop%20and%20want%20to%20fix%20my%20bookings" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <div>© DOP — Booking systems for service businesses. Singapore • Australia</div>
+    <div style="display:flex;gap:22px">
+      <a href="https://dopdev.com">dopdev.com</a>
+      <a href="https://dopdev.com/case-studies">Case Studies</a>
+      <a href="mailto:hello@dopdev.com">hello@dopdev.com</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Personalisasi untuk email 1-to-1: tambahkan ?name=Nama di link,
+   contoh: page.html?name=Wei  →  muncul "Hey Wei — this is for your shop." */
+(function(){
+  var n = new URLSearchParams(location.search).get('name');
+  if(n && n.trim()){
+    document.getElementById('greetName').textContent = n.trim().split(' ')[0];
+    document.getElementById('greet').classList.add('on');
+    document.title = document.title.replace('Barbershop Booking System', n.trim() + ', this is for your shop');
+  }
+})();
+</script>
+</body>
+</html>

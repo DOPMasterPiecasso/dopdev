@@ -53,6 +53,14 @@ if (PHP_SAPI === 'cli-server') {
 	$uri = urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 	$file = __DIR__ . '/public' . $uri;
 
+	// Cek file statis / demo dari root direktori (misal /demo/barber/...)
+	$rootDirFile = __DIR__ . $uri;
+	if ($uri !== '/' && is_file($rootDirFile) && strtolower(pathinfo($rootDirFile, PATHINFO_EXTENSION)) !== 'php') {
+		header('Content-Type: ' . static_content_type($rootDirFile));
+		readfile($rootDirFile);
+		exit();
+	}
+
 	// Sajikan file statis dari public/ — kecuali file PHP (jangan bocorkan source)
 	if (
 		$uri !== '/' &&

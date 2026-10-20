@@ -107,6 +107,48 @@ if (false !== ($pos = strpos($uri, '?'))) {
 }
 $uri = rawurldecode($uri);
 
+// Auto-route demo folder (e.g. /barber or /barber/ -> demo/barber/index.html, or /barber/style.css -> demo/barber/style.css)
+$trimmedUri = trim($uri, '/');
+if ($trimmedUri !== '') {
+	$pathSegments = explode('/', $trimmedUri);
+	$demoSlug = $pathSegments[0];
+	$subPath = implode('/', array_slice($pathSegments, 1));
+	$demoDir = ROOT . '/demo/' . $demoSlug;
+
+	if (is_dir($demoDir)) {
+		$targetPath = $subPath === '' ? $demoDir . '/index.html' : $demoDir . '/' . $subPath;
+		if (is_dir($targetPath) && file_exists($targetPath . '/index.html')) {
+			$targetPath .= '/index.html';
+		}
+
+		if (is_file($targetPath)) {
+			if (function_exists('static_content_type')) {
+				header('Content-Type: ' . static_content_type($targetPath));
+			} else {
+				$ext = strtolower(pathinfo($targetPath, PATHINFO_EXTENSION));
+				$mimeTypes = [
+					'html' => 'text/html; charset=utf-8',
+					'css'  => 'text/css; charset=utf-8',
+					'js'   => 'application/javascript; charset=utf-8',
+					'png'  => 'image/png',
+					'jpg'  => 'image/jpeg',
+					'jpeg' => 'image/jpeg',
+					'gif'  => 'image/gif',
+					'svg'  => 'image/svg+xml',
+					'webp' => 'image/webp',
+					'json' => 'application/json; charset=utf-8',
+					'woff' => 'font/woff',
+					'woff2'=> 'font/woff2',
+					'ttf'  => 'font/ttf',
+				];
+				header('Content-Type: ' . ($mimeTypes[$ext] ?? 'application/octet-stream'));
+			}
+			readfile($targetPath);
+			exit();
+		}
+	}
+}
+
 $routeInfo = $dispatcher->dispatch($httpMethod, $uri);
 switch ($routeInfo[0]) {
 	case FastRoute\Dispatcher::NOT_FOUND:
