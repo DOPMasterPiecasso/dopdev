@@ -20,6 +20,9 @@
     RewriteRule ^bootstrap\.php$ - [F,L]
 
     # Redirect Trailing Slashes If Not A Folder...
+    # Jangan strip slash untuk /demo/... atau folder demo — route demo butuh slash.
+    RewriteCond %{REQUEST_URI} !^/demo/
+    RewriteCond %{DOCUMENT_ROOT}/../demo%{REQUEST_URI} !-d
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]

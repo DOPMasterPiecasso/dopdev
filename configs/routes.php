@@ -108,7 +108,11 @@ if (false !== ($pos = strpos($uri, '?'))) {
 $uri = rawurldecode($uri);
 
 // Auto-route demo folder (e.g. /barber or /barber/ -> demo/barber/index.html, or /barber/style.css -> demo/barber/style.css)
+// Dukung juga akses langsung /demo/barber/... (mis. saat docroot mengarah ke public/)
 $trimmedUri = trim($uri, '/');
+if ($trimmedUri === 'demo' || str_starts_with($trimmedUri, 'demo/')) {
+	$trimmedUri = trim(substr($trimmedUri, 4), '/');
+}
 if ($trimmedUri !== '') {
 	$pathSegments = explode('/', $trimmedUri);
 	$demoSlug = $pathSegments[0];

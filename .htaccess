@@ -23,7 +23,9 @@
     RewriteRule \.(zip|tar|gz|sql|log|bak|lock|sqlite|sqlite-wal|sqlite-shm)$ - [F,L]
     RewriteRule ^(composer\.(json|lock)|package(-lock)?\.json|bun\.lock|vite\.config\.js|README\.md)$ - [F,L]
 
-    # Redirect Trailing Slashes If Not A Folder...
+    # Folder demo (mis. /barbershop/) — jangan strip trailing slash agar relative
+    # path (img/...) resolve; biarkan front controller yang menyajikan index.html.
+    RewriteCond %{DOCUMENT_ROOT}/demo%{REQUEST_URI} !-d
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]
