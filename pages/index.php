@@ -93,7 +93,7 @@
 
     <!-- About company -->
     <section class="lg:py-27.5 md:py-25 py-15 bg-default-100">
-        <div class="container lg:max-w-[70%]! mb-12.5">
+        <!-- <div class="container lg:max-w-[70%]! mb-12.5">
             <p class="mb-2 md:text-2xl text-xl text-center text-default-950 font-bold">Powering Local Service Businesses</p>
             <p class="mb-12.5 text-center text-default-600">From busy barbershops in Singapore to multi-branch clinics in Australia, DOP helps service businesses run smoother and sell more.</p>
 
@@ -180,11 +180,11 @@
 
                 <div class="w-25 z-10 absolute inset-0 start-auto bg-linear-to-l from-default-100 from-18% to-transparent lg:flex hidden"></div>
             </div>
-        </div>
+        </div> -->
 
         <div class="container">
             <div class="text-center">
-                <div class="lg:mb-25 mb-15">
+                <!-- <div class="lg:mb-25 mb-15">
                     <div class="inline-flex flex-wrap md:gap-2.5 gap-1 justify-center md:py-1.25 md:px-4 p-2 bg-white text-default-950 md:rounded-full rounded md:text-sm text-xs shadow">
                         <span>Singapore</span>
 
@@ -196,7 +196,7 @@
 
                         <span>Australia</span>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="lg:mb-12.5 mb-15">
                     <div class="mb-2 text-sm text-default-950">What You Get With DopDev</div>
