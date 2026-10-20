@@ -10,4 +10,4 @@
 <meta name="robots" content="index, follow">
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="logo/logodopputih.webp" type="image/x-iconz">
+<link rel="shortcut icon" href="logo/logo.webp" type="image/x-iconz">
