@@ -116,6 +116,12 @@ if ($trimmedUri !== '') {
 	$demoDir = ROOT . '/demo/' . $demoSlug;
 
 	if (is_dir($demoDir)) {
+		// Pastikan trailing slash untuk folder root demo agar relative path (seperti img/...) resolve dengan benar
+		if ($subPath === '' && !str_ends_with($uri, '/')) {
+			header('Location: ' . $uri . '/' . (isset($_SERVER['QUERY_STRING']) && $_SERVER['QUERY_STRING'] !== '' ? '?' . $_SERVER['QUERY_STRING'] : ''), true, 301);
+			exit();
+		}
+
 		$targetPath = $subPath === '' ? $demoDir . '/index.html' : $demoDir . '/' . $subPath;
 		if (is_dir($targetPath) && file_exists($targetPath . '/index.html')) {
 			$targetPath .= '/index.html';
