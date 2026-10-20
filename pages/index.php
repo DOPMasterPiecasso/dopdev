@@ -1072,10 +1072,10 @@
                             </div>
                         </div>
 
-                        <a href="https://www.youtube.com/embed/elgqxmdVms8?si=yYfzbunShGP15tde" data-toggle="video" class="absolute bottom-6 inset-s-1/2 -translate-x-1/2 bg-white px-4 py-2 rounded flex items-center gap-2 shadow">
+                        <!-- <a href="https://www.youtube.com/embed/elgqxmdVms8?si=yYfzbunShGP15tde" data-toggle="video" class="absolute bottom-6 inset-s-1/2 -translate-x-1/2 bg-white px-4 py-2 rounded flex items-center gap-2 shadow">
                             <span class="font-medium text-sm">Watch a review</span>
                             <i class="iconify tabler--player-play-filled"></i>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
 
