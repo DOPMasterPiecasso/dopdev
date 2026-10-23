@@ -60,9 +60,9 @@
                     <!-- Initial 3 Cards -->
                     <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5">
                         <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                            <a href="case-study?case=barbershop" class="absolute inset-0 z-10"></a>
+                            <a href="case-study?case=barbershop&cat=lp" class="absolute inset-0 z-10"></a>
                             <div class="overflow-hidden h-64">
-                                <img src="images/case-studies/1.webp" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="The Heritage Barber Co.">
+                                <img src="images/examples/barber-1.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="The Heritage Barber Co.">
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center gap-2 mb-3">
@@ -81,7 +81,7 @@
                         </div>
 
                         <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                            <a href="case-study?case=clinic" class="absolute inset-0 z-10"></a>
+                            <a href="case-study?case=clinic&cat=lp" class="absolute inset-0 z-10"></a>
                             <div class="overflow-hidden h-64">
                                 <img src="images/examples/clinic-1.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Lumina Aesthetic">
                             </div>
@@ -102,7 +102,7 @@
                         </div>
 
                         <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                            <a href="case-study?case=salon" class="absolute inset-0 z-10"></a>
+                            <a href="case-study?case=salon&cat=lp" class="absolute inset-0 z-10"></a>
                             <div class="overflow-hidden h-64">
                                 <img src="images/examples/salon-1.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Maison Privée">
                             </div>
@@ -127,7 +127,7 @@
                     <div id="collapse-lp" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300">
                         <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5 pt-7.5">
                             <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                                <a href="case-study?case=clinic" class="absolute inset-0 z-10"></a>
+                                <a href="case-study?case=clinic&cat=lp" class="absolute inset-0 z-10"></a>
                                 <div class="overflow-hidden h-64">
                                     <img src="images/examples/clinic-2.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Dental Care LP">
                                 </div>
@@ -148,7 +148,7 @@
                             </div>
 
                             <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                                <a href="case-study?case=salon" class="absolute inset-0 z-10"></a>
+                                <a href="case-study?case=salon&cat=lp" class="absolute inset-0 z-10"></a>
                                 <div class="overflow-hidden h-64">
                                     <img src="images/examples/salon-2.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Seasonal Spa LP">
                                 </div>
@@ -169,7 +169,7 @@
                             </div>
 
                             <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                                <a href="case-study?case=fitness" class="absolute inset-0 z-10"></a>
+                                <a href="case-study?case=fitness&cat=lp" class="absolute inset-0 z-10"></a>
                                 <div class="overflow-hidden h-64">
                                     <img src="images/examples/fitness-1.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Physiotherapy & Fitness LP">
                                 </div>
@@ -221,9 +221,9 @@
                     <!-- Initial 3 Cards -->
                     <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5">
                         <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                            <a href="case-study?case=clinic" class="absolute inset-0 z-10"></a>
+                            <a href="case-study?case=clinic&cat=company" class="absolute inset-0 z-10"></a>
                             <div class="overflow-hidden h-64">
-                                <img src="images/case-studies/2.webp" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Lumina Aesthetic">
+                                <img src="images/examples/clinic-2.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Lumina Aesthetic">
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center gap-2 mb-3">
@@ -242,7 +242,7 @@
                         </div>
 
                         <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                            <a href="case-study?case=barbershop" class="absolute inset-0 z-10"></a>
+                            <a href="case-study?case=barbershop&cat=company" class="absolute inset-0 z-10"></a>
                             <div class="overflow-hidden h-64">
                                 <img src="images/examples/barber-2.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="The Heritage Barber Co.">
                             </div>
@@ -263,7 +263,7 @@
                         </div>
 
                         <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                            <a href="case-study?case=salon" class="absolute inset-0 z-10"></a>
+                            <a href="case-study?case=salon&cat=company" class="absolute inset-0 z-10"></a>
                             <div class="overflow-hidden h-64">
                                 <img src="images/examples/salon-2.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Maison Privée">
                             </div>
@@ -287,47 +287,62 @@
                     <!-- Collapsible Additional Projects -->
                     <div id="collapse-company" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300">
                         <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5 pt-7.5">
-                            <div class="relative rounded-lg overflow-hidden group">
-                                <a href="case-study" class="absolute inset-0 z-10"></a>
-                                <img src="images/examples/salon-3.png" class="rounded-lg object-cover w-full h-80 group-hover:scale-105 transition-all duration-300" alt="Website Company Case Study">
-                                <div class="absolute bottom-0 m-5">
-                                    <div class="p-4 inline-flex rounded bg-white shadow-sm">
-                                        <div class="space-y-2.5">
-                                            <div class="py-1.5 px-2.5 text-sm/none font-medium inline-flex bg-default-100 border border-default-200 rounded">
-                                                Website Company
-                                            </div>
-                                            <h3 class="text-xl font-medium">Premium salon group corporate identity website</h3>
-                                        </div>
+                            <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+                                <a href="case-study?case=salon&cat=company" class="absolute inset-0 z-10"></a>
+                                <div class="overflow-hidden h-64">
+                                    <img src="images/examples/salon-3.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Website Company Case Study">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <span class="text-xs font-semibold text-primary">Maison Privée Studio</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Premium salon group corporate identity website</h3>
+                                    <p class="text-xs text-default-500 mb-4">Orchard Road, SG • Multi-location brand portal, stylist team portfolios, and press highlights.</p>
+                                    <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
+                                        <span class="font-bold text-primary">100% Bespoke</span>
+                                        <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
+                                            View Case <i class="iconify tabler--arrow-right size-3.5"></i>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="relative rounded-lg overflow-hidden group">
-                                <a href="case-study" class="absolute inset-0 z-10"></a>
-                                <img src="images/examples/clinic-3.png" class="rounded-lg object-cover w-full h-80 group-hover:scale-105 transition-all duration-300" alt="Website Company Case Study">
-                                <div class="absolute bottom-0 m-5">
-                                    <div class="p-4 inline-flex rounded bg-white shadow-sm">
-                                        <div class="space-y-2.5">
-                                            <div class="py-1.5 px-2.5 text-sm/none font-medium inline-flex bg-default-100 border border-default-200 rounded">
-                                                Website Company
-                                            </div>
-                                            <h3 class="text-xl font-medium">Multi-specialist wellness clinic official portal</h3>
-                                        </div>
+                            <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+                                <a href="case-study?case=clinic&cat=company" class="absolute inset-0 z-10"></a>
+                                <div class="overflow-hidden h-64">
+                                    <img src="images/examples/clinic-3.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Website Company Case Study">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <span class="text-xs font-semibold text-primary">Lumina Aesthetic</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Multi-specialist wellness clinic official portal</h3>
+                                    <p class="text-xs text-default-500 mb-4">Melbourne & Sydney • Doctor qualifications, treatment catalog, and clinical accreditation.</p>
+                                    <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
+                                        <span class="font-bold text-primary">High Credibility</span>
+                                        <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
+                                            View Case <i class="iconify tabler--arrow-right size-3.5"></i>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="relative rounded-lg overflow-hidden group">
-                                <a href="case-study" class="absolute inset-0 z-10"></a>
-                                <img src="images/examples/personal-trainer-1.png" class="rounded-lg object-cover w-full h-80 group-hover:scale-105 transition-all duration-300" alt="Website Company Case Study">
-                                <div class="absolute bottom-0 m-5">
-                                    <div class="p-4 inline-flex rounded bg-white shadow-sm">
-                                        <div class="space-y-2.5">
-                                            <div class="py-1.5 px-2.5 text-sm/none font-medium inline-flex bg-default-100 border border-default-200 rounded">
-                                                Website Company
-                                            </div>
-                                            <h3 class="text-xl font-medium">Health & beauty enterprise corporate showcase</h3>
-                                        </div>
+                            <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+                                <a href="case-study?case=fitness&cat=company" class="absolute inset-0 z-10"></a>
+                                <div class="overflow-hidden h-64">
+                                    <img src="images/examples/personal-trainer-1.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Website Company Case Study">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <span class="text-xs font-semibold text-primary">Apex Performance</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Health & beauty enterprise corporate showcase</h3>
+                                    <p class="text-xs text-default-500 mb-4">Brisbane, AU • Facility virtual tours, personal trainer roster, and membership programs.</p>
+                                    <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
+                                        <span class="font-bold text-primary">Custom Architecture</span>
+                                        <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
+                                            View Case <i class="iconify tabler--arrow-right size-3.5"></i>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -364,9 +379,9 @@
                     <!-- Initial 3 Cards -->
                     <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5">
                         <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                            <a href="case-study?case=barbershop" class="absolute inset-0 z-10"></a>
+                            <a href="case-study?case=barbershop&cat=booking" class="absolute inset-0 z-10"></a>
                             <div class="overflow-hidden h-64">
-                                <img src="images/case-studies/3.webp" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="The Heritage Barber Co.">
+                                <img src="images/examples/barber-2.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="The Heritage Barber Co.">
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center gap-2 mb-3">
@@ -385,7 +400,7 @@
                         </div>
 
                         <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                            <a href="case-study?case=clinic" class="absolute inset-0 z-10"></a>
+                            <a href="case-study?case=clinic&cat=booking" class="absolute inset-0 z-10"></a>
                             <div class="overflow-hidden h-64">
                                 <img src="images/examples/clinic-1.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Lumina Aesthetic">
                             </div>
@@ -406,7 +421,7 @@
                         </div>
 
                         <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                            <a href="case-study?case=salon" class="absolute inset-0 z-10"></a>
+                            <a href="case-study?case=salon&cat=booking" class="absolute inset-0 z-10"></a>
                             <div class="overflow-hidden h-64">
                                 <img src="images/examples/salon-1.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Maison Privée">
                             </div>
@@ -430,47 +445,62 @@
                     <!-- Collapsible Additional Projects -->
                     <div id="collapse-booking" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300">
                         <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5 pt-7.5">
-                            <div class="relative rounded-lg overflow-hidden group">
-                                <a href="case-study" class="absolute inset-0 z-10"></a>
-                                <img src="images/examples/barber-2.png" class="rounded-lg object-cover w-full h-80 group-hover:scale-105 transition-all duration-300" alt="Web Book System Case Study">
-                                <div class="absolute bottom-0 m-5">
-                                    <div class="p-4 inline-flex rounded bg-white shadow-sm">
-                                        <div class="space-y-2.5">
-                                            <div class="py-1.5 px-2.5 text-sm/none font-medium inline-flex bg-default-100 border border-default-200 rounded">
-                                                Web Book System
-                                            </div>
-                                            <h3 class="text-xl font-medium">Real-time calendar & therapist selection system</h3>
-                                        </div>
+                            <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+                                <a href="case-study?case=barbershop&cat=booking" class="absolute inset-0 z-10"></a>
+                                <div class="overflow-hidden h-64">
+                                    <img src="images/examples/barber-2.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Web Book System Case Study">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <span class="text-xs font-semibold text-primary">The Heritage Barber Co.</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Real-time calendar & therapist selection system</h3>
+                                    <p class="text-xs text-default-500 mb-4">Central Singapore • Dynamic barber availability with direct self-service appointment scheduling.</p>
+                                    <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
+                                        <span class="font-bold text-primary">Live Calendar Sync</span>
+                                        <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
+                                            View Case <i class="iconify tabler--arrow-right size-3.5"></i>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="relative rounded-lg overflow-hidden group">
-                                <a href="case-study" class="absolute inset-0 z-10"></a>
-                                <img src="images/examples/personal-trainer-2.png" class="rounded-lg object-cover w-full h-80 group-hover:scale-105 transition-all duration-300" alt="Web Book System Case Study">
-                                <div class="absolute bottom-0 m-5">
-                                    <div class="p-4 inline-flex rounded bg-white shadow-sm">
-                                        <div class="space-y-2.5">
-                                            <div class="py-1.5 px-2.5 text-sm/none font-medium inline-flex bg-default-100 border border-default-200 rounded">
-                                                Web Book System
-                                            </div>
-                                            <h3 class="text-xl font-medium">Automated WhatsApp slot confirmation platform</h3>
-                                        </div>
+                            <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+                                <a href="case-study?case=fitness&cat=booking" class="absolute inset-0 z-10"></a>
+                                <div class="overflow-hidden h-64">
+                                    <img src="images/examples/personal-trainer-2.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Web Book System Case Study">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <span class="text-xs font-semibold text-primary">Apex Performance</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Automated WhatsApp slot confirmation platform</h3>
+                                    <p class="text-xs text-default-500 mb-4">Brisbane, AU • Real-time slot reservation coupled with instant 2-way messaging confirmations.</p>
+                                    <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
+                                        <span class="font-bold text-primary">-50% No-Shows</span>
+                                        <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
+                                            View Case <i class="iconify tabler--arrow-right size-3.5"></i>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="relative rounded-lg overflow-hidden group">
-                                <a href="case-study" class="absolute inset-0 z-10"></a>
-                                <img src="images/examples/fitness-2.png" class="rounded-lg object-cover w-full h-80 group-hover:scale-105 transition-all duration-300" alt="Web Book System Case Study">
-                                <div class="absolute bottom-0 m-5">
-                                    <div class="p-4 inline-flex rounded bg-white shadow-sm">
-                                        <div class="space-y-2.5">
-                                            <div class="py-1.5 px-2.5 text-sm/none font-medium inline-flex bg-default-100 border border-default-200 rounded">
-                                                Web Book System
-                                            </div>
-                                            <h3 class="text-xl font-medium">Integrated prepayment & cancellation protection engine</h3>
-                                        </div>
+                            <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+                                <a href="case-study?case=fitness&cat=booking" class="absolute inset-0 z-10"></a>
+                                <div class="overflow-hidden h-64">
+                                    <img src="images/examples/fitness-2.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Web Book System Case Study">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <span class="text-xs font-semibold text-primary">Apex Fitness Club</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Integrated prepayment & cancellation protection engine</h3>
+                                    <p class="text-xs text-default-500 mb-4">Brisbane, AU • Deposit authorization gateway protecting off-peak studio bookings.</p>
+                                    <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
+                                        <span class="font-bold text-primary">100% Secured Slots</span>
+                                        <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
+                                            View Case <i class="iconify tabler--arrow-right size-3.5"></i>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -507,9 +537,9 @@
                     <!-- Initial 3 Cards -->
                     <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5">
                         <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                            <a href="case-study?case=barbershop" class="absolute inset-0 z-10"></a>
+                            <a href="case-study?case=barbershop&cat=system" class="absolute inset-0 z-10"></a>
                             <div class="overflow-hidden h-64">
-                                <img src="images/case-studies/4.webp" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="The Heritage Barber Co.">
+                                <img src="images/examples/barber-3.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="The Heritage Barber Co.">
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center gap-2 mb-3">
@@ -528,7 +558,7 @@
                         </div>
 
                         <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                            <a href="case-study?case=clinic" class="absolute inset-0 z-10"></a>
+                            <a href="case-study?case=clinic&cat=system" class="absolute inset-0 z-10"></a>
                             <div class="overflow-hidden h-64">
                                 <img src="images/examples/clinic-2.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Lumina Aesthetic">
                             </div>
@@ -549,7 +579,7 @@
                         </div>
 
                         <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                            <a href="case-study?case=fitness" class="absolute inset-0 z-10"></a>
+                            <a href="case-study?case=fitness&cat=system" class="absolute inset-0 z-10"></a>
                             <div class="overflow-hidden h-64">
                                 <img src="images/examples/fitness-1.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Apex Performance">
                             </div>
@@ -573,47 +603,62 @@
                     <!-- Collapsible Additional Projects -->
                     <div id="collapse-system" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300">
                         <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5 pt-7.5">
-                            <div class="relative rounded-lg overflow-hidden group">
-                                <a href="case-study" class="absolute inset-0 z-10"></a>
-                                <img src="images/examples/barber-3.png" class="rounded-lg object-cover w-full h-80 group-hover:scale-105 transition-all duration-300" alt="Web System Case Study">
-                                <div class="absolute bottom-0 m-5">
-                                    <div class="p-4 inline-flex rounded bg-white shadow-sm">
-                                        <div class="space-y-2.5">
-                                            <div class="py-1.5 px-2.5 text-sm/none font-medium inline-flex bg-default-100 border border-default-200 rounded">
-                                                Web System
-                                            </div>
-                                            <h3 class="text-xl font-medium">Real-time therapist commission & payout calculator</h3>
-                                        </div>
+                            <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+                                <a href="case-study?case=barbershop&cat=system" class="absolute inset-0 z-10"></a>
+                                <div class="overflow-hidden h-64">
+                                    <img src="images/examples/barber-3.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Web System Case Study">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <span class="text-xs font-semibold text-primary">The Heritage Barber Co.</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Real-time therapist commission & payout calculator</h3>
+                                    <p class="text-xs text-default-500 mb-4">Central Singapore • Automated performance tiers, shift roster tracking, and weekly payout exports.</p>
+                                    <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
+                                        <span class="font-bold text-primary">100% Automated</span>
+                                        <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
+                                            View Case <i class="iconify tabler--arrow-right size-3.5"></i>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="relative rounded-lg overflow-hidden group">
-                                <a href="case-study" class="absolute inset-0 z-10"></a>
-                                <img src="images/examples/personal-trainer-3.png" class="rounded-lg object-cover w-full h-80 group-hover:scale-105 transition-all duration-300" alt="Web System Case Study">
-                                <div class="absolute bottom-0 m-5">
-                                    <div class="p-4 inline-flex rounded bg-white shadow-sm">
-                                        <div class="space-y-2.5">
-                                            <div class="py-1.5 px-2.5 text-sm/none font-medium inline-flex bg-default-100 border border-default-200 rounded">
-                                                Web System
-                                            </div>
-                                            <h3 class="text-xl font-medium">Multi-outlet customer CRM & membership balance tracker</h3>
-                                        </div>
+                            <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+                                <a href="case-study?case=fitness&cat=system" class="absolute inset-0 z-10"></a>
+                                <div class="overflow-hidden h-64">
+                                    <img src="images/examples/personal-trainer-3.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Web System Case Study">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <span class="text-xs font-semibold text-primary">Apex Performance</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Multi-outlet customer CRM & membership balance tracker</h3>
+                                    <p class="text-xs text-default-500 mb-4">Brisbane, AU • Cross-location client profile sync, package balances, and visit audit history.</p>
+                                    <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
+                                        <span class="font-bold text-primary">Multi-Location</span>
+                                        <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
+                                            View Case <i class="iconify tabler--arrow-right size-3.5"></i>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="relative rounded-lg overflow-hidden group">
-                                <a href="case-study" class="absolute inset-0 z-10"></a>
-                                <img src="images/examples/fitness-3.png" class="rounded-lg object-cover w-full h-80 group-hover:scale-105 transition-all duration-300" alt="Web System Case Study">
-                                <div class="absolute bottom-0 m-5">
-                                    <div class="p-4 inline-flex rounded bg-white shadow-sm">
-                                        <div class="space-y-2.5">
-                                            <div class="py-1.5 px-2.5 text-sm/none font-medium inline-flex bg-default-100 border border-default-200 rounded">
-                                                Web System
-                                            </div>
-                                            <h3 class="text-xl font-medium">Multi-branch KPI & revenue performance dashboard</h3>
-                                        </div>
+                            <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+                                <a href="case-study?case=fitness&cat=system" class="absolute inset-0 z-10"></a>
+                                <div class="overflow-hidden h-64">
+                                    <img src="images/examples/fitness-3.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Web System Case Study">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <span class="text-xs font-semibold text-primary">Apex Studio Group</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Multi-branch KPI & revenue performance dashboard</h3>
+                                    <p class="text-xs text-default-500 mb-4">Brisbane, AU • Executive live revenue analytics, bay utilization rates, and trainer retention charts.</p>
+                                    <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
+                                        <span class="font-bold text-primary">Real-Time Data</span>
+                                        <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
+                                            View Case <i class="iconify tabler--arrow-right size-3.5"></i>
+                                        </span>
                                     </div>
                                 </div>
                             </div>

@@ -11,7 +11,7 @@ $case_studies = [
         'location' => 'Singapore (Tanjong Pagar & Orchard)',
         'flag' => '',
         'duration' => '3 Weeks',
-        'hero_image' => 'images/case-studies/barber.png',
+        'hero_image' => 'images/examples/barber-1.png',
         'alt' => 'The Heritage Barber Co. Booking Preview',
         'results' => [
             [
@@ -60,7 +60,7 @@ $case_studies = [
         'location' => 'Melbourne & Sydney, Australia',
         'flag' => '',
         'duration' => '6 Weeks',
-        'hero_image' => 'images/case-studies/2.webp',
+        'hero_image' => 'images/examples/clinic-1.png',
         'alt' => 'Lumina Aesthetic Web System Preview',
         'results' => [
             [
@@ -109,7 +109,7 @@ $case_studies = [
         'location' => 'Singapore (Orchard Road)',
         'flag' => '',
         'duration' => '4 Weeks',
-        'hero_image' => 'images/case-studies/3.webp',
+        'hero_image' => 'images/examples/salon-1.png',
         'alt' => 'Maison Privée Booking Preview',
         'results' => [
             [
@@ -158,7 +158,7 @@ $case_studies = [
         'location' => 'Brisbane, Australia',
         'flag' => '',
         'duration' => '4 Weeks',
-        'hero_image' => 'images/case-studies/4.webp',
+        'hero_image' => 'images/examples/fitness-1.png',
         'alt' => 'Apex Performance Portal Preview',
         'results' => [
             [
@@ -214,6 +214,15 @@ if (!array_key_exists($case_key, $case_studies)) {
     $case_key = $aliases[$case_key] ?? 'barbershop';
 }
 $current_case = $case_studies[$case_key];
+
+// Tentukan apakah case study ini kategori Landing Page atau Website Company
+$cat_param = strtolower($_GET['cat'] ?? '');
+$has_live_demo = in_array($cat_param, ['lp', 'company'], true)
+    || ($cat_param === '' && (stripos($current_case['category'], 'LP') !== false 
+        || stripos($current_case['category'], 'Landing') !== false 
+        || stripos($current_case['category'], 'Company') !== false 
+        || stripos($current_case['title'], 'Landing') !== false 
+        || stripos($current_case['title'], 'Company') !== false));
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -363,6 +372,7 @@ $current_case = $case_studies[$case_key];
                 </div>
 
                 <!-- Live Platform Preview Links -->
+                <?php if ($has_live_demo): ?>
                 <div class="mt-8 pt-6 border-t border-default-200">
                     <span class="text-xs uppercase font-bold tracking-wider text-primary mb-3 block">Live Platform Demos</span>
                     <div class="grid sm:grid-cols-3 gap-4">
@@ -406,6 +416,7 @@ $current_case = $case_studies[$case_key];
                         </a>
                     </div>
                 </div>
+                <?php endif; ?>
             </div>
 
             <!-- Client Testimonial Quote -->
