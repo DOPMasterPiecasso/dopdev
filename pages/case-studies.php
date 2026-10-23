@@ -124,7 +124,7 @@
                     </div>
 
                     <!-- Collapsible Additional Projects -->
-                    <div id="collapse-lp" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300">
+                    <!-- <div id="collapse-lp" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300">
                         <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5 pt-7.5">
                             <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
                                 <a href="case-study?case=clinic&cat=lp" class="absolute inset-0 z-10"></a>
@@ -133,7 +133,6 @@
                                 </div>
                                 <div class="p-6">
                                     <div class="flex items-center gap-2 mb-3">
-                                        <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">LP</span> -->
                                         <span class="text-xs font-semibold text-primary">Dental Care & Implants</span>
                                     </div>
                                     <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Dental care promotional offer landing page</h3>
@@ -154,7 +153,6 @@
                                 </div>
                                 <div class="p-6">
                                     <div class="flex items-center gap-2 mb-3">
-                                        <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">LP</span> -->
                                         <span class="text-xs font-semibold text-primary">Botanical Spa Studio</span>
                                     </div>
                                     <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Seasonal spa package introductory landing page</h3>
@@ -175,7 +173,6 @@
                                 </div>
                                 <div class="p-6">
                                     <div class="flex items-center gap-2 mb-3">
-                                        <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">LP</span> -->
                                         <span class="text-xs font-semibold text-primary">Apex Fitness Studio</span>
                                     </div>
                                     <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Physiotherapy direct consultation lead page</h3>
@@ -197,7 +194,7 @@
                             <span class="hidden hs-collapse-open:inline-block">Show Less</span>
                             <i class="iconify tabler--chevron-down size-4 hs-collapse-open:rotate-180 transition-transform"></i>
                         </button>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!-- Category 2: Website Company -->
@@ -285,7 +282,7 @@
                     </div>
 
                     <!-- Collapsible Additional Projects -->
-                    <div id="collapse-company" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300">
+                    <!-- <div id="collapse-company" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300">
                         <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5 pt-7.5">
                             <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
                                 <a href="case-study?case=salon&cat=company" class="absolute inset-0 z-10"></a>
@@ -355,7 +352,7 @@
                             <span class="hidden hs-collapse-open:inline-block">Show Less</span>
                             <i class="iconify tabler--chevron-down size-4 hs-collapse-open:rotate-180 transition-transform"></i>
                         </button>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!-- Category 3: Web Book System -->
@@ -443,7 +440,7 @@
                     </div>
 
                     <!-- Collapsible Additional Projects -->
-                    <div id="collapse-booking" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300">
+                    <!-- <div id="collapse-booking" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300">
                         <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5 pt-7.5">
                             <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
                                 <a href="case-study?case=barbershop&cat=booking" class="absolute inset-0 z-10"></a>
@@ -513,7 +510,7 @@
                             <span class="hidden hs-collapse-open:inline-block">Show Less</span>
                             <i class="iconify tabler--chevron-down size-4 hs-collapse-open:rotate-180 transition-transform"></i>
                         </button>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!-- Category 4: Web System -->
@@ -601,7 +598,7 @@
                     </div>
 
                     <!-- Collapsible Additional Projects -->
-                    <div id="collapse-system" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300">
+                    <!-- <div id="collapse-system" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300">
                         <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5 pt-7.5">
                             <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
                                 <a href="case-study?case=barbershop&cat=system" class="absolute inset-0 z-10"></a>
@@ -671,7 +668,7 @@
                             <span class="hidden hs-collapse-open:inline-block">Show Less</span>
                             <i class="iconify tabler--chevron-down size-4 hs-collapse-open:rotate-180 transition-transform"></i>
                         </button>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
