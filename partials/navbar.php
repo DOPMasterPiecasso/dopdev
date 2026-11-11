@@ -199,6 +199,18 @@ $navBlogClass = $navBlogActive ? 'text-primary underline decoration-current' : '
                     <i class="iconify tabler--stethoscope size-4.5 mb-1.5 text-primary group-hover:scale-110 transition-transform"></i>
                     <span>Clinic</span>
                 </a>
+                <a href="https://landing.dopdev.com/salon" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center p-2.5 rounded-xl border border-default-200 bg-white hover:border-primary hover:text-primary text-default-700 text-xs font-medium transition-all text-center group">
+                    <i class="iconify tabler--sparkles size-4.5 mb-1.5 text-primary group-hover:scale-110 transition-transform"></i>
+                    <span>Salon DOP</span>
+                </a>
+                <a href="https://landing.dopdev.com/barbershop" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center p-2.5 rounded-xl border border-default-200 bg-white hover:border-primary hover:text-primary text-default-700 text-xs font-medium transition-all text-center group">
+                    <i class="iconify tabler--cut size-4.5 mb-1.5 text-primary group-hover:scale-110 transition-transform"></i>
+                    <span>Barbershop DOP</span>
+                </a>
+                <a href="https://landing.dopdev.com/spa" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center p-2.5 rounded-xl border border-default-200 bg-white hover:border-primary hover:text-primary text-default-700 text-xs font-medium transition-all text-center group">
+                    <i class="iconify tabler--bath size-4.5 mb-1.5 text-primary group-hover:scale-110 transition-transform"></i>
+                    <span>Spa DOP</span>
+                </a>
             </div>
         </div>
     </div>
