@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <?php $title = 'Home';
+    <?php $title = 'Booking Systems for Service Businesses';
     include('partials/title-meta.php'); ?>
 
     <?php include('partials/head-css.php'); ?>

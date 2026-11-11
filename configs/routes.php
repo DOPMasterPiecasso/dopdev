@@ -58,6 +58,10 @@ $dispatcher = FastRoute\simpleDispatcher(function (
 	$r->addRoute('GET', '/sitemap.xml', function ($ROUTE_PARAMS) {
 		include 'pages/sitemap.xml.php';
 	});
+	$r->addRoute('GET', '/sitemap-{type}.xml', function ($ROUTE_PARAMS) {
+		$_GET['type'] = $ROUTE_PARAMS['type'] ?? '';
+		include 'pages/sitemap.xml.php';
+	});
 
 	// ---- Admin (dashboard artikel blog) ----
 	$r->addRoute('GET', '/admin', function ($ROUTE_PARAMS) {
