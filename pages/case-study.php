@@ -215,22 +215,22 @@ if (!array_key_exists($case_key, $case_studies)) {
 }
 $current_case = $case_studies[$case_key];
 
-// Tentukan apakah case study ini kategori Landing Page atau Website Company
+// Tentukan apakah case study ini kategori Landing Page atau Company Profile
 $cat_param = strtolower($_GET['cat'] ?? '');
 $has_live_demo = in_array($cat_param, ['lp', 'company'], true)
-    || ($cat_param === '' && (stripos($current_case['category'], 'LP') !== false 
-        || stripos($current_case['category'], 'Landing') !== false 
-        || stripos($current_case['category'], 'Company') !== false 
-        || stripos($current_case['title'], 'Landing') !== false 
+    || ($cat_param === '' && (stripos($current_case['category'], 'LP') !== false
+        || stripos($current_case['category'], 'Landing') !== false
+        || stripos($current_case['category'], 'Company') !== false
+        || stripos($current_case['title'], 'Landing') !== false
         || stripos($current_case['title'], 'Company') !== false));
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <?php 
-    $title = htmlspecialchars($current_case['client']) . ' - Case Study Detail'; 
-    include('partials/title-meta.php'); 
+    <?php
+    $title = htmlspecialchars($current_case['client']) . ' - Case Study Detail';
+    include('partials/title-meta.php');
     ?>
 
     <?php include('partials/head-css.php'); ?>
@@ -373,49 +373,49 @@ $has_live_demo = in_array($cat_param, ['lp', 'company'], true)
 
                 <!-- Live Platform Preview Links -->
                 <?php if ($has_live_demo): ?>
-                <div class="mt-8 pt-6 border-t border-default-200">
-                    <span class="text-xs uppercase font-bold tracking-wider text-primary mb-3 block">Live Platform Demos</span>
-                    <div class="grid sm:grid-cols-3 gap-4">
-                        <a href="https://www.salon.dopdev.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 rounded-xl border <?= $case_key === 'salon' ? 'border-primary ring-1 ring-primary/20 bg-primary/5' : 'border-default-200 bg-default-50 hover:bg-white' ?> hover:border-primary hover:shadow-xs transition-all group">
-                            <div class="flex items-center gap-3 min-w-0">
-                                <span class="size-9 rounded-lg <?= $case_key === 'salon' ? 'bg-primary text-white' : 'bg-primary/10 text-primary' ?> flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
-                                    <i class="iconify tabler--external-link size-4.5"></i>
-                                </span>
-                                <div class="truncate">
-                                    <span class="text-sm font-semibold text-default-950 group-hover:text-primary transition-colors block truncate">Salon Live Preview</span>
-                                    <span class="text-xs text-default-500 truncate block">www.salon.dopdev.com</span>
+                    <div class="mt-8 pt-6 border-t border-default-200">
+                        <span class="text-xs uppercase font-bold tracking-wider text-primary mb-3 block">Live Platform Demos</span>
+                        <div class="grid sm:grid-cols-3 gap-4">
+                            <a href="https://www.salon.dopdev.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 rounded-xl border <?= $case_key === 'salon' ? 'border-primary ring-1 ring-primary/20 bg-primary/5' : 'border-default-200 bg-default-50 hover:bg-white' ?> hover:border-primary hover:shadow-xs transition-all group">
+                                <div class="flex items-center gap-3 min-w-0">
+                                    <span class="size-9 rounded-lg <?= $case_key === 'salon' ? 'bg-primary text-white' : 'bg-primary/10 text-primary' ?> flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
+                                        <i class="iconify tabler--external-link size-4.5"></i>
+                                    </span>
+                                    <div class="truncate">
+                                        <span class="text-sm font-semibold text-default-950 group-hover:text-primary transition-colors block truncate">Salon Live Preview</span>
+                                        <span class="text-xs text-default-500 truncate block">www.salon.dopdev.com</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <i class="iconify tabler--arrow-up-right size-4.5 text-default-400 group-hover:text-primary transition-colors shrink-0"></i>
-                        </a>
+                                <i class="iconify tabler--arrow-up-right size-4.5 text-default-400 group-hover:text-primary transition-colors shrink-0"></i>
+                            </a>
 
-                        <a href="https://barber.dopdev.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 rounded-xl border <?= $case_key === 'barbershop' ? 'border-primary ring-1 ring-primary/20 bg-primary/5' : 'border-default-200 bg-default-50 hover:bg-white' ?> hover:border-primary hover:shadow-xs transition-all group">
-                            <div class="flex items-center gap-3 min-w-0">
-                                <span class="size-9 rounded-lg <?= $case_key === 'barbershop' ? 'bg-primary text-white' : 'bg-primary/10 text-primary' ?> flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
-                                    <i class="iconify tabler--external-link size-4.5"></i>
-                                </span>
-                                <div class="truncate">
-                                    <span class="text-sm font-semibold text-default-950 group-hover:text-primary transition-colors block truncate">Barber Live Preview</span>
-                                    <span class="text-xs text-default-500 truncate block">barber.dopdev.com</span>
+                            <a href="https://barber.dopdev.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 rounded-xl border <?= $case_key === 'barbershop' ? 'border-primary ring-1 ring-primary/20 bg-primary/5' : 'border-default-200 bg-default-50 hover:bg-white' ?> hover:border-primary hover:shadow-xs transition-all group">
+                                <div class="flex items-center gap-3 min-w-0">
+                                    <span class="size-9 rounded-lg <?= $case_key === 'barbershop' ? 'bg-primary text-white' : 'bg-primary/10 text-primary' ?> flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
+                                        <i class="iconify tabler--external-link size-4.5"></i>
+                                    </span>
+                                    <div class="truncate">
+                                        <span class="text-sm font-semibold text-default-950 group-hover:text-primary transition-colors block truncate">Barber Live Preview</span>
+                                        <span class="text-xs text-default-500 truncate block">barber.dopdev.com</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <i class="iconify tabler--arrow-up-right size-4.5 text-default-400 group-hover:text-primary transition-colors shrink-0"></i>
-                        </a>
+                                <i class="iconify tabler--arrow-up-right size-4.5 text-default-400 group-hover:text-primary transition-colors shrink-0"></i>
+                            </a>
 
-                        <a href="https://clinic.dopdev.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 rounded-xl border <?= $case_key === 'clinic' ? 'border-primary ring-1 ring-primary/20 bg-primary/5' : 'border-default-200 bg-default-50 hover:bg-white' ?> hover:border-primary hover:shadow-xs transition-all group">
-                            <div class="flex items-center gap-3 min-w-0">
-                                <span class="size-9 rounded-lg <?= $case_key === 'clinic' ? 'bg-primary text-white' : 'bg-primary/10 text-primary' ?> flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
-                                    <i class="iconify tabler--external-link size-4.5"></i>
-                                </span>
-                                <div class="truncate">
-                                    <span class="text-sm font-semibold text-default-950 group-hover:text-primary transition-colors block truncate">Clinic Live Preview</span>
-                                    <span class="text-xs text-default-500 truncate block">clinic.dopdev.com</span>
+                            <a href="https://clinic.dopdev.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 rounded-xl border <?= $case_key === 'clinic' ? 'border-primary ring-1 ring-primary/20 bg-primary/5' : 'border-default-200 bg-default-50 hover:bg-white' ?> hover:border-primary hover:shadow-xs transition-all group">
+                                <div class="flex items-center gap-3 min-w-0">
+                                    <span class="size-9 rounded-lg <?= $case_key === 'clinic' ? 'bg-primary text-white' : 'bg-primary/10 text-primary' ?> flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
+                                        <i class="iconify tabler--external-link size-4.5"></i>
+                                    </span>
+                                    <div class="truncate">
+                                        <span class="text-sm font-semibold text-default-950 group-hover:text-primary transition-colors block truncate">Clinic Live Preview</span>
+                                        <span class="text-xs text-default-500 truncate block">clinic.dopdev.com</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <i class="iconify tabler--arrow-up-right size-4.5 text-default-400 group-hover:text-primary transition-colors shrink-0"></i>
-                        </a>
+                                <i class="iconify tabler--arrow-up-right size-4.5 text-default-400 group-hover:text-primary transition-colors shrink-0"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
                 <?php endif; ?>
             </div>
 
@@ -478,9 +478,9 @@ $has_live_demo = in_array($cat_param, ['lp', 'company'], true)
             </div>
 
             <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5">
-                <?php 
+                <?php
                 $count = 0;
-                foreach ($case_studies as $k => $other_case): 
+                foreach ($case_studies as $k => $other_case):
                     if ($k === $case_key) continue;
                     if ($count >= 3) break;
                     $count++;

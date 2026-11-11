@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <?php $title = 'Case Studies'; include('partials/title-meta.php'); ?>
+    <?php $title = 'Case Studies';
+    include('partials/title-meta.php'); ?>
 
     <?php include('partials/head-css.php'); ?>
 </head>
@@ -25,7 +26,7 @@
                         Landing Page
                     </a>
                     <a href="#company" data-case-cat="company" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
-                        Website Company
+                        Company Profile
                     </a>
                     <a href="#booking" data-case-cat="booking" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
                         Web Book System
@@ -197,11 +198,11 @@
                     </div> -->
                 </div>
 
-                <!-- Category 2: Website Company -->
+                <!-- Category 2: Company Profile -->
                 <div id="company" class="scroll-mt-28 md:scroll-mt-24">
                     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pb-5 border-b border-default-200">
                         <div class="max-w-2xl">
-                            <h2 class="text-2xl md:text-3xl font-semibold text-default-950 mb-2">Website Company</h2>
+                            <h2 class="text-2xl md:text-3xl font-semibold text-default-950 mb-2">Company Profile</h2>
                             <p class="text-default-600 text-base leading-relaxed">
                                 Elegant, credible corporate company profile websites crafted to showcase brand identity, doctor and therapist teams, treatment catalogs, and multi-branch locations.
                             </p>
@@ -287,7 +288,7 @@
                             <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
                                 <a href="case-study?case=salon&cat=company" class="absolute inset-0 z-10"></a>
                                 <div class="overflow-hidden h-64">
-                                    <img src="images/examples/salon-3.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Website Company Case Study">
+                                    <img src="images/examples/salon-3.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Company Profile Case Study">
                                 </div>
                                 <div class="p-6">
                                     <div class="flex items-center gap-2 mb-3">
@@ -307,7 +308,7 @@
                             <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
                                 <a href="case-study?case=clinic&cat=company" class="absolute inset-0 z-10"></a>
                                 <div class="overflow-hidden h-64">
-                                    <img src="images/examples/clinic-3.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Website Company Case Study">
+                                    <img src="images/examples/clinic-3.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Company Profile Case Study">
                                 </div>
                                 <div class="p-6">
                                     <div class="flex items-center gap-2 mb-3">
@@ -327,7 +328,7 @@
                             <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
                                 <a href="case-study?case=fitness&cat=company" class="absolute inset-0 z-10"></a>
                                 <div class="overflow-hidden h-64">
-                                    <img src="images/examples/personal-trainer-1.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Website Company Case Study">
+                                    <img src="images/examples/personal-trainer-1.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Company Profile Case Study">
                                 </div>
                                 <div class="p-6">
                                     <div class="flex items-center gap-2 mb-3">
@@ -348,7 +349,7 @@
 
                     <div class="mt-8 text-center">
                         <button type="button" class="hs-collapse-toggle group py-3 px-6 inline-flex items-center gap-2 rounded-lg bg-default-100 hover:bg-default-200 text-default-900 text-sm font-medium transition-all" data-hs-collapse="#collapse-company">
-                            <span class="hs-collapse-open:hidden">View All Website Company Projects</span>
+                            <span class="hs-collapse-open:hidden">View All Company Profile Projects</span>
                             <span class="hidden hs-collapse-open:inline-block">Show Less</span>
                             <i class="iconify tabler--chevron-down size-4 hs-collapse-open:rotate-180 transition-transform"></i>
                         </button>

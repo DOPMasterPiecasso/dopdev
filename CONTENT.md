@@ -142,6 +142,6 @@ Copyright line:© dopdev. All rights reserved.
 
 Kategori 
 - LP
-- Website Company
+- Company Profile
 - Web Book System 
 - Web System 

@@ -72,7 +72,7 @@ $services = [
     'company-profile' => [
         'id' => 'company-profile',
         'number' => '02',
-        'name' => 'Website Company Profile',
+        'name' => 'Company Profile Profile',
         'badge' => 'Brand Authority & Credibility',
         'tagline' => 'Modern, authoritative multi-page websites that build brand trust and showcase your service excellence.',
         'hero_title' => 'Professional Company Profile Websites That Establish Industry Authority',
@@ -81,7 +81,7 @@ $services = [
         'stat_metric' => 'Custom Built & Branded',
         'stat_desc' => 'Tailored identity, responsive design, and seamless brand storytelling without generic templates.',
         'image' => 'images/case-studies/2.webp',
-        'alt' => 'Website Company Profile Preview',
+        'alt' => 'Company Profile Profile Preview',
         'outcomes' => [
             [
                 'icon' => 'tabler--shield-check',
@@ -369,9 +369,9 @@ $current_service = $services[$service_key];
 <html lang="en">
 
 <head>
-    <?php 
-    $title = htmlspecialchars($current_service['name']) . ' - Service Detail'; 
-    include('partials/title-meta.php'); 
+    <?php
+    $title = htmlspecialchars($current_service['name']) . ' - Service Detail';
+    include('partials/title-meta.php');
     ?>
 
     <?php include('partials/head-css.php'); ?>
@@ -641,8 +641,8 @@ $current_service = $services[$service_key];
             </div>
 
             <div class="grid md:grid-cols-3 gap-6">
-                <?php 
-                foreach ($services as $k => $other): 
+                <?php
+                foreach ($services as $k => $other):
                     if ($k === $service_key) continue;
                 ?>
                     <div class="p-6 rounded-2xl bg-white border border-default-200 flex flex-col justify-between hover:shadow-md transition-all">

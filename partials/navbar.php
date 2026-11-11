@@ -56,23 +56,23 @@ $navBlogClass = $navBlogActive ? 'text-primary underline decoration-current' : '
             </div>
 
             <?php if (isset($title) && $title === 'Case Studies'): ?>
-            <!-- Category Quick Jump Navigation on Navbar (Scrolled) -->
-            <div id="navbar-case-studies" class="absolute left-[calc(50%+24px)] -translate-x-1/2 hidden lg:flex items-center justify-center opacity-0 pointer-events-none -translate-y-2 transition-all duration-300">
-                <div class="inline-flex items-center gap-1.5 justify-center">
-                    <a href="#lp" data-case-cat="lp" class="case-cat-btn py-1.5 px-3.5 text-xs font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
-                        Landing Page
-                    </a>
-                    <a href="#company" data-case-cat="company" class="case-cat-btn py-1.5 px-3.5 text-xs font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
-                        Website Company
-                    </a>
-                    <a href="#booking" data-case-cat="booking" class="case-cat-btn py-1.5 px-3.5 text-xs font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
-                        Web Book System
-                    </a>
-                    <a href="#system" data-case-cat="system" class="case-cat-btn py-1.5 px-3.5 text-xs font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
-                        Web System
-                    </a>
+                <!-- Category Quick Jump Navigation on Navbar (Scrolled) -->
+                <div id="navbar-case-studies" class="absolute left-[calc(50%+24px)] -translate-x-1/2 hidden lg:flex items-center justify-center opacity-0 pointer-events-none -translate-y-2 transition-all duration-300">
+                    <div class="inline-flex items-center gap-1.5 justify-center">
+                        <a href="#lp" data-case-cat="lp" class="case-cat-btn py-1.5 px-3.5 text-xs font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
+                            Landing Page
+                        </a>
+                        <a href="#company" data-case-cat="company" class="case-cat-btn py-1.5 px-3.5 text-xs font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
+                            Company Profile
+                        </a>
+                        <a href="#booking" data-case-cat="booking" class="case-cat-btn py-1.5 px-3.5 text-xs font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
+                            Web Book System
+                        </a>
+                        <a href="#system" data-case-cat="system" class="case-cat-btn py-1.5 px-3.5 text-xs font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
+                            Web System
+                        </a>
+                    </div>
                 </div>
-            </div>
             <?php endif; ?>
 
             <div class="flex items-center justify-end gap-4">
@@ -100,25 +100,25 @@ $navBlogClass = $navBlogActive ? 'text-primary underline decoration-current' : '
         </div>
 
         <?php if (isset($title) && $title === 'Case Studies'): ?>
-        <!-- Mobile Adaptive Category Navigation -->
-        <div id="navbar-case-studies-mobile" class="lg:hidden w-full overflow-hidden transition-all duration-300 max-h-0 opacity-0 -translate-y-2 pointer-events-none border-t border-transparent">
-            <div class="py-2.5 overflow-x-auto no-scrollbar flex justify-start sm:justify-center">
-                <div class="inline-flex items-center gap-1 whitespace-nowrap">
-                    <a href="#lp" data-case-cat="lp" class="case-cat-btn py-1.5 px-3 text-xs font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
-                        Landing Page
-                    </a>
-                    <a href="#company" data-case-cat="company" class="case-cat-btn py-1.5 px-3 text-xs font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
-                        Website Company
-                    </a>
-                    <a href="#booking" data-case-cat="booking" class="case-cat-btn py-1.5 px-3 text-xs font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
-                        Web Book System
-                    </a>
-                    <a href="#system" data-case-cat="system" class="case-cat-btn py-1.5 px-3 text-xs font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
-                        Web System
-                    </a>
+            <!-- Mobile Adaptive Category Navigation -->
+            <div id="navbar-case-studies-mobile" class="lg:hidden w-full overflow-hidden transition-all duration-300 max-h-0 opacity-0 -translate-y-2 pointer-events-none border-t border-transparent">
+                <div class="py-2.5 overflow-x-auto no-scrollbar flex justify-start sm:justify-center">
+                    <div class="inline-flex items-center gap-1 whitespace-nowrap">
+                        <a href="#lp" data-case-cat="lp" class="case-cat-btn py-1.5 px-3 text-xs font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
+                            Landing Page
+                        </a>
+                        <a href="#company" data-case-cat="company" class="case-cat-btn py-1.5 px-3 text-xs font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
+                            Company Profile
+                        </a>
+                        <a href="#booking" data-case-cat="booking" class="case-cat-btn py-1.5 px-3 text-xs font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
+                            Web Book System
+                        </a>
+                        <a href="#system" data-case-cat="system" class="case-cat-btn py-1.5 px-3 text-xs font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
+                            Web System
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
         <?php endif; ?>
     </div>
 </header>

@@ -11,7 +11,7 @@
 
 const CASE_CATEGORY_LABELS = [
 	'lp' => 'Landing Page',
-	'company' => 'Website Company',
+	'company' => 'Company Profile',
 	'booking' => 'Booking System',
 	'system' => 'Web System',
 ];
@@ -29,7 +29,8 @@ const CASE_ALIASES = [
 ];
 
 /** Ambil array $case_studies dari pages/case-study.php tanpa merender halamannya. */
-function case_study_details(): array {
+function case_study_details(): array
+{
 	static $cache = null;
 	if ($cache !== null) {
 		return $cache;
@@ -54,14 +55,16 @@ function case_study_details(): array {
 	return $cache;
 }
 
-function case_study_resolve_detail(string $key): ?array {
+function case_study_resolve_detail(string $key): ?array
+{
 	$details = case_study_details();
 	$key = CASE_ALIASES[$key] ?? $key;
 	return $details[$key] ?? null;
 }
 
 /** Parse semua kartu portofolio di pages/case-studies.php. */
-function case_study_cards(): array {
+function case_study_cards(): array
+{
 	$src = @file_get_contents(ROOT . '/pages/case-studies.php');
 	if ($src === false) {
 		return [];
@@ -155,7 +158,8 @@ function case_study_cards(): array {
 }
 
 /** Susun konten HTML postingan dari data kartu + detail case study. */
-function case_study_post_content(array $card, ?array $detail): string {
+function case_study_post_content(array $card, ?array $detail): string
+{
 	$h = static fn(string $s) => htmlspecialchars($s, ENT_QUOTES);
 
 	$out = [];
@@ -259,7 +263,8 @@ function case_study_post_content(array $card, ?array $detail): string {
  * Jalankan seeder.
  * @return array{created:int, skipped:int}
  */
-function case_study_seeder_run(bool $fresh = false): array {
+function case_study_seeder_run(bool $fresh = false): array
+{
 	$created = 0;
 	$skipped = 0;
 
@@ -275,14 +280,14 @@ function case_study_seeder_run(bool $fresh = false): array {
 	foreach (case_study_cards() as $card) {
 		$detail =
 			$card['case_key'] !== ''
-				? case_study_resolve_detail($card['case_key'])
-				: null;
+			? case_study_resolve_detail($card['case_key'])
+			: null;
 
 		$slug = blog_slugify($card['title']);
 		if (
 			!$fresh &&
 			db_value('SELECT id FROM blog_posts WHERE slug = ?', [$slug]) !==
-				null
+			null
 		) {
 			$skipped++;
 			continue;
@@ -300,8 +305,8 @@ function case_study_seeder_run(bool $fresh = false): array {
 
 		$cover =
 			$card['image'] !== ''
-				? $card['image']
-				: 'images/blog/' . (($index % 6) + 1) . '.webp';
+			? $card['image']
+			: 'images/blog/' . (($index % 6) + 1) . '.webp';
 		$author =
 			($detail['author'] ?? '') !== '' ? $detail['author'] : 'DOP Team';
 

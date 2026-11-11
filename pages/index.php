@@ -864,8 +864,8 @@
                 <div class="hs-accordion border border-default-200 rounded-2xl p-6 lg:p-7.5 bg-white">
                     <button class="hs-accordion-toggle w-full flex justify-between items-start gap-3 text-start">
                         <div class="space-y-2">
-                            <!-- <div class="py-1 px-2.5 inline-flex text-xs/none font-medium border border-default-200 rounded-md">Website Company</div> -->
-                            <h3 class="lg:text-2xl text-xl font-medium text-default-950">Website Company Profile</h3>
+                            <!-- <div class="py-1 px-2.5 inline-flex text-xs/none font-medium border border-default-200 rounded-md">Company Profile</div> -->
+                            <h3 class="lg:text-2xl text-xl font-medium text-default-950">Company Profile Profile</h3>
                         </div>
 
                         <div class="relative size-4.5 flex items-center justify-center shrink-0 mt-1.5">
@@ -881,7 +881,7 @@
                             </p>
 
                             <div class="overflow-hidden rounded-xl">
-                                <img src="images/case-studies/2.webp" class="w-full h-48 md:h-56 object-cover rounded-xl" alt="Website Company Profile">
+                                <img src="images/case-studies/2.webp" class="w-full h-48 md:h-56 object-cover rounded-xl" alt="Company Profile Profile">
                             </div>
 
                             <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 p-3 ps-4 rounded-lg bg-default-100">
