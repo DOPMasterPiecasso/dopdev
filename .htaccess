@@ -23,16 +23,16 @@
     RewriteRule \.(zip|tar|gz|sql|log|bak|lock|sqlite|sqlite-wal|sqlite-shm)$ - [F,L]
     RewriteRule ^(composer\.(json|lock)|package(-lock)?\.json|bun\.lock|vite\.config\.js|README\.md)$ - [F,L]
 
-    # Folder demo (mis. /barbershop/) — jangan strip trailing slash agar relative
+    # Folder lp (mis. /barbershop/) — jangan strip trailing slash agar relative
     # path (img/...) resolve; biarkan front controller yang menyajikan index.html.
-    RewriteCond %{DOCUMENT_ROOT}/demo%{REQUEST_URI} !-d
+    RewriteCond %{DOCUMENT_ROOT}/lp%{REQUEST_URI} !-d
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]
 
-    # File demo (misal demo/barbershop/img/...) langsung dilayani jika ada
-    RewriteCond %{DOCUMENT_ROOT}/demo%{REQUEST_URI} -f
-    RewriteRule ^(.*)$ demo/$1 [END]
+    # File lp (misal lp/barbershop/img/...) langsung dilayani jika ada
+    RewriteCond %{DOCUMENT_ROOT}/lp%{REQUEST_URI} -f
+    RewriteRule ^(.*)$ lp/$1 [END]
 
     # File statis diambil dari public/ (/build/..., /images/..., /logo/..., /videos/..., /robots.txt)
     # Jalan untuk docroot root (Apache) — request /build/app.css -> public/build/app.css
