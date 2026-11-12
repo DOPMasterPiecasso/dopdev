@@ -10,6 +10,14 @@ if (!defined('ROOT')) {
 }
 
 // Ensure database and blog functions are loaded
+if (!function_exists('env')) {
+    if (file_exists(ROOT . '/configs/env.php')) {
+        require_once ROOT . '/configs/env.php';
+    }
+    if (file_exists(ROOT . '/system/env.php')) {
+        require_once ROOT . '/system/env.php';
+    }
+}
 if (!function_exists('db_all')) {
     require_once ROOT . '/system/db.php';
 }
