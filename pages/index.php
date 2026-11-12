@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <?php $title = 'Booking Systems for Service Businesses';
+    <?php $title = 'Professional Websites for Growing Businesses';
     include('partials/title-meta.php'); ?>
 
     <?php include('partials/head-css.php'); ?>
@@ -19,29 +19,29 @@
             <div class="grid lg:grid-cols-2 lg:gap-25 md:gap-16 gap-7.5">
                 <div class="flex flex-col lg:gap-15 gap-7.5 h-full">
                     <div>
-                        <h1 class="lg:text-[56px] md:text-5xl text-4xl text-default-950 mb-2.5">Turn Your Website Into a 24/7 Booking Machine</h1>
+                        <h1 class="lg:text-[56px] md:text-5xl text-4xl text-default-950 mb-2.5">Professional Websites That Help Your Business Grow.</h1>
 
-                        <p>Company profile + online booking + smart integrations built for barbershops, clinics, salons and other service businesses in Singapore and Australia.</p>
+                        <p>We design and develop modern, high-quality websites that help businesses showcase their expertise, build credibility, and generate new business opportunities.</p>
 
                         <div class="mt-11 flex flex-col items-start gap-2.5">
                             <a href="contact" class="group py-5 px-10 inline-flex items-center justify-center gap-5 rounded-lg bg-primary text-white font-medium transition-all">
                                 <span class="relative block overflow-hidden">
                                     <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Get a Free Booking Audit
+                                        Discuss Your Project
                                     </span>
                                     <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Get a Free Booking Audit
+                                        Discuss Your Project
                                     </span>
                                 </span>
                             </a>
-                            <p class="text-xs text-default-500">15 min. We'll show you exactly where you're losing bookings, with no pitch.</p>
+                            <p class="text-xs text-default-500">Free scoping consultation. Fixed scope and transparent pricing before any code is written.</p>
                         </div>
                     </div>
 
                     <div class="mt-auto flex items-end justify-between gap-2.5">
                         <div class="lg:w-3/4">
-                            <div class="mb-2.5 text-default-700">DOP Booking Systems</div>
-                            <p class="text-primary">Trusted by growing service businesses across SG & AU.</p>
+                            <div class="mb-2.5 text-default-700">DOPDEV – Digital Solutions</div>
+                            <p class="text-primary">Professional Websites for Growing Businesses in Singapore &amp; Australia.</p>
                         </div>
 
                         <div>
@@ -64,13 +64,13 @@
 
                     <div class="space-y-2.5">
                         <div class="bg-primary rounded-lg p-6">
-                            <p class="mb-25 text-white">“Before DOP, most of our bookings came via WhatsApp and a lot of people just didn’t show up. Now our calendar is much fuller.”</p>
+                            <p class="mb-25 text-white">“DOPDEV built our corporate web presence with clean design and clear service architecture. Client enquiries through our website increased significantly.”</p>
 
                             <div class="flex items-center gap-4">
                                 <img src="images/users/5.jpg" loading="lazy" alt="Image" class="size-11.5 rounded-full">
 
                                 <div class="space-y-1.5">
-                                    <div class="text-lg text-white">Barbershop Owner</div>
+                                    <div class="text-lg text-white">Commercial Contractor</div>
                                     <div class="text-sm text-default-400">Singapore</div>
                                 </div>
                             </div>
@@ -81,7 +81,7 @@
 
 
                             <div class="absolute inset-0  m-7.5 text-center">
-                                <div class="mb-2.5 text-default-950 py-3 px-4 rounded bg-white/50">24/7 Booking Engine</div>
+                                <div class="mb-2.5 text-default-950 py-3 px-4 rounded bg-white/50">Modern B2B Websites</div>
 
                                 <img src="images/other/hero-image-2.jpg" alt="Image" class="rounded">
                             </div>
@@ -288,9 +288,9 @@
     <section class="lg:py-27.5 md:py-25 py-15 bg-white">
         <div class="container">
             <div class="text-center mb-12.5">
-                <div class="text-sm text-primary font-semibold mb-2.5">Comparison</div>
-                <h2 class="lg:text-5xl md:text-4xl text-3xl mb-2.5 font-medium text-default-950">Why Not Just Use a Booking SaaS?</h2>
-                <p class="text-default-600 lg:max-w-2xl mx-auto">Tools like Timely, Booksy, or a generic booking plugin get you started, until your business grows. Here is how they compare:</p>
+                <div class="text-sm text-primary font-semibold mb-2.5">Why Businesses Choose DOPDEV</div>
+                <h2 class="lg:text-5xl md:text-4xl text-3xl mb-2.5 font-medium text-default-950">Why Businesses Choose DOPDEV.</h2>
+                <p class="text-default-600 lg:max-w-2xl mx-auto">We combine modern design, technical precision, and practical business understanding to build websites that deliver results.</p>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -299,47 +299,47 @@
                     <div>
                         <div class="flex items-center justify-between gap-4 mb-4">
                             <span class="inline-block px-3 py-1 text-xs font-medium rounded-md bg-default-100 text-default-700">
-                                Monthly Subscription
+                                Generic Templates
                             </span>
                             <span class="text-xs text-default-500">Off-the-shelf</span>
                         </div>
-                        <h3 class="text-2xl font-semibold text-default-950 mb-2">Booking SaaS or Generic Plugin</h3>
-                        <p class="text-sm text-default-500 mb-6">Quick to start, but restrictive and costly as your appointment volume grows.</p>
+                        <h3 class="text-2xl font-semibold text-default-950 mb-2">Off-The-Shelf Generic Sites</h3>
+                        <p class="text-sm text-default-500 mb-6">Inflexible templates with bloated code that fail to build trust or differentiate your business.</p>
 
                         <ul class="space-y-4 pt-4 border-t border-default-200 text-sm">
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--x size-4.5 text-red-500 shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-medium text-default-950 block">Recurring Monthly Costs</span>
-                                    <span class="text-xs text-default-500 leading-relaxed">S$50 to S$200 every month, compounding as you add features or staff.</span>
+                                    <span class="font-medium text-default-950 block">Generic Look &amp; Feel</span>
+                                    <span class="text-xs text-default-500 leading-relaxed">Cookie-cutter layouts that don't reflect your company's actual capabilities and expertise.</span>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--x size-4.5 text-red-500 shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-medium text-default-950 block">Rigid Booking Flow</span>
-                                    <span class="text-xs text-default-500 leading-relaxed">Bound to their rigid layouts, foreign branding, and non-negotiable steps.</span>
+                                    <span class="font-medium text-default-950 block">Poor Conversion Architecture</span>
+                                    <span class="text-xs text-default-500 leading-relaxed">Weak call-to-actions and unfocused page flows that let qualified enquiries slip away.</span>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--x size-4.5 text-red-500 shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-medium text-default-950 block">Multi-Branch Surcharges</span>
-                                    <span class="text-xs text-default-500 leading-relaxed">Extra monthly fees demanded for every new chair, therapist, or location.</span>
+                                    <span class="font-medium text-default-950 block">Slow Performance &amp; Bloat</span>
+                                    <span class="text-xs text-default-500 leading-relaxed">Heavy plugins and messy page builders that hurt mobile speed and search rankings.</span>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--x size-4.5 text-red-500 shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-medium text-default-950 block">Restricted Integrations</span>
-                                    <span class="text-xs text-default-500 leading-relaxed">Limited to their pre-approved plugin store, rarely tailored for local SG/AU payments.</span>
+                                    <span class="font-medium text-default-950 block">Vendor &amp; Monthly Lock-In</span>
+                                    <span class="text-xs text-default-500 leading-relaxed">Compounding monthly subscription fees with little ownership over your assets.</span>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--x size-4.5 text-red-500 shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-medium text-default-950 block">Platform Lock-In</span>
-                                    <span class="text-xs text-default-500 leading-relaxed">Your client relationships and booking records stay trapped in their proprietary cloud.</span>
+                                    <span class="font-medium text-default-950 block">Lack of Ongoing Support</span>
+                                    <span class="text-xs text-default-500 leading-relaxed">No dedicated technical partner when you need updates, fixes, or security improvements.</span>
                                 </div>
                             </li>
                         </ul>
@@ -351,47 +351,47 @@
                     <div>
                         <div class="flex items-center justify-between gap-4 mb-4">
                             <span class="inline-block px-3 py-1 text-xs font-semibold rounded-md bg-primary/10 text-primary">
-                                Complete Ownership
+                                Digital Partner
                             </span>
                             <span class="text-xs font-semibold text-primary">Built for Growth</span>
                         </div>
-                        <h3 class="text-2xl font-semibold text-default-950 mb-2">DOP Custom Booking System</h3>
-                        <p class="text-sm text-default-500 mb-6">Built specifically for your team, service rules, and local client booking habits.</p>
+                        <h3 class="text-2xl font-semibold text-default-950 mb-2">Tailored DOPDEV Solution</h3>
+                        <p class="text-sm text-default-500 mb-6">Professional websites crafted for your specific industry, audience, and commercial goals.</p>
 
                         <ul class="space-y-4 pt-4 border-t border-default-200 text-sm">
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-semibold text-default-950 block">One-Time Build Investment</span>
-                                    <span class="text-xs text-default-600 leading-relaxed">Fixed build cost with no mandatory monthly subscription fees. You own your code.</span>
+                                    <span class="font-semibold text-default-950 block">Business-Focused Approach</span>
+                                    <span class="text-xs text-default-600 leading-relaxed">Designed to communicate expertise, build credibility, and drive qualified enquiries.</span>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-semibold text-default-950 block">Tailored Booking Pathway</span>
-                                    <span class="text-xs text-default-600 leading-relaxed">Designed around your exact service menu, deposit policies, and staff rotation.</span>
+                                    <span class="font-semibold text-default-950 block">Modern &amp; Responsive Design</span>
+                                    <span class="text-xs text-default-600 leading-relaxed">Minimalist, premium business appearance optimized for mobile, tablet, and desktop.</span>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-semibold text-default-950 block">Multi-Branch From Day 1</span>
-                                    <span class="text-xs text-default-600 leading-relaxed">Manage multiple locations, chairs, and practitioners under one unified dashboard.</span>
+                                    <span class="font-semibold text-default-950 block">Tailored Development Solutions</span>
+                                    <span class="text-xs text-default-600 leading-relaxed">Clean code, high-converting layouts, contact forms, and local channel integrations.</span>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-semibold text-default-950 block">Direct Local Integrations</span>
-                                    <span class="text-xs text-default-600 leading-relaxed">Automated WhatsApp reminders, PayNow, Stripe deposits, and instant calendar sync.</span>
+                                    <span class="font-semibold text-default-950 block">Clear Communication &amp; Cost-Effective</span>
+                                    <span class="text-xs text-default-600 leading-relaxed">Transparent scoping, honest timelines, and straightforward English without jargon.</span>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-semibold text-default-950 block">100% Data &amp; System Ownership</span>
-                                    <span class="text-xs text-default-600 leading-relaxed">Export client records anytime; everything runs safely on your own web infrastructure.</span>
+                                    <span class="font-semibold text-default-950 block">Ongoing Technical Support</span>
+                                    <span class="text-xs text-default-600 leading-relaxed">Complete asset ownership, proactive maintenance, and reliable post-launch assistance.</span>
                                 </div>
                             </li>
                         </ul>
@@ -400,8 +400,8 @@
             </div>
 
             <div class="mt-10 text-center">
-                <a href="service-detail?service=booking-system" class="group py-3.5 px-8 inline-flex items-center justify-center gap-2 rounded-lg bg-primary text-white font-medium transition-all shadow-xs hover:bg-primary/90">
-                    <span>See How It Works</span>
+                <a href="contact" class="group py-3.5 px-8 inline-flex items-center justify-center gap-2 rounded-lg bg-primary text-white font-medium transition-all shadow-xs hover:bg-primary/90">
+                    <span>Discuss Your Project</span>
                 </a>
             </div>
         </div>
@@ -416,13 +416,13 @@
                 <!-- Item -->
                 <div>
                     <span class="inline-block px-2.5 py-1 text-sm bg-default-100 rounded-md">
-                        No-Show Reduction
+                        Singapore &amp; Australia
                     </span>
 
                     <div class="mt-4 flex items-start gap-4">
-                        <h3 class="text-3xl">30–50%</h3>
+                        <h3 class="text-3xl">B2B</h3>
                         <p>
-                            Reduction in no-shows with reminders and deposits.
+                            Websites tailored for growing small and medium businesses.
                         </p>
                     </div>
                 </div>
@@ -430,13 +430,13 @@
                 <!-- Item -->
                 <div>
                     <span class="inline-block px-2.5 py-1 text-sm bg-default-100 rounded-md">
-                        Online Booking
+                        Digital Presence
                     </span>
 
                     <div class="mt-4 flex items-start gap-4">
-                        <h3 class="text-3xl">24/7</h3>
+                        <h3 class="text-3xl">100%</h3>
                         <p>
-                            Online booking engine for your customers.
+                            Custom design and responsive mobile-first development.
                         </p>
                     </div>
                 </div>
@@ -444,13 +444,13 @@
                 <!-- Item -->
                 <div>
                     <span class="inline-block px-2.5 py-1 text-sm bg-default-100 rounded-md">
-                        Multi-Branch Support
+                        Business Growth
                     </span>
 
                     <div class="mt-4 flex items-start gap-4">
-                        <h3 class="text-3xl">Day 1</h3>
+                        <h3 class="text-3xl">Enquiry</h3>
                         <p>
-                            Built for multi-location groups and chains.
+                            Built to turn website visitors into qualified business leads.
                         </p>
                     </div>
                 </div>
@@ -462,24 +462,24 @@
             <!-- <div class="grid lg:grid-cols-2 gap-7.5">
                 <div class="flex flex-col lg:gap-50 md:gap-25 gap-10 h-full">
                     <div>
-                        <div class="text-sm text-default-950 mb-2.5">About DOP</div>
+                        <div class="text-sm text-default-950 mb-2.5">About DOPDEV</div>
 
-                        <h1 class="lg:text-5xl md:text-4xl text-3xl mb-2.5">We Build Systems <br> That Fill Your Calendar</h1>
+                        <h1 class="lg:text-5xl md:text-4xl text-3xl mb-2.5">Your Business Deserves <br> a Stronger Digital Presence</h1>
 
-                        <p class="text-default-600">DOP is a software house focused on service-based small and medium businesses. We combine a strong company profile website with a powerful booking engine and the right integrations, so your customers can find you, book you and pay you  without the back-and-forth messages.</p>
+                        <p class="text-default-600">DOPDEV helps businesses build a stronger digital presence through professional website design and development solutions. We create websites that communicate your expertise, showcase your services, build customer trust, and make it easier for potential clients to get in touch.</p>
 
                         <div class="mt-11 flex flex-col items-start gap-2.5">
                             <a href="contact" class="group py-5 px-10 inline-flex items-center justify-center gap-5 rounded-lg bg-primary text-white font-medium transition-all">
                                 <span class="relative block overflow-hidden">
                                     <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Get a Free Booking Audit
+                                        Discuss Your Project
                                     </span>
                                     <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Get a Free Booking Audit
+                                        Discuss Your Project
                                     </span>
                                 </span>
                             </a>
-                            <p class="text-xs text-default-500">15 min. We'll show you exactly where you're losing bookings, with no pitch.</p>
+                            <p class="text-xs text-default-500">Let's discuss your business goals and create a website that represents your company professionally.</p>
                         </div>
                     </div>
 
@@ -517,7 +517,7 @@
                         <img src="images/other/work-step.jpg" alt="Image" class="rounded-lg size-full object-cover">
 
                         <div class="absolute bottom-5 inset-x-5 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-block rounded bg-white">Want to fill your calendar? <a href="contact" class="underline text-body-color">Book a Demo now</a></div>
+                            <div class="text-default-950 py-2 px-4 inline-block rounded bg-white">Ready to elevate your online presence? <a href="contact" class="underline text-body-color">Discuss Your Project</a></div>
                         </div>
                     </div>
                 </div>
@@ -525,11 +525,11 @@
                 <div class="lg:col-span-4">
                     <div class="flex flex-col lg:gap-37.5 md:gap-25 gap-10">
                         <div>
-                            <div class="text-sm text-white mb-2.5">How We Work</div>
+                            <div class="text-sm text-white mb-2.5">Development Process</div>
 
-                            <h1 class="text-white lg:text-5xl md:text-4xl text-3xl mb-5">How We Work</h1>
+                            <h1 class="text-white lg:text-5xl md:text-4xl text-3xl mb-5">From Idea to Launch.</h1>
 
-                            <p class="text-default-400">Four simple steps from idea to live system.</p>
+                            <p class="text-default-400">A clear, collaborative process to build and deploy your business website.</p>
                         </div>
 
                         <div class="mt-auto">
@@ -543,17 +543,17 @@
 
                                     <button type="button" class="hs-tab-active:text-white group relative md:py-5 py-2 px-1 inline-flex items-center gap-2 text-lg text-default-400" id="tab-strategize" data-hs-tab="#tab-pane-strategize" aria-controls="tab-pane-strategize" role="tab">
                                         <span class="hs-tab-active:scale-100 mb-0.5 flex size-1.75 scale-0 bg-white rounded-full transition-all duration-300 group-hover:scale-100"></span>
-                                        Build
+                                        Planning
                                     </button>
 
                                     <button type="button" class="hs-tab-active:text-white group relative md:py-5 py-2 px-1 inline-flex items-center gap-2 text-lg text-default-400" id="tab-execute" data-hs-tab="#tab-pane-execute" aria-controls="tab-pane-execute" role="tab">
                                         <span class="hs-tab-active:scale-100 mb-0.5 flex size-1.75 scale-0 bg-white rounded-full transition-all duration-300 group-hover:scale-100"></span>
-                                        Test & Train
+                                        Design &amp; Dev
                                     </button>
 
                                     <button type="button" class="hs-tab-active:text-white group relative md:py-5 py-2 px-1 inline-flex items-center gap-2 text-lg text-default-400" id="tab-optimize" data-hs-tab="#tab-pane-optimize" aria-controls="tab-pane-optimize" role="tab">
                                         <span class="hs-tab-active:scale-100 mb-0.5 flex size-1.75 scale-0 bg-white rounded-full transition-all duration-300 group-hover:scale-100"></span>
-                                        Launch & Optimise
+                                        Launch
                                     </button>
                                 </nav>
                             </div>
@@ -561,25 +561,25 @@
 
                                 <div id="tab-pane-understand" role="tabpanel" aria-labelledby="tab-understand">
                                     <p class="text-default-400">
-                                        We learn about your business model, services, target customers and current pain points. We map out the exact booking flow you need.
+                                        Understand your business and objectives. We analyze your market, competitors, and target audience in Singapore and Australia.
                                     </p>
                                 </div>
 
                                 <div id="tab-pane-strategize" class="hidden" role="tabpanel" aria-labelledby="tab-strategize">
                                     <p class="text-default-400">
-                                        We design and develop your company profile and booking system, configure services, staff, branches and integrations.
+                                        Define the website structure, navigation architecture, and conversion-focused content flow tailored to your industry.
                                     </p>
                                 </div>
 
                                 <div id="tab-pane-execute" class="hidden" role="tabpanel" aria-labelledby="tab-execute">
                                     <p class="text-default-400">
-                                        We test every flow end-to-end and train your team on how to manage bookings, customers and reports day-to-day.
+                                        Create a professional visual experience and build clean, responsive code optimised for performance, SEO, and lead capture.
                                     </p>
                                 </div>
 
                                 <div id="tab-pane-optimize" class="hidden" role="tabpanel" aria-labelledby="tab-optimize">
                                     <p class="text-default-400">
-                                        We go live, monitor performance and keep improving based on real data and customer behaviour.
+                                        Rigorous quality testing, cross-browser verification, deployment, and seamless project handover with ongoing support.
                                     </p>
                                 </div>
 
@@ -601,7 +601,7 @@
 
                     <h1 class="lg:text-5xl md:text-4xl text-3xl mb-2.5">Real Results From Real Businesses</h1>
 
-                    <p class="text-default-600">Real results from barbershops in Singapore and aesthetic clinics in Australia.</p>
+                    <p class="text-default-600">Explore our featured web design and development projects across key industries.</p>
                 </div>
 
                 <div>
@@ -836,7 +836,7 @@
                     <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300 text-start">
                         <div class="pt-5 flex flex-col gap-5">
                             <p class="text-default-600 text-sm md:text-base leading-relaxed">
-                                High-converting landing pages built to turn traffic into bookings and sales, with optimized call-to-actions, mobile-first design, and fast load speeds.
+                                High-converting landing pages built to turn traffic into qualified business enquiries, with optimized call-to-actions, mobile-first design, and fast load speeds.
                             </p>
 
                             <div class="overflow-hidden rounded-xl">
@@ -845,8 +845,8 @@
 
                             <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 p-3 ps-4 rounded-lg bg-default-100">
                                 <div class="flex flex-col">
-                                    <span class="text-xs text-default-600">High Conversion & Fast Loading</span>
-                                    <span class="font-medium text-default-950 text-sm">2x–3x Leads</span>
+                                    <span class="text-xs text-default-600">High Conversion &amp; Fast Loading</span>
+                                    <span class="font-medium text-default-950 text-sm">Targeted B2B Enquiries</span>
                                 </div>
 
                                 <a href="service-detail?service=landing-page" class="group py-2.5 px-4 inline-flex items-center justify-center rounded-lg bg-primary text-white text-xs font-medium transition-all shrink-0">
@@ -865,7 +865,7 @@
                     <button class="hs-accordion-toggle w-full flex justify-between items-start gap-3 text-start">
                         <div class="space-y-2">
                             <!-- <div class="py-1 px-2.5 inline-flex text-xs/none font-medium border border-default-200 rounded-md">Company Profile</div> -->
-                            <h3 class="lg:text-2xl text-xl font-medium text-default-950">Company Profile Profile</h3>
+                            <h3 class="lg:text-2xl text-xl font-medium text-default-950">Company Profile Website</h3>
                         </div>
 
                         <div class="relative size-4.5 flex items-center justify-center shrink-0 mt-1.5">
@@ -881,7 +881,7 @@
                             </p>
 
                             <div class="overflow-hidden rounded-xl">
-                                <img src="images/case-studies/2.webp" class="w-full h-48 md:h-56 object-cover rounded-xl" alt="Company Profile Profile">
+                                <img src="images/case-studies/2.webp" class="w-full h-48 md:h-56 object-cover rounded-xl" alt="Company Profile Website">
                             </div>
 
                             <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 p-3 ps-4 rounded-lg bg-default-100">
@@ -906,7 +906,7 @@
                     <button class="hs-accordion-toggle w-full flex justify-between items-start gap-3 text-start">
                         <div class="space-y-2">
                             <!-- <div class="py-1 px-2.5 inline-flex text-xs/none font-medium border border-default-200 rounded-md">Web Book System</div> -->
-                            <h3 class="lg:text-2xl text-xl font-medium text-default-950">Web Booking System</h3>
+                            <h3 class="lg:text-2xl text-xl font-medium text-default-950">Industry &amp; Service Portals</h3>
                         </div>
 
                         <div class="relative size-4.5 flex items-center justify-center shrink-0 mt-1.5">
@@ -918,20 +918,20 @@
                     <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300 text-start">
                         <div class="pt-5 flex flex-col gap-5">
                             <p class="text-default-600 text-sm md:text-base leading-relaxed">
-                                Seamless 24/7 online booking, automated WhatsApp/email reminders, calendar scheduling, and payment deposits to streamline appointments and eliminate no-shows.
+                                Tailored web solutions for construction, engineering, commercial cleaning, landscaping, consulting, and manufacturing suppliers.
                             </p>
 
                             <div class="overflow-hidden rounded-xl">
-                                <img src="images/case-studies/3.webp" class="w-full h-48 md:h-56 object-cover rounded-xl" alt="Web Booking System">
+                                <img src="images/case-studies/3.webp" class="w-full h-48 md:h-56 object-cover rounded-xl" alt="Industry Web Solutions">
                             </div>
 
                             <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 p-3 ps-4 rounded-lg bg-default-100">
                                 <div class="flex flex-col">
-                                    <span class="text-xs text-default-600">Reduction in no-shows with reminders</span>
-                                    <span class="font-medium text-default-950 text-sm">30–50%</span>
+                                    <span class="text-xs text-default-600">Tailored to Industry Needs</span>
+                                    <span class="font-medium text-default-950 text-sm">6 Target Sectors</span>
                                 </div>
 
-                                <a href="service-detail?service=booking-system" class="group py-2.5 px-4 rounded-lg bg-primary text-white text-xs font-medium shrink-0">
+                                <a href="contact" class="group py-2.5 px-4 rounded-lg bg-primary text-white text-xs font-medium shrink-0">
                                     <span class="relative block overflow-hidden">
                                         <span class="block group-hover:-translate-y-7 duration-[1.125s]">See details</span>
                                         <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s]">See details</span>
@@ -947,7 +947,7 @@
                     <button class="hs-accordion-toggle w-full flex justify-between items-start gap-3 text-start">
                         <div class="space-y-2">
                             <!-- <div class="py-1 px-2.5 inline-flex text-xs/none font-medium border border-default-200 rounded-md">Web System</div> -->
-                            <h3 class="lg:text-2xl text-xl font-medium text-default-950">Custom Web System</h3>
+                            <h3 class="lg:text-2xl text-xl font-medium text-default-950">Custom Web Development</h3>
                         </div>
 
                         <div class="relative size-4.5 flex items-center justify-center shrink-0 mt-1.5">
@@ -959,20 +959,20 @@
                     <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300 text-start">
                         <div class="pt-5 flex flex-col gap-5">
                             <p class="text-default-600 text-sm md:text-base leading-relaxed">
-                                Robust management systems and dashboards for multi-branch operations, staff rosters, commissions, and automated business workflows tailored to your needs.
+                                Robust development solutions with clear communication, WhatsApp &amp; email integrations, enquiry workflows, and ongoing technical support.
                             </p>
 
                             <div class="overflow-hidden rounded-xl">
-                                <img src="images/case-studies/4.webp" class="w-full h-48 md:h-56 object-cover rounded-xl" alt="Custom Web System">
+                                <img src="images/case-studies/4.webp" class="w-full h-48 md:h-56 object-cover rounded-xl" alt="Custom Web Development">
                             </div>
 
                             <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 p-3 ps-4 rounded-lg bg-default-100">
                                 <div class="flex flex-col">
-                                    <span class="text-xs text-default-600">Hours saved every week</span>
-                                    <span class="font-medium text-default-950 text-sm">10+ hrs</span>
+                                    <span class="text-xs text-default-600">Reliable &amp; Cost-Effective</span>
+                                    <span class="font-medium text-default-950 text-sm">Long-term Partner</span>
                                 </div>
 
-                                <a href="service-detail?service=custom-system" class="group py-2.5 px-4 rounded-lg bg-primary text-white text-xs font-medium shrink-0">
+                                <a href="contact" class="group py-2.5 px-4 rounded-lg bg-primary text-white text-xs font-medium shrink-0">
                                     <span class="relative block overflow-hidden">
                                         <span class="block group-hover:-translate-y-7 duration-[1.125s]">See details</span>
                                         <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s]">See details</span>
@@ -1004,11 +1004,11 @@
         <div class="container">
 
             <div class="mb-12.5 text-center">
-                <div class="text-sm font-semibold text-primary mb-2.5">Proven Results</div>
+                <div class="text-sm font-semibold text-primary mb-2.5">Proven Value</div>
 
-                <h2 class="lg:text-5xl md:text-4xl text-3xl font-medium text-default-950 mb-2.5">Real Businesses. Real Numbers. Not Stock Testimonials.</h2>
+                <h2 class="lg:text-5xl md:text-4xl text-3xl font-medium text-default-950 mb-2.5">Building Trust Before the First Conversation.</h2>
 
-                <p class="text-default-600 lg:max-w-xl mx-auto mb-7.5">From barbershops in Singapore to aesthetic clinics in Australia, our clients share their experiences with DOP.</p>
+                <p class="text-default-600 lg:max-w-xl mx-auto mb-7.5">How businesses across Singapore and Australia establish credibility and win corporate contracts with DOPDEV.</p>
 
                 <div class="inline-flex items-center gap-2">
                     <i class="iconify tabler--star-filled text-yellow-300 size-6"></i>
@@ -1016,7 +1016,7 @@
                     <i class="iconify tabler--star-filled text-yellow-300 size-6"></i>
                     <i class="iconify tabler--star-filled text-yellow-300 size-6"></i>
                     <i class="iconify tabler--star-filled text-yellow-300 size-6"></i>
-                    <div class="ms-2 font-medium text-sm">Verified Client Metrics</div>
+                    <div class="ms-2 font-medium text-sm">Verified Client Partnerships</div>
                 </div>
             </div>
 
@@ -1028,29 +1028,29 @@
 
                         <div class="space-y-6">
                             <div>
-                                <h4 class="mb-1.5 text-lg text-white font-semibold">Wei Lin</h4>
-                                <p class="text-sm text-default-400">Owner, Heritage Barber Co. <span class="text-primary">(2 branches, SG)</span></p>
+                                <h4 class="mb-1.5 text-lg text-white font-semibold">David Tan</h4>
+                                <p class="text-sm text-default-400">Managing Director, Precision Engineering <span class="text-primary">(Singapore)</span></p>
                             </div>
 
                             <p class="text-white text-sm leading-relaxed">
-                                “Our no-shows dropped from 1 in 4 to almost zero. Before DOP, half our bookings came through WhatsApp and people just didn't show up. Now the calendar fills itself and deposits mean nobody disappears on us.”
+                                “Our previous website was outdated and didn't reflect our manufacturing capabilities. DOPDEV rebuilt our site with clear technical specifications and a structured RFQ process that immediately improved our conversion rate on tender bids.”
                             </p>
                         </div>
 
                         <div class="mt-8">
                             <div class="flex flex-wrap justify-between gap-6 mb-4">
                                 <div>
-                                    <h3 class="text-3xl text-white font-semibold">−45%</h3>
-                                    <p class="text-default-300 text-xs">No-shows in 60 days</p>
+                                    <h3 class="text-3xl text-white font-semibold">100%</h3>
+                                    <p class="text-default-300 text-xs">Responsive Design</p>
                                 </div>
 
                                 <div>
-                                    <h3 class="text-3xl text-white font-semibold">24/7</h3>
-                                    <p class="text-default-300 text-xs">Online booking</p>
+                                    <h3 class="text-3xl text-white font-semibold">B2B</h3>
+                                    <p class="text-default-300 text-xs">Direct Enquiries</p>
                                 </div>
                             </div>
-                            <a href="case-studies" class="text-xs text-primary hover:underline font-medium inline-flex items-center gap-1">
-                                <span>Read the full case study</span>
+                            <a href="contact" class="text-xs text-primary hover:underline font-medium inline-flex items-center gap-1">
+                                <span>Discuss your project</span>
                                 <i class="iconify tabler--arrow-up-right"></i>
                             </a>
                         </div>
@@ -1066,9 +1066,9 @@
 
                         <div class="absolute top-5 inset-x-5">
                             <div class="bg-default-950/80 backdrop-blur rounded-lg p-3.5 text-white">
-                                <span class="text-xs text-primary font-semibold block mb-0.5">Result: +140% trial bookings</span>
-                                <p class="text-xs text-default-200">“Bookings after hours tripled, and we didn't hire anyone.”</p>
-                                <span class="text-[11px] text-default-400 mt-1 block">Marcus Tan, Apex Performance Studio (Brisbane)</span>
+                                <span class="text-xs text-primary font-semibold block mb-0.5">Commercial Impact</span>
+                                <p class="text-xs text-default-200">“Our new website communicates our capabilities before we even pick up the phone.”</p>
+                                <span class="text-[11px] text-default-400 mt-1 block">Facility Management Group (Melbourne)</span>
                             </div>
                         </div>
 
@@ -1086,26 +1086,26 @@
 
                         <div>
                             <div class="flex items-center gap-3 mb-6">
-                                <img src="images/users/4.jpg" class="size-12 rounded-full object-cover" alt="Dr. Sarah Nguyen">
+                                <img src="images/users/4.jpg" class="size-12 rounded-full object-cover" alt="Sarah Jenkins">
 
                                 <div>
-                                    <h4 class="font-medium mb-1 text-default-950">Dr. Sarah Nguyen</h4>
-                                    <p class="text-sm text-default-500">Clinic Manager, Lumina Aesthetic <span class="text-primary">(Melb &amp; Syd)</span></p>
+                                    <h4 class="font-medium mb-1 text-default-950">Sarah Jenkins</h4>
+                                    <p class="text-sm text-default-500">Partner, Advisory Services <span class="text-primary">(Sydney)</span></p>
                                 </div>
                             </div>
 
                             <p class="text-default-600 leading-relaxed text-sm mb-4">
-                                “Front desk got 12 hours a week back. Scheduling across five practitioners used to take two people and a whiteboard. DOP gave us one clean system, our team actually thanked us.”
+                                “In consulting, trust is everything. DOPDEV created a clean, minimalist profile that clearly presents our advisory services and case studies. Prospective corporate clients frequently comment on the professionalism of our site.”
                             </p>
                         </div>
 
                         <div class="pt-4 border-t border-default-100 flex items-center justify-between">
                             <div>
-                                <span class="text-xs text-default-500 block">Verified Result:</span>
-                                <span class="text-sm font-bold text-default-950">98.8% show-up rate</span>
+                                <span class="text-xs text-default-500 block">Brand Impression:</span>
+                                <span class="text-sm font-bold text-default-950">High Credibility</span>
                             </div>
-                            <a href="case-studies" class="text-xs text-primary hover:underline font-medium inline-flex items-center gap-1">
-                                <span>Case study</span>
+                            <a href="contact" class="text-xs text-primary hover:underline font-medium inline-flex items-center gap-1">
+                                <span>Get in touch</span>
                                 <i class="iconify tabler--arrow-up-right"></i>
                             </a>
                         </div>
@@ -1117,17 +1117,17 @@
             <div class="mt-12.5">
                 <div class="flex items-center justify-between gap-2.5 p-2 md:ps-6 rounded-lg bg-default-100">
                     <div>
-                        <div class="font-medium text-default-950">Ready To Fill Your Calendar?</div>
-                        <div class="text-xs text-default-500 hidden sm:block">Free scoping call. Fixed price before any code is written.</div>
+                        <div class="font-medium text-default-950">Ready to Build a Better Website?</div>
+                        <div class="text-xs text-default-500 hidden sm:block">Let's discuss your business goals and create a website that represents your company professionally.</div>
                     </div>
 
                     <a href="contact" class="group py-5 px-10 inline-flex text-nowrap items-center justify-center rounded-lg bg-white text-primary font-medium transition-all shadow-xs">
                         <span class="relative block overflow-hidden">
                             <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                Get My Custom Quote
+                                Discuss Your Project
                             </span>
                             <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                Get My Custom Quote
+                                Discuss Your Project
                             </span>
                         </span>
                     </a>
@@ -1274,12 +1274,12 @@
                     <div class="border border-default-200 rounded-xl lg:p-10 p-5 lg:pb-16 pb-12 h-full flex flex-col md:items-start items-center lg:text-start text-center justify-between gap-12">
 
                         <div>
-                            <h4 class="lg:text-3xl text-2xl font-medium mb-2 text-default-950">Ready To Fill Your Calendar?</h4>
-                            <p class="text-default-600 text-sm">Free scoping call. Fixed price before any code is written.</p>
+                            <h4 class="lg:text-3xl text-2xl font-medium mb-2 text-default-950">Ready to Build a Better Website?</h4>
+                            <p class="text-default-600 text-sm">Let's discuss your business goals and create a website that represents your company professionally.</p>
                         </div>
 
                         <div class="inline-flex items-center gap-3">
-                            <div class="text-sm font-medium">Get My Custom Quote</div>
+                            <div class="text-sm font-medium">Discuss Your Project</div>
                             <i class="iconify tabler--circle-plus size-5"></i>
                             <div class="flex -space-x-2">
                                 <div class="relative inline-block group">
@@ -1333,10 +1333,10 @@
                             <a href="contact" class="group py-5 px-10 inline-flex items-center text-nowrap justify-center rounded-lg bg-white text-primary font-medium transition-all">
                                 <span class="relative block overflow-hidden">
                                     <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Get My Custom Quote
+                                        Let's Talk About Your Project
                                     </span>
                                     <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Get My Custom Quote
+                                        Let's Talk About Your Project
                                     </span>
                                 </span>
                             </a>
