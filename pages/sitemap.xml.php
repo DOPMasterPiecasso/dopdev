@@ -104,7 +104,7 @@ if ($type === 'pages') {
 
 // 2. Services Sub-sitemap
 if ($type === 'services') {
-    $services = ['landing-page', 'company-profile', 'booking-system', 'custom-system'];
+    $services = ['landing-page', 'company-profile'];
     $pages = [];
     foreach ($services as $svc) {
         $pages[] = [
@@ -170,6 +170,7 @@ if ($type === 'posts') {
             "SELECT slug, COALESCE(updated_at, published_at, created_at) AS modified_at 
              FROM blog_posts 
              WHERE status = 'published' 
+               AND category IN ('Landing Page', 'Website Company')
              ORDER BY id DESC"
         );
 
@@ -206,7 +207,7 @@ if ($type === 'posts') {
 // Default: Sitemap Index (Groups all sub-sitemaps together for Google/Search Engines)
 $latestPostMod = $today;
 try {
-    $latest = db_all("SELECT COALESCE(updated_at, published_at, created_at) AS modified_at FROM blog_posts WHERE status = 'published' ORDER BY id DESC LIMIT 1");
+    $latest = db_all("SELECT COALESCE(updated_at, published_at, created_at) AS modified_at FROM blog_posts WHERE status = 'published' AND category IN ('Landing Page', 'Website Company') ORDER BY id DESC LIMIT 1");
     if (!empty($latest[0]['modified_at'])) {
         $latestPostMod = substr($latest[0]['modified_at'], 0, 10);
     }
