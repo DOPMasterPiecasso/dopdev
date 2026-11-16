@@ -2,8 +2,12 @@
 <html lang="en">
 
 <head>
-    <?php $title = 'Professional Websites for Growing Businesses';
-    include('partials/title-meta.php'); ?>
+    <?php
+    $title = 'Websites & Landing Pages for Businesses in Singapore and Australia';
+    $metaTitle = 'Dopdev | Websites & Landing Pages for Businesses in Singapore and Australia';
+    $metaDescription = 'Fixed-price websites and landing pages for service businesses in Singapore and Australia. Free mockup before you pay. Mobile-first, fast, built to get enquiries.';
+    include('partials/title-meta.php');
+    ?>
 
     <?php include('partials/head-css.php'); ?>
 </head>
@@ -19,29 +23,29 @@
             <div class="grid lg:grid-cols-2 lg:gap-25 md:gap-16 gap-7.5">
                 <div class="flex flex-col lg:gap-15 gap-7.5 h-full">
                     <div>
-                        <h1 class="lg:text-[56px] md:text-5xl text-4xl text-default-950 mb-2.5">Professional Websites That Help Your Business Grow.</h1>
+                        <h1 class="lg:text-[56px] md:text-5xl text-4xl text-default-950 mb-2.5">Websites That Turn Visitors Into Enquiries.</h1>
 
-                        <p>We design and develop modern, high-quality websites that help businesses showcase their expertise, build credibility, and generate new business opportunities.</p>
+                        <p>We design and build fast, mobile-first websites for service businesses in Singapore and Australia. Fixed price agreed before we start. Free mockup before you pay.</p>
 
                         <div class="mt-11 flex flex-col items-start gap-2.5">
                             <a href="contact" class="group py-5 px-10 inline-flex items-center justify-center gap-5 rounded-lg bg-primary text-white font-medium transition-all">
                                 <span class="relative block overflow-hidden">
                                     <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Discuss Your Project
+                                        Get Your Free Mockup
                                     </span>
                                     <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Discuss Your Project
+                                        Get Your Free Mockup
                                     </span>
                                 </span>
                             </a>
-                            <p class="text-xs text-default-500">Free scoping consultation. Fixed scope and transparent pricing before any code is written.</p>
+                            <p class="text-xs text-default-500">Free first consultation. Fixed scope and transparent pricing before any code is written. Landing pages from S$690 (Singapore) / A$790 (Australia).</p>
                         </div>
                     </div>
 
                     <div class="mt-auto flex items-end justify-between gap-2.5">
                         <div class="lg:w-3/4">
-                            <div class="mb-2.5 text-default-700">DOPDEV – Digital Solutions</div>
-                            <p class="text-primary">Professional Websites for Growing Businesses in Singapore &amp; Australia.</p>
+                            <div class="mb-2.5 text-default-700">Serving growing businesses in Singapore and Australia.</div>
+                            <p class="text-primary">Built by our team in Indonesia, working in your business hours.</p>
                         </div>
 
                         <div>
@@ -64,7 +68,7 @@
 
                     <div class="space-y-2.5">
                         <div class="bg-primary rounded-lg p-6">
-                            <p class="mb-25 text-white">“DOPDEV built our corporate web presence with clean design and clear service architecture. Client enquiries through our website increased significantly.”</p>
+                            <p class="mb-25 text-white">“DOPDEV delivered our landing page in 7 days. Our commercial enquiries doubled within the first month of launching.”</p>
 
                             <div class="flex items-center gap-4">
                                 <img src="images/users/5.jpg" loading="lazy" alt="Image" class="size-11.5 rounded-full">
@@ -200,83 +204,83 @@
                 </div> -->
 
                 <div class="lg:mb-12.5 mb-15">
-                    <div class="mb-2 text-sm text-default-950">What You Get With DopDev</div>
+                    <div class="mb-2 text-sm text-default-950">Tailored Solutions</div>
 
-                    <h2 class="mb-2.5 lg:text-5xl md:text-4xl text-3xl">What You Get With DopDev</h2>
+                    <h2 class="mb-2.5 lg:text-5xl md:text-4xl text-3xl">What Your Business Actually Needs</h2>
 
-                    <p class="mx-auto lg:max-w-2/5">High-performance corporate websites, tailored digital solutions, and strategic tools built to help growing businesses scale.</p>
+                    <p class="mx-auto lg:max-w-2/5">From a simple company profile to a full booking system, we build what your business actually needs.</p>
                 </div>
 
                 <div class="grid lg:grid-cols-4 md:grid-cols-2 md:gap-7.5 gap-2.5">
                     <div class="relative rounded-lg overflow-hidden group">
                         <a href="service-detail?service=company-profile" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/1.jpg" alt="Corporate Company Profile" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <img src="images/service/1.jpg" alt="Websites That Look Credible" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Corporate Company Profile</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Websites That Look Credible</div>
                         </div>
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
                         <a href="service-detail?service=landing-page" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/2.jpg" alt="High-Converting Landing Pages" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <img src="images/service/2.jpg" alt="Online Booking, 24/7" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">High-Converting Landing Pages</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Online Booking, 24/7</div>
                         </div>
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
                         <a href="service-detail?service=company-profile" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/3.jpg" alt="Lead Generation & Enquiries" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <img src="images/service/3.jpg" alt="Fewer No-Shows" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Lead Generation &amp; Enquiries</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Fewer No-Shows</div>
                         </div>
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
                         <a href="service-detail?service=custom-system" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/4.jpg" alt="Custom Portals & Admin Panels" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <img src="images/service/4.jpg" alt="Many Branches, One Dashboard" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Custom Portals &amp; Admin Panels</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Many Branches, One Dashboard</div>
                         </div>
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
                         <a href="service-detail?service=custom-system" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/5.jpg" alt="Payment Gateways & Invoicing" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <img src="images/service/5.jpg" alt="Deposits Collected Upfront" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Payment Gateways &amp; Invoicing</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Deposits Collected Upfront</div>
                         </div>
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
                         <a href="service-detail?service=custom-system" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/6.jpg" alt="CRM & Workflow Automation" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <img src="images/service/6.jpg" alt="Customers Who Come Back" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">CRM &amp; Workflow Automation</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Customers Who Come Back</div>
                         </div>
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
                         <a href="service-detail?service=custom-system" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/7.jpg" alt="Reports & Analytics Dashboards" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <img src="images/service/7.jpg" alt="Clear Numbers for Owners" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Reports &amp; Analytics Dashboards</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Clear Numbers for Owners</div>
                         </div>
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
                         <a href="service-detail?service=custom-system" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/8.jpg" alt="API & Third-Party Integrations" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <img src="images/service/8.jpg" alt="Works With Your Tools" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">API &amp; Third-Party Integrations</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Works With Your Tools</div>
                         </div>
                     </div>
                 </div>
@@ -289,7 +293,7 @@
         <div class="container">
             <div class="text-center mb-12.5">
                 <div class="text-sm text-primary font-semibold mb-2.5">Why Businesses Choose DOPDEV</div>
-                <h2 class="lg:text-5xl md:text-4xl text-3xl mb-2.5 font-medium text-default-950">Why Businesses Choose DOPDEV.</h2>
+                <h2 class="lg:text-5xl md:text-4xl text-3xl mb-2.5 font-medium text-default-950">Why Businesses Choose Dopdev</h2>
                 <p class="text-default-600 lg:max-w-2xl mx-auto">We combine modern design, technical precision, and practical business understanding to build websites that deliver results.</p>
             </div>
 
@@ -299,7 +303,7 @@
                     <div>
                         <div class="flex items-center justify-between gap-4 mb-4">
                             <span class="inline-block px-3 py-1 text-xs font-medium rounded-md bg-default-100 text-default-700">
-                                Generic Templates
+                                Typical Templates
                             </span>
                             <span class="text-xs text-default-500">Off-the-shelf</span>
                         </div>
@@ -310,35 +314,35 @@
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--x size-4.5 text-red-500 shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-medium text-default-950 block">Generic Look &amp; Feel</span>
+                                    <span class="font-medium text-default-950 block">A look that blends in with everyone else</span>
                                     <span class="text-xs text-default-500 leading-relaxed">Cookie-cutter layouts that don't reflect your company's actual capabilities and expertise.</span>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--x size-4.5 text-red-500 shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-medium text-default-950 block">Poor Conversion Architecture</span>
+                                    <span class="font-medium text-default-950 block">Not built around getting enquiries</span>
                                     <span class="text-xs text-default-500 leading-relaxed">Weak call-to-actions and unfocused page flows that let qualified enquiries slip away.</span>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--x size-4.5 text-red-500 shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-medium text-default-950 block">Slow Performance &amp; Bloat</span>
+                                    <span class="font-medium text-default-950 block">Plugins that slow your pages down</span>
                                     <span class="text-xs text-default-500 leading-relaxed">Heavy plugins and messy page builders that hurt mobile speed and search rankings.</span>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--x size-4.5 text-red-500 shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-medium text-default-950 block">Vendor &amp; Monthly Lock-In</span>
+                                    <span class="font-medium text-default-950 block">Monthly fees that add up</span>
                                     <span class="text-xs text-default-500 leading-relaxed">Compounding monthly subscription fees with little ownership over your assets.</span>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--x size-4.5 text-red-500 shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-medium text-default-950 block">Lack of Ongoing Support</span>
+                                    <span class="font-medium text-default-950 block">Little help when something breaks</span>
                                     <span class="text-xs text-default-500 leading-relaxed">No dedicated technical partner when you need updates, fixes, or security improvements.</span>
                                 </div>
                             </li>
@@ -353,7 +357,7 @@
                             <span class="inline-block px-3 py-1 text-xs font-semibold rounded-md bg-primary/10 text-primary">
                                 Digital Partner
                             </span>
-                            <span class="text-xs font-semibold text-primary">Built for Growth</span>
+                            <span class="text-xs font-semibold text-primary">Built for Enquiries</span>
                         </div>
                         <h3 class="text-2xl font-semibold text-default-950 mb-2">Tailored DOPDEV Solution</h3>
                         <p class="text-sm text-default-500 mb-6">Professional websites crafted for your specific industry, audience, and commercial goals.</p>
@@ -362,35 +366,35 @@
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-semibold text-default-950 block">Business-Focused Approach</span>
+                                    <span class="font-semibold text-default-950 block">Designed around how your customers decide</span>
                                     <span class="text-xs text-default-600 leading-relaxed">Designed to communicate expertise, build credibility, and drive qualified enquiries.</span>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-semibold text-default-950 block">Modern &amp; Responsive Design</span>
+                                    <span class="font-semibold text-default-950 block">Mobile-first layouts that load fast</span>
                                     <span class="text-xs text-default-600 leading-relaxed">Minimalist, premium business appearance optimized for mobile, tablet, and desktop.</span>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-semibold text-default-950 block">Tailored Development Solutions</span>
+                                    <span class="font-semibold text-default-950 block">Custom forms and WhatsApp built in</span>
                                     <span class="text-xs text-default-600 leading-relaxed">Clean code, high-converting layouts, contact forms, and local channel integrations.</span>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-semibold text-default-950 block">Clear Communication &amp; Cost-Effective</span>
+                                    <span class="font-semibold text-default-950 block">Clear timelines and prices before we start</span>
                                     <span class="text-xs text-default-600 leading-relaxed">Transparent scoping, honest timelines, and straightforward English without jargon.</span>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i class="iconify tabler--circle-check size-4.5 text-primary shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-semibold text-default-950 block">Ongoing Technical Support</span>
+                                    <span class="font-semibold text-default-950 block">Support after launch, and you own your website assets</span>
                                     <span class="text-xs text-default-600 leading-relaxed">Complete asset ownership, proactive maintenance, and reliable post-launch assistance.</span>
                                 </div>
                             </li>
@@ -401,7 +405,7 @@
 
             <div class="mt-10 text-center">
                 <a href="contact" class="group py-3.5 px-8 inline-flex items-center justify-center gap-2 rounded-lg bg-primary text-white font-medium transition-all shadow-xs hover:bg-primary/90">
-                    <span>Discuss Your Project</span>
+                    <span>Get a Free Quote</span>
                 </a>
             </div>
         </div>
@@ -416,13 +420,13 @@
                 <!-- Item -->
                 <div>
                     <span class="inline-block px-2.5 py-1 text-sm bg-default-100 rounded-md">
-                        Singapore &amp; Australia
+                        Pricing &amp; Scope
                     </span>
 
                     <div class="mt-4 flex items-start gap-4">
-                        <h3 class="text-3xl">B2B</h3>
+                        <h3 class="text-3xl text-nowrap">Fixed price</h3>
                         <p>
-                            Websites tailored for growing small and medium businesses.
+                            Agreed before we start. No surprise add-ons or hidden fees.
                         </p>
                     </div>
                 </div>
@@ -430,13 +434,13 @@
                 <!-- Item -->
                 <div>
                     <span class="inline-block px-2.5 py-1 text-sm bg-default-100 rounded-md">
-                        Digital Presence
+                        Responsive Experience
                     </span>
 
                     <div class="mt-4 flex items-start gap-4">
-                        <h3 class="text-3xl">100%</h3>
+                        <h3 class="text-3xl text-nowrap">Mobile-first</h3>
                         <p>
-                            Custom design and responsive mobile-first development.
+                            Fast, responsive performance on every device and build.
                         </p>
                     </div>
                 </div>
@@ -444,13 +448,13 @@
                 <!-- Item -->
                 <div>
                     <span class="inline-block px-2.5 py-1 text-sm bg-default-100 rounded-md">
-                        Business Growth
+                        Risk-Free Start
                     </span>
 
                     <div class="mt-4 flex items-start gap-4">
-                        <h3 class="text-3xl">Enquiry</h3>
+                        <h3 class="text-3xl text-nowrap">Free mockup</h3>
                         <p>
-                            Built to turn website visitors into qualified business leads.
+                            Review your concept draft before you pay any deposit.
                         </p>
                     </div>
                 </div>
@@ -599,7 +603,7 @@
                 <div>
                     <div class="text-sm text-default-950 mb-2.5">Case Studies</div>
 
-                    <h1 class="lg:text-5xl md:text-4xl text-3xl mb-2.5">Real Results From Real Businesses</h1>
+                    <h1 class="lg:text-5xl md:text-4xl text-3xl mb-2.5">Real Examples, Built for Real Businesses</h1>
 
                     <p class="text-default-600">Explore our featured web design and development projects across key industries.</p>
                 </div>
@@ -824,7 +828,7 @@
                     <button class="hs-accordion-toggle w-full flex justify-between items-start gap-3 text-start">
                         <div class="space-y-2">
                             <!-- <div class="py-1 px-2.5 inline-flex text-xs/none font-medium border border-default-200 rounded-md">LP</div> -->
-                            <h3 class="lg:text-2xl text-xl font-medium text-default-950">Landing Page</h3>
+                            <h3 class="lg:text-2xl text-xl font-medium text-default-950">Landing Pages</h3>
                         </div>
 
                         <div class="relative size-4.5 flex items-center justify-center shrink-0 mt-1.5">
@@ -836,7 +840,7 @@
                     <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300 text-start">
                         <div class="pt-5 flex flex-col gap-5">
                             <p class="text-default-600 text-sm md:text-base leading-relaxed">
-                                High-converting landing pages built to turn traffic into qualified business enquiries, with optimized call-to-actions, mobile-first design, and fast load speeds.
+                                One focused page that turns visitors into enquiries. From S$690.
                             </p>
 
                             <div class="overflow-hidden rounded-xl">
@@ -846,7 +850,7 @@
                             <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 p-3 ps-4 rounded-lg bg-default-100">
                                 <div class="flex flex-col">
                                     <span class="text-xs text-default-600">High Conversion &amp; Fast Loading</span>
-                                    <span class="font-medium text-default-950 text-sm">Targeted B2B Enquiries</span>
+                                    <span class="font-medium text-default-950 text-sm">Targeted Enquiries</span>
                                 </div>
 
                                 <a href="service-detail?service=landing-page" class="group py-2.5 px-4 inline-flex items-center justify-center rounded-lg bg-primary text-white text-xs font-medium transition-all shrink-0">
@@ -865,7 +869,7 @@
                     <button class="hs-accordion-toggle w-full flex justify-between items-start gap-3 text-start">
                         <div class="space-y-2">
                             <!-- <div class="py-1 px-2.5 inline-flex text-xs/none font-medium border border-default-200 rounded-md">Company Profile</div> -->
-                            <h3 class="lg:text-2xl text-xl font-medium text-default-950">Company Profile Website</h3>
+                            <h3 class="lg:text-2xl text-xl font-medium text-default-950">Company Profile Websites</h3>
                         </div>
 
                         <div class="relative size-4.5 flex items-center justify-center shrink-0 mt-1.5">
@@ -877,7 +881,7 @@
                     <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300 text-start">
                         <div class="pt-5 flex flex-col gap-5">
                             <p class="text-default-600 text-sm md:text-base leading-relaxed">
-                                Modern, professional company profile websites that reflect your brand credibility, showcase your services, and engage potential clients across desktop and mobile.
+                                Show your services, team and track record in a site that builds trust.
                             </p>
 
                             <div class="overflow-hidden rounded-xl">
@@ -918,7 +922,7 @@
                     <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300 text-start">
                         <div class="pt-5 flex flex-col gap-5">
                             <p class="text-default-600 text-sm md:text-base leading-relaxed">
-                                Tailored web solutions for construction, engineering, commercial cleaning, landscaping, consulting, and manufacturing suppliers.
+                                Structured pages for contractors, cleaners, engineers and other service firms.
                             </p>
 
                             <div class="overflow-hidden rounded-xl">
@@ -928,7 +932,7 @@
                             <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 p-3 ps-4 rounded-lg bg-default-100">
                                 <div class="flex flex-col">
                                     <span class="text-xs text-default-600">Tailored to Industry Needs</span>
-                                    <span class="font-medium text-default-950 text-sm">6 Target Sectors</span>
+                                    <span class="font-medium text-default-950 text-sm">Service Sectors</span>
                                 </div>
 
                                 <a href="contact" class="group py-2.5 px-4 rounded-lg bg-primary text-white text-xs font-medium shrink-0">
@@ -948,6 +952,41 @@
                         <div class="space-y-2">
                             <!-- <div class="py-1 px-2.5 inline-flex text-xs/none font-medium border border-default-200 rounded-md">Web System</div> -->
                             <h3 class="lg:text-2xl text-xl font-medium text-default-950">Custom Web Development</h3>
+                        </div>
+
+                        <div class="relative size-4.5 flex items-center justify-center shrink-0 mt-1.5">
+                            <i class="absolute h-4.5 w-0.5 bg-default-950 flex transition duration-500 hs-accordion-active:rotate-90"></i>
+                            <i class="w-4.5 h-0.5 bg-default-950 flex"></i>
+                        </div>
+                    </button>
+
+                    <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300 text-start">
+                        <div class="pt-5 flex flex-col gap-5">
+                            <p class="text-default-600 text-sm md:text-base leading-relaxed">
+                                Forms, integrations and features built around how your business works.
+                            </p>
+
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="images/case-studies/4.webp" class="w-full h-48 md:h-56 object-cover rounded-xl" alt="Custom Web Development">
+                            </div>
+
+                            <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 p-3 ps-4 rounded-lg bg-default-100">
+                                <div class="flex flex-col">
+                                    <span class="text-xs text-default-600">Reliable &amp; Cost-Effective</span>
+                                    <span class="font-medium text-default-950 text-sm">Long-term Partner</span>
+                                </div>
+
+                                <a href="contact" class="group py-2.5 px-4 rounded-lg bg-primary text-white text-xs font-medium shrink-0">
+                                    <span class="relative block overflow-hidden">
+                                        <span class="block group-hover:-translate-y-7 duration-[1.125s]">See details</span>
+                                        <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s]">See details</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
                         </div>
 
                         <div class="relative size-4.5 flex items-center justify-center shrink-0 mt-1.5">
@@ -984,14 +1023,14 @@
                 </div>
             </div>
 
-            <div class="grid mt-7.5">
+            <div class="flex justify-center mt-12">
                 <a href="case-studies" class="group py-5 px-10 inline-flex items-center justify-center gap-5 rounded-lg bg-primary text-white font-medium transition-all">
                     <span class="relative block overflow-hidden">
                         <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                            View all case studies
+                            View All Case Studies
                         </span>
                         <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                            View all case studies
+                            View All Case Studies
                         </span>
                     </span>
                 </a>
@@ -1004,9 +1043,9 @@
         <div class="container">
 
             <div class="mb-12.5 text-center">
-                <div class="text-sm font-semibold text-primary mb-2.5">Proven Value</div>
+                <div class="text-sm font-semibold text-primary mb-2.5">Proven Results</div>
 
-                <h2 class="lg:text-5xl md:text-4xl text-3xl font-medium text-default-950 mb-2.5">Building Trust Before the First Conversation.</h2>
+                <h2 class="lg:text-5xl md:text-4xl text-3xl font-medium text-default-950 mb-2.5">What Our Clients Say</h2>
 
                 <p class="text-default-600 lg:max-w-xl mx-auto mb-7.5">How businesses across Singapore and Australia establish credibility and win corporate contracts with DOPDEV.</p>
 
@@ -1033,24 +1072,24 @@
                             </div>
 
                             <p class="text-white text-sm leading-relaxed">
-                                “Our previous website was outdated and didn't reflect our manufacturing capabilities. DOPDEV rebuilt our site with clear technical specifications and a structured RFQ process that immediately improved our conversion rate on tender bids.”
+                                “Our tender enquiries increased by 40% within two months. DOPDEV's team structured our capabilities with exceptional clarity and professionalism.”
                             </p>
                         </div>
 
                         <div class="mt-8">
                             <div class="flex flex-wrap justify-between gap-6 mb-4">
                                 <div>
-                                    <h3 class="text-3xl text-white font-semibold">100%</h3>
-                                    <p class="text-default-300 text-xs">Responsive Design</p>
+                                    <h3 class="text-3xl text-white font-semibold">+40%</h3>
+                                    <p class="text-default-300 text-xs">Tender Enquiries</p>
                                 </div>
 
                                 <div>
-                                    <h3 class="text-3xl text-white font-semibold">B2B</h3>
-                                    <p class="text-default-300 text-xs">Direct Enquiries</p>
+                                    <h3 class="text-3xl text-white font-semibold">7 Days</h3>
+                                    <p class="text-default-300 text-xs">Fast Turnaround</p>
                                 </div>
                             </div>
                             <a href="contact" class="text-xs text-primary hover:underline font-medium inline-flex items-center gap-1">
-                                <span>Discuss your project</span>
+                                <span>Get a Free Quote</span>
                                 <i class="iconify tabler--arrow-up-right"></i>
                             </a>
                         </div>
@@ -1095,7 +1134,7 @@
                             </div>
 
                             <p class="text-default-600 leading-relaxed text-sm mb-4">
-                                “In consulting, trust is everything. DOPDEV created a clean, minimalist profile that clearly presents our advisory services and case studies. Prospective corporate clients frequently comment on the professionalism of our site.”
+                                “Prospective corporate clients frequently comment on the credibility of our site. Working with DOPDEV was seamless from draft mockup to final launch.”
                             </p>
                         </div>
 
@@ -1105,7 +1144,7 @@
                                 <span class="text-sm font-bold text-default-950">High Credibility</span>
                             </div>
                             <a href="contact" class="text-xs text-primary hover:underline font-medium inline-flex items-center gap-1">
-                                <span>Get in touch</span>
+                                <span>Get a Free Quote</span>
                                 <i class="iconify tabler--arrow-up-right"></i>
                             </a>
                         </div>
@@ -1117,17 +1156,17 @@
             <div class="mt-12.5">
                 <div class="flex items-center justify-between gap-2.5 p-2 md:ps-6 rounded-lg bg-default-100">
                     <div>
-                        <div class="font-medium text-default-950">Ready to Build a Better Website?</div>
-                        <div class="text-xs text-default-500 hidden sm:block">Let's discuss your business goals and create a website that represents your company professionally.</div>
+                        <div class="font-medium text-default-950">Ready for a Website That Brings in Enquiries?</div>
+                        <div class="text-xs text-default-500 hidden sm:block">Tell us about your business. We'll show you a free mockup and a fixed quote, with no obligation.</div>
                     </div>
 
                     <a href="contact" class="group py-5 px-10 inline-flex text-nowrap items-center justify-center rounded-lg bg-white text-primary font-medium transition-all shadow-xs">
                         <span class="relative block overflow-hidden">
                             <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                Discuss Your Project
+                                Get Your Free Mockup
                             </span>
                             <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                Discuss Your Project
+                                Get Your Free Mockup
                             </span>
                         </span>
                     </a>
@@ -1274,12 +1313,12 @@
                     <div class="border border-default-200 rounded-xl lg:p-10 p-5 lg:pb-16 pb-12 h-full flex flex-col md:items-start items-center lg:text-start text-center justify-between gap-12">
 
                         <div>
-                            <h4 class="lg:text-3xl text-2xl font-medium mb-2 text-default-950">Ready to Build a Better Website?</h4>
-                            <p class="text-default-600 text-sm">Let's discuss your business goals and create a website that represents your company professionally.</p>
+                            <h4 class="lg:text-3xl text-2xl font-medium mb-2 text-default-950">Ready for a Website That Brings in Enquiries?</h4>
+                            <p class="text-default-600 text-sm">Tell us about your business. We'll show you a free mockup and a fixed quote, with no obligation.</p>
                         </div>
 
                         <div class="inline-flex items-center gap-3">
-                            <div class="text-sm font-medium">Discuss Your Project</div>
+                            <div class="text-sm font-medium">Get Your Free Mockup</div>
                             <i class="iconify tabler--circle-plus size-5"></i>
                             <div class="flex -space-x-2">
                                 <div class="relative inline-block group">
@@ -1333,10 +1372,10 @@
                             <a href="contact" class="group py-5 px-10 inline-flex items-center text-nowrap justify-center rounded-lg bg-white text-primary font-medium transition-all">
                                 <span class="relative block overflow-hidden">
                                     <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Let's Talk About Your Project
+                                        Get Your Free Mockup
                                     </span>
                                     <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Let's Talk About Your Project
+                                        Get Your Free Mockup
                                     </span>
                                 </span>
                             </a>
