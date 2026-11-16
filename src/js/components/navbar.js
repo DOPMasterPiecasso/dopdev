@@ -2,18 +2,7 @@
 
 // Sticky Navbar
 function initStickyNavbar() {
-
-    const stickyNav = document.querySelector(".nav-sticky");
-
-    if (!stickyNav) return;
-
-    window.addEventListener("scroll", () => {
-
-        const scTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        stickyNav.classList.toggle("nav-sticky-on", scTop >= 100);
-
-    });
+    return;
 }
 
 

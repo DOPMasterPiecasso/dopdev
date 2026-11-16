@@ -46,6 +46,9 @@ $dispatcher = FastRoute\simpleDispatcher(function (
 	$r->addRoute('GET', '/feature', function ($ROUTE_PARAMS) {
 		include 'pages/feature.php';
 	});
+	$r->addRoute('GET', '/lppromotion', function ($ROUTE_PARAMS) {
+		include 'pages/lppromotion.php';
+	});
 	$r->addRoute('GET', '/service-detail', function ($ROUTE_PARAMS) {
 		include 'pages/service-detail.php';
 	});

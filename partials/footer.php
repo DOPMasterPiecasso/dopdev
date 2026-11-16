@@ -87,4 +87,9 @@
         </div>
 
     </div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/6282125189383?text=Hi%20DOP%2C%20I%27d%20like%20to%20ask%20something." aria-label="Chat on WhatsApp" class="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-green-500/30 transition-transform duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-green-200" target="_blank" rel="noopener noreferrer">
+        <i class="iconify tabler--brand-whatsapp size-6"></i>
+    </a>
 </footer>
