@@ -2,7 +2,15 @@
 
 // Sticky Navbar
 function initStickyNavbar() {
-    return;
+    const stickyNav = document.querySelector(".nav-sticky");
+
+    if (!stickyNav) return;
+
+    window.addEventListener("scroll", () => {
+        const scTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        stickyNav.classList.toggle("nav-sticky-on", scTop >= 100);
+    });
 }
 
 
@@ -54,7 +62,7 @@ function initCaseStudiesAdaptiveNav() {
 
     if (!heroNav || (!navbarCase && !navbarCaseMobile)) return;
 
-    const sections = ["lp", "company", "booking", "system"]
+    const sections = ["company", "lp", "booking", "system"]
         .map((id) => document.getElementById(id))
         .filter(Boolean);
 
@@ -111,13 +119,11 @@ function initCaseStudiesAdaptiveNav() {
 
         // ScrollSpy to highlight currently active section
         let currentSectionId = "";
-        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
         const offsetThreshold = headerHeight + 80;
 
         for (let i = sections.length - 1; i >= 0; i--) {
             const sec = sections[i];
-            const secTop = sec.offsetTop;
-            if (scrollPosition >= secTop - offsetThreshold) {
+            if (sec.getBoundingClientRect().top <= offsetThreshold) {
                 currentSectionId = sec.id;
                 break;
             }

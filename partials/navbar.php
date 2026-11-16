@@ -4,9 +4,9 @@ $navPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?? '/';
 $navBlogActive = $navPath === '/blog' || $navPath === '/blog-details' || strpos($navPath, '/blog-details/') === 0;
 $navBlogClass = $navBlogActive ? 'text-primary underline decoration-current' : '';
 ?>
-<header class="relative z-50 bg-body-bg transition-all duration-300">
+<header class="sticky top-0 z-50 bg-body-bg transition-all duration-300">
     <div class="container">
-        <div class="navbar md:py-6.5 py-5 flex items-center w-full justify-between relative">
+        <div class="nav-sticky navbar md:py-6.5 py-5 flex items-center w-full justify-between relative">
             <a href="/" class="flex items-center">
                 <img src="logo/logodophitam.webp" class="h-9.5 flex" alt="DOP logo" />
             </a>
