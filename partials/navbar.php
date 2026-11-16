@@ -4,9 +4,9 @@ $navPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?? '/';
 $navBlogActive = $navPath === '/blog' || $navPath === '/blog-details' || strpos($navPath, '/blog-details/') === 0;
 $navBlogClass = $navBlogActive ? 'text-primary underline decoration-current' : '';
 ?>
-<header class="sticky top-0 z-50 bg-body-bg transition-all duration-300">
+<header class="relative z-50 bg-body-bg transition-all duration-300">
     <div class="container">
-        <div class="nav-sticky navbar md:py-6.5 py-5 flex items-center w-full justify-between relative">
+        <div class="navbar md:py-6.5 py-5 flex items-center w-full justify-between relative">
             <a href="/" class="flex items-center">
                 <img src="logo/logodophitam.webp" class="h-9.5 flex" alt="DOP logo" />
             </a>
@@ -231,3 +231,8 @@ $navBlogClass = $navBlogActive ? 'text-primary underline decoration-current' : '
         </div>
     </div>
 </div>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/11234567890" target="_blank" rel="noopener noreferrer" class="fixed bottom-4 end-4 z-50 p-3 rounded-full bg-green-500 text-white shadow-lg transition-transform transform hover:scale-105" aria-label="Chat with us on WhatsApp">
+    <i class="iconify tabler--brand-whatsapp size-5"></i>
+</a>
