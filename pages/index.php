@@ -204,79 +204,79 @@
 
                     <h2 class="mb-2.5 lg:text-5xl md:text-4xl text-3xl">What You Get With DopDev</h2>
 
-                    <p class="mx-auto lg:max-w-2/5">Company profile + online booking + smart integrations built for service businesses in Singapore and Australia.</p>
+                    <p class="mx-auto lg:max-w-2/5">High-performance corporate websites, tailored digital solutions, and strategic tools built to help growing businesses scale.</p>
                 </div>
 
                 <div class="grid lg:grid-cols-4 md:grid-cols-2 md:gap-7.5 gap-2.5">
                     <div class="relative rounded-lg overflow-hidden group">
                         <a href="service-detail?service=company-profile" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/1.jpg" alt="Company Profile + Booking Website" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <img src="images/service/1.jpg" alt="Corporate Company Profile" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Company Profile + Booking Website</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Corporate Company Profile</div>
                         </div>
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
-                        <a href="service-detail?service=booking-system" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/2.jpg" alt="Smart Appointment Booking" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <a href="service-detail?service=landing-page" class="absolute inset-0 z-1"></a>
+                        <img src="images/service/2.jpg" alt="High-Converting Landing Pages" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Smart Appointment Booking</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">High-Converting Landing Pages</div>
                         </div>
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
-                        <a href="service-detail?service=booking-system" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/3.jpg" alt="No-Show Reduction Tools" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <a href="service-detail?service=company-profile" class="absolute inset-0 z-1"></a>
+                        <img src="images/service/3.jpg" alt="Lead Generation & Enquiries" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">No-Show Reduction Tools</div>
-                        </div>
-                    </div>
-
-                    <div class="relative rounded-lg overflow-hidden group">
-                        <a href="service-detail?service=custom-system" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/4.jpg" alt="Multi-Branch & Multi-Staff Management" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
-
-                        <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Multi-Branch &amp; Multi-Staff Management</div>
-                        </div>
-                    </div>
-
-                    <div class="relative rounded-lg overflow-hidden group">
-                        <a href="service-detail?service=booking-system" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/5.jpg" alt="Payments & Deposits" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
-
-                        <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Payments &amp; Deposits</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Lead Generation &amp; Enquiries</div>
                         </div>
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
                         <a href="service-detail?service=custom-system" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/6.jpg" alt="CRM & Customer Retention" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <img src="images/service/4.jpg" alt="Custom Portals & Admin Panels" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">CRM &amp; Customer Retention</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Custom Portals &amp; Admin Panels</div>
                         </div>
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
                         <a href="service-detail?service=custom-system" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/7.jpg" alt="Reports & Analytics for Owners" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <img src="images/service/5.jpg" alt="Payment Gateways & Invoicing" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Reports &amp; Analytics for Owners</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Payment Gateways &amp; Invoicing</div>
                         </div>
                     </div>
 
                     <div class="relative rounded-lg overflow-hidden group">
                         <a href="service-detail?service=custom-system" class="absolute inset-0 z-1"></a>
-                        <img src="images/service/8.jpg" alt="Integrations That Matter" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+                        <img src="images/service/6.jpg" alt="CRM & Workflow Automation" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
 
                         <div class="absolute bottom-5 inset-x-0 text-center">
-                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Integrations That Matter</div>
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">CRM &amp; Workflow Automation</div>
+                        </div>
+                    </div>
+
+                    <div class="relative rounded-lg overflow-hidden group">
+                        <a href="service-detail?service=custom-system" class="absolute inset-0 z-1"></a>
+                        <img src="images/service/7.jpg" alt="Reports & Analytics Dashboards" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+
+                        <div class="absolute bottom-5 inset-x-0 text-center">
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">Reports &amp; Analytics Dashboards</div>
+                        </div>
+                    </div>
+
+                    <div class="relative rounded-lg overflow-hidden group">
+                        <a href="service-detail?service=custom-system" class="absolute inset-0 z-1"></a>
+                        <img src="images/service/8.jpg" alt="API & Third-Party Integrations" class="rounded-lg object-cover group-hover:scale-105 transition-all duration-300">
+
+                        <div class="absolute bottom-5 inset-x-0 text-center">
+                            <div class="text-default-950 py-2 px-4 inline-flex rounded bg-white">API &amp; Third-Party Integrations</div>
                         </div>
                     </div>
                 </div>

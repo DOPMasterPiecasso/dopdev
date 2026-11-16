@@ -9,8 +9,8 @@
                 <div class="h-full flex flex-col justify-between gap-6">
                     <div>
                         <img src="logo/logodophitam.webp" class="h-10 mb-4 brightness-0 invert" alt="DOP logo">
-                        <div class="text-white font-bold text-xl mb-2">DOP – Booking Systems for Service Businesses</div>
-                        <p class="text-default-400 text-sm leading-relaxed">Company profile + online booking + integrations for barbershops, clinics and other service brands in Singapore and Australia.</p>
+                        <div class="text-white font-bold text-xl mb-2">DOPDEV – Digital Solutions</div>
+                        <p class="text-default-400 text-sm leading-relaxed">Professional websites, web applications, and digital solutions designed to help growing businesses build credibility and scale.</p>
                     </div>
 
                     <div class="space-y-2">

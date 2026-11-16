@@ -22,11 +22,11 @@
             <!-- Category Quick Jump Navigation -->
             <div id="case-study-hero-nav" class="flex justify-center mb-16 transition-all duration-300">
                 <div class="inline-flex flex-wrap gap-2 justify-center">
-                    <a href="#lp" data-case-cat="lp" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
-                        Landing Page
-                    </a>
                     <a href="#company" data-case-cat="company" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
                         Company Profile
+                    </a>
+                    <a href="#lp" data-case-cat="lp" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
+                        Landing Page
                     </a>
                     <a href="#booking" data-case-cat="booking" class="case-cat-btn py-2 px-4 text-sm font-medium text-default-700 hover:text-default-950 rounded-lg transition-all">
                         Web Book System
@@ -40,7 +40,162 @@
             <!-- All 4 Category Sections -->
             <div class="space-y-20">
 
-                <!-- Category 1: LP -->
+                <!-- Category 1: Company Profile -->
+                <div id="company" class="scroll-mt-28 md:scroll-mt-24">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pb-5 border-b border-default-200">
+                        <div class="max-w-2xl">
+                            <h2 class="text-2xl md:text-3xl font-semibold text-default-950 mb-2">Company Profile</h2>
+                            <p class="text-default-600 text-base leading-relaxed">
+                                Elegant, credible corporate company profile websites crafted to showcase brand identity, doctor and therapist teams, treatment catalogs, and multi-branch locations.
+                            </p>
+                        </div>
+                        <!-- <div class="shrink-0">
+                            <button type="button" class="hs-collapse-toggle group py-2.5 px-5 inline-flex items-center gap-2 rounded-lg border border-default-200 hover:bg-default-100 text-default-800 text-sm font-medium transition-all" id="btn-company" data-hs-collapse="#collapse-company">
+                                <span class="hs-collapse-open:hidden">Show Details</span>
+                                <span class="hidden hs-collapse-open:inline-block">Show Less</span>
+                                <i class="iconify tabler--chevron-down size-4 hs-collapse-open:rotate-180 transition-transform"></i>
+                            </button>
+                        </div> -->
+                    </div>
+
+                    <!-- Initial 3 Cards -->
+                    <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5">
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+                            <a href="https://landing.dopdev.com/cleaning" target="_blank" rel="noopener noreferrer" class="absolute inset-0 z-10"></a>
+                            <div class="overflow-hidden h-64">
+                                <img src="images/case-studies/lp/cleaning.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Professional Cleaning Services">
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="text-xs font-semibold text-primary">Cleaning Services</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Professional commercial & residential cleaning profile</h3>
+                                <p class="text-xs text-default-500 mb-4">Commercial & Residential • Modern service presentation with transparent pricing and quotation requests.</p>
+                                <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
+                                    <span class="font-bold text-primary">Live Demo</span>
+                                    <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
+                                        View Demo <i class="iconify tabler--arrow-up-right size-3.5"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+                            <a href="https://landing.dopdev.com/contractor" target="_blank" rel="noopener noreferrer" class="absolute inset-0 z-10"></a>
+                            <div class="overflow-hidden h-64">
+                                <img src="images/case-studies/lp/contruction.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="General Contractor & Construction">
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="text-xs font-semibold text-primary">Contractor & Construction</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Commercial contractor & construction profile</h3>
+                                <p class="text-xs text-default-500 mb-4">Construction & Renovation • Project portfolio showcases, credentials, and consultation booking.</p>
+                                <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
+                                    <span class="font-bold text-primary">Live Demo</span>
+                                    <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
+                                        View Demo <i class="iconify tabler--arrow-up-right size-3.5"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+                            <a href="https://landing.dopdev.com/electrician" target="_blank" rel="noopener noreferrer" class="absolute inset-0 z-10"></a>
+                            <div class="overflow-hidden h-64">
+                                <img src="images/case-studies/lp/electric.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Licensed Electrical Contractor">
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="text-xs font-semibold text-primary">Electrical Services</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Licensed electrical contractor corporate profile</h3>
+                                <p class="text-xs text-default-500 mb-4">Emergency & Commercial • Fast service dispatch, licensing authority proof, and quote calculator.</p>
+                                <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
+                                    <span class="font-bold text-primary">Live Demo</span>
+                                    <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
+                                        View Demo <i class="iconify tabler--arrow-up-right size-3.5"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Collapsible Additional Projects -->
+                    <!-- <div id="collapse-company" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300">
+                        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5 pt-7.5">
+                            <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+                                <a href="case-study?case=salon&cat=company" class="absolute inset-0 z-10"></a>
+                                <div class="overflow-hidden h-64">
+                                    <img src="images/examples/salon-3.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Company Profile Case Study">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <span class="text-xs font-semibold text-primary">Maison Privée Studio</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Premium salon group corporate identity website</h3>
+                                    <p class="text-xs text-default-500 mb-4">Orchard Road, SG • Multi-location brand portal, stylist team portfolios, and press highlights.</p>
+                                    <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
+                                        <span class="font-bold text-primary">100% Bespoke</span>
+                                        <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
+                                            View Case <i class="iconify tabler--arrow-right size-3.5"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+                                <a href="case-study?case=clinic&cat=company" class="absolute inset-0 z-10"></a>
+                                <div class="overflow-hidden h-64">
+                                    <img src="images/examples/clinic-3.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Company Profile Case Study">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <span class="text-xs font-semibold text-primary">Lumina Aesthetic</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Multi-specialist wellness clinic official portal</h3>
+                                    <p class="text-xs text-default-500 mb-4">Melbourne & Sydney • Doctor qualifications, treatment catalog, and clinical accreditation.</p>
+                                    <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
+                                        <span class="font-bold text-primary">High Credibility</span>
+                                        <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
+                                            View Case <i class="iconify tabler--arrow-right size-3.5"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+                                <a href="case-study?case=fitness&cat=company" class="absolute inset-0 z-10"></a>
+                                <div class="overflow-hidden h-64">
+                                    <img src="images/examples/personal-trainer-1.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Company Profile Case Study">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <span class="text-xs font-semibold text-primary">Apex Performance</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Health & beauty enterprise corporate showcase</h3>
+                                    <p class="text-xs text-default-500 mb-4">Brisbane, AU • Facility virtual tours, personal trainer roster, and membership programs.</p>
+                                    <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
+                                        <span class="font-bold text-primary">Custom Architecture</span>
+                                        <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
+                                            View Case <i class="iconify tabler--arrow-right size-3.5"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <button type="button" class="hs-collapse-toggle group py-3 px-6 inline-flex items-center gap-2 rounded-lg bg-default-100 hover:bg-default-200 text-default-900 text-sm font-medium transition-all" data-hs-collapse="#collapse-company">
+                            <span class="hs-collapse-open:hidden">View All Company Profile Projects</span>
+                            <span class="hidden hs-collapse-open:inline-block">Show Less</span>
+                            <i class="iconify tabler--chevron-down size-4 hs-collapse-open:rotate-180 transition-transform"></i>
+                        </button>
+                    </div> -->
+                </div>
+
+                <!-- Category 2: LP -->
                 <div id="lp" class="scroll-mt-28 md:scroll-mt-24">
                     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pb-5 border-b border-default-200">
                         <div class="max-w-2xl">
@@ -192,164 +347,6 @@
                     <div class="mt-8 text-center">
                         <button type="button" class="hs-collapse-toggle group py-3 px-6 inline-flex items-center gap-2 rounded-lg bg-default-100 hover:bg-default-200 text-default-900 text-sm font-medium transition-all" data-hs-collapse="#collapse-lp">
                             <span class="hs-collapse-open:hidden">View All Landing Page Projects</span>
-                            <span class="hidden hs-collapse-open:inline-block">Show Less</span>
-                            <i class="iconify tabler--chevron-down size-4 hs-collapse-open:rotate-180 transition-transform"></i>
-                        </button>
-                    </div> -->
-                </div>
-
-                <!-- Category 2: Company Profile -->
-                <div id="company" class="scroll-mt-28 md:scroll-mt-24">
-                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pb-5 border-b border-default-200">
-                        <div class="max-w-2xl">
-                            <h2 class="text-2xl md:text-3xl font-semibold text-default-950 mb-2">Company Profile</h2>
-                            <p class="text-default-600 text-base leading-relaxed">
-                                Elegant, credible corporate company profile websites crafted to showcase brand identity, doctor and therapist teams, treatment catalogs, and multi-branch locations.
-                            </p>
-                        </div>
-                        <!-- <div class="shrink-0">
-                            <button type="button" class="hs-collapse-toggle group py-2.5 px-5 inline-flex items-center gap-2 rounded-lg border border-default-200 hover:bg-default-100 text-default-800 text-sm font-medium transition-all" id="btn-company" data-hs-collapse="#collapse-company">
-                                <span class="hs-collapse-open:hidden">Show Details</span>
-                                <span class="hidden hs-collapse-open:inline-block">Show Less</span>
-                                <i class="iconify tabler--chevron-down size-4 hs-collapse-open:rotate-180 transition-transform"></i>
-                            </button>
-                        </div> -->
-                    </div>
-
-                    <!-- Initial 3 Cards -->
-                    <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5">
-                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                            <a href="case-study?case=clinic&cat=company" class="absolute inset-0 z-10"></a>
-                            <div class="overflow-hidden h-64">
-                                <img src="images/examples/clinic-2.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Lumina Aesthetic">
-                            </div>
-                            <div class="p-6">
-                                <div class="flex items-center gap-2 mb-3">
-                                    <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">Company</span> -->
-                                    <span class="text-xs font-semibold text-primary">Lumina Aesthetic Clinic</span>
-                                </div>
-                                <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Corporate website for dental & aesthetic group</h3>
-                                <p class="text-xs text-default-500 mb-4">Melbourne & Sydney • Brand presence showcasing doctor credentials & treatment options.</p>
-                                <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
-                                    <span class="font-bold text-primary">100% Bespoke Design</span>
-                                    <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
-                                        View Case <i class="iconify tabler--arrow-right size-3.5"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                            <a href="case-study?case=barbershop&cat=company" class="absolute inset-0 z-10"></a>
-                            <div class="overflow-hidden h-64">
-                                <img src="images/examples/barber-2.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="The Heritage Barber Co.">
-                            </div>
-                            <div class="p-6">
-                                <div class="flex items-center gap-2 mb-3">
-                                    <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">Company</span> -->
-                                    <span class="text-xs font-semibold text-primary">The Heritage Barber Co.</span>
-                                </div>
-                                <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Multi-branch barbershop brand identity website</h3>
-                                <p class="text-xs text-default-500 mb-4">Central Singapore • Multi-branch location maps, barber bios, and service pricing.</p>
-                                <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
-                                    <span class="font-bold text-primary">2 Central Branches</span>
-                                    <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
-                                        View Case <i class="iconify tabler--arrow-right size-3.5"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                            <a href="case-study?case=salon&cat=company" class="absolute inset-0 z-10"></a>
-                            <div class="overflow-hidden h-64">
-                                <img src="images/examples/salon-2.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Maison Privée">
-                            </div>
-                            <div class="p-6">
-                                <div class="flex items-center gap-2 mb-3">
-                                    <!-- <span class="py-1 px-2.5 text-xs font-semibold rounded bg-default-100 text-default-700">Company</span> -->
-                                    <span class="text-xs font-semibold text-primary">Maison Privée Studio</span>
-                                </div>
-                                <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Medical aesthetics & salon corporate portal</h3>
-                                <p class="text-xs text-default-500 mb-4">Orchard Road, SG • Luxury treatment galleries, stylist portfolios, and press mentions.</p>
-                                <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
-                                    <span class="font-bold text-primary">+62% Avg Ticket</span>
-                                    <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
-                                        View Case <i class="iconify tabler--arrow-right size-3.5"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Collapsible Additional Projects -->
-                    <!-- <div id="collapse-company" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300">
-                        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5 pt-7.5">
-                            <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                                <a href="case-study?case=salon&cat=company" class="absolute inset-0 z-10"></a>
-                                <div class="overflow-hidden h-64">
-                                    <img src="images/examples/salon-3.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Company Profile Case Study">
-                                </div>
-                                <div class="p-6">
-                                    <div class="flex items-center gap-2 mb-3">
-                                        <span class="text-xs font-semibold text-primary">Maison Privée Studio</span>
-                                    </div>
-                                    <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Premium salon group corporate identity website</h3>
-                                    <p class="text-xs text-default-500 mb-4">Orchard Road, SG • Multi-location brand portal, stylist team portfolios, and press highlights.</p>
-                                    <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
-                                        <span class="font-bold text-primary">100% Bespoke</span>
-                                        <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
-                                            View Case <i class="iconify tabler--arrow-right size-3.5"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                                <a href="case-study?case=clinic&cat=company" class="absolute inset-0 z-10"></a>
-                                <div class="overflow-hidden h-64">
-                                    <img src="images/examples/clinic-3.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Company Profile Case Study">
-                                </div>
-                                <div class="p-6">
-                                    <div class="flex items-center gap-2 mb-3">
-                                        <span class="text-xs font-semibold text-primary">Lumina Aesthetic</span>
-                                    </div>
-                                    <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Multi-specialist wellness clinic official portal</h3>
-                                    <p class="text-xs text-default-500 mb-4">Melbourne & Sydney • Doctor qualifications, treatment catalog, and clinical accreditation.</p>
-                                    <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
-                                        <span class="font-bold text-primary">High Credibility</span>
-                                        <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
-                                            View Case <i class="iconify tabler--arrow-right size-3.5"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="relative rounded-xl overflow-hidden group border border-default-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
-                                <a href="case-study?case=fitness&cat=company" class="absolute inset-0 z-10"></a>
-                                <div class="overflow-hidden h-64">
-                                    <img src="images/examples/personal-trainer-1.png" class="object-cover size-full group-hover:scale-105 transition-all duration-300" alt="Company Profile Case Study">
-                                </div>
-                                <div class="p-6">
-                                    <div class="flex items-center gap-2 mb-3">
-                                        <span class="text-xs font-semibold text-primary">Apex Performance</span>
-                                    </div>
-                                    <h3 class="text-xl font-semibold text-default-950 mb-2 leading-snug">Health & beauty enterprise corporate showcase</h3>
-                                    <p class="text-xs text-default-500 mb-4">Brisbane, AU • Facility virtual tours, personal trainer roster, and membership programs.</p>
-                                    <div class="pt-3 border-t border-default-100 flex items-center justify-between text-xs">
-                                        <span class="font-bold text-primary">Custom Architecture</span>
-                                        <span class="font-medium text-default-700 group-hover:text-primary transition-colors flex items-center gap-1">
-                                            View Case <i class="iconify tabler--arrow-right size-3.5"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-8 text-center">
-                        <button type="button" class="hs-collapse-toggle group py-3 px-6 inline-flex items-center gap-2 rounded-lg bg-default-100 hover:bg-default-200 text-default-900 text-sm font-medium transition-all" data-hs-collapse="#collapse-company">
-                            <span class="hs-collapse-open:hidden">View All Company Profile Projects</span>
                             <span class="hidden hs-collapse-open:inline-block">Show Less</span>
                             <i class="iconify tabler--chevron-down size-4 hs-collapse-open:rotate-180 transition-transform"></i>
                         </button>
