@@ -1,1718 +1,1572 @@
+<?php
+// Singapore Home Service Landing Page Promotion
+$waNumber = '6282125189383';
+$waBase = 'https://wa.me/' . $waNumber;
+
+function getWaLink($msg) {
+    global $waBase;
+    return $waBase . '?text=' . rawurlencode($msg);
+}
+
+$waMockup = getWaLink("Hi Dopdev, I'd like a free homepage mockup. My business is: ");
+$waSpot = getWaLink("Hi Dopdev, I want to claim one of the 5 spots. My business is: ");
+$waRevamp = getWaLink("Hi Dopdev, I'd like a free review of my current website. My website is: ");
+$waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. My website is: ");
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DOPDEV builds fixed-price landing pages for home service businesses in Singapore. Get a free homepage mockup on WhatsApp.">
-    <title>DOPDEV | A Website That Gets Your Phone Ringing</title>
+    <title>DOPDEV | A Website That Gets Your Phone Ringing · Singapore Home Services</title>
+    <meta name="description" content="Fixed-price landing pages for Singapore home service businesses: aircon, cleaning, electrical, plumbing and renovation. WhatsApp enquiries built in. Ready in 7 days.">
+    <link rel="icon" type="image/webp" href="/logo/logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --ink: #111827;
-            --ink-soft: #374151;
-            --ink-muted: #6b7280;
-            --line: #e5e7eb;
-            --panel: #ffffff;
-            --panel-soft: #f7f7f5;
-            --panel-soft-2: #f3f4f6;
-            --accent: #16a34a;
-            --accent-hover: #15803d;
-            --accent-soft: #ebfdf1;
-            --shadow: rgba(17, 24, 39, 0.06);
-            --radius: 20px;
-            --ease: cubic-bezier(0.22, 1, 0.36, 1);
-            --max-width: 1180px;
+            --primary: #1A1A1A;       /* Monochrome Primary (Black) */
+            --primary-hover: #333333;
+            --secondary: #1A1A1A;     /* Black / Dark Surface */
+            --tertiary: #FFFFFF;      /* White */
+            --neutral: #888888;       /* Cool Grey */
+            --surface: #1A1A1A;       /* Dark Solid Accent */
+            --accent: #F5F5F5;        /* Light Grey Tint */
+            --border-line: #E5E5E5;
+            --border-dark: #333333;
+            --font-swiss: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            --font-mono: "JetBrains Mono", monospace;
+            --radius: 8px;
+            --max-w: 1280px;
         }
 
-        * { box-sizing: border-box; }
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
         html {
             scroll-behavior: smooth;
+            background: var(--tertiary);
+            color: var(--secondary);
+            font-family: var(--font-swiss);
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
         }
 
         body {
-            margin: 0;
-            font-family: Inter, "Segoe UI", Arial, sans-serif;
-            background: #ffffff;
-            color: var(--ink);
-            -webkit-font-smoothing: antialiased;
-            text-rendering: optimizeLegibility;
+            line-height: 1.6;
+            font-size: 1rem;
+            color: var(--secondary);
+            background: var(--tertiary);
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-swiss);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 1.15;
+            color: var(--secondary);
+        }
+
+        .hero-title {
+            font-size: clamp(2.35rem, 5.2vw, 4rem);
+            font-weight: 700;
+            letter-spacing: -0.035em;
+            line-height: 1.1;
+        }
+
+        .section-title {
+            font-size: clamp(1.85rem, 3.6vw, 2.5rem);
+            letter-spacing: -0.03em;
+            line-height: 1.15;
+        }
+
+        .mono {
+            font-family: var(--font-mono);
+            font-size: 0.8125rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .text-accent-red {
+            color: var(--secondary);
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            text-underline-offset: 6px;
+        }
+
+        p {
+            max-width: 72ch;
+            color: #3d4342;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
         }
 
         img {
             max-width: 100%;
+            height: auto;
             display: block;
         }
 
-        a {
-            color: inherit;
+        /* Layout Structure */
+        .container {
+            width: 100%;
+            max-width: var(--max-w);
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .section-gap {
+            padding-top: clamp(4rem, 8vw, 7.5rem);
+            padding-bottom: clamp(4rem, 8vw, 7.5rem);
+            border-bottom: 1px solid var(--border-line);
+        }
+
+        /* Swiss Grid System Utilities */
+        .grid-swiss-12 {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-line);
+            height: 72px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
             text-decoration: none;
         }
 
-        button, input, textarea, select {
-            font: inherit;
+        .nav-brand img {
+            height: 32px;
+            width: auto;
+            display: block;
         }
 
-        .container {
-            width: min(var(--max-width), calc(100% - 32px));
-            margin: 0 auto;
+        .brand-badge {
+            background: var(--secondary);
+            color: var(--tertiary);
+            padding: 0.2rem 0.5rem;
+            font-size: 0.7rem;
+            font-family: var(--font-mono);
+            border-radius: 4px;
+            letter-spacing: 0.08em;
         }
 
-        .topbar {
-            position: sticky;
-            top: 0;
-            z-index: 20;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--line);
-        }
-
-        .topbar-inner {
+        .nav-links {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            min-height: 72px;
+            gap: 2rem;
+            font-size: 0.9375rem;
+            font-weight: 500;
         }
 
-        .brand {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 800;
-            letter-spacing: 0.04em;
-            font-size: 0.95rem;
+        .nav-links a {
+            color: #4a504f;
+            transition: color 200ms ease;
         }
 
-        .brand-mark {
-            width: 66px;
-            height: 26px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            background: #fff;
-            padding: 2px 8px;
+        .nav-links a:hover {
+            color: var(--primary);
         }
 
-        .brand-mark img {
-            width: 100%;
-            height: auto;
-        }
-
-        .btn {
+        /* Buttons */
+        .btn-primary {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            min-height: 56px;
-            padding: 0 24px;
-            border-radius: 14px;
-            border: 1px solid transparent;
-            font-weight: 700;
-            letter-spacing: 0.01em;
-            transition: transform 0.3s var(--ease), background 0.3s var(--ease), border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
+            gap: 0.5rem;
+            background-color: var(--secondary);
+            color: var(--tertiary);
+            font-family: var(--font-swiss);
+            font-weight: 600;
+            font-size: 0.9375rem;
+            padding: 12px 22px;
+            border-radius: var(--radius);
+            border: 1px solid var(--secondary);
             cursor: pointer;
+            transition: background-color 200ms ease, transform 150ms ease, box-shadow 200ms ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
             text-align: center;
         }
 
-        .btn:focus-visible,
-        .faq-item button:focus-visible,
-        .wa-float:focus-visible {
-            outline: 3px solid rgba(22, 163, 74, 0.25);
-            outline-offset: 2px;
+        .btn-primary:hover {
+            background-color: #333333;
+            border-color: #333333;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
-        .btn-primary {
-            background: var(--accent);
-            color: #fff;
-            box-shadow: 0 8px 18px rgba(22, 163, 74, 0.18);
-        }
-
-        .btn-primary:hover,
-        .btn-primary:focus-visible {
-            background: var(--accent-hover);
+        .btn-primary:active {
+            transform: translateY(1px);
         }
 
         .btn-secondary {
-            background: #fff;
-            color: var(--ink);
-            border-color: var(--line);
-        }
-
-        .btn-secondary:hover,
-        .btn-secondary:focus-visible {
-            border-color: var(--accent);
-        }
-
-        .site-main {
-            overflow: hidden;
-        }
-
-        .section {
-            padding: 72px 0;
-        }
-
-        .section-soft {
-            background: var(--panel-soft);
-        }
-
-        .hero {
-            padding: 48px 0 56px;
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 28px;
-            align-items: center;
-        }
-
-        .eyebrow {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            padding: 8px 14px;
-            border: 1px solid var(--line);
-            border-radius: 999px;
-            background: #fff;
-            color: var(--ink-soft);
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            white-space: nowrap;
+            justify-content: center;
+            gap: 0.5rem;
+            background-color: transparent;
+            color: var(--secondary);
+            font-family: var(--font-swiss);
+            font-weight: 600;
+            font-size: 0.9375rem;
+            padding: 12px 22px;
+            border-radius: var(--radius);
+            border: 1.5px solid var(--neutral);
+            cursor: pointer;
+            transition: all 200ms ease;
+            text-align: center;
         }
 
-        .eyebrow-dot {
-            display: inline-block;
-            width: 9px;
-            height: 9px;
+        .btn-secondary:hover {
+            background-color: var(--accent);
+            border-color: var(--secondary);
+            color: var(--secondary);
+        }
+
+        .btn-white {
+            background-color: var(--tertiary);
+            color: var(--secondary);
+            border: 1px solid var(--tertiary);
+            font-weight: 600;
+            font-size: 0.9375rem;
+            padding: 12px 22px;
+            border-radius: var(--radius);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            transition: all 200ms ease;
+        }
+
+        .btn-white:hover {
+            background-color: var(--accent);
+            transform: translateY(-1px);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding-top: clamp(3.5rem, 6vw, 5.5rem);
+            padding-bottom: clamp(3.5rem, 6vw, 5.5rem);
+            border-bottom: 1px solid var(--border-line);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            background-color: var(--accent);
+            border: 1px solid var(--border-line);
+            padding: 0.4rem 0.85rem;
+            border-radius: 4px;
+            margin-bottom: 1.75rem;
+            font-family: var(--font-mono);
+            font-size: 0.8125rem;
+            color: var(--secondary);
+        }
+
+        .hero-badge-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--secondary);
             border-radius: 50%;
-            background: var(--accent);
-            animation: pulse 1.8s ease-in-out infinite;
+            display: inline-block;
         }
 
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.2); opacity: 0.8; }
+        .hero-sub {
+            font-size: 1.125rem;
+            line-height: 1.6;
+            color: #434a49;
+            margin-top: 1.5rem;
+            margin-bottom: 2.25rem;
         }
 
-        .headline-mask {
+        .hero-action-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            align-items: flex-start;
+        }
+
+        .hero-subtext {
+            font-size: 0.875rem;
+            color: #636b6a;
+        }
+
+        .hero-trust-bar {
+            margin-top: 2.5rem;
+            padding-top: 1.75rem;
+            border-top: 1px solid var(--border-line);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem 2.5rem;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            font-family: var(--font-mono);
+            font-size: 0.8125rem;
+            color: var(--secondary);
+            font-weight: 500;
+        }
+
+        .trust-item svg {
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        /* Hero Right Data Card */
+        .hero-card {
+            background-color: var(--secondary);
+            color: var(--tertiary);
+            border-radius: var(--radius);
+            padding: 2.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid var(--border-dark);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            position: relative;
             overflow: hidden;
         }
 
-        .headline-line {
-            display: block;
-            transform: translateY(110%);
-            opacity: 0;
-            animation: revealLine 0.7s var(--ease) forwards;
-        }
-
-        .headline-line:nth-child(2) { animation-delay: 0.08s; }
-        .headline-line:nth-child(3) { animation-delay: 0.16s; }
-
-        @keyframes revealLine {
-            0% {
-                opacity: 0;
-                transform: translateY(110%);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .headline {
-            margin: 20px 0 0;
-            font-size: clamp(2.3rem, 7vw, 4.5rem);
-            line-height: 1.04;
-            letter-spacing: -0.06em;
-            font-weight: 800;
-            color: var(--ink);
-        }
-
-        h1 .accent-line {
-            position: relative;
-            display: inline-block;
-            color: var(--ink);
-        }
-
-        h1 .accent-line::after {
+        .hero-card::after {
             content: "";
             position: absolute;
+            top: 0;
             left: 0;
-            bottom: -2px;
-            width: 100%;
-            height: 6px;
-            background: rgba(22, 163, 74, 0.18);
-            transform: scaleX(0);
-            transform-origin: left center;
-            animation: drawAccent 0.8s var(--ease) 0.5s forwards;
+            width: 4px;
+            height: 100%;
+            background-color: var(--tertiary);
         }
 
-        @keyframes drawAccent {
-            to { transform: scaleX(1); }
+        .hero-card-header {
+            border-bottom: 1px solid var(--border-dark);
+            padding-bottom: 1.25rem;
+            margin-bottom: 1.5rem;
         }
 
-        .lead {
-            margin-top: 22px;
-            max-width: 620px;
-            font-size: clamp(1.05rem, 1.8vw, 1.35rem);
-            line-height: 1.7;
-            color: var(--ink-soft);
-        }
-
-        .hero-actions {
+        .hero-card-metric {
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 12px;
-            margin-top: 28px;
+            flex-direction: column;
+            gap: 0.35rem;
+            margin-bottom: 1.5rem;
         }
 
-        .cta-sub {
-            margin-top: 10px;
-            font-size: 0.94rem;
-            color: var(--ink-muted);
-        }
-
-        .trust-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 26px;
-        }
-
-        .trust-pill {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 38px;
-            border: 1px solid var(--line);
-            border-radius: 999px;
-            padding: 10px 14px;
-            background: #fff;
-            font-size: 0.82rem;
-            color: var(--ink-soft);
-            font-weight: 600;
-        }
-
-        .hero-visual {
-            position: relative;
-            padding: 12px;
-            border: 1px solid var(--line);
-            border-radius: 28px;
-            background: #fff;
-            box-shadow: 0 18px 48px var(--shadow);
-        }
-
-        .hero-visual-inner {
-            border-radius: 22px;
-            border: 1px solid var(--line);
-            background: #fff;
-            padding: 20px;
-        }
-
-        .device-head {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 18px;
-        }
-
-        .device-label {
-            font-size: 10px;
-            font-weight: 800;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-            color: var(--ink-muted);
-        }
-
-        .status-pill {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 26px;
-            border-radius: 999px;
-            padding: 6px 10px;
-            background: #ebfdf1;
-            color: var(--accent-hover);
+        .hero-card-metric-num {
+            font-family: var(--font-mono);
+            font-size: 2.75rem;
             font-weight: 700;
-            font-size: 10px;
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-        }
-
-        .stat-card {
-            border: 1px solid var(--line);
-            border-radius: 18px;
-            padding: 16px 14px;
-        }
-
-        .stat-card.dark {
-            background: var(--ink);
-            color: #fff;
-            border-color: var(--ink);
-        }
-
-        .stat-card.green {
-            background: var(--accent-soft);
-            border-color: rgba(22, 163, 74, 0.12);
-        }
-
-        .stat-kicker {
-            font-size: 10px;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-            opacity: 0.75;
-            margin-bottom: 8px;
-            display: inline-block;
-        }
-
-        .stat-value {
-            font-size: clamp(1.7rem, 4vw, 2.5rem);
             line-height: 1;
-            letter-spacing: -0.05em;
-            font-weight: 800;
+            color: var(--tertiary);
         }
 
-        .mini-panel {
-            margin-top: 16px;
-            border: 1px solid var(--line);
-            border-radius: 18px;
-            background: #f8f9fb;
-            padding: 16px;
-        }
-
-        .mini-panel-head {
+        .hero-card-footer {
+            border-top: 1px solid var(--border-dark);
+            padding-top: 1.25rem;
+            margin-top: 1.5rem;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--neutral);
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            margin-bottom: 14px;
-            font-size: 0.82rem;
-            font-weight: 700;
-            color: var(--ink);
         }
 
-        .mini-meter {
-            display: grid;
-            gap: 12px;
+        /* Problem Section */
+        .problem-intro {
+            font-size: 1.125rem;
+            color: #555d5c;
+            margin-top: 1rem;
+            margin-bottom: 2.5rem;
         }
 
-        .meter-row {
-            display: grid;
-            gap: 6px;
-        }
-
-        .meter-row-top {
+        .problem-card {
+            background: var(--tertiary);
+            border: 1px solid var(--border-line);
+            border-radius: var(--radius);
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
             display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: space-between;
-            font-size: 0.72rem;
-            color: var(--ink-muted);
+            transition: border-color 200ms ease;
         }
 
-        .meter-bar {
+        .problem-card:hover {
+            border-color: var(--neutral);
+        }
+
+        .card-number {
+            font-family: var(--font-mono);
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 1.25rem;
+        }
+
+        .problem-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .problem-outro {
+            margin-top: 2.5rem;
+            padding: 1.25rem 1.75rem;
+            background: var(--accent);
+            border-left: 3px solid var(--secondary);
+            border-radius: 0 var(--radius) var(--radius) 0;
+            font-size: 1rem;
+            color: var(--secondary);
+            font-weight: 500;
+        }
+
+        /* Offer Section (The Enquiry-Ready Landing Page) */
+        .offer-box {
+            border: 2px solid var(--secondary);
+            border-radius: var(--radius);
+            background: var(--tertiary);
             position: relative;
-            height: 8px;
-            width: 100%;
-            border-radius: 999px;
-            background: #e5e7eb;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
             overflow: hidden;
         }
 
-        .meter-fill {
-            position: absolute;
-            inset: 0 auto 0 0;
-            width: var(--width, 0%);
-            background: var(--accent);
-            border-radius: inherit;
-        }
-
-        .section-head {
-            margin: 0 auto 28px;
-            text-align: center;
-            max-width: 760px;
-        }
-
-        .kicker {
-            display: inline-block;
-            margin-bottom: 16px;
-            font-size: 11px;
-            font-weight: 800;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-            color: var(--ink-muted);
-        }
-
-        h2 {
-            margin: 0;
-            font-size: clamp(2.2rem, 4vw, 3.5rem);
-            line-height: 1.08;
-            letter-spacing: -0.055em;
-            font-weight: 800;
-            color: var(--ink);
-        }
-
-        .card-grid,
-        .portfolio-grid,
-        .steps-grid,
-        .faq-grid,
-        .pricing-grid,
-        .compare-grid {
-            display: grid;
-            gap: 18px;
-        }
-
-        .card-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .feature-card,
-        .step-card,
-        .faq-item,
-        .portfolio-card,
-        .offer-panel,
-        .value-box,
-        .promise-box,
-        .cta-panel {
-            border: 1px solid var(--line);
-            background: #fff;
-            border-radius: 20px;
-            box-shadow: 0 10px 28px rgba(17, 24, 39, 0.03);
-            transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), border-color 0.35s var(--ease);
-        }
-
-        .feature-card:hover,
-        .feature-card:focus-within,
-        .portfolio-card:hover,
-        .step-card:hover,
-        .faq-item:hover,
-        .offer-panel:hover {
-            transform: translateY(-6px);
-            border-color: var(--accent);
-            box-shadow: 0 16px 34px rgba(17, 24, 39, 0.06);
-        }
-
-        .feature-card {
-            padding: 24px;
-        }
-
-        .feature-card .index {
-            display: inline-block;
-            margin-bottom: 18px;
-            font-size: 11px;
-            font-weight: 800;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-            color: var(--accent);
-        }
-
-        .feature-card h3,
-        .step-card h3,
-        .portfolio-card h3 {
-            margin: 0 0 10px;
-            font-size: clamp(1.2rem, 2vw, 1.6rem);
-            line-height: 1.2;
-            letter-spacing: -0.04em;
-            color: var(--ink);
-        }
-
-        .feature-card p,
-        .step-card p,
-        .portfolio-card p,
-        .offer-list li,
-        .faq-answer p,
-        .value-box p,
-        .promise-box p,
-        .cta-panel p,
-        .compare-table td,
-        .compare-table th,
-        .offer-panel li,
-        .final-small {
-            color: var(--ink-soft);
-            font-size: 1.02rem;
-            line-height: 1.7;
-        }
-
-        .problem-copy {
-            max-width: 700px;
-            margin: 26px auto 0;
-            text-align: center;
-            font-size: 1.15rem;
-            color: var(--ink-soft);
-            line-height: 1.7;
-        }
-
-        .problem-grid {
-            display: grid;
-            gap: 18px;
-            grid-template-columns: 1fr;
-            margin-top: 32px;
-        }
-
-        .feature-card svg {
-            width: 28px;
-            height: 28px;
-            margin-bottom: 16px;
-            stroke: var(--ink);
-            stroke-width: 1.8;
-            fill: none;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
-
-        .offer-panel {
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 24px;
-            background: #fff;
-        }
-
-        .offer-top {
+        .offer-header-banner {
+            background: var(--secondary);
+            color: var(--tertiary);
+            padding: 0.65rem 1.5rem;
+            font-family: var(--font-mono);
+            font-size: 0.8125rem;
+            letter-spacing: 0.08em;
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
             justify-content: space-between;
-            gap: 16px;
-            margin-bottom: 12px;
-        }
-
-        .offer-badge {
-            display: inline-flex;
             align-items: center;
-            justify-content: center;
-            min-height: 32px;
-            padding: 0 12px;
-            border-radius: 999px;
-            background: var(--accent-soft);
-            border: 1px solid rgba(22, 163, 74, 0.12);
-            color: var(--accent-hover);
-            font-size: 10px;
-            letter-spacing: 0.18em;
-            font-weight: 800;
-            text-transform: uppercase;
         }
 
-        .price-box {
-            text-align: right;
+        .offer-body {
+            padding: clamp(2rem, 4vw, 3rem);
         }
 
-        .price-main {
-            display: block;
-            font-size: clamp(2rem, 5vw, 3rem);
-            line-height: 1;
-            letter-spacing: -0.06em;
-            font-weight: 800;
-            color: var(--ink);
+        .price-badge-wrap {
+            display: flex;
+            align-items: baseline;
+            gap: 1rem;
+            margin-bottom: 0.5rem;
         }
 
-        .price-strike {
-            display: inline-block;
-            margin-left: 6px;
-            font-size: 0.95rem;
-            color: var(--ink-muted);
+        .price-current {
+            font-family: var(--font-mono);
+            font-size: clamp(2.5rem, 4.5vw, 3.5rem);
+            font-weight: 700;
+            color: var(--secondary);
+            letter-spacing: -0.04em;
+        }
+
+        .price-old {
+            font-family: var(--font-mono);
+            font-size: 1.5rem;
+            color: var(--neutral);
             text-decoration: line-through;
         }
 
-        .offer-sub {
-            margin: 0 0 20px;
-            font-size: 1.04rem;
-            color: var(--ink-soft);
+        .price-sub {
+            font-family: var(--font-mono);
+            font-size: 0.875rem;
+            color: #5d6665;
+            margin-bottom: 2.25rem;
         }
 
-        .offer-list {
+        .feature-checklist {
+            list-style: none;
             display: grid;
             grid-template-columns: 1fr;
-            gap: 10px;
-            padding: 0;
-            margin: 0;
-            list-style: none;
+            gap: 0.85rem;
+            margin-bottom: 2.25rem;
         }
 
-        .offer-list li {
+        .feature-checklist li {
             display: flex;
             align-items: flex-start;
-            gap: 10px;
-            padding: 8px 0;
-            border-bottom: 1px solid rgba(17, 24, 39, 0.05);
+            gap: 0.75rem;
+            font-size: 0.9675rem;
+            color: #2b3030;
         }
 
-        .offer-list li:last-child {
-            border-bottom: 0;
+        .feature-checklist li svg {
+            color: var(--primary);
+            flex-shrink: 0;
+            margin-top: 0.2rem;
         }
 
-        .offer-list li::before {
-            content: "";
-            width: 10px;
-            height: 10px;
-            margin-top: 9px;
-            border-radius: 50%;
+        .not-included-box {
+            padding: 1rem 1.25rem;
             background: var(--accent);
-            flex: 0 0 10px;
+            border-radius: var(--radius);
+            font-size: 0.875rem;
+            color: #555e5d;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-line);
         }
 
-        .not-included {
-            margin-top: 20px;
-            padding-top: 18px;
-            border-top: 1px solid var(--line);
-            font-size: 0.98rem;
-            color: var(--ink-soft);
-        }
-
-        .not-included strong {
-            color: var(--ink);
-        }
-
-        .offer-actions {
-            margin-top: 26px;
-        }
-
-        .compare-wrap {
-            overflow-x: auto;
-            border: 1px solid var(--line);
-            border-radius: 20px;
-            background: #fff;
-        }
-
-        .compare-table {
-            width: 100%;
-            border-collapse: collapse;
-            min-width: 640px;
-        }
-
-        .compare-table th,
-        .compare-table td {
-            padding: 16px 18px;
-            text-align: left;
-            border-bottom: 1px solid var(--line);
-            vertical-align: top;
-        }
-
-        .compare-table th {
-            font-size: 0.82rem;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: var(--ink-muted);
-            font-weight: 800;
-            background: #fff;
-        }
-
-        .compare-table tbody tr {
-            opacity: 0;
-            transform: translateY(18px);
-            animation: fadeSlideRow 0.5s var(--ease) forwards;
-        }
-
-        .compare-table tbody tr:nth-child(2) { animation-delay: 0.08s; }
-        .compare-table tbody tr:nth-child(3) { animation-delay: 0.16s; }
-        .compare-table tbody tr:nth-child(4) { animation-delay: 0.24s; }
-
-        @keyframes fadeSlideRow {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .compare-table .dop-cell {
-            background: rgba(22, 163, 74, 0.06);
-        }
-
-        .compare-table .dop-cell strong {
-            color: var(--ink);
-        }
-
-        .portfolio-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .portfolio-card {
-            overflow: hidden;
-        }
-
-        .portfolio-visual {
-            position: relative;
-            background: var(--panel-soft-2);
-            border-bottom: 1px solid var(--line);
-            height: 214px;
-            padding: 14px;
-        }
-
-        .browser-frame {
-            height: 100%;
-            border: 1px solid var(--line);
-            border-radius: 14px;
-            background: #fff;
-            overflow: hidden;
-        }
-
-        .browser-bar {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: #f7f8f9;
-            border-bottom: 1px solid var(--line);
-            padding: 8px 12px;
-        }
-
-        .browser-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: #d1d5db;
-        }
-
-        .browser-body {
+        /* Revamp & Care Section */
+        .service-card {
+            background: var(--tertiary);
+            border: 1px solid var(--border-line);
+            border-radius: var(--radius);
+            padding: clamp(1.75rem, 3vw, 2.5rem);
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            padding: 18px 16px 0;
-            height: calc(100% - 42px);
+            justify-content: space-between;
+            transition: all 200ms ease;
         }
 
-        .browser-hero {
-            height: 74px;
-            border-radius: 12px;
-            background: #e5e7eb;
+        .service-card:hover {
+            border-color: var(--secondary);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
         }
 
-        .browser-row {
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 10px;
-            height: 82px;
+        .service-tag {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--surface);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
         }
 
-        .browser-box {
-            border-radius: 12px;
-            background: #f3f4f6;
+        .care-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.875rem;
         }
 
-        .portfolio-card-body {
-            padding: 22px 20px 20px;
+        .care-table th, .care-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-line);
+        }
+
+        .care-table th {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: #636c6b;
+            background: var(--accent);
+        }
+
+        .care-table td:first-child {
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        .care-table td:nth-child(2) {
+            font-family: var(--font-mono);
+            font-weight: 600;
+            color: var(--primary);
+            white-space: nowrap;
+        }
+
+        .services-note {
+            font-size: 0.8125rem;
+            color: #727c7b;
+            margin-top: 1.5rem;
+            line-height: 1.5;
+        }
+
+        /* Value Section & Comparison Table */
+        .comparison-table-wrapper {
+            overflow-x: auto;
+            border: 1px solid var(--border-line);
+            border-radius: var(--radius);
+            margin-top: 2rem;
+            background: var(--tertiary);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            min-width: 580px;
+        }
+
+        .comparison-table th, .comparison-table td {
+            padding: 1.1rem 1.25rem;
+            border-bottom: 1px solid var(--border-line);
+            font-size: 0.9375rem;
+        }
+
+        .comparison-table th {
+            font-family: var(--font-mono);
+            font-size: 0.8125rem;
+            text-transform: uppercase;
+            background: var(--accent);
+            color: var(--secondary);
+        }
+
+        .comparison-table th.col-accent,
+        .comparison-table td.col-accent {
+            background-color: var(--accent);
+            color: var(--secondary);
+            font-weight: 700;
+            border-left: 2px solid var(--secondary);
+            border-right: 2px solid var(--secondary);
+        }
+
+        .comparison-table th.col-accent {
+            background-color: var(--secondary);
+            color: var(--tertiary);
+            border-left: 2px solid var(--secondary);
+            border-right: 2px solid var(--secondary);
+        }
+
+        /* Portfolio Section */
+        .portfolio-card {
+            border: 1px solid var(--border-line);
+            border-radius: var(--radius);
+            background: var(--tertiary);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--secondary);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+        }
+
+        .portfolio-thumb {
+            width: 100%;
+            height: 220px;
+            background-color: var(--accent);
+            overflow: hidden;
+            border-bottom: 1px solid var(--border-line);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .portfolio-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            filter: grayscale(100%);
+            transition: transform 300ms ease, filter 300ms ease;
+        }
+
+        .portfolio-card:hover .portfolio-thumb img {
+            transform: scale(1.02);
+            filter: grayscale(0%);
+        }
+
+        .portfolio-info {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+
+        .portfolio-info h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-info p {
+            font-size: 0.9375rem;
+            color: #586160;
+            margin-bottom: 1.25rem;
         }
 
         .portfolio-link {
-            display: inline-block;
-            margin-top: 10px;
-            font-weight: 700;
-            color: var(--accent-hover);
+            font-family: var(--font-mono);
+            font-size: 0.8125rem;
+            font-weight: 600;
+            color: var(--surface);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-transform: uppercase;
         }
 
-        .steps-wrap {
-            position: relative;
-            margin-top: 30px;
+        .portfolio-link:hover {
+            color: var(--primary);
         }
 
-        .steps-line {
-            position: absolute;
-            left: 6%;
-            right: 6%;
-            top: 32px;
-            height: 1px;
-            background: var(--line);
-            overflow: hidden;
-            z-index: 0;
-        }
-
-        .steps-line::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 0;
-            background: var(--accent);
-            transition: width 0.8s var(--ease);
-        }
-
-        .steps-wrap.is-visible .steps-line::before {
-            width: 100%;
-        }
-
-        .steps-grid {
-            position: relative;
-            z-index: 1;
-            grid-template-columns: 1fr;
+        /* How it works */
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 2.5rem;
         }
 
         .step-card {
-            padding: 22px 18px 20px;
+            border: 1px solid var(--border-line);
+            border-radius: var(--radius);
+            padding: 1.75rem 1.5rem;
+            background: var(--tertiary);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .step-num {
+            font-family: var(--font-mono);
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1;
+            margin-bottom: 1.25rem;
+        }
+
+        .step-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-card p {
+            font-size: 0.9375rem;
+            color: #555d5c;
+        }
+
+        /* Promise Section */
+        .promise-banner {
+            background-color: var(--secondary);
+            color: var(--tertiary);
+            border-radius: var(--radius);
+            padding: clamp(2.5rem, 5vw, 4rem);
+            border: 1px solid var(--border-dark);
             position: relative;
         }
 
-        .step-no {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 34px;
-            height: 34px;
-            border-radius: 50%;
-            background: #fff;
-            border: 1px solid var(--line);
-            color: var(--accent-hover);
-            font-size: 0.85rem;
-            font-weight: 800;
-            margin-bottom: 12px;
+        .promise-banner h2 {
+            color: var(--tertiary);
+            font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+            margin-bottom: 1rem;
         }
 
-        .promise-box {
-            max-width: 940px;
-            margin: 0 auto;
-            padding: 34px 30px;
-            background: #fff;
-            border: 1px dashed var(--line);
-            border-radius: 20px;
-            text-align: center;
+        .promise-banner p {
+            color: #c7d0cf;
+            font-size: 1.15rem;
+            max-width: 65ch;
         }
 
-        .promise-box strong {
-            display: block;
-            margin-bottom: 8px;
-            font-size: clamp(1.5rem, 3vw, 2.2rem);
-            line-height: 1.2;
-            letter-spacing: -0.04em;
-            color: var(--ink);
-        }
-
-        .faq-wrap {
-            max-width: 900px;
-            margin: 0 auto;
+        /* FAQ Section */
+        .faq-list {
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-line);
         }
 
         .faq-item {
-            overflow: hidden;
-            margin-bottom: 12px;
+            border-bottom: 1px solid var(--border-line);
         }
 
-        .faq-item button {
+        .faq-button {
             width: 100%;
-            background: transparent;
-            border: 0;
+            background: none;
+            border: none;
+            padding: 1.5rem 0;
             text-align: left;
             cursor: pointer;
-            color: var(--ink);
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 16px;
-            padding: 18px 20px;
-            font-size: 1.05rem;
-            font-weight: 700;
+            font-family: var(--font-swiss);
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: var(--secondary);
+            transition: color 150ms ease;
+        }
+
+        .faq-button:hover {
+            color: var(--primary);
         }
 
         .faq-icon {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            background: #f3f4f6;
-            color: var(--ink);
-            font-size: 1.3rem;
-            font-weight: 400;
-            transition: transform 0.35s var(--ease);
+            font-family: var(--font-mono);
+            font-size: 1.25rem;
+            transition: transform 200ms ease;
+            flex-shrink: 0;
+            margin-left: 1rem;
+            color: var(--neutral);
         }
 
-        .faq-item.is-open .faq-icon {
+        .faq-item.active .faq-icon {
             transform: rotate(45deg);
+            color: var(--primary);
         }
 
         .faq-answer {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.4s var(--ease), padding 0.35s var(--ease);
-            padding: 0 20px;
+            transition: max-height 250ms ease, padding-bottom 250ms ease;
+            color: #4b5352;
+            font-size: 0.9675rem;
+            line-height: 1.6;
         }
 
-        .faq-item.is-open .faq-answer {
-            max-height: 220px;
-            padding: 0 20px 18px;
+        .faq-item.active .faq-answer {
+            padding-bottom: 1.5rem;
         }
 
-        .faq-answer p {
-            margin: 0;
-        }
-
-        .final-cta {
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 32px 24px;
-            border-radius: 28px;
-            background: var(--ink);
-            color: #fff;
-            text-align: center;
-            box-shadow: 0 18px 40px rgba(17, 24, 39, 0.08);
-        }
-
-        .final-cta h2 {
-            color: #fff;
-            font-size: clamp(2.2rem, 5vw, 3.6rem);
-        }
-
-        .final-cta p {
-            margin: 16px auto 0;
-            max-width: 620px;
-            font-size: 1.1rem;
-            line-height: 1.7;
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        .cta-row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-            margin-top: 24px;
-        }
-
-        .btn-light {
-            background: #fff;
-            color: var(--ink);
-        }
-
-        .btn-light:hover,
-        .btn-light:focus-visible {
-            background: #f5f5f5;
-        }
-
-        .footer {
-            padding: 28px 0 72px;
-            background: #fff;
-            border-top: 1px solid var(--line);
-        }
-
-        .footer-inner {
+        /* Final CTA Section */
+        .cta-box {
+            background-color: var(--secondary);
+            color: var(--tertiary);
+            border-radius: var(--radius);
+            padding: clamp(3rem, 6vw, 5rem);
+            text-align: left;
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            text-align: center;
-            color: var(--ink-soft);
-            font-size: 0.95rem;
+            align-items: flex-start;
+            gap: 1.5rem;
+            border: 1px solid var(--border-dark);
         }
 
-        .footer-inner strong {
-            color: var(--ink);
+        .cta-box h2 {
+            color: var(--tertiary);
+            font-size: clamp(2rem, 4vw, 3rem);
         }
 
-        .mobile-wa {
+        .cta-box p {
+            color: #d5d5d5;
+            font-size: 1.15rem;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 3rem 0;
+            background: var(--tertiary);
+            border-top: 1px solid var(--border-line);
+            font-size: 0.875rem;
+            color: #6d7675;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .footer-line-1 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+            font-family: var(--font-mono);
+            font-size: 0.8125rem;
+            color: var(--secondary);
+        }
+
+        .footer-line-2 {
+            font-size: 0.8125rem;
+            color: #828c8b;
+        }
+
+        /* Floating WhatsApp for mobile */
+        .wa-float-btn {
             position: fixed;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 30;
-            padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
-            background: rgba(255,255,255,0.96);
-            border-top: 1px solid var(--line);
-            backdrop-filter: blur(12px);
-            transform: translateY(120%);
-            opacity: 0;
-            transition: transform 0.45s var(--ease), opacity 0.35s var(--ease);
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 200;
+            background-color: var(--secondary);
+            color: var(--tertiary);
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+            border: 1px solid var(--border-dark);
+            transition: transform 200ms ease, background-color 200ms ease;
         }
 
-        .mobile-wa.is-visible {
-            transform: translateY(0);
-            opacity: 1;
+        .wa-float-btn:hover {
+            transform: scale(1.06);
+            background-color: #333333;
         }
 
-        .mobile-wa .btn {
-            width: 100%;
-            min-height: 52px;
-        }
-
-        .reveal {
-            opacity: 0;
-            transform: translateY(24px);
-            transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
-        }
-
-        .reveal.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        @media (min-width: 700px) {
-            .hero {
-                padding: 68px 0 72px;
-            }
-
-            .section {
-                padding: 84px 0;
-            }
-
-            .card-grid {
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-            }
-
-            .problem-grid,
-            .portfolio-grid,
-            .pricing-grid,
-            .compare-grid {
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-            }
-
-            .steps-grid {
-                grid-template-columns: repeat(4, minmax(0, 1fr));
-            }
-
-            .offer-list {
-                grid-template-columns: 1fr 1fr;
-                gap: 10px 30px;
-            }
-
-            .topbar-inner {
-                min-height: 76px;
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            .steps-container {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
-        @media (min-width: 980px) {
-            .hero-grid {
-                grid-template-columns: 1.1fr 0.9fr;
-                gap: 44px;
+        @media (max-width: 768px) {
+            .grid-swiss-12 {
+                grid-template-columns: 1fr;
             }
-
-            .topbar .brand {
-                font-size: 1rem;
+            .grid-col-8, .grid-col-7, .grid-col-5, .grid-col-4, .grid-col-6 {
+                grid-column: span 12 !important;
             }
-
-            .offer-panel {
-                padding: 28px 30px;
+            .nav-links {
+                display: none;
             }
-
-            .steps-line {
-                left: 7%;
-                right: 7%;
+            .steps-container {
+                grid-template-columns: 1fr;
             }
-        }
-
-        @media (max-width: 699px) {
-            .topbar-inner {
-                min-height: 64px;
+            .hero-card {
+                margin-top: 1.5rem;
             }
-
-            .brand-mark {
-                width: 56px;
-                height: 22px;
-            }
-
-            .btn {
+            .hero-action-group {
                 width: 100%;
             }
-
-            .hero-actions {
+            .btn-primary, .btn-secondary, .btn-white {
                 width: 100%;
             }
-
-            .hero-actions .btn {
-                flex: 1 1 100%;
-            }
-
-            .cta-row .btn {
-                flex: 1 1 100%;
-            }
-
-            .offer-top {
-                align-items: flex-start;
-            }
-
-            .price-box {
-                text-align: left;
-            }
         }
 
-        @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-                scroll-behavior: auto !important;
-            }
-        }
+        /* Swiss Grid Span Classes */
+        .col-span-12 { grid-column: span 12; }
+        .col-span-8  { grid-column: span 8; }
+        .col-span-7  { grid-column: span 7; }
+        .col-span-6  { grid-column: span 6; }
+        .col-span-5  { grid-column: span 5; }
+        .col-span-4  { grid-column: span 4; }
     </style>
 </head>
-
 <body>
-    <!-- TOP BAR -->
-    <header class="topbar">
-        <div class="container topbar-inner">
-            <a href="#top" class="brand" aria-label="DOPDEV homepage">
-                <span class="brand-mark">
-                    <img src="logo/logodophitam.webp" alt="DOPDEV logo" />
-                </span>
-            </a>
 
-            <a class="btn btn-primary" href="https://wa.me/6282125189383?text=Hi%20Dopdev%2C%20I%27d%20like%20a%20free%20homepage%20mockup.%20My%20business%20is%3A" target="_blank" rel="noopener noreferrer">
+    <!-- 1. Navbar -->
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a href="/" class="nav-brand">
+                <img src="/logo/logodophitam.webp" alt="DOPDEV">
+            </a>
+            <nav class="nav-links">
+                <a href="#offer">Offer</a>
+                <a href="#services">Revamp & Care</a>
+                <a href="#portfolio">Demos</a>
+                <a href="#how-it-works">Process</a>
+                <a href="#faq">Questions</a>
+            </nav>
+            <a href="<?php echo htmlspecialchars($waMockup); ?>" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 9px 18px; font-size: 0.875rem;">
                 WhatsApp Us
             </a>
         </div>
     </header>
 
-    <main class="site-main" id="top">
-        <!-- HERO -->
-        <section class="hero">
-            <div class="container hero-grid">
-                <div>
-                    <div class="eyebrow">
-                        <span class="eyebrow-dot" aria-hidden="true"></span>
-                        Launch offer: S$690 (usual S$990) · Only 5 spots this month
+    <main>
+        <!-- 2. Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="grid-swiss-12" style="align-items: center;">
+                    <div class="col-span-7">
+                        <div class="hero-badge">
+                            <span class="hero-badge-dot"></span>
+                            <span>Launch offer: S$690 (usual S$990) · Only 5 spots this month</span>
+                        </div>
+                        <h1 class="hero-title">
+                            A Website That Gets Your <span class="text-accent-red">Phone Ringing.</span> Ready in 7 Days.
+                        </h1>
+                        <p class="hero-sub">
+                            Landing pages for Singapore home service businesses: aircon, cleaning, electrical, plumbing and renovation. Fixed price. WhatsApp enquiries built in. Pay the deposit only after you approve the design.
+                        </p>
+                        <div class="hero-action-group">
+                            <a href="<?php echo htmlspecialchars($waMockup); ?>" target="_blank" rel="noopener noreferrer" class="btn-primary" style="font-size: 1.05rem; padding: 14px 26px;">
+                                Get Your Free Homepage Mockup on WhatsApp
+                            </a>
+                            <span class="hero-subtext">Send your business name and we'll show you a draft before you pay anything.</span>
+                        </div>
+                        <div class="hero-trust-bar">
+                            <div class="trust-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Fixed price</span>
+                            </div>
+                            <div class="trust-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Mobile-first</span>
+                            </div>
+                            <div class="trust-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Hosting + domain setup in year 1</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <h1 class="headline" aria-label="A Website That Gets Your Phone Ringing. Ready in 7 Days.">
-                        <span class="headline-mask"><span class="headline-line">A Website That Gets</span></span>
-                        <span class="headline-mask"><span class="headline-line">Your Phone Ringing.</span></span>
-                        <span class="headline-mask"><span class="headline-line accent-line">Ready in 7 Days.</span></span>
-                    </h1>
+                    <div class="col-span-5">
+                        <div class="hero-card">
+                            <div class="hero-card-header">
+                                <div class="mono" style="color: var(--neutral); margin-bottom: 0.25rem;">STANDARDS & SLA</div>
+                                <h3 style="color: var(--tertiary); font-size: 1.35rem;">Singapore Standard Spec</h3>
+                            </div>
+                            <div class="hero-card-metric">
+                                <span class="mono" style="color: var(--neutral);">Turnaround</span>
+                                <div class="hero-card-metric-num">7 DAYS</div>
+                            </div>
+                            <div class="hero-card-metric">
+                                <span class="mono" style="color: var(--neutral);">Fixed Rate Launch Offer</span>
+                                <div class="hero-card-metric-num" style="color: var(--tertiary);">S$690</div>
+                            </div>
+                            <div class="hero-card-metric" style="margin-bottom: 0;">
+                                <span class="mono" style="color: var(--neutral);">Upfront Commitment</span>
+                                <div style="font-family: var(--font-mono); font-size: 1.25rem; font-weight: 600; color: #fff;">S$0 (Draft First)</div>
+                            </div>
+                            <div class="hero-card-footer">
+                                <span>VERIFIED SPEC 2026</span>
+                                <span>SG HOME SERVICES</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <p class="lead">
-                        Landing pages for Singapore home service businesses: aircon, cleaning, electrical, plumbing and renovation. Fixed price. WhatsApp enquiries built in. Pay the deposit only after you approve the design.
-                    </p>
+        <!-- 3. Problem Section -->
+        <section class="section-gap">
+            <div class="container">
+                <div class="mono text-accent-red" style="margin-bottom: 0.5rem;">01 / MARKET REALITY</div>
+                <h2 class="section-title">
+                    When someone searches "aircon servicing near me," you have about 5 seconds.
+                </h2>
+                <p class="problem-intro">
+                    They open 3 websites, then call the one that:
+                </p>
 
-                    <div class="hero-actions">
-                        <a class="btn btn-primary" href="https://wa.me/6282125189383?text=Hi%20Dopdev%2C%20I%27d%20like%20a%20free%20homepage%20mockup.%20My%20business%20is%3A" target="_blank" rel="noopener noreferrer">
-                            Get Your Free Homepage Mockup on WhatsApp
-                        </a>
+                <div class="grid-swiss-12">
+                    <div class="col-span-4 problem-card">
+                        <div>
+                            <div class="card-number">CRITERIA 01</div>
+                            <h3>Looks trustworthy</h3>
+                            <p>Clean design, clear services, real contact details.</p>
+                        </div>
                     </div>
 
-                    <div class="cta-sub">Send your business name and we’ll show you a draft before you pay anything.</div>
+                    <div class="col-span-4 problem-card">
+                        <div>
+                            <div class="card-number">CRITERIA 02</div>
+                            <h3>Loads fast on a phone</h3>
+                            <p>Most home service customers search on mobile, often in a hurry.</p>
+                        </div>
+                    </div>
 
-                    <div class="trust-row" aria-label="Trust points">
-                        <span class="trust-pill">Fixed price</span>
-                        <span class="trust-pill">Mobile-first</span>
-                        <span class="trust-pill">Hosting + domain setup in year 1</span>
+                    <div class="col-span-4 problem-card">
+                        <div>
+                            <div class="card-number">CRITERIA 03</div>
+                            <h3>Is easy to contact</h3>
+                            <p>One tap to WhatsApp or call. No hunting for a phone number.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="hero-visual" aria-label="Website mockup preview">
-                    <div class="hero-visual-inner">
-                        <div class="device-head">
+                <div class="problem-outro">
+                    If your page is outdated, slow, or just a Facebook link, that call goes to your competitor.
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Offer Section -->
+        <section id="offer" class="section-gap">
+            <div class="container">
+                <div class="mono text-accent-red" style="margin-bottom: 0.5rem;">02 / THE SOLUTION</div>
+                <h2 class="section-title">The Enquiry-Ready Landing Page</h2>
+                <p style="margin-top: 0.75rem; margin-bottom: 2.5rem;">
+                    One focused page built to turn visitors into WhatsApp messages, calls and quote requests.
+                </p>
+
+                <div class="grid-swiss-12">
+                    <div class="col-span-8">
+                        <div class="offer-box">
+                            <div class="offer-header-banner">
+                                <span>LAUNCH OFFER · 5 SPOTS ONLY</span>
+                                <span>7 BUSINESS DAYS</span>
+                            </div>
+                            <div class="offer-body">
+                                <div class="price-badge-wrap">
+                                    <div class="price-current">S$690</div>
+                                    <div class="price-old">S$990</div>
+                                </div>
+                                <div class="price-sub">One-time. No surprise add-ons.</div>
+
+                                <ul class="feature-checklist">
+                                    <li>
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Custom design for your business and brand</span>
+                                    </li>
+                                    <li>
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Mobile-first layout</span>
+                                    </li>
+                                    <li>
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Tap-to-WhatsApp and tap-to-call buttons</span>
+                                    </li>
+                                    <li>
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Quote request form</span>
+                                    </li>
+                                    <li>
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Up to 8 sections: services, pricing guide, reviews, FAQ, service areas and more</span>
+                                    </li>
+                                    <li>
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Google-friendly setup so your business can be found</span>
+                                    </li>
+                                    <li>
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span><strong>Hosting and domain setup for year 1 included</strong></span>
+                                    </li>
+                                    <li>
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>2 rounds of revisions</span>
+                                    </li>
+                                    <li>
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Live in 7 business days from content approval</span>
+                                    </li>
+                                </ul>
+
+                                <div class="not-included-box">
+                                    <strong>Not included:</strong> extra pages, online payments and ad management. We'll quote these separately if you need them.
+                                </div>
+
+                                <a href="<?php echo htmlspecialchars($waSpot); ?>" target="_blank" rel="noopener noreferrer" class="btn-primary" style="font-size: 1rem; padding: 14px 28px;">
+                                    Claim One of the 5 Spots
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-span-4" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div style="background: var(--accent); border: 1px solid var(--border-line); border-radius: var(--radius); padding: 1.75rem;">
+                            <div class="mono" style="color: var(--secondary); margin-bottom: 0.5rem;">GUARANTEE</div>
+                            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Risk Reversal</h3>
+                            <p style="font-size: 0.9375rem; color: #4e5554;">
+                                We construct the layout and design draft on WhatsApp first. Zero upfront financial risk.
+                            </p>
+                        </div>
+                        <div style="background: var(--accent); border: 1px solid var(--border-line); border-radius: var(--radius); padding: 1.75rem;">
+                            <div class="mono" style="color: var(--secondary); margin-bottom: 0.5rem;">INFRASTRUCTURE</div>
+                            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Year 1 Fully Covered</h3>
+                            <p style="font-size: 0.9375rem; color: #4e5554;">
+                                High-speed DNS, SSL certificate, cloud hosting setup, and mobile speed tuning included.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Revamp & Care Section -->
+        <section id="services" class="section-gap">
+            <div class="container">
+                <div class="mono text-accent-red" style="margin-bottom: 0.5rem;">03 / EXTENDED SERVICES</div>
+                <h2 class="section-title">Already have a website? Or need one looked after?</h2>
+                <p style="margin-top: 0.75rem; margin-bottom: 2.5rem;">
+                    Two more ways we help Singapore home service businesses, whether you build with us or not.
+                </p>
+
+                <div class="grid-swiss-12">
+                    <!-- Card 1: Website Revamp -->
+                    <div class="col-span-6 service-card">
+                        <div>
+                            <div class="service-tag">Website Revamp</div>
+                            <h3 style="font-size: 1.45rem; margin-bottom: 0.5rem;">Your business has grown. Your website should too.</h3>
+                            <div class="mono" style="font-size: 1.125rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem;">
+                                From S$590 one-time
+                            </div>
+                            <p style="font-size: 0.9375rem; color: #4c5352; margin-bottom: 1.5rem;">
+                                We modernise your current site so it looks trustworthy, works on phones and makes it easy for customers to WhatsApp or call.
+                            </p>
+
+                            <div class="mono" style="font-size: 0.75rem; color: #626a69; margin-bottom: 0.75rem;">WHAT IS INCLUDED:</div>
+                            <ul class="feature-checklist" style="margin-bottom: 1.75rem;">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Review of your current website</span>
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Modern design refresh</span>
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Mobile fixes</span>
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Clear WhatsApp and call buttons</span>
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Basic speed improvements</span>
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>2 rounds of revisions</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="<?php echo htmlspecialchars($waRevamp); ?>" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                            Get a Free Website Review
+                        </a>
+                    </div>
+
+                    <!-- Card 2: Website Care -->
+                    <div class="col-span-6 service-card">
+                        <div>
+                            <div class="service-tag">Website Care</div>
+                            <h3 style="font-size: 1.45rem; margin-bottom: 0.5rem;">Keep your website safe, fast and up to date.</h3>
+                            <div class="mono" style="font-size: 1.125rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">
+                                From S$39 per month
+                            </div>
+                            <p style="font-size: 0.9375rem; color: #4c5352; margin-bottom: 1rem;">
+                                No contracts. Cancel anytime. Pick the level of support you need.
+                            </p>
+
+                            <table class="care-table">
+                                <thead>
+                                    <tr>
+                                        <th>Package</th>
+                                        <th>Price</th>
+                                        <th>Scope</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Basic</td>
+                                        <td>S$39 / mo</td>
+                                        <td>Uptime and backup monitoring, basic security checks, technical support.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Standard</td>
+                                        <td>S$99 / mo</td>
+                                        <td>Everything in Basic, plus software updates, speed monitoring and 1 hour of content updates.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Premium</td>
+                                        <td>S$189 / mo</td>
+                                        <td>Everything in Standard, plus 3 hours of updates, a monthly report and priority support.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <a href="<?php echo htmlspecialchars($waCare); ?>" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                            Ask About Care Plans
+                        </a>
+                    </div>
+                </div>
+
+                <div class="services-note">
+                    Prices shown are starting prices. Hosting, domain renewals and third-party licences are quoted separately unless included in your proposal. We confirm the final price after reviewing your website.
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Value Section -->
+        <section class="section-gap">
+            <div class="container">
+                <div class="mono text-accent-red" style="margin-bottom: 0.5rem;">04 / ROI & COMPARISON</div>
+                <h2 class="section-title">One new job can pay for the whole website.</h2>
+                <p style="margin-top: 0.75rem; margin-bottom: 2rem;">
+                    If your average job is worth S$300, you need just 3 extra customers to cover it. For renovation and contracting, one job can cover it several times over.
+                </p>
+
+                <div class="comparison-table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Criteria</th>
+                                <th>DIY (Wix etc.)</th>
+                                <th>Typical agency</th>
+                                <th class="col-accent">DOPDEV</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Cost</strong></td>
+                                <td>Your time</td>
+                                <td>S$1,500–5,000+</td>
+                                <td class="col-accent"><strong>S$690</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ready in</strong></td>
+                                <td>Weeks (if you finish)</td>
+                                <td>4–8 weeks</td>
+                                <td class="col-accent"><strong>7 days</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Built for enquiries</strong></td>
+                                <td>Depends on you</td>
+                                <td>Depends</td>
+                                <td class="col-accent"><strong>Yes</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Portfolio Section -->
+        <section id="portfolio" class="section-gap">
+            <div class="container">
+                <div class="mono text-accent-red" style="margin-bottom: 0.5rem;">05 / LIVE DEMOS</div>
+                <h2 class="section-title">See what yours could look like.</h2>
+                <p style="margin-top: 0.75rem; margin-bottom: 2.5rem;">
+                    Live demo pages for popular home service industries. Open them on your phone.
+                </p>
+
+                <div class="grid-swiss-12">
+                    <!-- Contractor -->
+                    <div class="col-span-4 portfolio-card">
+                        <div class="portfolio-thumb">
+                            <img src="/images/examples/contractor.png" alt="Contractor Demo">
+                        </div>
+                        <div class="portfolio-info">
                             <div>
-                                <div class="device-label">DOPDEV</div>
-                                <div style="margin-top: 6px; font-size: 1.1rem; font-weight: 800;">Homepage Preview</div>
+                                <h3>Contractor</h3>
+                                <p>Showcase your projects and make it easy to request a quotation.</p>
                             </div>
-                            <span class="status-pill">Ready</span>
+                            <a href="https://landing.dopdev.com/contractor" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                                <span>View live demo</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
                         </div>
+                    </div>
 
-                        <div class="stats-grid">
-                            <div class="stat-card dark">
-                                <span class="stat-kicker">Estimated leads</span>
-                                <div class="stat-value">4x</div>
-                            </div>
-                            <div class="stat-card green">
-                                <span class="stat-kicker">Growth</span>
-                                <div class="stat-value">+42%</div>
-                            </div>
+                    <!-- Cleaning Service -->
+                    <div class="col-span-4 portfolio-card">
+                        <div class="portfolio-thumb">
+                            <img src="/images/case-studies/lp/cleaning.png" alt="Cleaning Service Demo">
                         </div>
+                        <div class="portfolio-info">
+                            <div>
+                                <h3>Cleaning Service</h3>
+                                <p>Build trust, present your packages and capture cleaning quote requests.</p>
+                            </div>
+                            <a href="https://landing.dopdev.com/cleaning" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                                <span>View live demo</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
 
-                        <div class="mini-panel">
-                            <div class="mini-panel-head">
-                                <span>Website score</span>
-                                <span style="color: var(--ink-muted);">Mobile-first</span>
+                    <!-- Electrician -->
+                    <div class="col-span-4 portfolio-card">
+                        <div class="portfolio-thumb">
+                            <img src="/images/examples/electritian.png" alt="Electrician Demo">
+                        </div>
+                        <div class="portfolio-info">
+                            <div>
+                                <h3>Electrician</h3>
+                                <p>Look professional and make it simple to call or WhatsApp you.</p>
                             </div>
-                            <div class="mini-meter">
-                                <div class="meter-row">
-                                    <div class="meter-row-top"><span>Speed</span><span>96%</span></div>
-                                    <div class="meter-bar"><span class="meter-fill" style="--width:96%;"></span></div>
-                                </div>
-                                <div class="meter-row">
-                                    <div class="meter-row-top"><span>SEO</span><span>93%</span></div>
-                                    <div class="meter-bar"><span class="meter-fill" style="--width:93%;"></span></div>
-                                </div>
-                                <div class="meter-row">
-                                    <div class="meter-row-top"><span>Clarity</span><span>89%</span></div>
-                                    <div class="meter-bar"><span class="meter-fill" style="--width:89%;"></span></div>
-                                </div>
-                            </div>
+                            <a href="https://landing.dopdev.com/electrician" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                                <span>View live demo</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- PROBLEM -->
-        <section class="section section-soft">
+        <!-- 8. How it works -->
+        <section id="how-it-works" class="section-gap">
             <div class="container">
-                <div class="section-head reveal">
-                    <span class="kicker">The problem</span>
-                    <h2>When someone searches “aircon servicing near me,” you have about 5 seconds.</h2>
-                </div>
+                <div class="mono text-accent-red" style="margin-bottom: 0.5rem;">06 / WORKFLOW</div>
+                <h2 class="section-title">How it works</h2>
 
-                <div class="problem-grid">
-                    <article class="feature-card reveal">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5V9.5h10v9M9 9.5V7.5h6v2M12 13.5v3M9 16.5h6"/></svg>
-                        <div class="index">01</div>
-                        <h3>Looks trustworthy</h3>
-                        <p>Clean design, clear services, and real contact details build confidence instantly.</p>
-                    </article>
-
-                    <article class="feature-card reveal">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13.5h4l2-5 4 10 2-5h4"/></svg>
-                        <div class="index">02</div>
-                        <h3>Loads fast on a phone</h3>
-                        <p>Most home service customers search on mobile, often in a hurry. Speed matters.</p>
-                    </article>
-
-                    <article class="feature-card reveal">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 16a4 4 0 0 1 8 0M12 4v6m0 0 2.5 2.5M12 10l-2.5 2.5M5 20h14"/></svg>
-                        <div class="index">03</div>
-                        <h3>Is easy to contact</h3>
-                        <p>One tap to WhatsApp or call. No hunting for a phone number or emailing back and forth.</p>
-                    </article>
-                </div>
-
-                <p class="problem-copy reveal">If your page is outdated, slow, or just a Facebook link, that call goes to your competitor.</p>
-            </div>
-        </section>
-
-        <!-- OFFER -->
-        <section class="section">
-            <div class="container">
-                <div class="section-head reveal">
-                    <span class="kicker">Offer</span>
-                    <h2>The Enquiry-Ready Landing Page</h2>
-                    <p style="margin: 18px auto 0; max-width: 700px; font-size: 1.15rem; color: var(--ink-soft); line-height: 1.7;">One focused page built to turn visitors into WhatsApp messages, calls and quote requests.</p>
-                </div>
-
-                <div class="offer-panel reveal">
-                    <div class="offer-top">
-                        <span class="offer-badge">Launch offer • 5 spots only</span>
-                        <div class="price-box">
-                            <span class="price-main">S$690</span>
-                            <span class="price-strike">S$990</span>
-                        </div>
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-num">01</div>
+                        <h3>Message us.</h3>
+                        <p>Tell us your business and services on WhatsApp.</p>
                     </div>
 
-                    <p class="offer-sub">One-time. No surprise add-ons.</p>
+                    <div class="step-card">
+                        <div class="step-num">02</div>
+                        <h3>Get a free mockup.</h3>
+                        <p>We design your homepage draft first.</p>
+                    </div>
 
-                    <ul class="offer-list">
-                        <li>Custom design for your business and brand</li>
-                        <li>Mobile-first layout</li>
-                        <li>Tap-to-WhatsApp and tap-to-call buttons</li>
-                        <li>Quote request form</li>
-                        <li>Up to 8 sections: services, pricing guide, reviews, FAQ, service areas and more</li>
-                        <li>Google-friendly setup so your business can be found</li>
-                        <li>Hosting and domain setup for year 1 included</li>
-                        <li>2 rounds of revisions</li>
-                        <li>Live in 7 business days from content approval</li>
-                    </ul>
+                    <div class="step-card">
+                        <div class="step-num">03</div>
+                        <h3>Approve & pay 50%.</h3>
+                        <p>Happy with it? We build the full page.</p>
+                    </div>
 
-                    <div class="not-included"><strong>Not included:</strong> extra pages, online payments and ad management. We’ll quote these separately if you need them.</div>
-
-                    <div class="offer-actions">
-                        <a class="btn btn-primary" href="https://wa.me/6282125189383?text=Hi%20Dopdev%2C%20I%20want%20to%20claim%20one%20of%20the%205%20spots.%20My%20business%20is%3A" target="_blank" rel="noopener noreferrer">
-                            Claim One of the 5 Spots
-                        </a>
+                    <div class="step-card">
+                        <div class="step-num">04</div>
+                        <h3>Launch.</h3>
+                        <p>Pay the remaining 50% and go live in 7 days.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- VALUE -->
-        <section class="section section-soft">
+        <!-- 9. Promise Section -->
+        <section class="section-gap" style="border-bottom: none;">
             <div class="container">
-                <div class="section-head reveal">
-                    <span class="kicker">Value</span>
-                    <h2>One new job can pay for the whole website.</h2>
-                </div>
-
-                <div class="offer-panel reveal">
-                    <p style="margin: 0; font-size: 1.1rem; line-height: 1.7; color: var(--ink-soft);">
-                        If your average job is worth S$300, you need just 3 extra customers to cover it. For renovation and contracting, one job can cover it several times over.
+                <div class="promise-banner">
+                    <div class="mono" style="color: var(--primary); margin-bottom: 0.5rem;">ZERO FINANCIAL RISK</div>
+                    <h2>Our promise</h2>
+                    <p>
+                        You see the design before you pay. If you don't like the direction, you walk away and owe nothing.
                     </p>
-
-                    <div class="compare-wrap" style="margin-top: 28px;">
-                        <table class="compare-table" aria-label="Comparison table">
-                            <thead>
-                                <tr>
-                                    <th>Option</th>
-                                    <th>Cost</th>
-                                    <th>Ready in</th>
-                                    <th>Built for enquiries</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>DIY (Wix etc.)</strong></td>
-                                    <td>Your time</td>
-                                    <td>Weeks, if you finish</td>
-                                    <td>Depends on you</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Typical agency</strong></td>
-                                    <td>S$1,500–5,000+</td>
-                                    <td>4–8 weeks</td>
-                                    <td>Depends</td>
-                                </tr>
-                                <tr class="dop-cell">
-                                    <td><strong>DOPDEV</strong></td>
-                                    <td>S$690</td>
-                                    <td>7 days</td>
-                                    <td>Yes</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- PORTFOLIO -->
-        <section class="section">
+        <!-- 10. FAQ Section -->
+        <section id="faq" class="section-gap">
             <div class="container">
-                <div class="section-head reveal">
-                    <span class="kicker">Portfolio</span>
-                    <h2>See what yours could look like.</h2>
-                    <p style="margin: 16px auto 0; max-width: 680px; font-size: 1.08rem; color: var(--ink-soft); line-height: 1.7;">Live demo pages for popular home service industries. Open them on your phone.</p>
-                </div>
+                <div class="mono text-accent-red" style="margin-bottom: 0.5rem;">07 / TRANSPARENCY</div>
+                <h2 class="section-title">Questions</h2>
 
-                <div class="portfolio-grid">
-                    <article class="portfolio-card reveal">
-                        <div class="portfolio-visual" aria-hidden="true">
-                            <div class="browser-frame">
-                                <div class="browser-bar">
-                                    <span class="browser-dot"></span>
-                                    <span class="browser-dot"></span>
-                                    <span class="browser-dot"></span>
-                                </div>
-                                <div class="browser-body" style="padding: 0; overflow: hidden;">
-                                    <img src="images/examples/contractor.png" alt="Contractor landing page preview" style="width: 100%; height: 100%; object-fit: cover;" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-card-body">
-                            <h3>Contractor</h3>
-                            <p>Showcase your projects and make it easy to request a quotation.</p>
-                            <a class="portfolio-link" href="https://landing.dopdev.com/contractor" target="_blank" rel="noopener noreferrer">View live demo</a>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-card reveal">
-                        <div class="portfolio-visual" aria-hidden="true">
-                            <div class="browser-frame">
-                                <div class="browser-bar">
-                                    <span class="browser-dot"></span>
-                                    <span class="browser-dot"></span>
-                                    <span class="browser-dot"></span>
-                                </div>
-                                <div class="browser-body" style="padding: 0; overflow: hidden;">
-                                    <img src="images/examples/cleaning.png" alt="Cleaning service landing page preview" style="width: 100%; height: 100%; object-fit: cover;" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-card-body">
-                            <h3>Cleaning Service</h3>
-                            <p>Build trust, present your packages and capture cleaning quote requests.</p>
-                            <a class="portfolio-link" href="https://landing.dopdev.com/cleaning" target="_blank" rel="noopener noreferrer">View live demo</a>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-card reveal">
-                        <div class="portfolio-visual" aria-hidden="true">
-                            <div class="browser-frame">
-                                <div class="browser-bar">
-                                    <span class="browser-dot"></span>
-                                    <span class="browser-dot"></span>
-                                    <span class="browser-dot"></span>
-                                </div>
-                                <div class="browser-body" style="padding: 0; overflow: hidden;">
-                                    <img src="images/examples/electritian.png" alt="Electrician landing page preview" style="width: 100%; height: 100%; object-fit: cover;" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-card-body">
-                            <h3>Electrician</h3>
-                            <p>Look professional and make it simple to call or WhatsApp you.</p>
-                            <a class="portfolio-link" href="https://landing.dopdev.com/electrician" target="_blank" rel="noopener noreferrer">View live demo</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- HOW IT WORKS -->
-        <section class="section section-soft">
-            <div class="container">
-                <div class="section-head reveal">
-                    <span class="kicker">How it works</span>
-                    <h2>Simple. Fast. No pressure.</h2>
-                </div>
-
-                <div class="steps-wrap reveal" id="stepsWrap">
-                    <div class="steps-line" aria-hidden="true"></div>
-                    <div class="steps-grid">
-                        <article class="step-card">
-                            <div class="step-no">01</div>
-                            <h3>Message us</h3>
-                            <p>Tell us your business and services on WhatsApp.</p>
-                        </article>
-
-                        <article class="step-card">
-                            <div class="step-no">02</div>
-                            <h3>Free mockup</h3>
-                            <p>We design your homepage draft first so you can see the direction.</p>
-                        </article>
-
-                        <article class="step-card">
-                            <div class="step-no">03</div>
-                            <h3>Approve &amp; pay 50%</h3>
-                            <p>Happy with it? We build the full page.</p>
-                        </article>
-
-                        <article class="step-card">
-                            <div class="step-no">04</div>
-                            <h3>Launch</h3>
-                            <p>Pay the remaining 50% and go live in 7 days.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PROMISE -->
-        <section class="section">
-            <div class="container">
-                <div class="promise-box reveal">
-                    <strong>You see the design before you pay.</strong>
-                    <p>If you don’t like the direction, you walk away and owe nothing.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ -->
-        <section class="section section-soft">
-            <div class="container">
-                <div class="section-head reveal">
-                    <span class="kicker">Questions</span>
-                    <h2>Frequently asked questions</h2>
-                </div>
-
-                <div class="faq-wrap reveal">
-                    <div class="faq-item is-open">
-                        <button type="button" aria-expanded="true">
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-button" type="button">
                             <span>Is there any hidden cost?</span>
-                            <span class="faq-icon" aria-hidden="true">+</span>
+                            <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>Hosting and domain setup for year 1 are included. After that, hosting is roughly S$XX per year. Anything outside the list above is quoted before we start.</p>
+                            Hosting and domain setup for year 1 are included. After that, hosting is roughly S$90 per year. Anything outside the list above is quoted before we start.
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <button type="button" aria-expanded="false">
+                        <button class="faq-button" type="button">
                             <span>You're based in Indonesia. How do we work together?</span>
-                            <span class="faq-icon" aria-hidden="true">+</span>
+                            <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>Everything runs over WhatsApp and email, during Singapore hours (we’re just 1 hour behind SGT). Payment by PayNow or bank transfer.</p>
+                            Everything runs over WhatsApp and email, during Singapore hours (we're just 1 hour behind SGT). Payment by PayNow or bank transfer.
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <button type="button" aria-expanded="false">
+                        <button class="faq-button" type="button">
                             <span>I don't have photos or content ready.</span>
-                            <span class="faq-icon" aria-hidden="true">+</span>
+                            <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>Send what you have. We’ll guide you on what to write and which photos to take.</p>
+                            Send what you have. We'll guide you on what to write and which photos to take.
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <button type="button" aria-expanded="false">
+                        <button class="faq-button" type="button">
                             <span>Do you handle updates after launch?</span>
-                            <span class="faq-icon" aria-hidden="true">+</span>
+                            <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>Yes. An optional care plan is available at S$39 per month, or we can quote one-off updates on request.</p>
+                            Yes. Website Care plans start from S$39 per month (see above), or we can quote one-off updates on request.
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <button type="button" aria-expanded="false">
+                        <button class="faq-button" type="button">
                             <span>Will this get me on page 1 of Google?</span>
-                            <span class="faq-icon" aria-hidden="true">+</span>
+                            <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>We set up the technical foundations, but no one can honestly guarantee rankings. For faster results, many businesses pair the page with a Google Business Profile or ads, and we can advise on that.</p>
+                            We set up the technical foundations, but no one can honestly guarantee rankings. For faster results, many businesses pair the page with a Google Business Profile or ads, and we can advise on that.
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- FINAL CTA -->
-        <section class="section">
+        <!-- 11. Final CTA Section -->
+        <section class="section-gap" style="border-bottom: none;">
             <div class="container">
-                <div class="final-cta reveal">
-                    <span class="kicker" style="color: rgba(255,255,255,0.7); margin-bottom: 14px;">Final CTA</span>
+                <div class="cta-box">
+                    <div class="mono" style="color: var(--neutral);">APRIL COHORT · 5 CLIENT LIMIT</div>
                     <h2>Only 5 spots at S$690 this month.</h2>
-                    <p>Send us your business name and we’ll show you a free mockup. No commitment.</p>
-                    <div class="cta-row">
-                        <a class="btn btn-light" href="https://wa.me/6282125189383?text=Hi%20Dopdev%2C%20I%27d%20like%20a%20free%20homepage%20mockup.%20My%20business%20is%3A" target="_blank" rel="noopener noreferrer">
+                    <p>
+                        Send us your business name and we'll show you a free mockup. No commitment.
+                    </p>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-start; width: 100%;">
+                        <a href="<?php echo htmlspecialchars($waMockup); ?>" target="_blank" rel="noopener noreferrer" class="btn-white" style="font-size: 1.05rem; padding: 14px 28px;">
                             Chat on WhatsApp
                         </a>
+                        <span style="font-size: 0.8125rem; color: #a3a3a3;">No pressure. Just a conversation about your business.</span>
                     </div>
-                    <div class="final-small" style="margin-top: 14px; color: rgba(255,255,255,0.7);">No pressure. Just a conversation about your business.</div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- 12. Footer -->
     <footer class="footer">
-        <div class="container footer-inner">
-            <div><strong>DOPDEV</strong> · Web Design &amp; Development Studio · dopdev.com</div>
-            <div>By messaging us, you consent to us using your details to respond to your enquiry (PDPA).</div>
+        <div class="container footer-content">
+            <div class="footer-line-1">
+                <span>DOPDEV · Web Design & Development Studio · dopdev.com</span>
+                <span>SINGAPORE TIME ZONE (UTC+8)</span>
+            </div>
+            <div class="footer-line-2">
+                By messaging us, you consent to us using your details to respond to your enquiry (PDPA).
+            </div>
         </div>
     </footer>
 
-    <div class="mobile-wa" id="mobileWaBar" aria-live="polite">
-        <a class="btn btn-primary" href="https://wa.me/6282125189383?text=Hi%20Dopdev%2C%20I%27d%20like%20a%20free%20homepage%20mockup.%20My%20business%20is%3A" target="_blank" rel="noopener noreferrer">
-            Get Your Free Mockup on WhatsApp
-        </a>
-    </div>
+    <!-- WhatsApp Floating Button -->
+    <a href="<?php echo htmlspecialchars($waMockup); ?>" target="_blank" rel="noopener noreferrer" class="wa-float-btn" aria-label="Chat on WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+    </a>
 
+    <!-- Minimal Vanilla Script for FAQ -->
     <script>
-        (function () {
-            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        document.querySelectorAll('.faq-button').forEach(function(button) {
+            button.addEventListener('click', function() {
+                var item = button.parentElement;
+                var answer = item.querySelector('.faq-answer');
+                var isOpen = item.classList.contains('active');
 
-            function revealSections() {
-                const items = document.querySelectorAll('.reveal');
-                if (!items.length) return;
-
-                const observer = new IntersectionObserver(function (entries) {
-                    entries.forEach(function (entry) {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('is-visible');
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, { threshold: 0.18 });
-
-                items.forEach(function (item) {
-                    observer.observe(item);
+                // Close all others
+                document.querySelectorAll('.faq-item').forEach(function(otherItem) {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.faq-answer').style.maxHeight = null;
                 });
-            }
 
-            function setupFaq() {
-                const items = document.querySelectorAll('.faq-item');
-                items.forEach(function (item) {
-                    const button = item.querySelector('button');
-                    const answer = item.querySelector('.faq-answer');
-                    if (!button || !answer) return;
-
-                    button.addEventListener('click', function () {
-                        const isOpen = item.classList.contains('is-open');
-                        items.forEach(function (other) {
-                            other.classList.remove('is-open');
-                            other.querySelector('button').setAttribute('aria-expanded', 'false');
-                        });
-
-                        if (!isOpen) {
-                            item.classList.add('is-open');
-                            button.setAttribute('aria-expanded', 'true');
-                        }
-                    });
-                });
-            }
-
-            function setupStepsLine() {
-                const stepsWrap = document.getElementById('stepsWrap');
-                if (!stepsWrap) return;
-                const observer = new IntersectionObserver(function (entries) {
-                    entries.forEach(function (entry) {
-                        if (entry.isIntersecting) {
-                            stepsWrap.classList.add('is-visible');
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, { threshold: 0.2 });
-                observer.observe(stepsWrap);
-            }
-
-            function setupStickyBar() {
-                const bar = document.getElementById('mobileWaBar');
-                if (!bar) return;
-                const hero = document.querySelector('.hero');
-                if (!hero) return;
-
-                const threshold = hero.offsetTop + hero.offsetHeight - 100;
-                function check() {
-                    if (window.scrollY > threshold) {
-                        bar.classList.add('is-visible');
-                    } else {
-                        bar.classList.remove('is-visible');
-                    }
+                if (!isOpen) {
+                    item.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
                 }
-                check();
-                window.addEventListener('scroll', check, { passive: true });
-            }
-
-            function countPrice() {
-                const target = document.querySelector('.price-main');
-                if (!target) return;
-                const text = target.textContent;
-                const num = Number(text.replace(/[^\d]/g, '')) || 690;
-                const duration = 900;
-                if (prefersReducedMotion) {
-                    target.textContent = 'S$690';
-                    return;
-                }
-
-                let start = null;
-                function tick(ts) {
-                    if (!start) start = ts;
-                    const progress = Math.min((ts - start) / duration, 1);
-                    const eased = 1 - Math.pow(1 - progress, 3);
-                    const value = Math.round(num * eased);
-                    target.textContent = 'S$' + value;
-                    if (progress < 1) {
-                        requestAnimationFrame(tick);
-                    } else {
-                        target.textContent = 'S$690';
-                    }
-                }
-
-                const observer = new IntersectionObserver(function (entries) {
-                    entries.forEach(function (entry) {
-                        if (entry.isIntersecting) {
-                            requestAnimationFrame(tick);
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, { threshold: 0.35 });
-
-                observer.observe(target);
-            }
-
-            if (!prefersReducedMotion) {
-                revealSections();
-                setupFaq();
-                setupStepsLine();
-                setupStickyBar();
-                countPrice();
-            } else {
-                document.querySelectorAll('.reveal').forEach(function (el) {
-                    el.classList.add('is-visible');
-                });
-                document.querySelectorAll('.faq-item').forEach(function (item) {
-                    item.classList.add('is-open');
-                    const button = item.querySelector('button');
-                    if (button) button.setAttribute('aria-expanded', 'true');
-                });
-                const bar = document.getElementById('mobileWaBar');
-                if (bar) bar.classList.add('is-visible');
-                const price = document.querySelector('.price-main');
-                if (price) price.textContent = 'S$690';
-            }
-        })();
+            });
+        });
     </script>
 </body>
-
 </html>
