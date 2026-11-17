@@ -37,7 +37,7 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
             --font-swiss: "Helvetica Neue", Helvetica, Arial, sans-serif;
             --font-mono: "JetBrains Mono", monospace;
             --radius: 8px;
-            --max-w: 980px;
+            --max-w: 950px;
         }
 
         *, *::before, *::after {
@@ -629,16 +629,16 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
         }
 
         .highlight-card-callout {
-            font-size: 1.05rem;
+            font-size: 1.2rem;
             font-weight: 700;
             color: #111111;
-            line-height: 1.4;
+            line-height: 1.35;
         }
 
         .highlight-card-desc {
-            font-size: 0.9rem;
-            line-height: 1.5;
-            color: #444444;
+            font-size: 1.025rem;
+            line-height: 1.55;
+            color: #3d4342;
         }
 
         .highlight-card-tags {
@@ -1060,11 +1060,11 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
         }
 
         .side-banner-left {
-            left: calc((100vw - var(--max-w)) / 4 - 80px);
+            right: calc(50% + (var(--max-w) / 2) + 16px);
         }
 
         .side-banner-right {
-            right: calc((100vw - var(--max-w)) / 4 - 80px);
+            left: calc(50% + (var(--max-w) / 2) + 16px);
         }
 
         .side-banner img {
