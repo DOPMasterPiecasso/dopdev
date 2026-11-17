@@ -140,11 +140,9 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
 
         /* Navigation */
         .navbar {
-            position: sticky;
-            top: 0;
+            position: relative;
             z-index: 100;
-            background: rgba(255, 255, 255, 0.96);
-            backdrop-filter: blur(12px);
+            background: #FFFFFF;
             border-bottom: 1px solid var(--border-line);
             height: 72px;
             display: flex;
@@ -1204,8 +1202,13 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
             .hero-action-group {
                 width: 100%;
             }
-            .btn-primary, .btn-secondary, .btn-white {
+            .btn-primary:not(.nav-btn-wa), .btn-secondary, .btn-white {
                 width: 100%;
+            }
+            .nav-btn-wa {
+                width: auto !important;
+                padding: 8px 14px !important;
+                font-size: 0.8125rem !important;
             }
         }
 
@@ -1241,7 +1244,7 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
                 <a href="#how-it-works">Process</a>
                 <a href="#faq">Questions</a>
             </nav> -->
-            <a href="<?php echo htmlspecialchars($waMockup); ?>" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 9px 18px; font-size: 0.875rem;">
+            <a href="<?php echo htmlspecialchars($waMockup); ?>" target="_blank" rel="noopener noreferrer" class="btn-primary nav-btn-wa" style="padding: 9px 18px; font-size: 0.875rem;">
                 WhatsApp Us
             </a>
         </div>
