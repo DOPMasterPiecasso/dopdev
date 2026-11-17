@@ -18,7 +18,7 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOPDEV | A Website That Gets Your Phone Ringing · Singapore Home Services</title>
-    <meta name="description" content="Fixed-price landing pages for Singapore home service businesses: aircon, cleaning, electrical, plumbing and renovation. WhatsApp enquiries built in. Ready in 7 days.">
+    <meta name="description" content="Fixed-price landing pages for Singapore home service businesses: aircon, cleaning, electrical, plumbing and renovation. WhatsApp enquiries built in. Ready in 10 days.">
     <link rel="icon" type="image/webp" href="/logo/logo.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1119,7 +1119,7 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
                             <span>Launch offer: S$690 (usual S$990) · Only 5 spots this month</span>
                         </div>
                         <h1 class="hero-title">
-                            A Website That Gets Your <span class="text-accent-red">Phone Ringing.</span> Ready in 7 Days.
+                            A Website That Gets Your <span class="text-accent-red">Phone Ringing.</span> Ready in 10 Days.
                         </h1>
                         <p class="hero-sub">
                             Landing pages for Singapore home service businesses: aircon, cleaning, electrical, plumbing and renovation. Fixed price. WhatsApp enquiries built in. Pay the deposit only after you approve the design.
@@ -1154,7 +1154,7 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
                             </div>
                             <div class="hero-card-metric">
                                 <span class="mono" style="color: var(--neutral);">Turnaround</span>
-                                <div class="hero-card-metric-num">7 DAYS</div>
+                                <div class="hero-card-metric-num">10 DAYS</div>
                             </div>
                             <div class="hero-card-metric">
                                 <span class="mono" style="color: var(--neutral);">Fixed Rate Launch Offer</span>
@@ -1231,7 +1231,7 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
                         <div class="offer-box">
                             <div class="offer-header-banner">
                                 <span>5 SPOTS ONLY</span>
-                                <span>7 DAYS READY</span>
+                                <span>10 DAYS READY</span>
                             </div>
                             <div class="offer-body">
                                 <div class="price-badge-wrap">
@@ -1275,7 +1275,7 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
                                     </li>
                                     <li>
                                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>Live in 7 business days from content approval</span>
+                                        <span>Live in 10 business days from content approval</span>
                                     </li>
                                 </ul>
 
@@ -1497,7 +1497,7 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
                                 <td><strong>Ready in</strong></td>
                                 <td>Weeks (if you finish)</td>
                                 <td>4–8 weeks</td>
-                                <td class="col-accent"><strong>7 days</strong></td>
+                                <td class="col-accent"><strong>10 days</strong></td>
                             </tr>
                             <tr>
                                 <td><strong>Built for enquiries</strong></td>
@@ -1603,7 +1603,7 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
                     <div class="step-card">
                         <div class="step-num">04</div>
                         <h3>Launch.</h3>
-                        <p>Pay the remaining 50% and go live in 7 days.</p>
+                        <p>Pay the remaining 50% and go live in 10 days.</p>
                     </div>
                 </div>
             </div>
