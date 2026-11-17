@@ -3,15 +3,14 @@
 $waNumber = '6282125189383';
 $waBase = 'https://wa.me/' . $waNumber;
 
-function getWaLink($msg) {
-    global $waBase;
+function getWaLink($msg, $waBase) {
     return $waBase . '?text=' . rawurlencode($msg);
 }
 
-$waMockup = getWaLink("Hi Dopdev, I'd like a free homepage mockup. My business is: ");
-$waSpot = getWaLink("Hi Dopdev, I want to claim one of the 5 spots. My business is: ");
-$waRevamp = getWaLink("Hi Dopdev, I'd like a free review of my current website. My website is: ");
-$waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. My website is: ");
+$waMockup = getWaLink("Hi Dopdev, I'd like a free homepage mockup. My business is: ", $waBase);
+$waSpot = getWaLink("Hi Dopdev, I want to claim one of the 5 spots. My business is: ", $waBase);
+$waRevamp = getWaLink("Hi Dopdev, I'd like a free review of my current website. My website is: ", $waBase);
+$waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. My website is: ", $waBase);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +37,7 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
             --font-swiss: "Helvetica Neue", Helvetica, Arial, sans-serif;
             --font-mono: "JetBrains Mono", monospace;
             --radius: 8px;
-            --max-w: 1280px;
+            --max-w: 980px;
         }
 
         *, *::before, *::after {
@@ -971,13 +970,13 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
             <a href="/" class="nav-brand">
                 <img src="/logo/logodophitam.webp" alt="DOPDEV">
             </a>
-            <nav class="nav-links">
+            <!-- <nav class="nav-links">
                 <a href="#offer">Offer</a>
                 <a href="#services">Revamp & Care</a>
                 <a href="#portfolio">Demos</a>
                 <a href="#how-it-works">Process</a>
                 <a href="#faq">Questions</a>
-            </nav>
+            </nav> -->
             <a href="<?php echo htmlspecialchars($waMockup); ?>" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 9px 18px; font-size: 0.875rem;">
                 WhatsApp Us
             </a>
@@ -1202,7 +1201,7 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
                             <div class="service-tag">Website Revamp</div>
                             <h3 style="font-size: 1.45rem; margin-bottom: 0.5rem;">Your business has grown. Your website should too.</h3>
                             <div class="mono" style="font-size: 1.125rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem;">
-                                From S$590 one-time
+                                From S$450 one-time
                             </div>
                             <p style="font-size: 0.9375rem; color: #4c5352; margin-bottom: 1.5rem;">
                                 We modernise your current site so it looks trustworthy, works on phones and makes it easy for customers to WhatsApp or call.
