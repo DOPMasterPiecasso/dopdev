@@ -1068,6 +1068,7 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
         }
 
         .side-banner img {
+            margin-top: 50px;
             width: 190px;
             max-width: 14vw;
             height: auto;
