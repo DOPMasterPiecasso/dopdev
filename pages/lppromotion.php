@@ -1068,18 +1068,10 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
         }
 
         .side-banner img {
-            width: 150px;
+            width: 190px;
             max-width: 14vw;
             height: auto;
-            border-radius: var(--radius);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-            border: 1px solid var(--border-line);
             transition: transform 200ms ease, box-shadow 200ms ease;
-        }
-
-        .side-banner:hover img {
-            transform: scale(1.02);
-            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.18);
         }
 
         /* Hide side banners if screen is not wide enough */
@@ -1132,10 +1124,10 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
 <body>
 
     <!-- Sticky Side Banners -->
-    <a href="<?php echo htmlspecialchars($waMockup); ?>" target="_blank" rel="noopener noreferrer" class="side-banner side-banner-left" aria-label="WhatsApp Offer Left Banner">
+    <a href="<?php echo htmlspecialchars($waMockup); ?>" target="_blank" rel="noopener noreferrer" class="side-banner side-banner-right" aria-label="WhatsApp Offer Left Banner">
         <img src="/images/banner/left.webp" alt="DOPDEV Promotion Banner" width="160" height="480">
     </a>
-    <a href="<?php echo htmlspecialchars($waMockup); ?>" target="_blank" rel="noopener noreferrer" class="side-banner side-banner-right" aria-label="WhatsApp Offer Right Banner">
+    <a href="<?php echo htmlspecialchars($waMockup); ?>" target="_blank" rel="noopener noreferrer" class="side-banner side-banner-left" aria-label="WhatsApp Offer Right Banner">
         <img src="/images/banner/kanan.webp" alt="DOPDEV Promotion Banner" width="160" height="480">
     </a>
 
