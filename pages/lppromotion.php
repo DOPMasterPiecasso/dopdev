@@ -538,6 +538,131 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
             border: 1px solid var(--border-line);
         }
 
+        /* Offer Highlight Cards (Side Cards Stacked) */
+        .highlight-cards-stack {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #1A1A1A;
+            border-radius: var(--radius);
+            box-shadow: 4px 4px 0px #1A1A1A;
+            overflow: hidden;
+            background: #FAFAFA;
+            height: 100%;
+        }
+
+        .highlight-card {
+            background: #FAFAFA;
+            border: none;
+            border-radius: 0;
+            padding: 1.75rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1 1 50%;
+            gap: 1rem;
+            box-shadow: none;
+            transition: background-color 150ms ease;
+        }
+
+        .highlight-card + .highlight-card {
+            border-top: 2px solid #1A1A1A;
+        }
+
+        .highlight-card:hover {
+            background-color: #F4F4F4;
+        }
+
+        .highlight-card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .highlight-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.3rem 0.65rem;
+            border-radius: 4px;
+            background: #1A1A1A;
+            color: #FFFFFF;
+        }
+
+        .highlight-badge-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #10B981;
+        }
+
+        .highlight-card-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            background: #FFFFFF;
+            border: 1.5px solid #1A1A1A;
+            color: #1A1A1A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .highlight-card-body {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .highlight-card-title {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #1A1A1A;
+            letter-spacing: -0.03em;
+            line-height: 1.15;
+        }
+
+        .highlight-card-callout {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #111111;
+            line-height: 1.4;
+        }
+
+        .highlight-card-desc {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #444444;
+        }
+
+        .highlight-card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding-top: 0.75rem;
+            border-top: 1.5px dashed #D0D0D0;
+        }
+
+        .highlight-tag-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #111111;
+            background: #EAEAEA;
+            border: 1px solid #D5D5D5;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-family: var(--font-mono);
+        }
+
         /* Revamp & Care Section */
         .service-card {
             background: var(--tertiary);
@@ -1105,8 +1230,8 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
                     <div class="col-span-8">
                         <div class="offer-box">
                             <div class="offer-header-banner">
-                                <span>LAUNCH OFFER · 5 SPOTS ONLY</span>
-                                <span>7 BUSINESS DAYS</span>
+                                <span>5 SPOTS ONLY</span>
+                                <span>7 DAYS READY</span>
                             </div>
                             <div class="offer-body">
                                 <div class="price-badge-wrap">
@@ -1165,20 +1290,71 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
                         </div>
                     </div>
 
-                    <div class="col-span-4" style="display: flex; flex-direction: column; gap: 1.5rem;">
-                        <div style="background: var(--accent); border: 1px solid var(--border-line); border-radius: var(--radius); padding: 1.75rem;">
-                            <div class="mono" style="color: var(--secondary); margin-bottom: 0.5rem;">GUARANTEE</div>
-                            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Risk Reversal</h3>
-                            <p style="font-size: 0.9375rem; color: #4e5554;">
-                                We construct the layout and design draft on WhatsApp first. Zero upfront financial risk.
-                            </p>
+                    <div class="col-span-4 highlight-cards-stack">
+                        <!-- Card 1: Guarantee / Risk Reversal -->
+                        <div class="highlight-card">
+                            <div class="highlight-card-header">
+                                <span class="highlight-badge">
+                                    <span class="highlight-badge-dot"></span>
+                                    GUARANTEE
+                                </span>
+                                <div class="highlight-card-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                        <polyline points="9 12 11 14 15 10"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="highlight-card-body">
+                                <h3 class="highlight-card-title">Risk Reversal</h3>
+                                <p class="highlight-card-callout">
+                                    Draft on WhatsApp first. Zero upfront risk.
+                                </p>
+                                <p class="highlight-card-desc">
+                                    We design your mockup before you commit or pay anything. If you don't like it, you walk away freely.
+                                </p>
+                            </div>
+                            <div class="highlight-card-tags">
+                                <span class="highlight-tag-pill">
+                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    S$0 Deposit First
+                                </span>
+                                <span class="highlight-tag-pill">Pay only if approved</span>
+                            </div>
                         </div>
-                        <div style="background: var(--accent); border: 1px solid var(--border-line); border-radius: var(--radius); padding: 1.75rem;">
-                            <div class="mono" style="color: var(--secondary); margin-bottom: 0.5rem;">INFRASTRUCTURE</div>
-                            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Year 1 Fully Covered</h3>
-                            <p style="font-size: 0.9375rem; color: #4e5554;">
-                                High-speed DNS, SSL certificate, cloud hosting setup, and mobile speed tuning included.
-                            </p>
+
+                        <!-- Card 2: Infrastructure / Year 1 Fully Covered -->
+                        <div class="highlight-card">
+                            <div class="highlight-card-header">
+                                <span class="highlight-badge">
+                                    <span class="highlight-badge-dot"></span>
+                                    YEAR 1 INCLUDED
+                                </span>
+                                <div class="highlight-card-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                        <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                        <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                        <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="highlight-card-body">
+                                <h3 class="highlight-card-title">All-Inclusive Setup</h3>
+                                <p class="highlight-card-callout">
+                                    Zero tech headaches. Everything covered.
+                                </p>
+                                <p class="highlight-card-desc">
+                                    High-speed DNS, SSL certificate, cloud hosting setup, and mobile speed tuning included for Year 1.
+                                </p>
+                            </div>
+                            <div class="highlight-card-tags">
+                                <span class="highlight-tag-pill">
+                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Cloud Hosting
+                                </span>
+                                <span class="highlight-tag-pill">SSL & DNS Setup</span>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -17,9 +17,9 @@
 
         <div class="container max-w-315!">
             <div class="mb-12.5 text-center">
-                <h1 class="lg:text-[56px] md:text-5xl text-4xl text-default-950 mb-2.5">We're a Software House That Books Appointments, Not a Generic Web Agency</h1>
+                <h1 class="lg:text-[56px] md:text-5xl text-4xl text-default-950 mb-2.5">Websites Built to Turn Visitors Into Enquiries, Not Generic Templates</h1>
 
-                <p class="md:max-w-2/3 mx-auto text-lg text-default-600">DOP exists because we watched the same problem repeat across every barbershop, clinic, and salon we met in Singapore and Australia: great businesses losing revenue to missed calls, WhatsApp chaos, and no-shows. So we don't do "digital transformation." We build one thing extremely well: systems that turn visitors into confirmed, paying, showing-up appointments.</p>
+                <p class="md:max-w-2/3 mx-auto text-lg text-default-600">Dopdev exists because service businesses in Singapore and Australia lose valuable enquiries to slow pages, cluttered templates, and confusing contact flows. We don't build generic corporate websites. We design and build fast, mobile-first websites with clear timelines and fixed pricing agreed before we start.</p>
             </div>
 
             <div class="mb-2.5">
@@ -42,7 +42,7 @@
 
                             <div>
                                 <h2 class="text-4xl text-white mb-8">260+</h2>
-                                <p class="text-white mt-2">Projects shipped across SG, AU, and beyond.</p>
+                                <p class="text-white mt-2">Websites and digital projects delivered across SG, AU, and beyond.</p>
                             </div>
 
                         </div>
@@ -55,18 +55,18 @@
                     <div class="h-full bg-default-950 rounded-xl p-6 flex flex-col justify-between">
 
                         <h3 class="text-2xl leading-snug text-white">
-                            24/7 support:
-                            <span class="text-default-400">because your Saturday rush doesn't wait for business hours</span>
+                            Reliable support:
+                            <span class="text-default-400">working in your business hours with support after launch</span>
                         </h3>
 
                         <div class="mt-8">
                             <a href="contact" class="group py-3 px-4.5 inline-flex items-center justify-center gap-5 rounded-xl bg-white text-primary font-medium transition-all">
                                 <span class="relative block overflow-hidden">
                                     <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Get in Touch
+                                        Get a Free Quote
                                     </span>
                                     <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Get in Touch
+                                        Get a Free Quote
                                     </span>
                                 </span>
                             </a>
@@ -87,7 +87,7 @@
                         <div class="mt-6">
                             <h3 class="text-4xl font-semibold text-default-900">6+</h3>
                             <p class="text-default-600 mt-2">
-                                Years building booking &amp; operations systems for service businesses
+                                Years designing and building high-converting websites for service businesses
                             </p>
                         </div>
 
@@ -106,9 +106,9 @@
 
             <div class="grid lg:grid-cols-2 grid-cols-2 lg:gap-30 gap-7.5">
                 <div class="our-story-detail-item">
-                    <p class="mb-7.5 text-xl text-default-800">We built DOP around a single observation: barbershops, aesthetic clinics, and boutique salons don't need another generic brochure website. They need an automated system that books appointments while they work, sends WhatsApp reminders, collects upfront deposits, and gives owners total clarity over every staff member and branch.</p>
+                    <p class="mb-7.5 text-xl text-default-800">We built Dopdev around a simple observation: service businesses don't need bloated templates or generic brochure websites that blend in with everyone else. They need websites designed around how their customers decide—fast loading, credible, with WhatsApp and custom forms built in to capture enquiries effortlessly.</p>
 
-                    <p>From Singapore to Sydney, Melbourne, and Brisbane, we build high-converting websites and bespoke booking software that match the habits, local payment methods, and daily operations of local service brands. No bloated corporate frameworks, just clean, reliable systems that keep your calendar full.</p>
+                    <p>Serving growing businesses across Singapore and Australia, our team in Indonesia builds mobile-first websites working directly in your business hours. No bloated plugins or surprise monthly fees—just clean, high-performing websites where you own your assets and get real results.</p>
                 </div>
 
                 <div>
@@ -133,8 +133,8 @@
                         <img src="images/other/sign.svg" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" data-w-id="2e19b734-5117-5347-782c-f7048aa4f02c" alt="Image" class="signature">
 
                         <div class="mt-2.5">
-                            <h3 class="text-lg mb-2.5">DOP Team</h3>
-                            <div class="text-default-600">Booking Systems &amp; Operations</div>
+                            <h3 class="text-lg mb-2.5">Dopdev Team</h3>
+                            <div class="text-default-600">Web Design &amp; Development</div>
                         </div>
                     </div>
                 </div>
@@ -151,7 +151,7 @@
                     <div class="border border-default-200 rounded-xl lg:p-10 p-5 lg:pb-16 pb-12 h-full flex flex-col md:items-start items-center lg:text-start text-center justify-between gap-12">
 
                         <h2 class="mb-12.5 text-2xl font-semibold">Our Mission</h2>
-                        <p class="text-default-950">To eliminate empty chairs, lost bookings, and admin chaos for local service businesses through automated booking technology, high-converting design, and dependable integrations.</p>
+                        <p class="text-default-950">To eliminate lost enquiries and digital frustration for service businesses through fast, mobile-first design, transparent fixed pricing, and dependable web development.</p>
 
                     </div>
                 </div>
@@ -166,12 +166,12 @@
                             <div class="space-y-7.5">
                                 <h2 class="text-2xl font-semibold">Our Vision</h2>
 
-                                <p class="text-default-950">To be the most trusted appointment engineering partner for growing barbershops, clinics, and salons across Singapore and Australia.</p>
+                                <p class="text-default-950">To be the most trusted web design and development partner for growing service businesses across Singapore and Australia.</p>
 
                                 <ul role="list" class="list-disc text-default-950 list-inside space-y-2.5 ps-2">
-                                    <li>Zero missed appointments</li>
-                                    <li>Frictionless deposits &amp; payments</li>
-                                    <li>Clear visibility across branches</li>
+                                    <li>Websites that turn visitors into enquiries</li>
+                                    <li>Fixed pricing and clear timelines before we start</li>
+                                    <li>Full asset ownership with post-launch support</li>
                                 </ul>
                             </div>
 
@@ -277,17 +277,17 @@
         <div class="container max-w-315!">
             <div class="mt-12.5">
                 <div class="lg:py-17.5 lg:px-25 py-8 px-3 rounded-lg bg-default-100 text-center">
-                    <h2 class="mb-2.5 lg:text-4xl md:text-3xl text-2xl">Ready to Turn Your Website Into a Booking Machine?</h2>
+                    <h2 class="mb-2.5 lg:text-4xl md:text-3xl text-2xl">Ready for a Website That Brings in Enquiries?</h2>
 
-                    <p class="mb-12.5 lg:w-3/5 mx-auto">Get a free 15-minute booking audit. We'll show you exactly where you're losing appointments, with no pitch.</p>
+                    <p class="mb-12.5 lg:w-3/5 mx-auto">Tell us about your business. We'll show you a free mockup and a fixed quote, with no obligation.</p>
 
                     <a href="contact" class="group py-5 px-10 inline-flex items-center justify-center rounded-lg bg-primary text-white font-medium transition-all">
                         <span class="relative block overflow-hidden">
                             <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                Get in Touch
+                                Get Your Free Mockup
                             </span>
                             <span class="absolute top-7 inset-s-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                Get in Touch
+                                Get Your Free Mockup
                             </span>
                         </span>
                     </a>
