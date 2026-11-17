@@ -37,7 +37,7 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
             --font-swiss: "Helvetica Neue", Helvetica, Arial, sans-serif;
             --font-mono: "JetBrains Mono", monospace;
             --radius: 8px;
-            --max-w: 950px;
+            --max-w: 900px;
         }
 
         *, *::before, *::after {
@@ -275,7 +275,7 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
 
         /* Hero Section */
         .hero-section {
-            padding-top: clamp(3.5rem, 6vw, 5.5rem);
+            padding-top: 30px;
             padding-bottom: clamp(3.5rem, 6vw, 5.5rem);
             border-bottom: 1px solid var(--border-line);
         }
@@ -1082,6 +1082,102 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
             }
         }
 
+        /* Bottom Sticky Banner */
+        .bottom-banner-wrap {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 190;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 1rem 0.75rem 1rem;
+            pointer-events: none;
+            transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1), opacity 300ms ease;
+        }
+
+        .bottom-banner-wrap.is-closed {
+            transform: translateY(120%);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .bottom-banner-inner {
+            position: relative;
+            max-width: min(620px, 94vw);
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            pointer-events: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.22);
+            overflow: visible;
+        }
+
+        .bottom-banner-link {
+            display: block;
+            width: auto;
+            text-decoration: none;
+            line-height: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1.5px solid #1A1A1A;
+            background: #1A1A1A;
+        }
+
+        .bottom-banner-link img {
+            width: 100%;
+            max-width: 620px;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            transition: transform 200ms ease;
+        }
+
+        .bottom-banner-link:hover img {
+            transform: scale(1.01);
+        }
+
+        .bottom-banner-close {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #1A1A1A;
+            color: #FFFFFF;
+            border: 2px solid #FFFFFF;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: background 150ms ease, transform 150ms ease;
+        }
+
+        .bottom-banner-close:hover {
+            background: #333333;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .bottom-banner-wrap {
+                padding: 0 0.5rem 0.5rem 0.5rem;
+            }
+            .bottom-banner-close {
+                top: -10px;
+                right: -6px;
+                width: 28px;
+                height: 28px;
+            }
+            .wa-float-btn {
+                bottom: 5.5rem; /* give space so bottom banner doesn't cover WhatsApp button when visible */
+            }
+        }
+
         /* Responsive Breakpoints */
         @media (max-width: 1024px) {
             .steps-container {
@@ -1758,6 +1854,21 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
         </div>
     </footer>
 
+    <!-- Bottom Sticky Banner with Close Button -->
+    <div class="bottom-banner-wrap" id="bottomBanner">
+        <div class="bottom-banner-inner">
+            <button type="button" class="bottom-banner-close" id="closeBottomBanner" aria-label="Close Promotion Banner">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <a href="<?php echo htmlspecialchars($waMockup); ?>" target="_blank" rel="noopener noreferrer" class="bottom-banner-link" aria-label="Claim Limited Offer on WhatsApp">
+                <img src="/images/banner/bottom.webp" alt="Limited Launch Offer Promotion" width="1086" height="159" loading="lazy">
+            </a>
+        </div>
+    </div>
+
     <!-- WhatsApp Floating Button -->
     <a href="<?php echo htmlspecialchars($waMockup); ?>" target="_blank" rel="noopener noreferrer" class="wa-float-btn" aria-label="Chat on WhatsApp">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1765,8 +1876,9 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
         </svg>
     </a>
 
-    <!-- Minimal Vanilla Script for FAQ -->
+    <!-- Minimal Vanilla Script for FAQ & Banner Close -->
     <script>
+        // FAQ Accordion
         document.querySelectorAll('.faq-button').forEach(function(button) {
             button.addEventListener('click', function() {
                 var item = button.parentElement;
@@ -1785,6 +1897,22 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
                 }
             });
         });
+
+        // Bottom Banner Close Functionality
+        (function() {
+            var banner = document.getElementById('bottomBanner');
+            var closeBtn = document.getElementById('closeBottomBanner');
+            if (banner && closeBtn) {
+                closeBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    banner.classList.add('is-closed');
+                    setTimeout(function() {
+                        banner.style.display = 'none';
+                    }, 350);
+                });
+            }
+        })();
     </script>
 </body>
 </html>
