@@ -1047,6 +1047,48 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
             background-color: #333333;
         }
 
+        /* Side Sticky Banners */
+        .side-banner {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 90;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 200ms ease;
+        }
+
+        .side-banner-left {
+            left: calc((100vw - var(--max-w)) / 4 - 80px);
+        }
+
+        .side-banner-right {
+            right: calc((100vw - var(--max-w)) / 4 - 80px);
+        }
+
+        .side-banner img {
+            width: 150px;
+            max-width: 14vw;
+            height: auto;
+            border-radius: var(--radius);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            border: 1px solid var(--border-line);
+            transition: transform 200ms ease, box-shadow 200ms ease;
+        }
+
+        .side-banner:hover img {
+            transform: scale(1.02);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.18);
+        }
+
+        /* Hide side banners if screen is not wide enough */
+        @media (max-width: 1320px) {
+            .side-banner {
+                display: none;
+            }
+        }
+
         /* Responsive Breakpoints */
         @media (max-width: 1024px) {
             .steps-container {
@@ -1088,6 +1130,14 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
     </style>
 </head>
 <body>
+
+    <!-- Sticky Side Banners -->
+    <a href="<?php echo htmlspecialchars($waMockup); ?>" target="_blank" rel="noopener noreferrer" class="side-banner side-banner-left" aria-label="WhatsApp Offer Left Banner">
+        <img src="/images/banner/left.webp" alt="DOPDEV Promotion Banner" width="160" height="480">
+    </a>
+    <a href="<?php echo htmlspecialchars($waMockup); ?>" target="_blank" rel="noopener noreferrer" class="side-banner side-banner-right" aria-label="WhatsApp Offer Right Banner">
+        <img src="/images/banner/kanan.webp" alt="DOPDEV Promotion Banner" width="160" height="480">
+    </a>
 
     <!-- 1. Navbar -->
     <header class="navbar">
