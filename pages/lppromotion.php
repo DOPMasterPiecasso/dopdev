@@ -807,13 +807,11 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
             height: 100%;
             object-fit: cover;
             object-position: top;
-            filter: grayscale(100%);
-            transition: transform 300ms ease, filter 300ms ease;
+            transition: transform 300ms ease;
         }
 
         .portfolio-card:hover .portfolio-thumb img {
             transform: scale(1.02);
-            filter: grayscale(0%);
         }
 
         .portfolio-info {
