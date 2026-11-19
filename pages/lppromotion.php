@@ -680,7 +680,7 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
 
         .service-tag {
             font-family: var(--font-mono);
-            font-size: 0.75rem;
+            font-size: 0.8125rem;
             text-transform: uppercase;
             letter-spacing: 0.06em;
             color: var(--surface);
@@ -692,18 +692,18 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
             width: 100%;
             border-collapse: collapse;
             margin: 1.5rem 0;
-            font-size: 0.875rem;
+            font-size: 0.95rem;
         }
 
         .care-table th, .care-table td {
-            padding: 0.75rem;
+            padding: 0.85rem 1rem;
             text-align: left;
             border-bottom: 1px solid var(--border-line);
         }
 
         .care-table th {
             font-family: var(--font-mono);
-            font-size: 0.75rem;
+            font-size: 0.8125rem;
             text-transform: uppercase;
             color: #636c6b;
             background: var(--accent);
@@ -1514,59 +1514,59 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
 
                 <div class="grid-swiss-12">
                     <!-- Card 1: Website Revamp -->
-                    <div class="col-span-6 service-card">
+                    <div class="col-span-12 service-card">
                         <div>
                             <div class="service-tag">Website Revamp</div>
-                            <h3 style="font-size: 1.45rem; margin-bottom: 0.5rem;">Your business has grown. Your website should too.</h3>
-                            <div class="mono" style="font-size: 1.125rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem;">
+                            <h3 style="font-size: 1.65rem; margin-bottom: 0.65rem; line-height: 1.3;">Your business has grown. Your website should too.</h3>
+                            <div class="mono" style="font-size: 1.25rem; font-weight: 700; color: var(--primary); margin-bottom: 1.15rem;">
                                 From S$450 one-time
                             </div>
-                            <p style="font-size: 0.9375rem; color: #4c5352; margin-bottom: 1.5rem;">
+                            <p style="font-size: 1.05rem; line-height: 1.6; color: #4c5352; margin-bottom: 1.75rem;">
                                 We modernise your current site so it looks trustworthy, works on phones and makes it easy for customers to WhatsApp or call.
                             </p>
 
-                            <div class="mono" style="font-size: 0.75rem; color: #626a69; margin-bottom: 0.75rem;">WHAT IS INCLUDED:</div>
-                            <ul class="feature-checklist" style="margin-bottom: 1.75rem;">
-                                <li>
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <div class="mono" style="font-size: 0.8125rem; color: #626a69; margin-bottom: 0.85rem; font-weight: 600; letter-spacing: 0.05em;">WHAT IS INCLUDED:</div>
+                            <ul class="feature-checklist" style="margin-bottom: 2rem; font-size: 1.05rem;">
+                                <li style="font-size: 1.05rem;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     <span>Review of your current website</span>
                                 </li>
-                                <li>
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <li style="font-size: 1.05rem;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     <span>Modern design refresh</span>
                                 </li>
-                                <li>
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <li style="font-size: 1.05rem;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     <span>Mobile fixes</span>
                                 </li>
-                                <li>
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <li style="font-size: 1.05rem;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     <span>Clear WhatsApp and call buttons</span>
                                 </li>
-                                <li>
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <li style="font-size: 1.05rem;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     <span>Basic speed improvements</span>
                                 </li>
-                                <li>
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <li style="font-size: 1.05rem;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     <span>2 rounds of revisions</span>
                                 </li>
                             </ul>
                         </div>
-                        <a href="<?php echo htmlspecialchars($waRevamp); ?>" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                        <a href="<?php echo htmlspecialchars($waRevamp); ?>" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="font-size: 1rem; padding: 14px 26px;">
                             Get a Free Website Review
                         </a>
                     </div>
 
                     <!-- Card 2: Website Care -->
-                    <div class="col-span-6 service-card">
+                    <div class="col-span-12 service-card">
                         <div>
                             <div class="service-tag">Website Care</div>
-                            <h3 style="font-size: 1.45rem; margin-bottom: 0.5rem;">Keep your website safe, fast and up to date.</h3>
-                            <div class="mono" style="font-size: 1.125rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">
+                            <h3 style="font-size: 1.65rem; margin-bottom: 0.65rem; line-height: 1.3;">Keep your website safe, fast and up to date.</h3>
+                            <div class="mono" style="font-size: 1.25rem; font-weight: 700; color: var(--primary); margin-bottom: 0.75rem;">
                                 From S$39 per month
                             </div>
-                            <p style="font-size: 0.9375rem; color: #4c5352; margin-bottom: 1rem;">
+                            <p style="font-size: 1.05rem; line-height: 1.6; color: #4c5352; margin-bottom: 1.25rem;">
                                 No contracts. Cancel anytime. Pick the level of support you need.
                             </p>
 
@@ -1597,7 +1597,7 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
                                 </tbody>
                             </table>
                         </div>
-                        <a href="<?php echo htmlspecialchars($waCare); ?>" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                        <a href="<?php echo htmlspecialchars($waCare); ?>" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="font-size: 1rem; padding: 14px 26px;">
                             Ask About Care Plans
                         </a>
                     </div>
