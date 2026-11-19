@@ -1069,6 +1069,8 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
             max-width: 14vw;
             height: auto;
             transition: transform 200ms ease, box-shadow 200ms ease;
+            border: 3px solid black;
+            border-radius: 10px;
         }
 
         /* Hide side banners if screen is not wide enough */
