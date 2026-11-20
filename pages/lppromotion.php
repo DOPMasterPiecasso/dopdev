@@ -688,10 +688,19 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
             margin-bottom: 0.75rem;
         }
 
+        .care-table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 1.5rem 0;
+            border: 1px solid var(--border-line);
+            border-radius: var(--radius);
+        }
+
         .care-table {
             width: 100%;
+            min-width: 540px;
             border-collapse: collapse;
-            margin: 1.5rem 0;
             font-size: 0.95rem;
         }
 
@@ -1570,32 +1579,34 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
                                 No contracts. Cancel anytime. Pick the level of support you need.
                             </p>
 
-                            <table class="care-table">
-                                <thead>
-                                    <tr>
-                                        <th>Package</th>
-                                        <th>Price</th>
-                                        <th>Scope</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Basic</td>
-                                        <td>S$39 / mo</td>
-                                        <td>Uptime and backup monitoring, basic security checks, technical support.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Standard</td>
-                                        <td>S$99 / mo</td>
-                                        <td>Everything in Basic, plus software updates, speed monitoring and 1 hour of content updates.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Premium</td>
-                                        <td>S$189 / mo</td>
-                                        <td>Everything in Standard, plus 3 hours of updates, a monthly report and priority support.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="care-table-wrapper">
+                                <table class="care-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Package</th>
+                                            <th>Price</th>
+                                            <th>Scope</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Basic</td>
+                                            <td>S$39 / mo</td>
+                                            <td>Uptime and backup monitoring, basic security checks, technical support.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Standard</td>
+                                            <td>S$99 / mo</td>
+                                            <td>Everything in Basic, plus software updates, speed monitoring and 1 hour of content updates.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Premium</td>
+                                            <td>S$189 / mo</td>
+                                            <td>Everything in Standard, plus 3 hours of updates, a monthly report and priority support.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <a href="<?php echo htmlspecialchars($waCare); ?>" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="font-size: 1rem; padding: 14px 26px;">
                             Ask About Care Plans
