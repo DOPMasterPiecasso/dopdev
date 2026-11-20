@@ -1196,8 +1196,12 @@ $waCare = getWaLink("Hi Dopdev, I'd like to ask about your website care plans. M
             .grid-swiss-12 {
                 grid-template-columns: 1fr;
             }
-            .grid-col-8, .grid-col-7, .grid-col-5, .grid-col-4, .grid-col-6 {
+            .grid-col-8, .grid-col-7, .grid-col-5, .grid-col-4, .grid-col-6,
+            .col-span-12, .col-span-8, .col-span-7, .col-span-6, .col-span-5, .col-span-4 {
                 grid-column: span 12 !important;
+            }
+            .highlight-cards-stack {
+                height: auto;
             }
             .nav-links {
                 display: none;
